@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Nongdi | 사용자 관리 | 사용자 권한대행관리 | 신청자 찾기 팝업
+        </title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup-inner pop-1000">
+            <div class="popup-head">
+                <strong class="head-title">신청자 찾기</strong>
+                <button
+                    type="button"
+                    class="popup-close"
+                    aria-label="닫기"
+                ></button>
+            </div>
+            <div class="popup-body agency-body">
+                <div class="body-box">
+                    <div class="bg-box">
+                        <ul class="bg-list">
+                            <li class="bg-item">
+                                <strong class="item-tit">사용자 구분</strong>
+                                <select class="select">
+                                    <option value="">전체</option>
+                                    <option value="">플랫폼 사용자</option>
+                                    <option value="">업무담당자</option>
+                                    <option value="">포털 관리자</option>
+                                </select>
+                            </li>
+                            <li class="bg-item">
+                                <strong class="item-tit">소속부서</strong>
+                                <select class="select">
+                                    <option value="">전체</option>
+                                    <option value="">소속부서</option>
+                                </select>
+                            </li>
+                        </ul>
+
+                        <div class="search-btn-box">
+                            <strong class="search-tit">검색어</strong>
+                            <select class="select">
+                                <option value="">전체</option>
+                                <option value="">신청자ID</option>
+                                <option value="">신청자명</option>
+                                <option value="">대행자ID</option>
+                                <option value="">대행자명</option>
+                            </select>
+                            <input type="text" />
+                            <button type="button" class="btn btn-default">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tbl-inner">
+                        <div class="top-box">
+                            <p class="top-total">전체 <span>4</span>건</p>
+                        </div>
+                        <div class="tbl-wrap scroll-y">
+                            <table class="tbl">
+                                <caption>
+                                    사용자구분, 아이디, 사용자명, 소속부서
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 225px" />
+                                    <col style="width: 215px" />
+                                    <col style="width: 215px" />
+                                    <col style="width: 255px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">사용자구분</th>
+                                        <th scope="col">아이디</th>
+                                        <th scope="col">사용자명</th>
+                                        <th scope="col">소속부서</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>플랫폼 사용자</td>
+                                        <td>1234</td>
+                                        <td>홍길동</td>
+                                        <td>소속부서</td>
+                                    </tr>
+                                    <tr>
+                                        <td>플랫폼 사용자</td>
+                                        <td>1234</td>
+                                        <td>홍길동</td>
+                                        <td>소속부서</td>
+                                    </tr>
+                                    <tr class="highlight">
+                                        <td>플랫폼 사용자</td>
+                                        <td>1234</td>
+                                        <td>홍길동</td>
+                                        <td>소속부서</td>
+                                    </tr>
+                                    <tr>
+                                        <td>플랫폼 사용자</td>
+                                        <td>1234</td>
+                                        <td>홍길동</td>
+                                        <td>소속부서</td>
+                                    </tr>
+                                    <tr>
+                                        <td>플랫폼 사용자</td>
+                                        <td>1234</td>
+                                        <td>홍길동</td>
+                                        <td>소속부서</td>
+                                    </tr>
+                                    <tr>
+                                        <td>플랫폼 사용자</td>
+                                        <td>1234</td>
+                                        <td>홍길동</td>
+                                        <td>소속부서</td>
+                                    </tr>
+                                    <tr>
+                                        <td>플랫폼 사용자</td>
+                                        <td>1234</td>
+                                        <td>홍길동</td>
+                                        <td>소속부서</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <ol class="paging-list">
+                            <li class="all-prev paging-item">
+                                <button
+                                    type="button"
+                                    aria-label="첫페이지로 이동"
+                                ></button>
+                            </li>
+                            <li class="arrow-prev paging-item">
+                                <button
+                                    type="button"
+                                    aria-label="이전페이지 이동"
+                                ></button>
+                            </li>
+                            <li class="paging-item is-active">
+                                <button type="button">1</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">2</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">3</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">4</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">5</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">6</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">7</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">8</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">9</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">10</button>
+                            </li>
+                            <li class="arrow-next paging-item">
+                                <button
+                                    type="button"
+                                    aria-label="다음페이지 이동"
+                                ></button>
+                            </li>
+                            <li class="all-next paging-item">
+                                <button
+                                    type="button"
+                                    aria-label="마지막 페이지로 이동"
+                                ></button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-default">확인</button>
+                    <button type="button" class="btn btn-bd">취소</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

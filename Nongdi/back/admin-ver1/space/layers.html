@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 공간정보관리 | 레이어관리 | 레이어관리</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>
+                    <a href="#a" class="logo"
+                        ><img src="../images/logo.png" alt="nongdi 로고"
+                    /></a>
+                </h1>
+                <div class="page-user">
+                    <a href="#a" class="link-portal"
+                        >농디 사용자포털 바로가기</a
+                    >
+                    <ul class="user-info">
+                        <li>포털관리자</li>
+                        <li><a href="#a" class="user">홍길동</a>님</li>
+                    </ul>
+                    <button type="button" class="log-out">로그아웃</button>
+                </div>
+            </div>
+            <div class="header-gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#a"><span>포털관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>사용자관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>모니터링</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a" class="is-active"
+                            ><span>공간정보관리</span></a
+                        >
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>유휴시설관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>농촌사업관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>창업지원관리</span></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <strong class="aside-tit">공간정보관리</strong>
+                <ul class="aside-list">
+                    <li class="aside-item">
+                        <a href="#a">공간정보등록</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 공간정보 등록</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 공간정보 등록 승인</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 공간정보 변환 로그</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item">
+                        <a href="#a">공간정보관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 공간정보 관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item on">
+                        <a href="#a">레이어관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item on">
+                                <a href="#a" class="is-active"
+                                    ><span>- 레이어관리</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="section">
+                <h2 class="visually-hidden">레이어관리</h2>
+                <div class="sec-inner">
+                    <div class="title-location">
+                        <h3 class="title">레이어관리</h3>
+                        <ul class="location-list">
+                            <li class="location-item">
+                                <a href="#a" class="home" aria-label="home"></a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">공간정보관리</a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">레이어관리</a>
+                            </li>
+                            <li class="location-item on">
+                                <a href="#a">레이어관리</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="layer-inner">
+                        <div class="left">
+                            <div class="bg-box">
+                                <div class="search-btn-box">
+                                    <input
+                                        type="text"
+                                        placeholder="카테고리 명칭 입력"
+                                    />
+                                    <button
+                                        type="button"
+                                        class="btn btn-search"
+                                        aria-label="검색"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-reset"
+                                        aria-label="초기화"
+                                    ></button>
+                                </div>
+                            </div>
+
+                            <div class="layer-tree">
+                                <select name="" id="" class="select">
+                                    <option value="">기본 최상위 로드</option>
+                                </select>
+                                <div class="tree-box">
+                                    <span class="txt-layer"> 레이어 트리 </span>
+                                    <div class="tree-acc scroll-y">
+                                        <span class="acc-subtit">기본</span>
+                                        <ul class="acc-list">
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >3D</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a">- 건물</a>
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a">- 교통</a>
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 지하시설물</a
+                                                        >
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a">- 도로</a>
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 융건릉</a
+                                                        >
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a">- etc</a>
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a">- 지형</a>
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- Digital Platform
+                                                            Government</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >2D</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a">- 하천</a>
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 지적도</a
+                                                        >
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 지하시설물</a
+                                                        >
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a">- 도로</a>
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 산사태</a
+                                                        >
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 행정구역</a
+                                                        >
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 문화재</a
+                                                        >
+                                                    </li>
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 연속지적도</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >영상</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >연속지적도</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                        <span class="acc-subtit">서비스</span>
+                                        <ul class="acc-list">
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >test</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >drone</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >etc</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >test0517</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >vip</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >융건릉</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >terrain</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >terrain1020</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="acc-item">
+                                                <a href="#a" class="btn-more"
+                                                    >전북농디</a
+                                                >
+                                                <ul class="more-list">
+                                                    <li class="more-item">
+                                                        <a href="#a"
+                                                            >- 테스트</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="bg-box">
+                                <div class="search-btn-box">
+                                    <strong class="search-tit">작업명</strong>
+                                    <input type="text" />
+                                    <button
+                                        type="button"
+                                        class="btn btn-search"
+                                        aria-label="검색"
+                                    >
+                                        검색
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tbl-wrap">
+                                <div class="btn-wrap">
+                                    <button
+                                        type="button"
+                                        class="btn btn-default"
+                                    >
+                                        추가
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-retouch"
+                                    >
+                                        수정
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-default"
+                                    >
+                                        레이어 카테고리 이동
+                                    </button>
+                                    <button type="button" class="btn btn-del">
+                                        삭제
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-date-del"
+                                    >
+                                        메타데이터 수정
+                                    </button>
+                                </div>
+
+                                <table class="tbl">
+                                    <caption>
+                                        레이번호, 작업명, 작업명_2, 작성시간,
+                                        등록자, 서비스종류, 서비스 주소, 기본
+                                        설정 여부, 사용 여부
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 58px" />
+                                        <col style="width: 120px" />
+                                        <col style="width: 140px" />
+                                        <col style="width: 140px" />
+                                        <col style="width: 120px" />
+                                        <col style="width: 120px" />
+                                        <col style="width: 120px" />
+                                        <col style="width: 120px" />
+                                        <col style="width: 80px" />
+                                        <col style="width: 80px" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer1"
+                                                    />
+                                                    <label
+                                                        for="chk-layer1"
+                                                    ></label>
+                                                </div>
+                                            </th>
+                                            <th scope="col">레이어 번호</th>
+                                            <th scope="col">작업명</th>
+                                            <th scope="col">작업명_2</th>
+                                            <th scope="col">작성시간</th>
+                                            <th scope="col">등록자</th>
+                                            <th scope="col">서비스 종류</th>
+                                            <th scope="col">서비스 주소</th>
+                                            <th scope="col">
+                                                기본 설정<br />
+                                                여부
+                                            </th>
+                                            <th scope="col">사용여부</th>
+                                        </tr>
+                                    </thead>
+                                    <!-- <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer2"
+                                                    />
+                                                    <label
+                                                        for="chk-layer2"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td><spsan>prj_test</spsan></td>
+                                            <td><spsan>prj_test</spsan></td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span class="normal">설정</span>
+                                            </td>
+                                            <td>
+                                                <span class="normal">사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer3"
+                                                    />
+                                                    <label
+                                                        for="chk-layer3"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span class="normal">설정</span>
+                                            </td>
+                                            <td>
+                                                <span class="normal">사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer4"
+                                                    />
+                                                    <label
+                                                        for="chk-layer4"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td><span>prj_test</span></td>
+                                            <td><span>prj_test</span></td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span class="normal">설정</span>
+                                            </td>
+                                            <td>
+                                                <span class="normal">사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer5"
+                                                    />
+                                                    <label
+                                                        for="chk-layer5"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span class="normal">설정</span>
+                                            </td>
+                                            <td>
+                                                <span class="normal">사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer6"
+                                                    />
+                                                    <label
+                                                        for="chk-layer6"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td><span>prj_test</span></td>
+                                            <td><span>prj_test</span></td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span class="normal">설정</span>
+                                            </td>
+                                            <td>
+                                                <span class="normal">사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer7"
+                                                    />
+                                                    <label
+                                                        for="chk-layer7"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span>미설정</span>
+                                            </td>
+                                            <td>
+                                                <span>미사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer9"
+                                                    />
+                                                    <label
+                                                        for="chk-layer9"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td><span>prj_test</span></td>
+                                            <td><span>prj_test</span></td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span>미설정</span>
+                                            </td>
+                                            <td>
+                                                <span>미사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer10"
+                                                    />
+                                                    <label
+                                                        for="chk-layer10"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span>미설정</span>
+                                            </td>
+                                            <td>
+                                                <span>미사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer11"
+                                                    />
+                                                    <label
+                                                        for="chk-layer11"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td><span>prj_test</span></td>
+                                            <td><span>prj_test</span></td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span>미설정</span>
+                                            </td>
+                                            <td>
+                                                <span>미사용</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="visually-hidden"
+                                                        id="chk-layer8"
+                                                    />
+                                                    <label
+                                                        for="chk-layer8"
+                                                    ></label>
+                                                </div>
+                                            </td>
+                                            <td>1676406891 435655170</td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                <span>/3ds_heungdeok_all3</span>
+                                            </td>
+                                            <td>
+                                                2023-07-03<br />
+                                                14:13:51
+                                            </td>
+                                            <td><span>LXP_ID_manager</span></td>
+                                            <td>3D tiles</td>
+                                            <td>
+                                                <p class="ellipsis">
+                                                    http://106.245.249.226:8...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <span>미설정</span>
+                                            </td>
+                                            <td>
+                                                <span>미사용</span>
+                                            </td>
+                                        </tr>
+                                    </tbody> -->
+                                </table>
+
+                                <!-- <div class="pagination">
+                                    <ol class="paging-list">
+                                        <li class="all-prev paging-item">
+                                            <button
+                                                type="button"
+                                                aria-label="첫페이지로 이동"
+                                            ></button>
+                                        </li>
+                                        <li class="arrow-prev paging-item">
+                                            <button
+                                                type="button"
+                                                aria-label="이전페이지 이동"
+                                            ></button>
+                                        </li>
+                                        <li class="paging-item is-active">
+                                            <button type="button">1</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">2</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">3</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">4</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">5</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">6</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">7</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">8</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">9</button>
+                                        </li>
+                                        <li class="paging-item">
+                                            <button type="button">10</button>
+                                        </li>
+                                        <li class="arrow-next paging-item">
+                                            <button
+                                                type="button"
+                                                aria-label="다음페이지 이동"
+                                            ></button>
+                                        </li>
+                                        <li class="all-next paging-item">
+                                            <button
+                                                type="button"
+                                                aria-label="마지막 페이지로 이동"
+                                            ></button>
+                                        </li>
+                                    </ol>
+                                </div> -->
+
+                                <!-- NOTE : 데이터 없는 경우 노출 -->
+                                <div class="nodate">
+                                    <img
+                                        src="../images/img-nodate.png"
+                                        alt="데이터 없음"
+                                    />
+                                    <span>데이터 없음</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="f-logo">
+                    <img src="../images/f-logo.png" alt="nongdi 푸터 로고" />
+                </div>
+                <p class="address">
+                    (04513) 전라북도 전주시 세종대로 39 11층 농촌디지털트윈빌딩
+                </p>
+                <div class="copyright">
+                    COPYRIGHT&copy;By . All rights Reserved
+                </div>
+            </div>
+        </footer>
+
+        <div class="dim"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

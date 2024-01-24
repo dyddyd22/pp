@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NONGDI | 로그인 팝업</title>
+        <link rel="stylesheet" href="../css/opensrc/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup-inner">
+            <div class="popup-head">
+                <div class="head-title"></div>
+                <button
+                    type="button"
+                    class="popup-close"
+                    aria-label="닫기버튼"
+                ></button>
+            </div>
+            <div class="popup-main">
+                <span aria-label="주의 이미지" class="pop-warning"></span>
+                <div class="popup-info">
+                    <span class="count">10</span>회 로그인 실패<br />
+                    10회 이상 로그인 실패 시<br class="sm-only" />
+                    계정이 잠금 처리됩니다.
+                    <!-- 계정이 잠금 처리되었습니다. 비밀번호 찾기를 해주세요 -->
+                </div>
+
+                <button type="button" class="btn-check">확인</button>
+            </div>
+        </div>
+
+        <div class="dim on"></div>
+
+        <script src="../js/opensrc/swiper-bundle.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

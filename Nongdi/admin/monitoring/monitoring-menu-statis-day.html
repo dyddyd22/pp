@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 모니터링 | 메뉴별사용현황 | 메뉴별사용현황통계</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>
+                    <a href="#a" class="logo"
+                        ><img src="../images/logo.png" alt="nongdi 로고"
+                    /></a>
+                </h1>
+                <div class="page-user">
+                    <a href="#a" class="link-portal"
+                        >농디 사용자포털 바로가기</a
+                    >
+                    <ul class="user-info">
+                        <li>포털관리자</li>
+                        <li><a href="#a" class="user">홍길동</a>님</li>
+                    </ul>
+                    <button type="button" class="log-out">로그아웃</button>
+                </div>
+            </div>
+            <div class="header-gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#a"><span>포털관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>사용자관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a" class="is-active"><span>모니터링</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>공간정보관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>유휴시설관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>농촌사업관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>창업지원관리</span></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <strong class="aside-tit">모니터링</strong>
+                <ul class="aside-list">
+                    <li class="aside-item">
+                        <a href="#a">사용자현황</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 사용자 현황</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 사용자현황통계</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item">
+                        <a href="#a">사용자접속현황</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 사용자접속현황</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 사용자접속현황통계</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item">
+                        <a href="#a">게시판등록현황</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 게시판등록현황</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 게시판등록현황통계</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item on">
+                        <a href="#a">메뉴별사용현황</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 메뉴별사용현황</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a" class="is-active"
+                                    ><span>- 메뉴별사용현황통계</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="section monitor-statics-sec menu-statics-sec">
+                <h2 class="visually-hidden">메뉴별사용현황통계</h2>
+                <div class="sec-inner">
+                    <div class="title-location">
+                        <h3 class="title">메뉴별사용현황통계</h3>
+                        <ul class="location-list">
+                            <li class="location-item">
+                                <a href="#a" class="home" aria-label="home"></a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">모니터링</a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">메뉴별사용현황</a>
+                            </li>
+                            <li class="location-item on">
+                                <a href="#a">메뉴별사용현황통계</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-box">
+                        <ul class="bg-list">
+                            <li class="bg-item">
+                                <strong class="item-tit">시스템구분</strong>
+                                <select class="select">
+                                    <option value="">전체</option>
+                                </select>
+                            </li>
+                            <li class="bg-item">
+                                <strong class="item-tit">조회구분</strong>
+                                <select class="select">
+                                    <option value="">월별</option>
+                                    <option value="">일별</option>
+                                </select>
+                            </li>
+                            <li class="bg-item">
+                                <strong class="item-tit">기준년도</strong>
+                                <div class="picker-box">
+                                    <input
+                                        type="text"
+                                        class="datepicker"
+                                        value="2023-08-01"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="btn btn-search">
+                            검색
+                        </button>
+                    </div>
+
+                    <div class="excel-box">
+                        <div class="excel-tbl">
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-excel">
+                                    엑셀 다운로드
+                                </button>
+                            </div>
+                            <!-- NOTE : 그래프 정보 노출시 테이블 활성화 -->
+                            <div class="tbl-wrap">
+                                <table class="tbl">
+                                    <caption>
+                                        시스템구분, 계, 날짜
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 240px" />
+                                        <col style="width: 159px" />
+                                        <col style="width: 163px" />
+                                        <col style="width: 163px" />
+                                        <col style="width: 163px" />
+                                        <col style="width: 163px" />
+                                        <col style="width: 163px" />
+                                        <col style="width: 163px" />
+                                        <col style="width: 163px" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">시스템 구분</th>
+                                            <th scope="col" class="w-normal">
+                                                계
+                                            </th>
+                                            <th scope="col" class="w-normal">
+                                                07-26
+                                            </th>
+                                            <th scope="col" class="w-normal">
+                                                07-28
+                                            </th>
+                                            <th scope="col" class="w-normal">
+                                                07-28
+                                            </th>
+                                            <th scope="col" class="w-normal">
+                                                07-29
+                                            </th>
+                                            <th scope="col" class="w-normal">
+                                                07-30
+                                            </th>
+                                            <th scope="col" class="w-normal">
+                                                07-31
+                                            </th>
+                                            <th scope="col" class="w-normal">
+                                                08-01
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>농디플랫폼</td>
+                                            <td>8</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>운영관리시스템</td>
+                                            <td>3</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>합계</td>
+                                            <td>11</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>3</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="graph-inner">
+                            <div class="graph"></div>
+                            <ul class="graph-list">
+                                <li>구분명</li>
+                                <li>구분명</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="f-logo">
+                    <img src="../images/f-logo.png" alt="nongdi 푸터 로고" />
+                </div>
+                <p class="address">
+                    (04513) 전라북도 전주시 세종대로 39 11층 농촌디지털트윈빌딩
+                </p>
+                <div class="copyright">
+                    COPYRIGHT&copy;By . All rights Reserved
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

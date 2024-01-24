@@ -1,0 +1,3002 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NONGDI</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            table-layout: fixed;
+        }
+
+        table:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        table th {
+            border-right: 1px solid #fff;
+            height: 50px;
+        }
+
+        table th:last-child {
+            border: 0;
+        }
+
+        table td {
+            height: 40px;
+        }
+
+        table tbody tr {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tbody tr th {
+            background-color: #d9e0e6;
+            /* border-bottom: 1px solid #fff; */
+        }
+
+        table tbody tr th:last-child {
+            border: 0;
+        }
+
+        table tbody tr td {
+            padding: 10px;
+            border-right: 1px solid #ddd;
+        }
+
+        table tbody tr td:last-child {
+            border-right: 0;
+        }
+
+        a {
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .final {
+            background-color: #2ccb46;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .before {
+            background-color: #ef0000;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NONGDI -->
+    <!-- NOTE : 관리자 -->
+    <table>
+        <colgroup>
+            <col style="width: 12%" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th rowspan="190">Nongdi(관리자)</th>
+                <th>1Depth</th>
+                <th>2Depth</th>
+                <th>3Depth</th>
+                <th>link</th>
+                <th>비고</th>
+            </tr>
+            <tr>
+                <td class="bold">로그인</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/log/log.html" target="_blank">log.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">유휴시설관리</td>
+                <td>유휴시설 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/facility/facility-idle.html" target="_blank">facility-idle.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>등록</td>
+                <td>
+                    <a href="./admin/facility/facility-idle-regist.html" target="_blank">facility-idle-regist.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <!-- <tr>
+                        <td class="bold"></td>
+                        <td></td>
+                        <td>등록 예시</td>
+                        <td>
+                            <a
+                                href="./facility/facility-idle-example.html"
+                                target="_blank"
+                                >facility-idle-example.html</a
+                            >
+                        </td>
+                        <td></td>
+                    </tr> -->
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/facility/facility-idle-detail.html" target="_blank">facility-idle-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./admin/facility/facility-idle-correct.html" target="_blank">facility-idle-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>작성 내용 취소 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-del.html" target="_blank">pop-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>파일 크기 제한 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-limit.html" target="_blank">pop-limit.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>승인 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-approval.html" target="_blank">pop-approval.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>게시물 삭제 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-post-del.html" target="_blank">pop-post-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>조회하기 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-check.html" target="_blank">pop-check.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>조회하기 선택 확인 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-choice.html" target="_blank">pop-choice.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>조회하기 선택 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-choice.html" target="_blank">pop-choice.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>지원정책 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/facility/facility-support.html" target="_blank">facility-support.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>등록</td>
+                <td>
+                    <a href="./admin/facility/support-regist.html" target="_blank">support-regist.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/facility/support-detail.html" target="_blank">support-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./admin/facility/support-correct.html" target="_blank">support-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>게시문 삭제 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-post-del.html" target="_blank">pop-post-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>문의하기 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/facility/inquiry-support.html" target="_blank">inquiry-support.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>미답변</td>
+                <td>
+                    <a href="./admin/facility/inquiry-undetail.html" target="_blank">inquiry-undetail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>답변완료</td>
+                <td>
+                    <a href="./admin/facility/inquiry-detail.html" target="_blank">inquiry-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./admin/facility/inquiry-correct.html" target="_blank">inquiry-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세 답변 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-inquiry-del.html" target="_blank">pop-inquiry-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>유휴시설 현황통계</td>
+                <td></td>
+                <td>
+                    <a href="./admin/facility/statistics.html" target="_blank">statistics.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>조회구분 - 월별</td>
+                <td>
+                    <a href="./admin/facility/statistics-check.html" target="_blank">statistics-check.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>조회구분 - 일별</td>
+                <td></td>
+                <td>
+                    <a href="./admin/facility/statistics-check-day.html" target="_blank">statistics-check-day.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>관광정보 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/facility/tourism-support.html" target="_blank">tourism-support.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/facility/tourism-detail.html" target="_blank">tourism-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>파일 삭제 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-tourism-del.html" target="_blank">pop-tourism-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정 완료 - 팝업</td>
+                <td>
+                    <a href="./admin/facility/pop-tourism-finish.html" target="_blank">pop-tourism-finish.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">공간정보관리</td>
+                <td>공간정보등록</td>
+                <td>공간정보 등록</td>
+                <td>
+                    <a href="./admin/space/registration.html" target="_blank">registration.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>추가</td>
+                <td>
+                    <a href="./admin/space/pop-addition.html" target="_blank">pop-addition.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>작업 파일</td>
+                <td>
+                    <a href="./admin/space/pop-file.html" target="_blank">pop-file.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>파일 삭제</td>
+                <td>
+                    <a href="./admin/space/pop-del.html" target="_blank">pop-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>공간정보 등록 승인</td>
+                <td></td>
+                <td>
+                    <a href="./admin/space/approval.html" target="_blank">approval.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세보기</td>
+                <td>
+                    <a href="./admin/space/approval-detail.html" target="_blank">approval-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>공간정보 변환 로그</td>
+                <td></td>
+                <td>
+                    <a href="./admin/space/approval-log.html" target="_blank">approval-log.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>공간정보관리</td>
+                <td>공간정보 관리</td>
+                <td>
+                    <a href="./admin/space/approval-manage.html" target="_blank">approval-manage.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>미리보기 - 팝업</td>
+                <td>
+                    <a href="./admin/space/pop-preview.html" target="_blank">pop-preview.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>레이어 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/space/layers.html" target="_blank">layers.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>카테고리 추가 - 팝업</td>
+                <td>
+                    <a href="./admin/space/pop-category.html" target="_blank">pop-category.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>추가 - 팝업</td>
+                <td>
+                    <a href="./admin/space/pop-add.html" target="_blank">pop-add.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>추가2 - 팝업</td>
+                <td>
+                    <a href="./admin/space/pop-add-type2.html" target="_blank">pop-add-type2.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">농촌사업관리</td>
+                <td>농촌개발사업관리</td>
+                <td>농촌개발사업 관리</td>
+                <td>
+                    <a href="./admin/rural/development.html" target="_blank">development.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/rural/development-detail.html" target="_blank">development-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>심의결과 관리</td>
+                <td>심의결과 관리</td>
+                <td>
+                    <a href="./admin/rural/result.html" target="_blank">result.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>등록</td>
+                <td>
+                    <a href="./admin/rural/result-regist.html" target="_blank">result-regist.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/rural/result-regist-detail.html" target="_blank">result-regist-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./admin/rural/result-regist-correct.html" target="_blank">result-regist-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>농촌개발사업 관리 상세, 심의결과 상세</td>
+                <td>오류 팝업</td>
+                <td>
+                    <a href="./admin/rural/pop-del.html" target="_blank">pop-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>농촌개발사업 관리 상세</td>
+                <td>수정 확인 팝업</td>
+                <td>
+                    <a href="./admin/rural/pop-chk.html" target="_blank">pop-chk.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">창업지원관리</td>
+                <td>창업지원 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/founded/found.html" target="_blank">found.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>등록</td>
+                <td>
+                    <a href="./admin/founded/found-regist.html" target="_blank">found-regist.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/founded/found-regist-detail.html" target="_blank">found-regist-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./admin/founded/found-regist-correct.html" target="_blank">found-regist-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원서 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/founded/found-application.html" target="_blank">found-application.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>지원자 목록</td>
+                <td>
+                    <a href="./admin/founded/found-result.html" target="_blank">found-result.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/founded/found-result-detail.html" target="_blank">found-result-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세 - 1개 이상</td>
+                <td>
+                    <a href="./admin/founded/found-result-detail-type1.html"
+                        target="_blank">found-result-detail-type1.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원기관 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/founded/found-agency.html" target="_blank">found-agency.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>등록</td>
+                <td>
+                    <a href="./admin/founded/found-agency-regist.html" target="_blank">found-agency-regist.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/founded/found-agency-regist-detail.html"
+                        target="_blank">found-agency-regist-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./admin/founded/found-agency-regist-correct.html"
+                        target="_blank">found-agency-regist-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>공모전 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/founded/compet.html" target="_blank">compet.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>등록</td>
+                <td>
+                    <a href="./admin/founded/compet-result.html" target="_blank">compet-result.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/founded/compet-result-detail.html" target="_blank">compet-result-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./admin/founded/compet-result-correct.html" target="_blank">compet-result-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>공모지원 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/founded/compet-support.html" target="_blank">compet-support.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>지원자 목록</td>
+                <td>
+                    <a href="./admin/founded/compet-support-result.html" target="_blank">compet-support-result.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>지원자 목록 예시</td>
+                <td>
+                    <a href="./admin/founded/compet-support-example.html"
+                        target="_blank">compet-support-example.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./admin/founded/compet-support-detail.html" target="_blank">compet-support-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>창업지원 관리, 우수작관리 상세 - 오류 팝업</td>
+                <td>
+                    <a href="./admin/founded/pop-del.html" target="_blank">pop-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공모전 관리 - 시설 선택 팝업</td>
+                <td>
+                    <a href="./admin/founded/pop-search.html" target="_blank">pop-del.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>우수작관리 등록 - 시설 선택 팝업</td>
+                <td>
+                    <a href="./admin/founded/pop-compet.html" target="_blank">pop-compet.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>우수작관리 등록 - 선택 팝업</td>
+                <td>
+                    <a href="./admin/founded/pop-compet-chk.html" target="_blank">pop-compet.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>지원자 목록 예시 - 오류 팝업</td>
+                <td>
+                    <a href="./admin/founded/pop-del-example.html" target="_blank">pop-del-example.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">모니터링</td>
+                <td>사용자현황</td>
+                <td>사용자 현황</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring.html" target="_blank">monitoring.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자현황통계</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-statis.html" target="_blank">monitoring-statis.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자현황통계 - 날짜</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-statis-day.html"
+                        target="_blank">monitoring-statis-day.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>사용자접속현황</td>
+                <td>사용자접속현황</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-connect.html" target="_blank">monitoring-connect.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자접속현황통계</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-connect-statis.html"
+                        target="_blank">monitoring-connect-statis.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자접속현황통계 - 날짜</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-connect-statis-day.html"
+                        target="_blank">monitoring-connect-statis-day.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>게시판등록현황</td>
+                <td>게시판등록현황</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-notice.html" target="_blank">monitoring-notice.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>게시판등록현황통계</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-notice-statis.html"
+                        target="_blank">monitoring-notice-statis.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>게시판등록현황통계 - 날짜</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-notice-statis-day.html"
+                        target="_blank">monitoring-notice-statis-day.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>메뉴별사용현황</td>
+                <td>메뉴별사용현황</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-menu.html" target="_blank">monitoring-menu.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>메뉴별사용현황통계</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-menu-statis.html"
+                        target="_blank">monitoring-menu-statis.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>메뉴별사용현황통계 - 날짜</td>
+                <td>
+                    <a href="./admin/monitoring/monitoring-menu-statis-day.html"
+                        target="_blank">monitoring-menu-statis-day.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">포털관리</td>
+                <td>메인화면관리</td>
+                <td>포털소식 관리</td>
+                <td>
+                    <a href="./admin/portal/portal.html" target="_blank">portal.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>포털소식 관리 - 배너등록</td>
+                <td>
+                    <a href="./admin/portal/portal-regist.html" target="_blank">portal-regist.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>포털소식 관리 - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-regist-detail.html" target="_blank">portal-regist-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>포털소식 관리 - 수정</td>
+                <td>
+                    <a href="./admin/portal/portal-regist-correct.html" target="_blank">portal-regist-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>포털소식 관리 오류 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-error.html" target="_blank">pop-error.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>포털소식 관리 상세 오류 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-detail-error.html" target="_blank">pop-detail-error.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>Footer 관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/portal/portal-footer.html" target="_blank">portal-footer.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>게시판관리</td>
+                <td>게시판 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-notice.html" target="_blank">portal-notice.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>게시판 관리 - 등록</td>
+                <td>
+                    <a href="./admin/portal/portal-notice-regist.html" target="_blank">portal-notice-regist.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>게시판 관리 - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-notice-detail.html" target="_blank">portal-notice-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>게시판 관리 - 수정</td>
+                <td>
+                    <a href="./admin/portal/portal-notice-correct.html" target="_blank">portal-notice-correct.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>
+                    게시판 관리, 홍보게시판 관리, 공지사항 관리, 자료실
+                    관리, 질의응답 관리, 자주묻는질문, 사용자요청 관리 상세
+                    오류 - 팝업
+                </td>
+                <td>
+                    <a href="./admin/portal/pop-noti-error.html" target="_blank">pop-noti-error.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>홍보게시판 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-promotion.html" target="_blank">portal-promotion.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>홍보게시판 관리 - 등록</td>
+                <td>
+                    <a href="./admin/portal/portal-promotion-regist.html" target="_blank">portal-promotion-regist.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>홍보게시판 관리 - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-promotion-detail.html" target="_blank">portal-promotion-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>홍보게시판 관리 - 수정</td>
+                <td>
+                    <a href="./admin/portal/portal-promotion-correct.html" target="_blank">portal-promotion-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공지사항 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-notification.html" target="_blank">portal-notification.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공지사항 관리 - 등록</td>
+                <td>
+                    <a href="./admin/portal/portal-notification-regist.html"
+                        target="_blank">portal-notification-regist.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공지사항 관리 - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-notification-detail.html"
+                        target="_blank">portal-notification-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공지사항 관리 - 수정</td>
+                <td>
+                    <a href="./admin/portal/portal-notification-correct.html"
+                        target="_blank">portal-notification-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>자료실 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-room.html" target="_blank">portal-room.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>자료실 관리 - 등록</td>
+                <td>
+                    <a href="./admin/portal/portal-room-regist.html" target="_blank">portal-room.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>자료실 관리 - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-room-detail.html" target="_blank">portal-room-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>자료실 관리 - 수정</td>
+                <td>
+                    <a href="./admin/portal/portal-room-correct.html" target="_blank">portal-room-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>질의응답 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-answer.html" target="_blank">portal-answer.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>질의응답 관리 - 등록</td>
+                <td>
+                    <a href="./admin/portal/portal-answer-regist.html" target="_blank">portal-answer-regist.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>질의응답 관리 - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-answer-detail.html" target="_blank">portal-answer-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>질의응답 관리(답변완료) - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-answer-detail-type.html"
+                        target="_blank">portal-answer-detail-type.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>질의응답 관리 - 수정</td>
+                <td>
+                    <a href="./admin/portal/portal-answer-correct.html" target="_blank">portal-answer-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>
+                    질의응답 답변 삭제, 사용자요청 관리 상세 오류 - 팝업
+                </td>
+                <td>
+                    <a href="./admin/portal/pop-answer-error.html" target="_blank">pop-answer-error.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>자주묻는질문 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-question.html" target="_blank">portal-question.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>자주묻는질문 관리 - 등록</td>
+                <td>
+                    <a href="./admin/portal/portal-question-regist.html" target="_blank">portal-question-regist.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>자주묻는질문 관리 - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-question-detail.html" target="_blank">portal-question-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>자주묻는질문 관리 - 수정</td>
+                <td>
+                    <a href="./admin/portal/portal-question-correct.html" target="_blank">portal-question-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자요청 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-user.html" target="_blank">portal-user.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자요청 관리 - 등록</td>
+                <td>
+                    <a href="./admin/portal/portal-user-regist.html" target="_blank">portal-user-regist.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자요청 관리 - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-user-detail.html" target="_blank">portal-user-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자요청 관리(답변완료) - 상세</td>
+                <td>
+                    <a href="./admin/portal/portal-user-detail-type.html" target="_blank">portal-user-detail-type.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자요청 관리 - 수정</td>
+                <td>
+                    <a href="./admin/portal/portal-user-correct.html" target="_blank">portal-user-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자요청 관리 상세 오류 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-answer-error.html" target="_blank">pop-answer-error.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>코드관리</td>
+                <td>대분류 코드 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-big-code.html" target="_blank">portal-big-code.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>대분류 코드 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-big-code.html" target="_blank">pop-big-code.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>대분류 코드 조회/수정 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-big-code-correct.html" target="_blank">pop-big-code-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>중분류 코드 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-normal-code.html" target="_blank">portal-normal-code.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>중분류 코드 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-normal-code.html" target="_blank">pop-normal-code.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>중분류 코드 조회/수정 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-normal-code-correct.html" target="_blank">pop-normal-code-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세 코드 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-detail-code.html" target="_blank">portal-detail-code.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세 코드 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-detail-code.html" target="_blank">pop-detail-code.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세 코드 조회/수정 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-detail-code-correct.html" target="_blank">pop-detail-code-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>대분류 코드 관리 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-code-error.html" target="_blank">pop-code-error.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>메뉴관리</td>
+                <td>프로그램 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-program.html" target="_blank">portal-program.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>프로그램 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-program.html" target="_blank">pop-program.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>프로그램 상세정보 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-program-info.html" target="_blank">pop-program-info.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>프로그램 관리 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-program-chk.html" target="_blank">pop-program-chk.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>메뉴 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-menu.html" target="_blank">portal-menu.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>메뉴 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-menu.html" target="_blank">pop-menu.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>메뉴 프로그램 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-menu-program.html" target="_blank">pop-menu-program.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>메뉴 프로그램 관리 삭제 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-menu-chk.html" target="_blank">pop-menu-chk.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>메뉴 프로그램 관리 수정 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-menu-correct.html" target="_blank">pop-menu-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>권한메뉴 관리</td>
+                <td>
+                    <a href="./admin/portal/portal-authority-menu.html" target="_blank">portal-authority-menu.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>권한메뉴 관리 - 팝업</td>
+                <td>
+                    <a href="./admin/portal/pop-auth-correct.html" target="_blank">pop-auth-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">사용자관리</td>
+                <td>사용자계정관리</td>
+                <td>사용자 계정관리</td>
+                <td>
+                    <a href="./admin/user/user.html" target="_blank">user.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 계정관리 - 상세</td>
+                <td>
+                    <a href="./admin/user/user-detail.html" target="_blank">user-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 계정관리 - 대기상태</td>
+                <td>
+                    <a href="./admin/user/user-detail-wait.html" target="_blank">user-detail-wait.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 계정관리 초기화 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-user-reset.html" target="_blank">pop-user-reset.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 계정관리 삭제 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-user-del.html" target="_blank">pop-user-del.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 계정관리 권한 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-user-auth.html" target="_blank">pop-user-auth.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 계정관리 - 수정</td>
+                <td>
+                    <a href="./admin/user/user-correct.html" target="_blank">user-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>권한변경 신청 관리</td>
+                <td>
+                    <a href="./admin/user/user-change.html" target="_blank">user-change.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>권한변경 신청 관리 - 상세</td>
+                <td>
+                    <a href="./admin/user/user-change-detail.html" target="_blank">user-change-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>권한변경 신청 관리(승인, 반려 후) - 상세</td>
+                <td>
+                    <a href="./admin/user/user-change-detail-type.html" target="_blank">user-change-detail-type.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>약관조회 관리</td>
+                <td>
+                    <a href="./admin/user/user-terms.html" target="_blank">user-terms.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>약관조회 관리 - 수정</td>
+                <td>
+                    <a href="./admin/user/user-terms-correct.html" target="_blank">user-terms-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>사용자권한관리</td>
+                <td>사용권한그룹관리</td>
+                <td>
+                    <a href="./admin/user/user-group.html" target="_blank">user-group.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용권한그룹관리 상세 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-group-detail.html" target="_blank">pop-group-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용권한그룹관리 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-group-correct.html" target="_blank">pop-group-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용권한그룹관리 삭제 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-group-del.html" target="_blank">pop-group-del.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용권한그룹관리 수정 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-group-chk.html" target="_blank">pop-group-chk.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업무별 사용권한관리</td>
+                <td>
+                    <a href="./admin/user/user-work.html" target="_blank">user-work.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업무별 사용권한관리 상세 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-work-detail.html" target="_blank">pop-work-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업무별 사용권한관리 등록 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-work-correct.html" target="_blank">pop-work-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업무별 사용권한관리 삭제 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-work-del.html" target="_blank">pop-work-del.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업무별 사용권한관리 수정 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-work-chk.html" target="_blank">pop-work-chk.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업무별 사용권한그룹관리</td>
+                <td>
+                    <a href="./admin/user/user-work-group.html" target="_blank">user-work-group.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업무별 사용권한그룹관리 선택 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-workGroup-error.html" target="_blank">pop-workGroup-error.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업무별 사용권한그룹관리 수정 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-workGroup-chk.html" target="_blank">pop-workGroup-chk.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 구분 권한 관리</td>
+                <td>
+                    <a href="./admin/user/user-choice.html" target="_blank">user-choice.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 구분 권한 관리 선택 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-choice-error.html" target="_blank">pop-choice-error.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 구분 권한 관리 수정 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-choice-chk.html" target="_blank">pop-choice-error.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>레이어그룹관리</td>
+                <td>
+                    <a href="./admin/user/user-layer.html" target="_blank">user-layer.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>레이어그룹관리 - 상세</td>
+                <td>
+                    <a href="./admin/user/user-layer-detail.html" target="_blank">user-layer-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>레이어그룹관리 - 등록</td>
+                <td>
+                    <a href="./admin/user/user-layer-correct.html" target="_blank">user-layer-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>레이어그룹관리 삭제 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-layer-del.html" target="_blank">pop-layer-del.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>레이어그룹관리 수정 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-layer-chk.html" target="_blank">pop-layer-chk.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>레이어그룹관리 레이어 추가 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-layer-correct.html" target="_blank">pop-layer-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 레이어그룹관리</td>
+                <td>
+                    <a href="./admin/user/user-layer-group.html" target="_blank">user-layer-group.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 권한대행관리</td>
+                <td>
+                    <a href="./admin/user/user-agency.html" target="_blank">user-agency.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 권한대행관리 - 상세</td>
+                <td>
+                    <a href="./admin/user/user-agency-detail.html" target="_blank">user-agency-detail.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 권한대행관리 - 등록</td>
+                <td>
+                    <a href="./admin/user/user-agency-correct.html" target="_blank">user-agency-correct.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 권한대행관리 신청자 찾기 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-agency-search.html" target="_blank">pop-agency-search.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사용자 권한대행관리 대행 찾기 - 팝업</td>
+                <td>
+                    <a href="./admin/user/pop-agency-search-type.html" target="_blank">pop-agency-search-type.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">창업지원서</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/applicat/applicat.html" target="_blank">applicat.html
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- NOTE : 사용자 -->
+    <table>
+        <colgroup>
+            <col style="width: 12%" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th rowspan="120">Nongdi(사용자)</th>
+                <th>1Depth</th>
+                <th>2Depth</th>
+                <th>3Depth</th>
+                <th>link</th>
+                <th>비고</th>
+            </tr>
+            <tr>
+                <td class="bold">메인</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./user/index.html" target="_blank">index.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>이용약관 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/popup-use-terms.html" target="_blank">popup-use-terms.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>개인정보처리방침 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/popup-use-policy.html" target="_blank">popup-use-policy.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">로그인</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./user/login/login.html" target="_blank">login.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>로그인 - 팝업</td>
+                <td>
+                    <a href="./user/login/popup.html" target="_blank">popup.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>아이디 찾기</td>
+                <td></td>
+                <td>
+                    <a href="./user/login/id.html" target="_blank">id.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>비밀번호 찾기</td>
+                <td></td>
+                <td>
+                    <a href="./user/login/pw.html" target="_blank">pw.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>비밀번호 확인 - 팝업</td>
+                <td>
+                    <a href="./user/login/popup-pw.html" target="_blank">popup-pw.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>약관조회</td>
+                <td></td>
+                <td>
+                    <a href="./user/login/terms.html" target="_blank">terms.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>정보입력</td>
+                <td></td>
+                <td>
+                    <a href="./user/login/info.html" target="_blank">info.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>소속기관 선택 - 팝업</td>
+                <td>
+                    <a href="./user/login/popup-search.html" target="_blank">popup-search.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>기관 선택 - 팝업</td>
+                <td>
+                    <a href="./user/login/popup-belong.html" target="_blank">popup-belong.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>소속기관 선택 - 팝업</td>
+                <td>
+                    <a href="./user/login/popup-belong-choice.html" target="_blank">popup-belong-choice.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>회원가입 완료</td>
+                <td></td>
+                <td>
+                    <a href="./user/login/finish.html" target="_blank">finish.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">마이페이지</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./user/mypage/my-page.html" target="_blank">my-page.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>내정보관리</td>
+                <td></td>
+                <td>
+                    <a href="./user/mypage/my-manage.html" target="_blank">my-manage.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./user/mypage/my-manage-modify.html" target="_blank">my-manage-modify.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>권한 변경 신청</td>
+                <td>
+                    <a href="./user/mypage/my-authorize.html" target="_blank">my-authorize.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>권한 변경 - 팝업</td>
+                <td>
+                    <a href="./user/mypage/popup.html" target="_blank">popup.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>권한 변경 완료 - 팝업</td>
+                <td>
+                    <a href="./user/mypage/popup-finish.html" target="_blank">popup-finish.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>탈퇴 - 팝업</td>
+                <td>
+                    <a href="./user/mypage/popup-secession.html" target="_blank">popup-secession.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>소속기관검색 - 팝업</td>
+                <td>
+                    <a href="./user/mypage/popup-search.html" target="_blank">popup-search.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>비밀번호 확인 - 팝업</td>
+                <td>
+                    <a href="./user/mypage/popup-pw.html" target="_blank">popup-pw.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>비밀번호 변경</td>
+                <td></td>
+                <td>
+                    <a href="./user/mypage/pw-new-change.html" target="_blank">pw-new-change.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>비밀번호 변경 - 팝업</td>
+                <td>
+                    <a href="./user/mypage/popup-change.html" target="_blank">popup-change.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>내가 작성한 글 관리</td>
+                <td></td>
+                <td>
+                    <a href="./user/mypage/my-text.html" target="_blank">my-text.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./user/mypage/my-text-detail.html" target="_blank">my-text-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./user/mypage/my-text-modify.html" target="_blank">my-text-modify.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>관심목록</td>
+                <td></td>
+                <td>
+                    <a href="./user/mypage/my-list.html" target="_blank">my-list.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원</td>
+                <td></td>
+                <td>
+                    <a href="./user/mypage/my-founded.html" target="_blank">my-founded.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세조회</td>
+                <td>
+                    <a href="./user/mypage/my-founded-detail.html" target="_blank">my-founded-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>공모참여</td>
+                <td></td>
+                <td>
+                    <a href="./user/mypage/my-founded-contest.html" target="_blank">my-founded-contest.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./user/mypage/my-page-participation.html" target="_blank">my-page-participation.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">유휴시설정보안내</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./user/facility/facility.html" target="_blank">facility.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>건물임대</td>
+                <td></td>
+                <td>
+                    <a href="./user/facility/facility-lease.html" target="_blank">facility-lease.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>시설정보</td>
+                <td></td>
+                <td>
+                    <a href="./user/facility/facility-info.html" target="_blank">facility-info.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>거래이력</td>
+                <td></td>
+                <td>
+                    <a href="./user/facility/facility-record.html" target="_blank">facility-record.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>지원정책</td>
+                <td></td>
+                <td>
+                    <a href="./user/facility/facility-support.html" target="_blank">facility-support.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>문의하기</td>
+                <td></td>
+                <td>
+                    <a href="./user/facility/facility-inquiry.html" target="_blank">facility-inquiry.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>주변분석</td>
+                <td>인구정보</td>
+                <td>
+                    <a href="./user/facility/facility-population.html" target="_blank">facility-population.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>주변환경</td>
+                <td>
+                    <a href="./user/facility/facility-around.html" target="_blank">facility-around.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>주요시설</td>
+                <td>
+                    <a href="./user/facility/facility-building.html" target="_blank">facility-building.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>교통정보</td>
+                <td>
+                    <a href="./user/facility/facility-traffic.html" target="_blank">facility-traffic.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사업체정보</td>
+                <td>
+                    <a href="./user/facility/facility-business.html" target="_blank">facility-business.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>관광정보</td>
+                <td>
+                    <a href="./user/facility/facility-tourism.html" target="_blank">facility-tourism.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>답변 등록 - 팝업</td>
+                <td>
+                    <a href="./user/facility/popup.html" target="_blank">popup.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>답변 수정 - 팝업</td>
+                <td>
+                    <a href="./user/facility/popup-correction.html" target="_blank">popup-correction.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>문의 수정 - 팝업</td>
+                <td>
+                    <a href="./user/facility/popup-inquiry.html" target="_blank">popup-inquiry.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>문의 내용 삭제 선택 - 팝업</td>
+                <td>
+                    <a href="./user/facility/popup-belong.html" target="_blank">popup-belong.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">지도화면</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map.html" target="_blank">map.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>주변시설 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type1.html" target="_blank">map-type1.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>로딩 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type2.html" target="_blank">map-type2.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>경사도 분석 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type10.html" target="_blank">map-type10.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>경사도 분석 결과 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type3.html" target="_blank">map-type3.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>경사방향 분석 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type11.html" target="_blank">map-type11.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>경사방향 분석 결과 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type4.html" target="_blank">map-type4.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>가시권 분석 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type5.html" target="_blank">map-type5.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>스카이라인 분석 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type6.html" target="_blank">map-type6.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>조망 분석 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type7.html" target="_blank">map-type7.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>음영 분석 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type8.html" target="_blank">map-type8.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>음영 분석 결과 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type9.html" target="_blank">map-type9.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>농촌 정보 조회 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/maps/map-type12.html" target="_blank">map-type12.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">공모설계</td>
+                <td>공모참여 메인</td>
+                <td></td>
+                <td>
+                    <a href="./user/collusion/collusion-participation.html"
+                        target="_blank">collusion-participation.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공모 서비스 소개</td>
+                <td>
+                    <a href="./user/collusion/collusion-introduction.html"
+                        target="_blank">collusion-introduction.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>지난공모전 우수작 상세</td>
+                <td>
+                    <a href="./user/collusion/collusion-detail.html" target="_blank">collusion-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공모참여 상세</td>
+                <td>
+                    <a href="./user/collusion/collusion-detail-participation.html"
+                        target="_blank">collusion-detail-participation.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공모참여 - 팝업</td>
+                <td>
+                    <a href="./user/collusion/popup.html" target="_blank">popup.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공모참여 설계정보 - 팝업</td>
+                <td>
+                    <a href="./user/collusion/popup-info.html" target="_blank">popup.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공모참여 저장파일 - 팝업</td>
+                <td>
+                    <a href="./user/collusion/popup-file.html" target="_blank">popup.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공모참여 프로그램 - 팝업</td>
+                <td>
+                    <a href="./user/collusion/popup-program.html" target="_blank">popup-program.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">창업지원</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/founded.html" target="_blank">founded.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>상세</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/founded-detail.html" target="_blank">founded-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>유휴시설 정보</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/founded-plan.html" target="_blank">founded-plan.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>계획서</td>
+                <td>개요</td>
+                <td>
+                    <a href="./user/founded/founded-plan-type1.html" target="_blank">founded-plan-type1.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>입지 분석 및 사업 필요성</td>
+                <td>
+                    <a href="./user/founded/founded-plan-type2.html" target="_blank">founded-plan-type2.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>사업비 투자 계획</td>
+                <td>
+                    <a href="./user/founded/founded-plan-type3.html" target="_blank">founded-plan-type3.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>신청서식</td>
+                <td>
+                    <a href="./user/founded/founded-plan-type4.html" target="_blank">founded-plan-type4.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원 상세 오류 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/popup.html" target="_blank">popup.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원 초기화 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/popup-reset.html" target="_blank">popup-reset.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원 필수 입력 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/popup-essential.html" target="_blank">popup-essential.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원 신청 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/popup-apply.html" target="_blank">popup-apply.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원 임시저장 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/popup-finish.html" target="_blank">popup-finish.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>창업지원 크기 제한 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/popup-limit.html" target="_blank">popup-limit.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>유휴시설 선택 - 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/popup-chk.html" target="_blank">popup-chk.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>유휴시설 선택 확인 버튼 - 팝업</td>
+                <td>
+                    <a href="./user/founded/popup-chk-caution.html" target="_blank">popup-chk-caution.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>유휴시설 선택 확인,취소 버튼 - 팝업</td>
+                <td>
+                    <a href="./user/founded/popup-chk-choice.html" target="_blank">popup-chk-choice.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>신청기관 검색 - 팝업</td>
+                <td>
+                    <a href="./user/founded/popup-search.html" target="_blank">popup-search.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>신청기관 검색 확인 버튼 - 팝업</td>
+                <td>
+                    <a href="./user/founded/popup-chk-caution-type1.html"
+                        target="_blank">popup-chk-caution-type1.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>신청기관 검색 확인,취소 버튼 - 팝업</td>
+                <td>
+                    <a href="./user/founded/popup-chk-choice-type1.html" target="_blank">popup-chk-choice-type1.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>사업 추진 경과</td>
+                <td></td>
+                <td>
+                    <a href="./user/founded/founded-plan-lapse.html" target="_blank">founded-plan-lapse.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">공간심의</td>
+                <td>농촌개발사업메인</td>
+                <td>사업명</td>
+                <td>
+                    <a href="./user/rural/rural-type1.html" target="_blank">rural-type1.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>검색결과</td>
+                <td>
+                    <a href="./user/rural/rural-type2.html" target="_blank">rural-type2.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>농촌개발사업 상세정보</td>
+                <td>
+                    <a href="./user/rural/rural-type3.html" target="_blank">rural-type3.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>심의결과조회</td>
+                <td>
+                    <a href="./user/rural/rural-review.html" target="_blank">rural-review.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>심의결과조회 - 상세</td>
+                <td>
+                    <a href="./user/rural/rural-review-detail.html" target="_blank">rural-review-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">커뮤니티</td>
+                <td>게시판</td>
+                <td></td>
+                <td>
+                    <a href="./user/community/community.html" target="_blank">community.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./user/community/community-detail.html" target="_blank">community.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>홍보게시판</td>
+                <td></td>
+                <td>
+                    <a href="./user/community/community-motion.html" target="_blank">community-motion.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./user/community/community-motion-detail.html"
+                        target="_blank">community-motion-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">고객지원</td>
+                <td>공지사항</td>
+                <td></td>
+                <td>
+                    <a href="./user/users/announ.html" target="_blank">announ.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./user/users/announ-detail.html" target="_blank">announ-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>자료실</td>
+                <td></td>
+                <td>
+                    <a href="./user/users/announ-room.html" target="_blank">announ-room.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./user/users/announ-room-detail.html" target="_blank">announ-room-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>FAQ</td>
+                <td></td>
+                <td>
+                    <a href="./user/users/faq.html" target="_blank">faq.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>질의응답</td>
+                <td></td>
+                <td>
+                    <a href="./user/users/announ-answer.html" target="_blank">announ-answer.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>등록</td>
+                <td>
+                    <a href="./user/users/announ-answer-regis.html" target="_blank">announ-answer-regis.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./user/users/announ-answer-detail.html" target="_blank">announ-answer-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./user/users/announ-answer-correc.html" target="_blank">announ-answer-correc.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>사용자 요청</td>
+                <td></td>
+                <td>
+                    <a href="./user/users/announ-user-answer.html" target="_blank">announ-user-answer.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>등록</td>
+                <td>
+                    <a href="./user/users/announ-user-regis.html" target="_blank">announ-user-regis.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세</td>
+                <td>
+                    <a href="./user/users/announ-user-detail.html" target="_blank">announ-user-detail.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>수정</td>
+                <td>
+                    <a href="./user/users/announ-user-correc.html" target="_blank">announ-user-correc.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>질의응답 등록 오류, 사용자 요청 등록 오류</td>
+                <td>팝업</td>
+                <td>
+                    <a href="./user/users/popup-error.html" target="_blank">popup-error.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>질의응답 상세 삭제, 사용자 요청 상세 삭제</td>
+                <td>팝업</td>
+                <td>
+                    <a href="./user/users/popup-noti.html" target="_blank">popup-noti.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>질의응답 수정 오류, 사용자 요청 수정 오류</td>
+                <td>팝업</td>
+                <td>
+                    <a href="./user/users/popup-essential.html" target="_blank">popup-essential.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>시스템 소개</td>
+                <td></td>
+                <td>
+                    <a href="./user/users/system.html" target="_blank">system.html</a>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

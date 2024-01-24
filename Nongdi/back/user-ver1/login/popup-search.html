@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NONGDI | 소속기관 검색</title>
+        <link rel="stylesheet" href="../css/opensrc/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup-inner pop-10">
+            <div class="popup-head">
+                <div class="head-title">소속기관 검색</div>
+                <button
+                    type="button"
+                    class="popup-close"
+                    aria-label="닫기버튼"
+                ></button>
+            </div>
+            <div class="popup-main popup-search">
+                <div class="search-btn">
+                    <input type="text" placeholder="소속기관 명" />
+                    <button type="button" class="btn-search">검색</button>
+                </div>
+
+                <div class="tbl-inner">
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                번호, 소속기관id, 소속기관명
+                            </caption>
+                            <colgroup>
+                                <col style="width: 100px" />
+                                <col style="width: 120px" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">소속기관 ID</th>
+                                    <th scope="col">소소기관 명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>110041</td>
+                                    <td>(본사)국방부 국방시설본부</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>126050</td>
+                                    <td>(본사)문화재청</td>
+                                </tr>
+                                <tr class="highlight">
+                                    <td>3</td>
+                                    <td>100000</td>
+                                    <td>본사</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>860012</td>
+                                    <td>광주.전남운영지원처</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>860021</td>
+                                    <td>광주.전남지적사업처</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>870012</td>
+                                    <td>대구.경북운영지원처</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>870012</td>
+                                    <td>제주도운영지원처</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <ol class="paging-list">
+                            <li class="all-prev paging-item">
+                                <button
+                                    type="button"
+                                    aria-label="첫페이지로 이동"
+                                ></button>
+                            </li>
+                            <li class="arrow-prev paging-item">
+                                <button
+                                    type="button"
+                                    aria-label="이전페이지 이동"
+                                ></button>
+                            </li>
+                            <li class="paging-item is-active">
+                                <button type="button">1</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">2</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">3</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">4</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">5</button>
+                            </li>
+                            <!-- <li class="paging-item">
+                                <button type="button">6</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">7</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">8</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">9</button>
+                            </li>
+                            <li class="paging-item">
+                                <button type="button">10</button>
+                            </li> -->
+                            <li class="arrow-next paging-item">
+                                <button
+                                    type="button"
+                                    aria-label="다음페이지 이동"
+                                ></button>
+                            </li>
+                            <li class="all-next paging-item">
+                                <button
+                                    type="button"
+                                    aria-label="마지막 페이지로 이동"
+                                ></button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-check">확인</button>
+                    <button type="button" class="btn btn-cancel">취소</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim on"></div>
+
+        <script src="../js/opensrc/swiper-bundle.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

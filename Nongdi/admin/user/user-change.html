@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 사용자관리 | 사용자계정관리 | 권한변경 신청 관리</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>
+                    <a href="#a" class="logo"
+                        ><img src="../images/logo.png" alt="nongdi 로고"
+                    /></a>
+                </h1>
+                <div class="page-user">
+                    <a href="#a" class="link-portal"
+                        >농디 사용자포털 바로가기</a
+                    >
+                    <ul class="user-info">
+                        <li>포털관리자</li>
+                        <li><a href="#a" class="user">홍길동</a>님</li>
+                    </ul>
+                    <button type="button" class="log-out">로그아웃</button>
+                </div>
+            </div>
+            <div class="header-gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#a" class="is-active"><span>포털관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>사용자관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>모니터링</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>공간정보관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>유휴시설관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>농촌사업관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>창업지원관리</span></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <strong class="aside-tit">사용자관리</strong>
+                <ul class="aside-list">
+                    <li class="aside-item on">
+                        <a href="#a">사용자계정관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 사용자 계정관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a" class="is-active"
+                                    ><span>- 권한 변경 신청 관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 약관조회 관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item">
+                        <a href="#a">사용자권한관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 사용권한그룹관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 업무별 사용권한관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 업무별 사용권한그룹관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 사용자 구분 권한 관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 레이어그룹관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 사용자 레이어그룹관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 사용자 권한대행관리</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="section user-change-sec">
+                <h2 class="visually-hidden">권한변경 신청 관리</h2>
+                <div class="sec-inner">
+                    <div class="title-location">
+                        <h3 class="title">권한변경 신청 관리</h3>
+                        <ul class="location-list">
+                            <li class="location-item">
+                                <a href="#a" class="home" aria-label="home"></a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">사용자관리</a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">사용자계정관리</a>
+                            </li>
+                            <li class="location-item on">
+                                <a href="#a">권한변경 신청 관리</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-box">
+                        <ul class="bg-list">
+                            <li class="bg-item">
+                                <strong class="item-tit">상태구분</strong>
+                                <select class="select">
+                                    <option value="">전체</option>
+                                    <option value="">미승인</option>
+                                    <option value="">승인</option>
+                                    <option value="">반려</option>
+                                </select>
+                            </li>
+                            <li class="bg-item">
+                                <strong class="item-tit">검색어</strong>
+                                <div class="search-btn-box">
+                                    <select class="select">
+                                        <option value="">사용자ID</option>
+                                        <option value="">사용자명</option>
+                                    </select>
+                                    <input type="text" />
+                                    <button
+                                        type="button"
+                                        class="btn btn-search"
+                                    >
+                                        검색
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <div class="total-inner">
+                                <div class="top-total">
+                                    전체 <span>220</span>건
+                                </div>
+                                <ul class="total-list">
+                                    <li class="total-item">
+                                        <span>미승인</span>
+                                        <p><span>4</span>건</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <table class="tbl">
+                            <caption>
+                                번호, 사용자id,신청자명,소속부서, 신청권한,
+                                신청일시,상태구분
+                            </caption>
+                            <colgroup>
+                                <col style="width: 80px" />
+                                <col style="width: 200px" />
+                                <col style="width: 200px" />
+                                <col style="width: 300px" />
+                                <col style="width: 440px" />
+                                <col style="width: 180px" />
+                                <col style="width: 140px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">사용자 ID</th>
+                                    <th scope="col">신청자명</th>
+                                    <th scope="col">소속부서</th>
+                                    <th scope="col">신청권한</th>
+                                    <th scope="col">신청일시</th>
+                                    <th scope="col">상태구분</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>220</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>미승인</td>
+                                </tr>
+                                <tr>
+                                    <td>219</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>미승인</td>
+                                </tr>
+                                <tr>
+                                    <td>218</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>미승인</td>
+                                </tr>
+                                <tr>
+                                    <td>217</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>미승인</td>
+                                </tr>
+                                <tr>
+                                    <td>216</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>승인</td>
+                                </tr>
+                                <tr>
+                                    <td>215</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>승인</td>
+                                </tr>
+                                <tr>
+                                    <td>214</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>승인</td>
+                                </tr>
+                                <tr>
+                                    <td>213</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>승인</td>
+                                </tr>
+                                <tr>
+                                    <td>212</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>승인</td>
+                                </tr>
+                                <tr>
+                                    <td>211</td>
+                                    <td>test001</td>
+                                    <td>홍길동</td>
+                                    <td>공간정보실 디지털트윈사업단</td>
+                                    <td>그룹 신청권한</td>
+                                    <td>2023-07-25 00:00:00</td>
+                                    <td>승인</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pagination">
+                            <ol class="paging-list">
+                                <li class="all-prev paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="첫페이지로 이동"
+                                    ></button>
+                                </li>
+                                <li class="arrow-prev paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="이전페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="paging-item is-active">
+                                    <button type="button">1</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">2</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">3</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">4</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">5</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">6</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">7</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">8</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">9</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">10</button>
+                                </li>
+                                <li class="arrow-next paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="다음페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="all-next paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="마지막 페이지로 이동"
+                                    ></button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="f-logo">
+                    <img src="../images/f-logo.png" alt="nongdi 푸터 로고" />
+                </div>
+                <p class="address">
+                    (04513) 전라북도 전주시 세종대로 39 11층 농촌디지털트윈빌딩
+                </p>
+                <div class="copyright">
+                    COPYRIGHT&copy;By . All rights Reserved
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

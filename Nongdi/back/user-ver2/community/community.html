@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NONGDI | 커뮤니티 | 게시판</title>
+        <link rel="stylesheet" href="../css/opensrc/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="skip">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#main">본문 바로가기</a>
+        </div>
+
+        <header class="header">
+            <div class="head-inner">
+                <div class="head-left">
+                    <h1 class="logo">
+                        <a href="#a">
+                            <img src="../images/logo.png" alt="nongdi" />
+                        </a>
+                    </h1>
+                    <div id="gnb">
+                        <ul class="gnb-list">
+                            <li class="gnb-item">
+                                <a href="#a" class="first-depth"
+                                    >유휴시설정보안내</a
+                                >
+                                <ul class="sub-list">
+                                    <li class="list-item">
+                                        <a href="#a">유휴시설정보안내</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#a" class="first-depth">농촌사업</a>
+                                <ul class="sub-list">
+                                    <li class="list-item">
+                                        <a href="#a">농촌개발사업</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">심의결과조회</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#a" class="first-depth">창업지원</a>
+                                <ul class="sub-list">
+                                    <li class="list-item">
+                                        <a href="#a">창업지원사업</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">공모서비스 소개</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">지난공모전우수작</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">공모참여</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#a" class="first-depth">커뮤니티</a>
+                                <ul class="sub-list">
+                                    <li class="list-item">
+                                        <a href="#a">게시판</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">홍보 게시판</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#a" class="first-depth">고객지원</a>
+                                <ul class="sub-list">
+                                    <li class="list-item">
+                                        <a href="#a">시스템소개</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">공지사항</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">자료실</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">자주묻는질문(FAQ)</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">질의응답</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#a">사용자 요청</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn-all">
+                            메뉴전체보기
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-inner pc-only">
+                    <a href="#a" class="main-log">로그인</a>
+                    <!-- NOTE : 로그인 시 class on 추가 -->
+                    <a href="#a" class="member-log">회원가입</a>
+                    <button
+                        type="button"
+                        class="btn-all"
+                        aria-label="전체보기"
+                    ></button>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-all">
+            <div class="inner scroll-y">
+                <div class="login-inner sm-only">
+                    <a href="#a" class="main-log">로그인</a>
+                    <!-- NOTE : 로그인 시 class on 추가 -->
+                    <a href="#a" class="member-log on">회원가입</a>
+                </div>
+
+                <div class="menu-list">
+                    <strong>즐겨 찾는 서비스</strong>
+                    <ul class="all-box">
+                        <li class="all-item on">
+                            <button type="button" class="btn-enjoy">
+                                유휴시설정보
+                            </button>
+                        </li>
+                        <li class="all-item on">
+                            <button type="button" class="btn-enjoy">
+                                창업지원사업
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-info">
+                    <strong>유휴시설정보안내</strong>
+                    <ul class="info-list">
+                        <li class="info-item on">
+                            <button type="button" class="btn-enjoy">
+                                유휴시설정보
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-info">
+                    <strong>농촌사업</strong>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                농촌개발사업
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                심의결과조회
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-info">
+                    <strong>창업지원</strong>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                창업지원사업
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                공모서비스 소개
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                지난공모전우수작
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                공모참여
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-info">
+                    <strong>커뮤니티</strong>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                게시판
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                홍보 게시판
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-info">
+                    <strong>창업지원</strong>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                시스템 소개
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                공지사항
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                자료실
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                자주묻는질문(FAQ)
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                질의응답
+                            </button>
+                        </li>
+                        <li class="info-item">
+                            <button type="button" class="btn-enjoy">
+                                사용자요청
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <button
+                    type="button"
+                    class="btn-close"
+                    aria-label="메뉴창 닫기"
+                ></button>
+            </div>
+        </div>
+
+        <main id="main" class="main">
+            <section class="section">
+                <h2 class="visually-hidden">기타게시판</h2>
+                <div class="inner">
+                    <div class="location location-info">
+                        <strong class="loca-tit">기타게시판</strong>
+                        <ul class="location-list">
+                            <li class="location-item">
+                                <a href="#a" class="home" aria-label="home"></a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">커뮤니티</a>
+                            </li>
+                            <li class="location-item active">
+                                <a href="#a">기타게시판</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="community">
+                        <div class="search-box">
+                            <div class="region-search">
+                                <div class="search-item">
+                                    <span class="tit">검색</span>
+                                    <select class="select">
+                                        <option value="">전체</option>
+                                        <option value="">제목</option>
+                                        <option value="">내용</option>
+                                    </select>
+                                    <input
+                                        type="text"
+                                        placeholder="검색어를 입력해주세요."
+                                    />
+                                </div>
+                                <div class="btn-wrap">
+                                    <button
+                                        type="button"
+                                        class="btn btn-default"
+                                    >
+                                        검색
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-text">
+                            <div class="top-box">
+                                <p class="num-all">검색결과<span>12건</span></p>
+                                <select class="select">
+                                    <option value="">최신순</option>
+                                </select>
+                            </div>
+                            <!-- <ul class="text-list">
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">12</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                2023 농디 플랫폼 구축 오픈안내
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <a
+                                                            href="#a"
+                                                            class="file-down"
+                                                            aria-label="파일 다운로드"
+                                                        ></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">11</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                2023 주요일정 안내
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <a
+                                                            href="#a"
+                                                            class="file-down"
+                                                            aria-label="파일 다운로드"
+                                                        ></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">10</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                제목 부분입니다.제목
+                                                부분입니다.제목 부분입니다.제목
+                                                부분입니다.제목 부분입니다.제목
+                                                부분입니다.제목 부분입니다.
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">9</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                제목 부분입니다. 제목
+                                                부분입니다.제목 부분입니다. 제목
+                                                부분입니다.제목 부분입니다. 제목
+                                                부분입니다.제목 부분입니다. 제목
+                                                부분입니다.제목 부분입니다. 제목
+                                                부분입니다.제목 부분입니다. 제목
+                                                부분입니다.제목 부분입니다. 제목
+                                                부분입니다.
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">8</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                제목 부분입니다. 제목
+                                                부분입니다. 제목 부분입니다.
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <a
+                                                            href="#a"
+                                                            class="file-down"
+                                                            aria-label="파일 다운로드"
+                                                        ></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">7</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                제목 부분입니다. 제목
+                                                부분입니다. 제목 부분입니다.
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">6</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                제목 부분입니다. 제목
+                                                부분입니다. 제목 부분입니다.
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">5</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                제목 부분입니다. 제목
+                                                부분입니다. 제목 부분입니다.
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">4</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                제목 부분입니다. 제목
+                                                부분입니다. 제목 부분입니다.
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="text-item">
+                                    <div class="text-info">
+                                        <span class="info-number">3</span>
+                                        <div class="text-box">
+                                            <a href="#a" class="ellipsis">
+                                                제목 부분입니다. 제목
+                                                부분입니다. 제목 부분입니다.
+                                            </a>
+                                            <div class="text-answer">
+                                                <ul class="answer-list">
+                                                    <li class="answer-item">
+                                                        <span
+                                                            class="answer-user"
+                                                            >작성자 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-name"
+                                                        >
+                                                            관리자
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >등록일 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            2023-07-11
+                                                        </div>
+                                                    </li>
+                                                    <li class="answer-item">
+                                                        <span class="answer-day"
+                                                            >조회수 :</span
+                                                        >
+                                                        <div
+                                                            class="answer-date"
+                                                        >
+                                                            1,567
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
+                        <!-- <div class="pagination">
+                            <ol class="paging-list">
+                                <li class="arrow-prev paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="이전페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="paging-item is-active">
+                                    <button type="button">1</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">2</button>
+                                </li>
+                                <li class="arrow-next paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="다음페이지 이동"
+                                    ></button>
+                                </li>
+                            </ol>
+                        </div> -->
+
+                        <!-- NOTE : 등록된 게시물이 없는경우 노출 -->
+                        <div class="not-page">
+                            <strong class="data-title"
+                                >등록된 게시물이 없습니다</strong
+                            >
+                            <img
+                                src="../images/img-data.png"
+                                alt="등록된 데이터가 없는 화면"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <ul class="ftop-list">
+                    <li class="ftop-item"><a href="#a">이용약관</a></li>
+                    <li class="ftop-item">
+                        <a href="#a"><strong>개인정보처리방침</strong></a>
+                    </li>
+                </ul>
+                <select name="" id="" class="select">
+                    <option value="">관련 사이트</option>
+                </select>
+            </div>
+            <div class="footer-main">
+                <div class="inner">
+                    <p class="address">
+                        (04513)<br class="sm-only" />
+                        전라북도 전주시 세종대로 39 11층 농촌디지털트윈빌딩
+                    </p>
+                    <div class="copyright">
+                        COPYRIGHT&copy;By. All rights Reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/swiper-bundle.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

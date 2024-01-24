@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 미리보기 팝업</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup-inner pop-800">
+            <div class="popup-head">
+                <strong class="head-title">미리보기</strong>
+                <button
+                    type="button"
+                    class="popup-close"
+                    aria-label="닫기"
+                ></button>
+            </div>
+            <div class="popup-body">
+                <div class="body-box preview-body">
+                    <img src="../images/img-preview.png" alt="미리보기 지도" />
+                    <div class="chk-item">
+                        <div class="chk-inner">
+                            <input
+                                type="checkbox"
+                                class="visually-hidden"
+                                id="pre-chk1"
+                            />
+                            <label for="pre-chk1">지하 시각</label>
+                        </div>
+                        <div class="chk-inner">
+                            <input
+                                type="checkbox"
+                                class="visually-hidden"
+                                id="pre-chk2"
+                            />
+                            <label for="pre-chk2">잠금 시각</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

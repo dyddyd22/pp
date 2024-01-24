@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 사용자관리 | 사용권한그룹관리 | 사용권한그룹관리</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>
+                    <a href="#a" class="logo"
+                        ><img src="../images/logo.png" alt="nongdi 로고"
+                    /></a>
+                </h1>
+                <div class="page-user">
+                    <a href="#a" class="link-portal"
+                        >농디 사용자포털 바로가기</a
+                    >
+                    <ul class="user-info">
+                        <li>포털관리자</li>
+                        <li><a href="#a" class="user">홍길동</a>님</li>
+                    </ul>
+                    <button type="button" class="log-out">로그아웃</button>
+                </div>
+            </div>
+            <div class="header-gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#a" class="is-active"><span>포털관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>사용자관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>모니터링</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>공간정보관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>유휴시설관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>농촌사업관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>창업지원관리</span></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <strong class="aside-tit">사용자관리</strong>
+                <ul class="aside-list">
+                    <li class="aside-item">
+                        <a href="#a">사용자계정관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 사용자 계정관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 권한 변경 신청 관리</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item on">
+                        <a href="#a">사용자권한관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a" class="is-active"
+                                    ><span>- 사용권한그룹관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 업무별 사용권한관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 업무별 사용권한그룹관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 사용자 구분 권한 관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 레이어그룹관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 사용자 레이어그룹관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 사용자 권한대행관리</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="section user-group-sec">
+                <h2 class="visually-hidden">사용권한그룹관리</h2>
+                <div class="sec-inner">
+                    <div class="title-location">
+                        <h3 class="title">사용권한그룹관리</h3>
+                        <ul class="location-list">
+                            <li class="location-item">
+                                <a href="#a" class="home" aria-label="home"></a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">사용자관리</a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">사용자권한관리</a>
+                            </li>
+                            <li class="location-item on">
+                                <a href="#a">사용권한그룹관리</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-box">
+                        <ul class="bg-list">
+                            <li class="bg-item">
+                                <strong class="item-tit">시스템구분</strong>
+                                <select class="select">
+                                    <option value="">전체</option>
+                                    <option value="">농디플랫폼</option>
+                                    <option value="">운영관리시스템</option>
+                                </select>
+                            </li>
+                            <li class="bg-item">
+                                <strong class="item-tit">사용여부</strong>
+                                <select class="select">
+                                    <option value="">전체</option>
+                                    <option value="">사용</option>
+                                    <option value="">미사용</option>
+                                </select>
+                            </li>
+                            <li class="bg-item">
+                                <strong class="item-tit">그룹명</strong>
+                                <div class="search-btn-box">
+                                    <input type="text" />
+                                    <button
+                                        type="button"
+                                        class="btn btn-search"
+                                    >
+                                        검색
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <div class="top-total">전체 <span>0</span>건</div>
+
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-excel">
+                                    엑셀 다운로드
+                                </button>
+                            </div>
+                        </div>
+
+                        <table class="tbl">
+                            <caption>
+                                번호, 시스템구분, 그룹명, 설명, 등록자, 등록일,
+                                사용여부
+                            </caption>
+                            <colgroup>
+                                <col style="width: 80px" />
+                                <col style="width: 200px" />
+                                <col style="width: 300px" />
+                                <col style="width: 480px" />
+                                <col style="width: 200px" />
+                                <col style="width: 140px" />
+                                <col style="width: 140px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">시스템 구분</th>
+                                    <th scope="col">그룹명</th>
+                                    <th scope="col">설명</th>
+                                    <th scope="col">등록자</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">사용여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>농디플랫폼</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2023-08-10</td>
+                                    <td>사용</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>농디플랫폼</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2023-06-26</td>
+                                    <td>사용</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>농디플랫폼</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2022-11-14</td>
+                                    <td>사용</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>농디플랫폼</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2021-09-14</td>
+                                    <td>사용</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>농디플랫폼</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2021-09-14</td>
+                                    <td>사용</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>운영관리시스템</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2023-08-10</td>
+                                    <td>미사용</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>운영관리시스템</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2023-06-26</td>
+                                    <td>미사용</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>운영관리시스템</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2022-11-14</td>
+                                    <td>미사용</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>운영관리시스템</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2021-09-14</td>
+                                    <td>미사용</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>운영관리시스템</td>
+                                    <td>(메뉴)플랫폼 사용자 권한</td>
+                                    <td class="lf">
+                                        LX플랫폼의 일반 서비스를 사용할 수 있는
+                                        사용자
+                                    </td>
+                                    <td>test001</td>
+                                    <td>2021-09-14</td>
+                                    <td>미사용</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pagin-btn">
+                            <div class="pagination">
+                                <ol class="paging-list">
+                                    <li class="all-prev paging-item">
+                                        <button
+                                            type="button"
+                                            aria-label="첫페이지로 이동"
+                                        ></button>
+                                    </li>
+                                    <li class="arrow-prev paging-item">
+                                        <button
+                                            type="button"
+                                            aria-label="이전페이지 이동"
+                                        ></button>
+                                    </li>
+                                    <li class="paging-item is-active">
+                                        <button type="button">1</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">2</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">3</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">4</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">5</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">6</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">7</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">8</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">9</button>
+                                    </li>
+                                    <li class="paging-item">
+                                        <button type="button">10</button>
+                                    </li>
+                                    <li class="arrow-next paging-item">
+                                        <button
+                                            type="button"
+                                            aria-label="다음페이지 이동"
+                                        ></button>
+                                    </li>
+                                    <li class="all-next paging-item">
+                                        <button
+                                            type="button"
+                                            aria-label="마지막 페이지로 이동"
+                                        ></button>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="btn-wrap detail-btns">
+                                <button type="button" class="btn btn-default">
+                                    등록
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="f-logo">
+                    <img src="../images/f-logo.png" alt="nongdi 푸터 로고" />
+                </div>
+                <p class="address">
+                    (04513) 전라북도 전주시 세종대로 39 11층 농촌디지털트윈빌딩
+                </p>
+                <div class="copyright">
+                    COPYRIGHT&copy;By . All rights Reserved
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

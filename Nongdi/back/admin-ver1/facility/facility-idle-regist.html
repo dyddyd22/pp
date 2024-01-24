@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Nongdi | 유휴시설관리 | 유휴시설 관리 | 유휴시설 관리 등록
+        </title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>
+                    <a href="#a" class="logo"
+                        ><img src="../images/logo.png" alt="nongdi drhksfl"
+                    /></a>
+                </h1>
+                <div class="page-user">
+                    <a href="#a" class="link-portal"
+                        >농디 사용자포털 바로가기</a
+                    >
+                    <ul class="user-info">
+                        <li>포털관리자</li>
+                        <li><a href="#a" class="user">홍길동</a>님</li>
+                    </ul>
+                    <button type="button" class="log-out">로그아웃</button>
+                </div>
+            </div>
+            <div class="header-gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#a"><span>포털관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>사용자관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>모니터링</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>공간정보관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a" class="is-active"
+                            ><span>유휴시설관리</span></a
+                        >
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>농촌사업관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>창업지원관리</span></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <strong class="aside-tit">유휴시설관리</strong>
+                <ul class="aside-list">
+                    <li class="aside-item on">
+                        <a href="#a">유휴시설관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a" class="is-active"
+                                    ><span>- 유휴시설 관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 지원정책 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 문의하기 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 유휴시설 현황통계</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="section idle-detail-sec">
+                <h2 class="visually-hidden">유휴시설 관리_등록</h2>
+                <div class="sec-inner">
+                    <div class="title-location">
+                        <h3 class="title">유휴시설 관리_등록</h3>
+                        <ul class="location-list">
+                            <li class="location-item">
+                                <a href="#a" class="home" aria-label="home"></a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">유휴시설관리</a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">유휴시설관리</a>
+                            </li>
+                            <li class="location-item on">
+                                <a href="#a">유휴시설 관리</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <div class="tbl-title">기본정보</div>
+                            <button type="type" class="btn btn-search">
+                                주소찾기
+                            </button>
+                        </div>
+                        <table class="tbl">
+                            <caption>
+                                상태,유휴시설명, 분류, 시군구/읍면동, 우편번호,
+                                도로명 주소, 지번주소, 해시태그, 사진,
+                                담당자소속, 담당자 연락처,마을명,
+                                건물번호,소유자명, 담당자소속, 담당자연락처,
+                                담당자면담
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">상태</th>
+                                    <td class="lf">
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-1"
+                                                    name="idle1"
+                                                />
+                                                <label for="radio-1"
+                                                    >임대가능</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-2"
+                                                    name="idle1"
+                                                />
+                                                <label for="radio-2"
+                                                    >임대불가</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">유휴시설명</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">도로명주소</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">지번주소</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">시군구</th>
+                                    <td class="lf">
+                                        <select class="select" disabled>
+                                            <option value="">시군구</option>
+                                        </select>
+                                    </td>
+                                    <th class="lf">읍면동</th>
+                                    <td class="lf">
+                                        <select class="select" disabled>
+                                            <option value="">읍면동</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">분류</th>
+                                    <td class="lf" colspan="3">
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="tbl-chk1"
+                                                    disabled
+                                                />
+                                                <label for="tbl-chk1"
+                                                    >창업</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="tbl-chk2"
+                                                    disabled
+                                                />
+                                                <label for="tbl-chk2"
+                                                    >문화예술</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="tbl-chk3"
+                                                    disabled
+                                                />
+                                                <label for="tbl-chk3"
+                                                    >워케이션</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="tbl-chk4"
+                                                    disabled
+                                                />
+                                                <label for="tbl-chk4"
+                                                    >기타</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">주용도</th>
+                                    <td class="lf" colspan="3">
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-2"
+                                                    name="idle2"
+                                                    disabled
+                                                />
+                                                <label for="radio-2"
+                                                    >문화복지(공동활동,
+                                                    건강증진, 전시, 교육)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-3"
+                                                    name="idle2"
+                                                    disabled
+                                                />
+                                                <label for="radio-3"
+                                                    >소득A(가공, 저장)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-4"
+                                                    name="idle2"
+                                                    disabled
+                                                />
+                                                <label for="radio-4"
+                                                    >소득B(체험)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-5"
+                                                    name="idle2"
+                                                    disabled
+                                                />
+                                                <label for="radio-5"
+                                                    >소득C(숙박)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-6"
+                                                    name="idle2"
+                                                    disabled
+                                                />
+                                                <label for="radio-6"
+                                                    >종합(문화, 복지,
+                                                    소득)</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">해시태그</th>
+                                    <td class="lf" colspan="3">
+                                        <!-- NOTE : 해시태그 입력시 노출 -->
+                                        <!-- <div class="tags-box">
+                                            <span class="tags">창업가능</span>
+                                            <button
+                                                type="button"
+                                                class="btn btn-del"
+                                                aria-label="삭제"
+                                            ></button>
+                                        </div> -->
+                                        <input type="text" disabled />
+                                        <p class="tags-info">
+                                            입력 후 Enter & tap 자동추가
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">사진</th>
+                                    <td class="lf" colspan="3">
+                                        <button
+                                            type="button"
+                                            class="btn btn-add"
+                                        >
+                                            사진추가
+                                        </button>
+                                        <!-- NOTE : 사진 추가시 노출 -->
+                                        <!-- <ul class="img-list">
+                                            <li class="img-item">
+                                                <img
+                                                    src="../images/img-app1.png"
+                                                    alt="건물 이미지"
+                                                />
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-img-del"
+                                                    aria-label="사진 지우기 버튼"
+                                                ></button>
+                                            </li>
+                                            <li class="img-item">
+                                                <img
+                                                    src="../images/img-app2.png"
+                                                    alt="건물 이미지"
+                                                />
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-img-del"
+                                                    aria-label="사진 지우기 버튼"
+                                                ></button>
+                                            </li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">마을명</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">건물번호</th>
+                                    <td class="lf">
+                                        <input type="text" disabled />
+                                    </td>
+                                    <th class="lf">소유자 명</th>
+                                    <td class="lf">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">담당자 소속</th>
+                                    <td class="lf">
+                                        <input type="text" disabled />
+                                    </td>
+                                    <th class="lf">담당자 연락처</th>
+                                    <td class="lf">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">담당자 면담</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <div class="tbl-title">건축물 정보</div>
+                            <div class="btn-wrap">
+                                <a href="#a" class="btn btn-default"
+                                    >조회하기</a
+                                >
+                            </div>
+                        </div>
+                        <table class="tbl">
+                            <caption>
+                                건물명, 주용도, 구조물, 준공일, 층/실, 대지면적,
+                                건축면적, 지역(구), 소유권
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">건물명</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">구조물</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">준공일</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">층(층)</th>
+                                    <td class="lf">
+                                        <input type="text" disabled />
+                                    </td>
+                                    <th class="lf">실(실)</th>
+                                    <td class="lf">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">대지면적(㎡)</th>
+                                    <td class="lf">
+                                        <input type="text" disabled />
+                                    </td>
+                                    <th class="lf">건축면적(㎡)</th>
+                                    <td class="lf">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">지역(구)</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" disabled />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="tbl-title">공간정보</div>
+                        <table class="tbl">
+                            <caption>
+                                위생 안전 부대시설, 시설명, 개수
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="4">
+                                        위생·안전 부대시설
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">시설명</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                    <th class="lf">개수(개)</th>
+                                    <td class="lf">
+                                        <div class="count-box">
+                                            <input type="text" />
+                                            <button
+                                                type="button"
+                                                class="btn btn-count-del"
+                                                aria-label="입력 내용 삭제 버튼"
+                                            ></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">시설명</th>
+                                    <td class="lf">
+                                        <button
+                                            type="button"
+                                            class="btn btn-bd"
+                                        >
+                                            정보추가
+                                        </button>
+                                        <!-- NOTE : 정보 추가시 input 노출 -->
+                                        <!-- <input type="text"> -->
+                                    </td>
+                                    <th class="lf">개수(개)</th>
+                                    <td class="lf">
+                                        <!-- NOTE : 정보 추가 활성화 시 input 노출 -->
+                                        <!-- <div class="count-box">
+                                            <input type="text" value="2" />
+                                            <span class="count-txt">개</span>
+                                            <button
+                                                type="button"
+                                                class="btn btn-count-del"
+                                                aria-label="입력 내용 삭제 버튼"
+                                            ></button>
+                                        </div> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="tbl">
+                            <caption>
+                                기타 부대시설, 시설명, 개수
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="4">
+                                        기타 부대시설
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">시설명</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                    <th class="lf">개수(개)</th>
+                                    <td class="lf">
+                                        <div class="count-box">
+                                            <input type="text" />
+                                            <button
+                                                type="button"
+                                                class="btn btn-count-del"
+                                                aria-label="입력 내용 삭제 버튼"
+                                            ></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">시설명</th>
+                                    <td class="lf">
+                                        <button
+                                            type="button"
+                                            class="btn btn-bd"
+                                        >
+                                            정보추가
+                                        </button>
+                                        <!-- NOTE : 정보 추가시 input 노출 -->
+                                        <!-- <input type="text"> -->
+                                    </td>
+                                    <th class="lf">개수(개)</th>
+                                    <td class="lf">
+                                        <!-- NOTE : 정보 추가 활성화 시 input 노출 -->
+                                        <!-- <div class="count-box">
+                                            <input type="text" value="2" />
+                                            <span class="count-txt">개</span>
+                                            <button
+                                                type="button"
+                                                class="btn btn-count-del"
+                                                aria-label="입력 내용 삭제 버튼"
+                                            ></button>
+                                        </div> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="tbl">
+                            <caption>
+                                외부시설, 시설명, 개수
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="4">외부시설</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">시설명</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                    <th class="lf">개수(개)</th>
+                                    <td class="lf">
+                                        <div class="count-box">
+                                            <input type="text" />
+                                            <button
+                                                type="button"
+                                                class="btn btn-count-del"
+                                                aria-label="입력 내용 삭제 버튼"
+                                            ></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">시설명</th>
+                                    <td class="lf">
+                                        <button
+                                            type="button"
+                                            class="btn btn-bd"
+                                        >
+                                            정보추가
+                                        </button>
+                                        <!-- NOTE : 정보 추가시 input 노출 -->
+                                        <!-- <input type="text"> -->
+                                    </td>
+                                    <th class="lf">개수(개)</th>
+                                    <td class="lf">
+                                        <!-- NOTE : 정보 추가 활성화 시 input 노출 -->
+                                        <!-- <div class="count-box">
+                                            <input type="text" value="2 개" />
+                                            <button
+                                                type="button"
+                                                class="btn btn-count-del"
+                                                aria-label="입력 내용 삭제 버튼"
+                                            ></button>
+                                        </div> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="tbl-title">유지·관리현황</div>
+                        <table class="tbl">
+                            <caption>
+                                유지·관리현황 - 건물명, 운영방식, 운영관리자,
+                                관리인력, 운영비 마련
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">건물명</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">운영방식</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">운영관리자</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                    <th class="lf">관리인력(명)</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">운영비 마련</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <div class="tbl-title">개보수·리모델링</div>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-add">
+                                    정보추가
+                                </button>
+                            </div>
+                        </div>
+                        <table class="tbl">
+                            <caption>
+                                구분, 날짜, 내용
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 1320px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">구분</th>
+                                    <td class="lf">
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-7"
+                                                    name="idle3"
+                                                />
+                                                <label for="radio-7"
+                                                    >이력</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="radio-8"
+                                                    name="idle3"
+                                                />
+                                                <label for="radio-8"
+                                                    >필요</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">날짜</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">내용</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <div class="tbl-title">실 정보</div>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-search">
+                                    실 정보추가
+                                </button>
+                            </div>
+                        </div>
+                        <table class="tbl">
+                            <caption>
+                                실 정보 - 층, 실명, 면적, 규모, 사진
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                                <col style="width: 220px" />
+                                <col style="width: 550px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">실명</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">면적(㎡)</th>
+                                    <td class="lf" colspan="3">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">층(층)</th>
+                                    <td class="lf"><input type="text" /></td>
+                                    <th class="lf">호실(호)</th>
+                                    <td class="lf"><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">규모</th>
+                                    <td class="lf" colspan="3">
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="tbl-rd3"
+                                                    name="tbl-rd1"
+                                                />
+                                                <label for="tbl-rd3"
+                                                    >대규모 이용시설(30인
+                                                    이상)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="tbl-rd4"
+                                                    name="tbl-rd1"
+                                                />
+                                                <label for="tbl-rd4"
+                                                    >중규모 이용시설(30인
+                                                    이하)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="tbl-rd5"
+                                                    name="tbl-rd1"
+                                                />
+                                                <label for="tbl-rd5"
+                                                    >소규모 이용시설(10인
+                                                    이하)</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">사진</th>
+                                    <td class="lf">
+                                        <button
+                                            type="button"
+                                            class="btn btn-add"
+                                        >
+                                            사진추가
+                                        </button>
+
+                                        <!-- NOTE : 사진 추가시 노출 -->
+                                        <!-- <ul class="img-list">
+                                            <li class="img-item">
+                                                <img
+                                                    src="../images/img-app1.png"
+                                                    alt="건물 이미지"
+                                                />
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-img-del"
+                                                    aria-label="사진 지우기 버튼"
+                                                ></button>
+                                            </li>
+                                            <li class="img-item">
+                                                <img
+                                                    src="../images/img-app2.png"
+                                                    alt="건물 이미지"
+                                                />
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-img-del"
+                                                    aria-label="사진 지우기 버튼"
+                                                ></button>
+                                            </li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="tbl">
+                            <caption>
+                                시설물 가동현황 - 1,2,3,4,5,6,7,8,9,10,11,12월
+                            </caption>
+                            <colgroup>
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                                <col style="width: 128px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="12">
+                                        시설물 가동현황
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">1월</th>
+                                    <th scope="col">2월</th>
+                                    <th scope="col">3월</th>
+                                    <th scope="col">4월</th>
+                                    <th scope="col">5월</th>
+                                    <th scope="col">6월</th>
+                                    <th scope="col">7월</th>
+                                    <th scope="col">8월</th>
+                                    <th scope="col">9월</th>
+                                    <th scope="col">10월</th>
+                                    <th scope="col">11월</th>
+                                    <th scope="col">12월</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="tbl">
+                            <caption>
+                                최대수용인원
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 1320px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>최대수용인원</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-red">
+                                실 정보삭제
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <div class="tbl-title">거래이력</div>
+                            <button type="button" class="btn btn-search">
+                                거래이력추가
+                            </button>
+                        </div>
+                        <table class="tbl">
+                            <caption>
+                                거래이력 - 거래일, 사용이력, 거래용도
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 1320px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">거래일</th>
+                                    <td class="lf">
+                                        <div class="picker-box">
+                                            <input
+                                                type="text"
+                                                class="datepicker"
+                                                value="0000-00-00"
+                                            />
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th class="lf">거래금액(원)</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">사용이력</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">거래용도</th>
+                                    <td class="lf">
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-red">
+                                이력삭제
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="tbl-title">모델 등록</div>
+                        <table class="tbl">
+                            <caption>
+                                모델 등록 - 모델 유형, 모델 업로드
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 1320px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">모델 유형</th>
+                                    <td class="lf">
+                                        <select name="" id="" class="select">
+                                            <option value="">선택</option>
+                                            <option value="">3ds</option>
+                                            <option value="">fbx</option>
+                                            <option value="">obj</option>
+                                            <option value="">citygml</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">모델 업로드</th>
+                                    <td class="lf">
+                                        <div class="btn-filebox">
+                                            <button
+                                                type="button"
+                                                class="btn btn-upload"
+                                            >
+                                                첨부파일
+                                            </button>
+                                            <!-- NOTE : 첨부파일 추가 시 노출 -->
+                                            <!-- <div class="upload-filebox">
+                                                <a href="#a" class="down-file"
+                                                    >오늘늘찬문화복지센터
+                                                    모델.zip</a
+                                                >
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-count-del"
+                                                    aria-label="첨부파일 삭제 버특"
+                                                ></button>
+                                            </div> -->
+                                        </div>
+                                        <p class="file-info">
+                                            zip 파일만 업로드 가능
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="tbl tbl-item">
+                            <caption>
+                                영상 유형, 영상 업로드
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 1320px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">영상 유형</th>
+                                    <td class="lf">
+                                        <select name="" id="" class="select">
+                                            <option value="">선택</option>
+                                            <option value="">tiff</option>
+                                            <option value="">geotiff</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">영상 업로드</th>
+                                    <td class="lf">
+                                        <div class="btn-filebox">
+                                            <button
+                                                type="button"
+                                                class="btn btn-upload"
+                                            >
+                                                첨부파일
+                                            </button>
+                                            <!-- NOTE : 첨부파일 추가 시 노출 -->
+                                            <!-- <div class="upload-filebox">
+                                                <a href="#a" class="down-file"
+                                                    >오늘늘찬문화복지센터
+                                                    모델.zip</a
+                                                >
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-count-del"
+                                                    aria-label="첨부파일 삭제 버특"
+                                                ></button>
+                                            </div> -->
+                                        </div>
+                                        <p class="file-info">
+                                            zip 파일만 업로드 가능
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="btn-wrap detail-btns">
+                        <button type="button" class="btn btn-bd">취소</button>
+                        <button type="button" class="btn btn-default">
+                            등록
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="f-logo">
+                    <img src="../images/f-logo.png" alt="nongdi 푸터 로고" />
+                </div>
+                <p class="address">
+                    (04513) 전라북도 전주시 세종대로 39 11층 농촌디지털트윈빌딩
+                </p>
+                <div class="copyright">
+                    COPYRIGHT&copy;By . All rights Reserved
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "spoqa";
+    src: url(../font/SpoqaHanSansNeo-Thin.otf);
+    src: url(../font/SpoqaHanSansNeo-Thin?iefix) format(embedded-opentype),
+        url(../font/SpoqaHanSansNeo-Thin.otf) format(opentype);
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "spoqa";
+    src: url(../font/SpoqaHanSansNeo-Light.otf);
+    src: url(../font/SpoqaHanSansNeo-Light?iefix) format(embedded-opentype),
+        url(../font/SpoqaHanSansNeo-Light.otf) format(opentype);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "spoqa";
+    src: url(../font/SpoqaHanSansNeo-Regular.otf);
+    src: url(../font/SpoqaHanSansNeo-Regular.otf?iefix)
+            format(embedded-opentype),
+        url(../font/SpoqaHanSansNeo-Regular.otf) format(opentype);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "spoqa";
+    src: url(../font/SpoqaHanSansNeo-Medium.otf);
+    src: url(../font/SpoqaHanSansNeo-Medium.otf?iefix) format(embedded-opentype),
+        url(../font/SpoqaHanSansNeo-Medium.otf) format(opentype);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "spoqa";
+    src: url(../font/SpoqaHanSansNeo-Bold.otf);
+    src: url(../font/SpoqaHanSansNeo-Bold.otf?iefix) format(embedded-opentype),
+        url(../font/SpoqaHanSansNeo-Bold.otf) format(opentype);
+    font-weight: 700;
+    font-style: normal;
+}

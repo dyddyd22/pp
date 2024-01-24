@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 레이어관리 | 추가 팝업</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup-inner pop-1000">
+            <div class="popup-head">
+                <strong class="head-title">추가</strong>
+                <button
+                    type="button"
+                    class="popup-close"
+                    aria-label="닫기"
+                ></button>
+            </div>
+            <div class="popup-body add-body">
+                <div class="add-box">
+                    <ul class="add-list">
+                        <li class="add-item is-active">기본 구성</li>
+                        <li class="add-item is-active">보조 구성</li>
+                        <li class="add-item on">기능 구성</li>
+                    </ul>
+                </div>
+
+                <div class="tbl-wrap">
+                    <table class="tbl">
+                        <caption>
+                            포지셔닝 스위치, 색상 스위치, 단량체 선택
+                        </caption>
+                        <colgroup>
+                            <col style="width: 220px" />
+                            <col style="width: 1320px" />
+                        </colgroup>
+
+                        <tbody>
+                            <tr>
+                                <th class="lf">포지셔닝 스위치</th>
+                                <td class="lf">
+                                    <div class="chk-item">
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                id="rd-add1"
+                                                name="rd-add1"
+                                            />
+                                            <label for="rd-add1">ON</label>
+                                        </div>
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                id="rd-add2"
+                                                name="rd-add1"
+                                                checked
+                                            />
+                                            <label for="rd-add2">OFF</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">색상 스위치</th>
+                                <td class="lf">
+                                    <div class="chk-item">
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                id="rd-add3"
+                                                name="rd-add2"
+                                            />
+                                            <label for="rd-add3">ON</label>
+                                        </div>
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                id="rd-add4"
+                                                name="rd-add2"
+                                                checked
+                                            />
+                                            <label for="rd-add4">OFF</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">단량체 선택</th>
+                                <td class="lf">
+                                    <div class="chk-item">
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                id="rd-add5"
+                                                name="rd-add3"
+                                            />
+                                            <label for="rd-add5">ON</label>
+                                        </div>
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                id="rd-add6"
+                                                name="rd-add3"
+                                                checked
+                                            />
+                                            <label for="rd-add6">OFF</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-add">이전 단계</button>
+                    <button type="button" class="btn btn-default">제출</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

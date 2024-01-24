@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 로그인</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="log-inner">
+                <h1 class="logo">
+                    <a href="#a"
+                        ><img src="../images/logo.svg" alt="Nongdi"
+                    /></a>
+                </h1>
+
+                <!-- NOTE : 오류시 warning 클래스 추가 -->
+                <div class="key-box warning">
+                    <div class="id-input">
+                        <input
+                            type="text"
+                            placeholder="아이디를 입력해주세요."
+                        />
+                    </div>
+                    <div class="pw-input">
+                        <input
+                            type="password"
+                            placeholder="비밀번호를 입력해주세요."
+                        />
+                        <p class="error">
+                            아이디 또는 비밀번호가 잘못입력되었습니다
+                        </p>
+                        <!-- NOTE : 아이디, 비밀번호 입력하지 않을 경우 노출 -->
+                        <!-- <p class="error">
+                            아이디 또는 비밀번호가 잘못입력되었습니다
+                        </p> -->
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-default">로그인</button>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

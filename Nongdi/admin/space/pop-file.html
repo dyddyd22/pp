@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 작업 파일 팝업</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup-inner pop-1000">
+            <div class="popup-head">
+                <strong class="head-title">작업 파일</strong>
+                <button
+                    type="button"
+                    class="popup-close"
+                    aria-label="닫기"
+                ></button>
+            </div>
+            <div class="popup-body file-body">
+                <div class="tbl-wrap">
+                    <table class="tbl">
+                        <caption>
+                            작업명, 작업유형, 입력경로
+                        </caption>
+                        <colgroup>
+                            <col style="width: 220px" />
+                            <col style="width: 1320px" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="lf">작업명</th>
+                                <td class="lf">
+                                    <input type="text" value="프로그램 명" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">작업 유형</th>
+                                <td class="lf">
+                                    <select class="select">
+                                        <option value="">선택</option>
+                                        <option value="">3ds-3dtiles</option>
+                                        <option value="">
+                                            citygml-3dtiles
+                                        </option>
+                                        <option value="">3dtiles</option>
+                                        <option value="">tiff-WMTS</option>
+                                        <option value="">tiff-terrain</option>
+                                        <option value="">ifc - 3dtiles</option>
+                                        <option value="">
+                                            geotiff - terrain
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">입력 경로</th>
+                                <td class="lf">
+                                    <input
+                                        type="text"
+                                        disabled
+                                        placeholder="/0.JBND"
+                                    />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-default">저장</button>
+                    <button type="button" class="btn btn-bd">취소</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

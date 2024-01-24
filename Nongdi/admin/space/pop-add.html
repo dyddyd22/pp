@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 추가 팝업</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup-inner pop-1000">
+            <div class="popup-head">
+                <strong class="head-title">추가</strong>
+                <button
+                    type="button"
+                    class="popup-close"
+                    aria-label="닫기"
+                ></button>
+            </div>
+            <div class="popup-body add-body">
+                <div class="add-box">
+                    <ul class="add-list">
+                        <li class="add-item on">기본 구성</li>
+                        <li class="add-item">보조 구성</li>
+                        <li class="add-item">기능 구성</li>
+                    </ul>
+                </div>
+
+                <div class="tbl-wrap">
+                    <table class="tbl">
+                        <caption>
+                            카테고리 이름, 작업명, 작업명_2, 서비스종류, 인덱스,
+                            서비스주소, 기본설정여부, 사용여부
+                        </caption>
+                        <colgroup>
+                            <col style="width: 220px" />
+                            <col style="width: 1320px" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="lf">카테고리 이름</th>
+                                <td class="lf">
+                                    <input
+                                        type="text"
+                                        disabled
+                                        placeholder="전북농디"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">작업명</th>
+                                <td class="lf">
+                                    <input type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">작업명_2</th>
+                                <td class="lf">
+                                    <input type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">서비스 종류</th>
+                                <td class="lf">
+                                    <select class="select">
+                                        <option value="">서비스 종류</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">인덱스</th>
+                                <td class="lf">
+                                    <input
+                                        type="text"
+                                        placeholder="지역을 선택하세요"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">서비스 주소</th>
+                                <td class="lf">
+                                    <div class="file-count">
+                                        <button
+                                            type="button"
+                                            id="btn-minus"
+                                            aria-label="감소"
+                                        ></button>
+                                        <div id="count-nums">0</div>
+                                        <button
+                                            type="button"
+                                            id="btn-plus"
+                                            aria-label="증가"
+                                        ></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">기본 설정 여부</th>
+                                <td class="lf">
+                                    <div class="chk-item">
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                name="add-rd"
+                                                id="add-rd1"
+                                                checked
+                                            />
+                                            <label for="add-rd1">예</label>
+                                        </div>
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                name="add-rd"
+                                                id="add-rd2"
+                                            />
+                                            <label for="add-rd2">아니오</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="lf">사용여부</th>
+                                <td class="lf">
+                                    <div class="chk-item">
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                name="add-rd1"
+                                                id="add-rd3"
+                                                checked
+                                            />
+                                            <label for="add-rd3">예</label>
+                                        </div>
+                                        <div class="chk-inner">
+                                            <input
+                                                type="radio"
+                                                class="visually-hidden"
+                                                name="add-rd1"
+                                                id="add-rd4"
+                                            />
+                                            <label for="add-rd4">아니오</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-default">
+                        다음 단계
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

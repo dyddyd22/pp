@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yong Portfolio</title>
+    <meta name="description" content="Aiming at front-end development My Portfolio">
+    <meta name="author" content="Yong">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- og -->
+    <meta property="og:title" content="성용의 포트폴리오">
+    <meta property="og:type" content="web site">
+    <meta property="og:url" content="배포후 생성된 URL">
+    <meta property="og:image" content="배포후 생성된 이미지 URL">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d3a262bf36.js" crossorigin="anonymous"></script>
+    <!-- Typeit -->
+    <script src="./src/typeCdn.js"></script>
+    <!-- javascript -->
+    <script type="module" src="./src/main.js" defer></script>
+    <script type="module" src="./src/projects.js" defer></script>
+    <script type="module" src="./src/active_menu.js" defer></script>
+    <script type="module" src="./src/type.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="images/myicon-round.png" alt="logo" class="header-logo-img">
+            <h1 class="header-logo-title"><a href="#a">Sung Yong</a></h1>
+        </div>
+
+        <nav class="header-nav">
+            <ul class="header-menu">
+                <li><a class="header-menu-item active" href="#home">Home</a></li>
+                <li><a class="header-menu-item" href="#about">About</a></li>
+                <li><a class="header-menu-item" href="#skills">Skills</a></li>
+                <li><a class="header-menu-item" href="#work">My work</a></li>
+                <li><a class="header-menu-item" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button type="button" class="btn-menu" aria-label="navigation menu toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <div class="home-container">
+                <img src="./images/myicon-removebg.png" alt="yong profile" class="home-avatar">
+                <h2 class="home-title" aria-label="Hello I'am Dreaming of
+                    Front-End, Web Publisher Sung Yong">Hello <br>I&#39;am Dreaming of
+                    Front-End,<br>
+                    <strong class="home-title-strong">Web Publisher</strong> Sung Yong
+                </h2>
+                <p class="home-description">늦게 시작한 만큼 어떻게든 발전을 해 나가려는 노력과 배울려는 의지를 가지고 버티고 발전해 왔습니다.<br> 현재는 퍼블리셔에 머물러
+                    있지만 프론트개발자라는 위치에 올라가 보려 합니다.</p>
+                <a class="home-contact" href="#contact">Contact Me</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section max-container">
+            <h2 class="title">About me</h2>
+            <p class="description">웹 퍼블리셔로서 앞으로 나아가고 있는 조성용라고 합니다.</p>
+            <div class="about-me">
+                <ul class="majors">
+                    <li class="major">
+                        <i class="fa-brands fa-html5 major-icon"></i>
+                        <!-- <p class="major-title">Front-end</p> -->
+                        <p class="major-title">Web Publisher</p>
+                        <p>HTML, CSS, Javascript, Jquery</p>
+                    </li>
+                </ul>
+                <ul class="jobs">
+                    <li class="job">
+                        <p class="job-name">SI, 유지보수, 교육페이지, 마이데이터 앱 작업</p>
+                        <div>
+                            <p>
+                                1인 작업으로 구축을 작업 하였습니다.<br>
+                                이미지 작업 툴은 포토샵, XD, 피그마를 사용하였고<br>
+                                기본적으로 HTML,CSS,JAVASCRIPT,JQUERY 이용해 작업 하였고<br> swiper,datepicker, pullpage 플러그인을 이용해오고
+                                있습니다.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="max-container">
+                <h2 class="title">My Skills</h2>
+                <p class="description">Skills & Attributes</p>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus beatae accusamus reprehenderit
+                    dignissimos, nesciunt esse doloremque aut, rem tempora sed odio, sint eaque eveniet optio quas
+                    dolores
+                    aspernatur sit voluptatum.</p> -->
+                <div class="skills">
+                    <section class="skills-coding">
+                        <h3 class="skills-title">Coding Skills</h3>
+                        <ul>
+                            <li class="bar">
+                                <div class="bar-metadata">
+                                    <span>HTML</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="bar-bg">
+                                    <div class="bar-value" style="width:88%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar-metadata">
+                                    <span>CSS</span>
+                                    <span>84%</span>
+                                </div>
+                                <div class="bar-bg">
+                                    <div class="bar-value" style="width:84%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar-metadata">
+                                    <span>JAVASCRIPT / JQUERY</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="bar-bg">
+                                    <div class="bar-value" style="width:65%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills-tools">
+                        <h3 class="skills-title">Tools</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Figma</li>
+                            <li>XD</li>
+                            <li>PhotoShop</li>
+                        </ul>
+                    </section>
+                    <section class="skills-etc">
+                        <h3 class="skills-title">Etc</h3>
+                        <ul>
+                            <li>Git</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section id="work" class="section">
+            <div class="max-container">
+                <h2 class="title">My work</h2>
+                <p class="description">Project</p>
+                <ul class="categories">
+                    <li><button class="category category-selected" data-category="all">All <span
+                                class="category-count">17</span></button>
+                    </li>
+                    <li><button class="category" data-category="responsive">Responsive <span
+                                class="category-count">12</span></button></li>
+                    <li><button class="category" data-category="pc">PC <span class="category-count">4</span></button>
+                    </li>
+                    <li><button class="category" data-category="mobile">Mobile <span
+                                class="category-count">1</span></button></li>
+                </ul>
+                <ul class="projects">
+                    <li class="project" data-type="responsive">
+                        <a href="https://ttadivision.sports.or.kr/index.do" target="_blank">
+                            <img src="./images/jobs/ktta.png" alt="ktta" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">대한탁구협회 - 디비전</h3>
+                                <p>
+                                    <span>구축</span>
+                                    HTML5, CSS3, JQUERY, SLICK, SVN
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="https://www.teachforkorea.go.kr" target="_blank">
+                            <img src="./images/jobs/teach.png" alt="교육기부" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">교육기부</h3>
+                                <p>
+                                    <span>유지보수</span>
+                                    HTML, CSS, SVN
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="http://www.sdbiosensor.co.kr" target="_blank">
+                            <img src="./images/jobs/sdbio.png" alt="sd 바이오센서" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">SD 바이오센서</h3>
+                                <p>
+                                    <span>구축</span>
+                                    HTML, CSS, JQUERY
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="https://www.i-discovery.com" target="_blank">
+                            <img src="./images/jobs/discovery.png" alt="i-Discovery" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">i-Discovery</h3>
+                                <p>
+                                    <span>구축</span>
+                                    HTML, CSS, JQUERY
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="http://www.mdi-filone.com" target="_blank">
+                            <img src="./images/jobs/ecorbit.png" alt="ecorbit" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">Mdi-Ecorbit</h3>
+                                <p>
+                                    <span>유지보수</span>
+                                    HTML, CSS
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="https://www.vieworks.com" target="_blank">
+                            <img src="./images/jobs/vieworks.png" alt="vieworks" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">Vieworks</h3>
+                                <p>
+                                    <span>유지보수</span>
+                                    HTML, CSS, JQUERY
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="http://www.ecorbit.com/kr/index" target="_blank">
+                            <img src="./images/jobs/ecorbit-main.png" alt="ecorbit 본사" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">Ecorbit</h3>
+                                <p>
+                                    <span>유지보수</span>
+                                    HTML, CSS, JQUERY
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="./Nongdi/allpage.html" target="_blank">
+                            <img src="./images/jobs/nongdi.png" alt="Nongdi" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">Nongdi</h3>
+                                <p>
+                                    <span>구축</span>
+                                    HTML, CSS, JAVASCRIPT, SWIPER
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="#a" target="_blank">
+                            <img src="./images/jobs/ksa.png" alt="ksa 표준인증협회" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">KSA 표준인증협회</h3>
+                                <p>
+                                    <span>구축</span>
+                                    HTML, CSS, JAVASCRIPT, SWIPER, GIT
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="https://www.hmm21.com/company.do" target="_blank">
+                            <img src="./images/jobs/hmm-1.png" alt="HMM(사용자)" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">HMM(사용자)</h3>
+                                <p>
+                                    <span>유지보수</span>
+                                    HTML, CSS, JQUERY, GIT
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="https://www.hmm21.com/e-service/general/DashBoard.do" target="_blank">
+                            <img src="./images/jobs/e-service.png" alt="HMM e-service" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">HMM e-service</h3>
+                                <p>
+                                    <span>구축</span>
+                                    HTML, CSS, GIT
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="responsive">
+                        <a href="./ksa/ksa-manager/index-po.html" target="_blank">
+                            <img src="./images/jobs/ksa-parther.png" alt="ksa 표준인증협회 관리자" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">KSA 표준인증협회 운영자</h3>
+                                <p>
+                                    <span>구축(PO - index-user.html)</span>
+                                    HTML5, CSS3, JAVASCRIPT, GIT
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="pc">
+                        <a href="#a" target="_blank">
+                            <img src="./images/jobs/book.png" alt="project5" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">지학사 교과서</h3>
+                                <p>
+                                    <span>
+                                        교육콘텐츠 구축<br>(링크가 없어 이미지로 대체 합니다.)<br>
+                                        텍스트, 아이콘 위치 등 전체적 구조를 구축하였습니다.
+                                    </span>
+                                    HTML, CSS, JQUERY
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="pc">
+                        <a href="#a" target="_blank">
+                            <img src="./images/jobs/clean.png" alt="식품의약품안전처-클린룸" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">식품의약품안전처 - 클린룸</h3>
+                                <p>
+                                    <span>교육콘텐츠 구축<br>(링크가 없어 이미지로 대체 합니다.)
+                                    </span>
+                                    HTML, CSS, JQUERY
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="pc">
+                        <a href="https://dtbook.edunet.net/literacy/main.html" target="_blank">
+                            <img src="./images/jobs/media.png" alt="미디어리터러시" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">미디어리터러시</h3>
+                                <p>
+                                    <span>교육콘텐츠 구축</span>
+                                    HTML5, CSS3, JQUERY, SVN
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="pc">
+                        <a href="./ksa/ksa-manager/index-bo.html" target="_blank">
+                            <img src="./images/jobs/ksa-admin.png" alt="ksa 표준인증협회 관리자" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">KSA 표준인증협회 관리자</h3>
+                                <p>
+                                    <span>구축(BO - index.html)</span>
+                                    HTML5, CSS3, JAVASCRIPT, GIT
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="mobile">
+                        <a href="#a" target="_blank">
+                            <img src="./images/jobs/data.png" alt="손해보험 마이데이터앱" class="project-img">
+                            <div class="project-metadata">
+                                <h3 class="project-title">KB 손해보험 - 마이데이터</h3>
+                                <p>
+                                    <span>구축<br>(링크가 없어 이미지로 대체 합니다. 앱 모바일)</span>
+                                    HTML, CSS, JQUERY
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Arrow up -->
+        <aside>
+            <a href="#home" title="back to top" class="arrow-up">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="section">
+        <div class="max-container">
+            <h2 class="title">Let&#39;s talk</h2>
+            <p class="description">mythwing1@gmail.com</p>
+            <div class="contact-links">
+                <a href="https://github.com/dyddyd22" target="_blank" title="my github link" class="contact-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <p>&copy;Sung yong - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 포털관리 | 게시판 관리 | 자주묻는질문 관리</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>
+                    <a href="#a" class="logo"
+                        ><img src="../images/logo.png" alt="nongdi 로고"
+                    /></a>
+                </h1>
+                <div class="page-user">
+                    <a href="#a" class="link-portal"
+                        >농디 사용자포털 바로가기</a
+                    >
+                    <ul class="user-info">
+                        <li>포털관리자</li>
+                        <li><a href="#a" class="user">홍길동</a>님</li>
+                    </ul>
+                    <button type="button" class="log-out">로그아웃</button>
+                </div>
+            </div>
+            <div class="header-gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#a" class="is-active"><span>포털관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>사용자관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>모니터링</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>공간정보관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>유휴시설관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>농촌사업관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>창업지원관리</span></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <strong class="aside-tit">포털관리</strong>
+                <ul class="aside-list">
+                    <li class="aside-item">
+                        <a href="#a">메인화면관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 포털소식 관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item on">
+                        <a href="#a">게시판관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 게시판 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 홍보게시판 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 공지사항 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 자료실 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 질의응답 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a" class="is-active"
+                                    ><span>- 자주묻는질문 관리</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 사용자요청 관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item">
+                        <a href="#a">코드관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 대분류 코드 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 중분류 코드 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 상세 코드 관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item">
+                        <a href="#a">메뉴관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 프로그램 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 메뉴 관리</span></a>
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"><span>- 권한메뉴 관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="section portal-question-sec">
+                <h2 class="visually-hidden">자주묻는질문 관리</h2>
+                <div class="sec-inner">
+                    <div class="title-location">
+                        <h3 class="title">자주묻는질문 관리</h3>
+                        <ul class="location-list">
+                            <li class="location-item">
+                                <a href="#a" class="home" aria-label="home"></a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">포털관리</a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">게시판관리</a>
+                            </li>
+                            <li class="location-item on">
+                                <a href="#a">자주묻는질문 관리</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-box">
+                        <ul class="bg-list">
+                            <li class="bg-item">
+                                <strong class="item-tit">등록일</strong>
+                                <div class="chk-inner">
+                                    <input
+                                        type="checkbox"
+                                        class="visually-hidden"
+                                        id="noti-chk"
+                                    />
+                                    <label
+                                        for="noti-chk"
+                                        class="bg-label"
+                                    ></label>
+                                </div>
+                                <div class="picker-from">
+                                    <div class="picker-box">
+                                        <input
+                                            type="text"
+                                            class="datepicker"
+                                            value="0000-00-00"
+                                        />
+                                    </div>
+                                    <div class="picker-box">
+                                        <input
+                                            type="text"
+                                            class="datepicker"
+                                            value="0000-00-00"
+                                        />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="bg-item flexs">
+                                <strong class="item-tit">검색어</strong>
+                                <select class="select">
+                                    <option value="">전체</option>
+                                    <option value="">질문</option>
+                                    <option value="">답변</option>
+                                    <option value="">작성자</option>
+                                </select>
+                                <div class="search-btn-box flexs">
+                                    <input type="text" />
+                                    <button
+                                        type="button"
+                                        class="btn btn-search"
+                                    >
+                                        검색
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <p class="top-total">전체 <span>220건</span></p>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-default">
+                                    등록
+                                </button>
+                            </div>
+                        </div>
+
+                        <table class="tbl">
+                            <caption>
+                                번호, 질문, 작성자, 등록일,조회수
+                            </caption>
+                            <colgroup>
+                                <col style="width: 80px" />
+                                <col style="width: 1020px" />
+                                <col style="width: 160px" />
+                                <col style="width: 140px" />
+                                <col style="width: 140px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">질문</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>220</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >2023 농디 플랫폼 구축 오픈안내
+                                        </a>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>219</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >2023 주요일정 안내
+                                        </a>
+                                    </td>
+
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>218</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >제목 부분입니다. 제목
+                                            부분입니다.>제목 부분입니다. 제목
+                                            부분입니다.>제목 부분입니다. 제목
+                                            부분입니다.
+                                        </a>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>245</td>
+                                </tr>
+                                <tr>
+                                    <td>217</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >2023 농디 플랫폼 구축 오픈안내
+                                        </a>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>216</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >2023 주요일정 안내
+                                        </a>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>215</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >제목 부분입니다. 제목 부분입니다.
+                                            제목 부분입니다. 제목 부분입니다.
+                                            제목 부분입니다. 제목 부분입...
+                                        </a>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>245</td>
+                                </tr>
+                                <tr>
+                                    <td>214</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >2023 농디 플랫폼 구축 오픈안내
+                                        </a>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>213</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >2023 주요일정 안내
+                                        </a>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>212</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >제목 부분입니다. 제목 부분입니다.
+                                            제목 부분입니다. 제목 부분입니다.
+                                            제목 부분입니다. 제목 부분입...
+                                        </a>
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>245</td>
+                                </tr>
+                                <tr>
+                                    <td>211</td>
+                                    <td class="lf">
+                                        <a href="#a" class="ellipsis"
+                                            >제목 부분입니다. 제목 부분입니다.
+                                            제목 부분입니다. 제목 부분입니다.
+                                            제목 부분입니다. 제목 부분입...</a
+                                        >
+                                    </td>
+                                    <td>홍길동</td>
+                                    <td>2023-07-25</td>
+                                    <td>245</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pagination">
+                            <ol class="paging-list">
+                                <li class="all-prev paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="첫페이지로 이동"
+                                    ></button>
+                                </li>
+                                <li class="arrow-prev paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="이전페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="paging-item is-active">
+                                    <button type="button">1</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">2</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">3</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">4</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">5</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">6</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">7</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">8</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">9</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">10</button>
+                                </li>
+                                <li class="arrow-next paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="다음페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="all-next paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="마지막 페이지로 이동"
+                                    ></button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="f-logo">
+                    <img src="../images/f-logo.png" alt="nongdi 푸터 로고" />
+                </div>
+                <p class="address">
+                    (04513) 전라북도 전주시 세종대로 39 11층 농촌디지털트윈빌딩
+                </p>
+                <div class="copyright">
+                    COPYRIGHT&copy;By . All rights Reserved
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

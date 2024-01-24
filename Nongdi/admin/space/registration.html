@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 공간정보관리 | 공간정보등록 | 공간정보 등록</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>
+                    <a href="#a" class="logo"
+                        ><img src="../images/logo.png" alt="nongdi 로고"
+                    /></a>
+                </h1>
+                <div class="page-user">
+                    <a href="#a" class="link-portal"
+                        >농디 사용자포털 바로가기</a
+                    >
+                    <ul class="user-info">
+                        <li>포털관리자</li>
+                        <li><a href="#a" class="user">홍길동</a>님</li>
+                    </ul>
+                    <button type="button" class="log-out">로그아웃</button>
+                </div>
+            </div>
+            <div class="header-gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#a"><span>포털관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>사용자관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>모니터링</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a" class="is-active"
+                            ><span>공간정보관리</span></a
+                        >
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>유휴시설관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>농촌사업관리</span></a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#a"><span>창업지원관리</span></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <strong class="aside-tit">공간정보관리</strong>
+                <ul class="aside-list">
+                    <li class="aside-item">
+                        <a href="#a">공간정보등록</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a" class="is-active"
+                                    ><span>- 공간정보 등록</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 공간정보 등록 승인</span></a
+                                >
+                            </li>
+                            <li class="depth-item">
+                                <a href="#a"
+                                    ><span>- 공간정보 변환 로그</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item">
+                        <a href="#a">공간정보관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 공간정보 관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside-item">
+                        <a href="#a">레이어관리</a>
+                        <ul class="depth-list">
+                            <li class="depth-item">
+                                <a href="#a"><span>- 레이어관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="section regista-sec">
+                <h2 class="visually-hidden">공간정보 등록</h2>
+                <div class="sec-inner">
+                    <div class="title-location">
+                        <h3 class="title">공간정보 등록</h3>
+                        <ul class="location-list">
+                            <li class="location-item">
+                                <a href="#a" class="home" aria-label="home"></a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">공간정보관리</a>
+                            </li>
+                            <li class="location-item">
+                                <a href="#a">공간정보등록</a>
+                            </li>
+                            <li class="location-item on">
+                                <a href="#a">공간정보 등록</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tbl-wrap">
+                        <div class="top-box">
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-default">
+                                    추가
+                                </button>
+                                <a href="#a" class="btn btn-zip"
+                                    >zip파일 업로드</a
+                                >
+                                <a href="#a" class="btn btn-bigfile"
+                                    >대형 파일 업로드</a
+                                >
+                            </div>
+                        </div>
+
+                        <table class="tbl">
+                            <caption>
+                                번호, 세부사업명, 지원 지자체, 시군구, 등록일
+                            </caption>
+                            <colgroup>
+                                <col style="width: 1200px" />
+                                <col style="width: 340px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">리소스 이름</th>
+                                    <th scope="col">편집</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder">0.JBND</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder">00.메타</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder">000000</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder"
+                                            >000000_20220900</span
+                                        >
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder"
+                                            >000000_20220904</span
+                                        >
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder"
+                                            >000000_20220905_1111</span
+                                        >
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder"
+                                            >000000_20220905_a</span
+                                        >
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder"
+                                            >000000_20220905_LIM_TEST</span
+                                        >
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder"
+                                            >000000_20220905_yong</span
+                                        >
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lf">
+                                        <span class="folder"
+                                            >000000_2022_09_05_000</span
+                                        >
+                                    </td>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button
+                                                type="button"
+                                                class="btn btn-orange"
+                                            >
+                                                메모수정
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-red"
+                                            >
+                                                삭제
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-green"
+                                            >
+                                                작업파일
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pagination">
+                            <ol class="paging-list">
+                                <li class="all-prev paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="첫페이지로 이동"
+                                    ></button>
+                                </li>
+                                <li class="arrow-prev paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="이전페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="paging-item is-active">
+                                    <button type="button">1</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">2</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">3</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">4</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">5</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">6</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">7</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">8</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">9</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">10</button>
+                                </li>
+                                <li class="arrow-next paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="다음페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="all-next paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="마지막 페이지로 이동"
+                                    ></button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="f-logo">
+                    <img src="../images/f-logo.png" alt="nongdi 푸터 로고" />
+                </div>
+                <p class="address">
+                    (04513) 전라북도 전주시 세종대로 39 11층 농촌디지털트윈빌딩
+                </p>
+                <div class="copyright">
+                    COPYRIGHT&copy;By . All rights Reserved
+                </div>
+            </div>
+        </footer>
+
+        <div class="dim"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

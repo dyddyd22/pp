@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nongdi | 작업 파일 팝업</title>
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup-inner pop-800">
+            <div class="popup-head">
+                <strong class="head-title">대분류 코드 등록</strong>
+                <button
+                    type="button"
+                    class="popup-close"
+                    aria-label="닫기"
+                ></button>
+            </div>
+            <div class="popup-body">
+                <div class="body-box big-code-body">
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                코드 대분류 id, 코드 대분류 명, 사용 여부, 설명
+                            </caption>
+                            <colgroup>
+                                <col style="width: 220px" />
+                                <col style="width: 700px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="lf">
+                                        <div class="import">코드 대분류 ID</div>
+                                    </th>
+                                    <td>
+                                        <div>
+                                            <input type="text" />
+                                            <button
+                                                type="button"
+                                                class="btn btn-default"
+                                            >
+                                                중복확인
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">
+                                        <div class="import">코드 대분류 명</div>
+                                    </th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">
+                                        <div class="import">사용여부</div>
+                                    </th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="lf">
+                                        <div class="import">설명</div>
+                                    </th>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-bd">취소</button>
+                    <button type="button" class="btn btn-default">제출</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>
