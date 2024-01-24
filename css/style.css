@@ -324,7 +324,7 @@ a {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  width: calc(121% + 1.3px);
+  width: calc(100% + 1.3px);
   height: 58px;
   background-color: var(--color-primary);
   mask: var(--divider-multi-wave);
@@ -595,6 +595,7 @@ a {
     position: absolute;
     right: 1rem;
     top: 1.25rem;
+    font-size: 30px;
     color: var(--color-text);
   }
 
@@ -623,6 +624,10 @@ a {
   .skills {
     grid-template-columns: 1fr;
   }
+
+  /* #skills::after {
+    width:calc(100% + 1.3px);
+  } */
 
   .categories {
     flex-direction: column;
