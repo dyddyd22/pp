@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회 |
+        회사현황 수정 팝업
+    </title>
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="Description" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회 |
+            회사현황 수정 팝업" />
+    <meta http-equiv="Title" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회 |
+            회사현황 수정 팝업" />
+    <meta http-equiv="Copyright" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회 |
+            회사현황 수정 팝업" />
+    <meta property="og:url" content="페이지 url" />
+    <meta property="og:title" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회 |
+            회사현황 수정 팝업" />
+    <meta property="og:description" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회 |
+            회사현황 수정 팝업" />
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../images/apple-icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-icon-96.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-icon-144.png" />
+    <link rel="stylesheet" href="../../css/opensrc/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../css/opensrc/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+    <div class="popup-inner open">
+        <div class="modal-popup pop-1200">
+            <h2 class="modal-title">회사현황</h2>
+            <div class="popup-content situation-pop situation-input">
+                <div class="total-info">
+                    <div class="total-group">
+                        <strong class="info-tit">안내</strong>
+                        <ul class="info-list">
+                            <li class="info-item">
+                                회사명/대표자/사업자번호/공장주소가 변경된
+                                경우, 반드시 각종 신청업무 접수 전
+                                사업자등록증을 관할지역본부 이메일 또는
+                                FAX로 송부 후 전화주세요.
+                            </li>
+                            <li class="info-item">
+                                {관할지역본부명}
+                                {관할지역본부_세금계산서담당자 이메일주소} /
+                                {관할지역본부_세금계산서담당자 전화번호}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column-box applicant-box">
+                    <div class="entire-box">
+                        <div class="left">
+                            <h3 class="sub-title import">회사기본현황</h3>
+                        </div>
+                        <div class="right">
+                            <em>최근 신고내역 불러오기</em>
+                            <select class="select">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-inner">
+                        <dl class="info-list list-w2">
+                            <div class="info-item">
+                                <dt class="item-name">회사명</dt>
+                                <dd class="item-write">현대모비스</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">회사명 영문</dt>
+                                <dd class="item-write">
+                                    <input type="text" value="HYUNDAI MOBIS" />
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">대표자</dt>
+                                <dd class="item-write">홍길동</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">대표자 영문</dt>
+                                <dd class="item-write">
+                                    <input type="text" value="Hong Gil Dong" />
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">사업자등록번호</dt>
+                                <dd class="item-write">123-12-12345</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">소재지 국적</dt>
+                                <dd class="item-write">한국</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">설립일</dt>
+                                <dd class="item-write">
+                                    <div class="picker-box">
+                                        <input type="text" class="datepicker" placeholder="YYYY-MM-DD" />
+                                    </div>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="column-box applicant-box">
+                    <h4 class="box-title">공장</h4>
+                    <div class="info-inner info-factory">
+                        <dl class="info-list list-w2">
+                            <div class="info-item">
+                                <dt class="item-name">주소</dt>
+                                <dd class="item-write">
+                                    12345 서울특별시 강남구 테헤란로 69길 5
+                                    (삼성동, DT센터)
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">영문주소</dt>
+                                <dd class="item-write">
+                                    <textarea class="textarea"
+                                        placeholder="12345 5, Teheran-ro 69-gil, Gangnam-gu, Seoul (Samseong-dong, DT)"></textarea>
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">전화번호</dt>
+                                <dd class="item-write">
+                                    <input type="text" value="02-1234-1234" />
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">팩스</dt>
+                                <dd class="item-write">
+                                    <input type="text" value="02-1234-1111" />
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">대표 이메일</dt>
+                                <dd class="item-write">
+                                    <input type="text" value="HYUNDAI MOBIS@com" />
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">공장규모</dt>
+                                <dd class="item-write">
+                                    <div class="write-size">
+                                        <div class="size-item">
+                                            <span>대지</span>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="00,000" />
+                                                ㎡
+                                            </div>
+                                        </div>
+                                        <div class="size-item">
+                                            <span>건평</span>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="00,000" />
+                                                ㎡
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="column-box applicant-box">
+                    <h4 class="box-title">
+                        본사
+                        <div class="chk-inner">
+                            <input type="checkbox" class="visually-hidden" id="pop-chk" />
+                            <label for="pop-chk">공장과 동일</label>
+                        </div>
+                    </h4>
+                    <div class="info-inner">
+                        <dl class="info-list list-w2">
+                            <div class="info-item address-item">
+                                <dt class="item-name">주소</dt>
+                                <dd class="item-write">
+                                    <div class="item-address">
+                                        <button type="button" class="btn btn-search">
+                                            주소 찾기
+                                        </button>
+                                        <input type="text" class="first" />
+                                        <input type="text" class="second" />
+                                        <input type="text" placeholder="상세주소 입력" class="last" />
+                                    </div>
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">전화번호</dt>
+                                <dd class="item-write">
+                                    <input type="text" value="02-1234-1234" />
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">팩스</dt>
+                                <dd class="item-write">
+                                    <input type="text" value="02-1234-1111" />
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">대표 이메일</dt>
+                                <dd class="item-write">
+                                    <input type="text" value="HYUNDAI MOBIS@com" />
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="column-box">
+                    <h3 class="sub-title import">공장 종업원 현황</h3>
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                공장 종업원 현황 - 구분, 내국인, 외국인,
+                                합계
+                            </caption>
+                            <colgroup>
+                                <col style="width: 30%" />
+                                <col style="width: 23%" />
+                                <col style="width: 23%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">내국인</th>
+                                    <th scope="col">외국인</th>
+                                    <th scope="col">합계</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>경영간부</td>
+                                    <td>
+                                        <input type="text" value="1" class="tc numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">1</td>
+                                </tr>
+                                <tr>
+                                    <td>사무직</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        2 명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>기술직</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        1 명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>생산직</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        5 명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>기타</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        1 명
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>총인원</td>
+                                    <td>5 명</td>
+                                    <td>5 명</td>
+                                    <td>10 명</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="column-box">
+                    <h3 class="sub-title import">사업장 종업원 현황</h3>
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                사업장 종업원 현황 - 경력, 3년이상,
+                                1년이상~3년미만, 1년미만, 합계
+                            </caption>
+                            <colgroup>
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">경력</th>
+                                    <th scope="col">3년 이상</th>
+                                    <th scope="col">1년 이상 ~ 3년미만</th>
+                                    <th scope="col">1년 미만</th>
+                                    <th scope="col">합계</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>경영책임자</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        1 명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>경영간부</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        2 명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>품질관리담당자</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        1 명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>서비스종사자</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        5 명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>기타</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="numbers" />
+                                        명
+                                    </td>
+                                    <td class="lightyellow">
+                                        1 명
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>총인원</td>
+                                    <td>4 명</td>
+                                    <td>0 명</td>
+                                    <td>6 명</td>
+                                    <td>10 명</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="column-box mb-0">
+                    <h3 class="sub-title">회사 생산현황</h3>
+                    <div class="tbl-wrap tbl-production">
+                        <table class="tbl">
+                            <caption>
+                                회사 생산현황 - 자본금, 매출액, 경상이익,
+                                1인당 교육훈련 투자비, 연구개발비,
+                                공정자동화율, 설비자동화율, 한국산업표준
+                                원부자재 사용율, 원자재의 제품원가비율,
+                                원자재 공급업체의 독과점 상태
+                            </caption>
+                            <colgroup>
+                                <col style="width: 21.5%" class="first-col" />
+                                <col style="width: 140px" class="second-col" />
+                                <col style="width: 66%" class="last-col" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <span class="import">자본금</span>
+                                    </th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="숫자 입력" class="money" />백만 원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">
+                                        <span class="import">매출액</span>
+                                    </th>
+                                    <td class="bg-gray">전체매출</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" />백만 원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray">KS제품관련매출</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" />백만 원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="import">경상이익</span>
+                                    </th>
+                                    <td colspan="2">
+                                        <input type="text" value="10,000" class="money" />백만 원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="import">1인당 교육훈련 투자비</span>
+                                    </th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="숫자 입력" />
+                                        원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="import">연구개발비</span>
+                                    </th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="숫자 입력" class="money" />백만 원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="import">공정자동화율(자동화공정 /
+                                            전체공정)</span>
+                                    </th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="숫자 입력" />
+                                        %
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="import">설비자동화율(자동화설비 /
+                                            전체설비)</span>
+                                    </th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="숫자 입력" />
+                                        %
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="import">한국산업표준 원부자재
+                                            사용율</span>
+                                    </th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="숫자 입력" />
+                                        %
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>원자재의 제품원가비율</th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="숫자 입력" />
+                                        %
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>원자재 공급업체의 독과점 상태</th>
+                                    <td colspan="2">
+                                        <ul class="btn-tab-list">
+                                            <li class="btn-tab-item">
+                                                <button type="button" class="btn btn-tab on">
+                                                    상
+                                                </button>
+                                            </li>
+                                            <li class="btn-tab-item">
+                                                <button type="button" class="btn btn-tab">
+                                                    중
+                                                </button>
+                                            </li>
+                                            <li class="btn-tab-item">
+                                                <button type="button" class="btn btn-tab">
+                                                    하
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">기타 인증 수</th>
+                                    <td class="bg-gray">의무</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="count" />개
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray">임의</td>
+                                    <td>
+                                        <input type="text" placeholder="숫자 입력" class="count" />개
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기타 생산품</th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="내용을 입력해 주세요" class="full-input" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>한국산업표준 보유 수</th>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="숫자 입력" />
+                                        개
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>회사의 연혁</th>
+                                    <td colspan="2">
+                                        <textarea class="textarea" placeholder="내용을 입력해 주세요"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>특기사항</th>
+                                    <td colspan="2">
+                                        <textarea class="textarea" placeholder="내용을 입력해 주세요"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-cancel">
+                        취소
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        저장
+                    </button>
+                </div>
+            </div>
+
+            <div class="popup-bottom">
+                <div class="btn-wrap btn-pos">
+                    <button type="button" class="btn pop-close">
+                        <span class="visually-hidden">닫기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dim open"></div>
+    <script src="../../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../../js/opensrc/jquery-ui.min.js"></script>
+    <script src="../../js/opensrc/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/constants.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA통합인증플랫폼 KS심사기관 | 소속심사원 | 심사원 상세조회
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA통합인증플랫폼 KS심사기관 | 소속심사원 | 심사원 상세조회"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA통합인증플랫폼 KS심사기관 | 소속심사원 | 심사원 상세조회"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA통합인증플랫폼 KS심사기관 | 소속심사원 | 심사원 상세조회"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA통합인증플랫폼 KS심사기관 | 소속심사원 | 심사원 상세조회"
+        />
+        <meta
+            property="og:description"
+            content="KSA통합인증플랫폼 KS심사기관 | 소속심사원 | 심사원 상세조회"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/sub.css" />
+    </head>
+    <body>
+        <header>
+            <button
+                type="button"
+                class="m-btn-menu sm-only"
+                aria-label="메뉴버튼 열기"
+            ></button>
+            <h1 class="logo">
+                <a href="../index-period.html">
+                    <img
+                        src="../images/logo-period.svg"
+                        alt="KSA통합인증플랫폼 ks시험기관 로고"
+                        class="lg-only"
+                    />
+                    <img
+                        src="../images/logo-period-sm.svg"
+                        alt="KSA통합인증플랫폼 ks시험기관 로고"
+                        class="sm-only"
+                    />
+                </a>
+            </h1>
+
+            <div class="head_user_info">
+                <div class="user_name">
+                    <a href="#a" class="name_color">김인증</a>님
+                    <div class="belong">(KS인증센터 / 심사원)</div>
+                </div>
+                <button
+                    type="button"
+                    class="log-out lg-only"
+                    aria-label="로그아웃"
+                >
+                    <i class="ic-logout" aria-hidden></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper">
+                <aside class="gnb">
+                    <div class="gnb-inner">
+                        <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button>
+                        <div class="gnb-icon-inner">
+                            <ul class="gnb-icon-list">
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-myinfo" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-judge" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a" class="is-active"
+                                        ><i class="ic-appertain" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-customer" aria-hidden></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gnb-on">
+                        <div class="head_user_info">
+                            <button
+                                type="button"
+                                class="btn-close"
+                                aria-label="닫기"
+                            ></button>
+                            <div class="head-top sm-only">
+                                <div class="user_name">
+                                    <a href="#a" class="name_color">사용자</a>님
+                                    <div class="belong">
+                                        (KS인증센터 / 운영자)
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="log-out"
+                                    aria-label="로그아웃"
+                                >
+                                    <i class="ic-logout" aria-hidden></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gnb-inner">
+                            <!-- <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button> -->
+                            <div class="gnb-icon-inner">
+                                <ul class="gnb-icon-list">
+                                    <li class="gnb-icon-item">
+                                        <a href="./period-myinfo.html"
+                                            ><i
+                                                class="ic-myinfo"
+                                                aria-hidden
+                                            ></i>
+                                            내정보관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="./period-management.html"
+                                            ><i
+                                                class="ic-judge"
+                                                aria-hidden
+                                            ></i>
+                                            심사배정현황</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a
+                                            href="./period-belong.html"
+                                            class="is-active"
+                                            ><i
+                                                class="ic-appertain"
+                                                aria-hidden
+                                            ></i>
+                                            소속심사원</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <i
+                                            class="ic-customer"
+                                            aria-hidden="고객센터 아이콘"
+                                        ></i>
+                                        <div class="gnb-customer-box">
+                                            <span class="customer-title"
+                                                >고객센터</span
+                                            >
+                                            <ul class="customer-menu-list">
+                                                <li class="customer-menu-item">
+                                                    <a href="#">공지사항</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">Q & A</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">자료실</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="content period-detail-belong">
+                    <div class="page_head list-title">
+                        <h3 class="page_tit">심사원 상세조회</h3>
+
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a
+                                        href="../index-period.html"
+                                        class="home"
+                                    ></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">KS심사기관</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="./period-belong.html"
+                                        >소속심사원</a
+                                    >
+                                </li>
+                                <li class="location_item active">
+                                    <a
+                                        href="../period/period-detail-belong.html"
+                                        >심사원 상세조회</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit tit-medium">인적정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20 table-info">
+                                <caption>
+                                    인적정보 - 고유번호, 성명, id,
+                                    생년월일/성별, 전화번호, 휴대폰, 이메일,
+                                    주소, 거주지 권역, 소속기관, 소속부서, 직위,
+                                    심사원구분, 심사보고서 서명 이미지
+                                </caption>
+                                <colgroup>
+                                    <col
+                                        class="first-col"
+                                        style="width: 200px"
+                                    />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>고유번호</th>
+                                        <td>555555</td>
+                                    </tr>
+                                    <tr>
+                                        <th>성명</th>
+                                        <td>박서준</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ID</th>
+                                        <td>park</td>
+                                    </tr>
+                                    <tr>
+                                        <th>생년월일/성별</th>
+                                        <td>1988-12-16 (남)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>전화번호</th>
+                                        <td>02-1234-1333</td>
+                                    </tr>
+                                    <tr>
+                                        <th>휴대폰</th>
+                                        <td>010-1234-1333</td>
+                                    </tr>
+                                    <tr>
+                                        <th>이메일</th>
+                                        <td>bbba@.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>주소</th>
+                                        <td>
+                                            (08028) 서울 강남구 테헤란로 69길
+                                            5층
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>거주지 권역</th>
+                                        <td>서울</td>
+                                    </tr>
+                                    <tr>
+                                        <th>소속기관</th>
+                                        <td>한국표준협회</td>
+                                    </tr>
+                                    <tr>
+                                        <th>소속부서</th>
+                                        <td>KS인증센터</td>
+                                    </tr>
+                                    <tr>
+                                        <th>직위</th>
+                                        <td>위원</td>
+                                    </tr>
+                                    <tr>
+                                        <th>심사원구분</th>
+                                        <td>선임심사원</td>
+                                    </tr>
+                                    <tr>
+                                        <th>심사보고서 서명 이미지</th>
+                                        <td>
+                                            <button type="button">
+                                                <img
+                                                    src="../images/img-info.svg"
+                                                    alt="서명 이미지"
+                                                />
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit tit-medium">
+                                KS인증심사원 자격증 정보
+                            </h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    KS인증심사원 자격증 정보 - 자격번호,
+                                    부여코드, 최초발급일, 자격유효기간,
+                                    자격증첨부, 상태, 최종수정일(처리일, 사유)
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 100px" />
+                                    <col style="width: 240px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 290px" />
+                                    <col style="width: 270px" />
+                                    <col style="width: 220px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 120px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">자격번호</th>
+                                        <th scope="col">
+                                            부여코드 (최초등록일)
+                                        </th>
+                                        <th scope="col">최초발급일</th>
+                                        <th scope="col">자격유효기간</th>
+                                        <th scope="col">자격증 첨부</th>
+                                        <th scope="col">상태</th>
+                                        <th scope="col">최종수정일</th>
+                                        <th scope="col">처리일</th>
+                                        <th scope="col">사유</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>14496</td>
+                                        <td>C (22-10-31), S (19-08-01)</td>
+                                        <td>2019-08-01</td>
+                                        <td>2019-08-01 ~ 2022-07-31</td>
+                                        <td class="lf">
+                                            <a href="#">자격증 (1,200kb)</a>
+                                        </td>
+                                        <td>
+                                            <span class="situation"
+                                                >수정중</span
+                                            >
+                                        </td>
+                                        <td>22-10-25 (김심사)</td>
+                                        <td>22-10-25 (박서준)</td>
+                                        <td>갱신</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">교육이수정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap basic-bg">
+                            <table class="tbl left">
+                                <caption>
+                                    교육이수정보 - 교육구분
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 68px" />
+                                    <col style="width: 96%" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>교육구분</th>
+                                        <td>
+                                            <div class="chk-item">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        id="tbl-chk1"
+                                                        class="visually-hidden"
+                                                        name="list-chk1"
+                                                    />
+                                                    <label for="tbl-chk1"
+                                                        >직무필수</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="checkbox"
+                                                        id="tbl-chk2"
+                                                        class="visually-hidden"
+                                                        name="list-chk2"
+                                                    />
+                                                    <label for="tbl-chk2"
+                                                        >기타</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn_wrap">
+                                <button type="button" class="btn btn-search">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    교육이수정보 -
+                                    교육연도,교육구분,과정명,훈련기관명,교육기간,수료번호,수료증,최종수정일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 5.6085%" />
+                                    <col style="width: 7.7397%" />
+                                    <col style="width: 24.2288%" />
+                                    <col style="width: 10.9927%" />
+                                    <col style="width: 18.9568%" />
+                                    <col style="width: 7.8519%" />
+                                    <col style="width: 16.7134%" />
+                                    <col style="width: 7.8519%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">교육연도</th>
+                                        <th scope="col">교육구분</th>
+                                        <th scope="col">과정명</th>
+                                        <th scope="col">훈련기관명</th>
+                                        <th scope="col">교육기간</th>
+                                        <th scope="col">수료번호</th>
+                                        <th scope="col">수료증</th>
+                                        <th scope="col">최종수정일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022</td>
+                                        <td>직무필수</td>
+                                        <td class="lf">KS인증직무교육</td>
+                                        <td>한국표준협회</td>
+                                        <td>2022-01-02 ~ 2022-01-03 (18h)</td>
+                                        <td>2022-1234</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022</td>
+                                        <td>기타</td>
+                                        <td class="lf">생산관리기본</td>
+                                        <td>한국표준협회</td>
+                                        <td>2022-01-02 ~ 2022-01-03 (18h)</td>
+                                        <td>2022-1234</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">자기평가서(공평성) 정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    자기평가서(공평성) 정보 - 평가연도, 평가서
+                                    첨부파일, 최종수정일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 22.2222%" />
+                                    <col style="width: 44.4444%" />
+                                    <col style="width: 33.3333%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">평가연도</th>
+                                        <th scope="col">평가서 첨부파일</th>
+                                        <th scope="col">최종수정일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">
+                                기밀유지 및 윤리서약서 정보
+                            </h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    기밀유지 및 윤리서약서 정보 -
+                                    평가연도,평가서 첨부파일,최종수정일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 22.2222%" />
+                                    <col style="width: 44.4444%" />
+                                    <col style="width: 33.3333%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">평가연도</th>
+                                        <th scope="col">평가서 첨부파일</th>
+                                        <th scope="col">최종수정일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">학력정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    학력정보 - 학교명, 전공, 졸업년도, 졸업년도,
+                                    비고, 최종수정일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 18.5081%" />
+                                    <col style="width: 18.5081%" />
+                                    <col style="width: 7.8519%" />
+                                    <col style="width: 7.8519%" />
+                                    <col style="width: 30.286%" />
+                                    <col style="width: 16.8255%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">학교명</th>
+                                        <th scope="col">전공</th>
+                                        <th scope="col">학위</th>
+                                        <th scope="col">졸업년도</th>
+                                        <th scope="col">비고</th>
+                                        <th scope="col">최종수정일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>문과대학교</td>
+                                        <td>문학</td>
+                                        <td>석사</td>
+                                        <td>1990</td>
+                                        <td class="lf">
+                                            데이터 있는 경우 텍스트 노출
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>문과대학</td>
+                                        <td>문학</td>
+                                        <td>학사</td>
+                                        <td>1983</td>
+                                        <td class="lf">
+                                            데이터 있는 경우 텍스트 노출
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">경력정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    경력정보 - 회사명, 재직기간, 직위, 주요업무,
+                                    비고, 최종수정일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 18.5081%" />
+                                    <col style="width: 13.4604%" />
+                                    <col style="width: 7.6275%" />
+                                    <col style="width: 13.2361%" />
+                                    <col style="width: 30.286%" />
+                                    <col style="width: 16.8255%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">회사명</th>
+                                        <th scope="col">재직기간</th>
+                                        <th scope="col">직위</th>
+                                        <th scope="col">주요업무</th>
+                                        <th scope="col">비고</th>
+                                        <th scope="col">최종수정일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>미디어센터1</td>
+                                        <td>1990-06-01 ~ 1993-12-30</td>
+                                        <td>사원</td>
+                                        <td>수습기자</td>
+                                        <td class="lf">
+                                            데이터 있는 경우 텍스트 노출
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>미디어센터2</td>
+                                        <td>1990-06-01 ~ 1993-12-30</td>
+                                        <td>사원</td>
+                                        <td>정기자</td>
+                                        <td class="lf">
+                                            데이터 있는 경우 텍스트 노출
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">기타 보유자격정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    기타 보유자격정보 - 자격증명칭, 재직기간,
+                                    자격번호, 발급처, 비고, 최종수정일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 18.7324%" />
+                                    <col style="width: 13.1239%" />
+                                    <col style="width: 7.5154%" />
+                                    <col style="width: 13.1239%" />
+                                    <col style="width: 30.286%" />
+                                    <col style="width: 16.8255%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">자격증명칭</th>
+                                        <th scope="col">자격취득일</th>
+                                        <th scope="col">자격번호</th>
+                                        <th scope="col">발급처</th>
+                                        <th scope="col">비고</th>
+                                        <th scope="col">최종수정일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>품질관리담당자</td>
+                                        <td>1999-10-23</td>
+                                        <td>05247</td>
+                                        <td>한국표준협회</td>
+                                        <td class="lf">갱신</td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기사1급</td>
+                                        <td>1999-10-23</td>
+                                        <td>05248</td>
+                                        <td>한국산업인력공단</td>
+                                        <td class="lf">취득</td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기능정보사2급</td>
+                                        <td>1999-10-23</td>
+                                        <td>05249</td>
+                                        <td>한국산업인력공단</td>
+                                        <td class="lf">취득</td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">참관보고서</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    참관보고서 - 참관일, 참관업체명, 참관보고서,
+                                    최종수정일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 18.8888%" />
+                                    <col style="width: 34.4444%" />
+                                    <col style="width: 30%" />
+                                    <col style="width: 16.6666%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">참관일</th>
+                                        <th scope="col">참관업체명</th>
+                                        <th scope="col">참관보고서</th>
+                                        <th scope="col">최종수정일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022-10-01</td>
+                                        <td>현대제철 당진공장</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-08-01</td>
+                                        <td>현대제철 당진공장</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-06-01</td>
+                                        <td>현대제철 당진공장</td>
+                                        <td class="lf">
+                                            <a href="#"
+                                                >첨부파일명.pdf (1,200kb)</a
+                                            >
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box mb-0">
+                        <div class="page_head">
+                            <h3 class="page_tit">
+                                KS인증관련 사내교육, 지도/조언, 기술지원 정보
+                            </h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    KS인증관련 사내교육, 지도/조언, 기술지원
+                                    정보 - 일자, 업체명, 업체주소, 주요내용,
+                                    최종수정일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 8.6371%" />
+                                    <col style="width: 17.4985%" />
+                                    <col style="width: 28.7156%" />
+                                    <col style="width: 28.0426%" />
+                                    <col />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">일자</th>
+                                        <th scope="col">업체명</th>
+                                        <th scope="col">업체주소</th>
+                                        <th scope="col">주요내용</th>
+                                        <th scope="col">최종수정일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022-10-01</td>
+                                        <td>현대제철 당진공장</td>
+                                        <td class="lf">
+                                            충남 당진시 송악읍 북부산업로 1480
+                                        </td>
+                                        <td class="lf">
+                                            KS인증 품질담당자 보수교육 강의
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-08-01</td>
+                                        <td>현대제철 울산공장</td>
+                                        <td class="lf">
+                                            울산 북구 염포로 706 현대제철(주).
+                                            현대하이스코
+                                        </td>
+                                        <td class="lf">
+                                            KS인증 품질담당자 보수교육 강의
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-06-01</td>
+                                        <td>현대제철 울산공장</td>
+                                        <td class="lf">
+                                            울산 북구 염포로 706 현대제철(주).
+                                            현대하이스코
+                                        </td>
+                                        <td class="lf">
+                                            KS인증 품질담당자 보수교육 강의
+                                        </td>
+                                        <td>22-10-25 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="fot-top">
+                <ul class="fot-top-list">
+                    <li class="fot-top-item"><a href="#">찾아오시는길</a></li>
+                    <li class="fot-top-item"><a href="#">담당자연락처</a></li>
+                    <li class="fot-top-item">
+                        <a href="#">사업자등록증 · 계좌안내</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">공평성 & 윤리강령</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fot-bottom">
+                <h3 class="footer-logo">
+                    <img src="../images/fot-logo.png" alt="KSA통합인증플랫폼" />
+                </h3>
+
+                <div class="address-inner">
+                    <ul class="address-list">
+                        <li class="address-item">KSA한국표준협회</li>
+                        <li class="address-item">사업자번호 : 105-82-00617</li>
+                        <li class="address-item">대표전화 : 1670-6009</li>
+                        <li class="address-item">
+                            06160 서울시 강남구 테헤란로 69길 5 (삼성동,DT센터)
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright(C) 2023 Korean Standards Association. All
+                        rights reserved.
+                    </address>
+                </div>
+            </div>
+        </footer>
+
+        <div class="dim"></div>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA 통합인증플랫폼 | 비밀번호 설정</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta name="Description" content="KSA 통합인증플랫폼 | 비밀번호 설정" />
+        <meta http-equiv="Title" content="KSA 통합인증플랫폼 | 비밀번호 설정" />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 비밀번호 설정"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 비밀번호 설정"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 비밀번호 설정"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="apple-touch-icon" href="../images/apple-icon-72.png" />
+        <link
+            rel="apple-touch-icon-precomposed"
+            href="../images/apple-icon-96.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../images/apple-icon-144.png"
+        />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="skip">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#main">본문 바로가기</a>
+        </div>
+
+        <header class="header log-header">
+            <div class="head-inner">
+                <h1 class="logo">
+                    <a href="#a">
+                        <img src="../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="section pw">
+                <h2 class="visually-hidden">비밀번호 설정</h2>
+                <h3 class="title">비밀번호 설정</h3>
+
+                <p class="pw-text">
+                    ID(사업자등록번호)와 비빌번호로 편리하게 로그인하실 수
+                    있습니다.<br />
+                    비밀번호는 영문,숫자,특수문자를 포함하여 8자~16자로 입력해
+                    주세요.
+                </p>
+
+                <div class="pw-box">
+                    <div class="label-field">
+                        <span class="tit-import">ID (사업자등록번호)</span>
+                        <div class="id-num">1234567890</div>
+                    </div>
+                    <div class="label-field">
+                        <span class="tit-import import">새 비밀번호</span>
+                        <input
+                            type="password"
+                            placeholder="새 비밀번호를 입력해 주세요."
+                        />
+                    </div>
+                    <!-- 
+                                NOTE : 05-03
+                                label-field class on 추가시 border color 값 변경
+                             -->
+                    <div class="label-field">
+                        <span class="tit-import import">새 비밀번호 확인</span>
+                        <div class="input-pw">
+                            <div class="pw-btn-box">
+                                <input
+                                    type="password"
+                                    placeholder="새 비밀번호를 한번 더 입력해 주세요."
+                                />
+                                <!-- NOTE : input 활성화시 class on 추가 -->
+                                <button
+                                    type="button"
+                                    class="input-close"
+                                    aria-label="삭제"
+                                >
+                                    <i class="ic-close"></i>
+                                </button>
+                            </div>
+                            <p class="input-error">
+                                새 비밀번호가 일치하지 않습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-cancel">취소</button>
+                    <button type="button" class="btn btn-default">저장</button>
+                </div>
+            </section>
+        </main>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/swiper-bundle.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

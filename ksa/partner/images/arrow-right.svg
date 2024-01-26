@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="구성_요소_3_2" data-name="구성 요소 3 – 2" transform="translate(20 20) rotate(180)" opacity="0.52">
+    <g id="그룹_164416" data-name="그룹 164416" transform="translate(209 8168)">
+      <g id="그룹_164415" data-name="그룹 164415">
+        <g id="사각형_148213" data-name="사각형 148213" transform="translate(-209 -8168)" fill="#fff" stroke="#929292" stroke-width="1">
+          <rect width="20" height="20" rx="3" stroke="none"/>
+          <rect x="0.5" y="0.5" width="19" height="19" rx="2.5" fill="none"/>
+        </g>
+        <g id="그룹_164414" data-name="그룹 164414" transform="translate(-2 -26)">
+          <line id="선_374" data-name="선 374" x1="4" y2="4" transform="translate(-195 -8132) rotate(90)" fill="none" stroke="#101012" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <line id="선_375" data-name="선 375" x2="4" y2="4" transform="translate(-195 -8136) rotate(90)" fill="none" stroke="#101012" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

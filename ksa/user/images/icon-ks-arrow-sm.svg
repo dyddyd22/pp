@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="123" viewBox="0 0 140 123">
+  <g id="그룹_166205" data-name="그룹 166205" transform="translate(-19 -1698)">
+    <path id="다각형_1" data-name="다각형 1" d="M7,0l7,12H0Z" transform="translate(126 1811) rotate(180)" fill="#194da1"/>
+    <path id="다각형_2" data-name="다각형 2" d="M7,0l7,12H0Z" transform="translate(52 1708)" fill="#194da1"/>
+    <line id="선_572" data-name="선 572" x2="102" transform="translate(119 1698) rotate(90)" fill="none" stroke="#194da1" stroke-width="1"/>
+    <line id="선_573" data-name="선 573" x2="102" transform="translate(59 1719) rotate(90)" fill="none" stroke="#194da1" stroke-width="1"/>
+    <g id="그룹_166183" data-name="그룹 166183" transform="translate(-57.244 -35)">
+      <rect id="사각형_151206" data-name="사각형 151206" width="80" height="20" rx="10" transform="translate(136.244 1804)" fill="#194da1"/>
+      <text id="인증신청" transform="translate(176.245 1819)" fill="#fff" font-size="13" font-family="Pretendard-Medium, Pretendard" font-weight="500"><tspan x="-22.471" y="0">인증신청</tspan></text>
+    </g>
+    <g id="그룹_166182" data-name="그룹 166182" transform="translate(-117.244 -15)">
+      <rect id="사각형_151207" data-name="사각형 151207" width="80" height="20" rx="10" transform="translate(136.244 1744)" fill="#194da1"/>
+      <text id="KS인증" transform="translate(176.244 1759)" fill="#fff" font-size="13" font-family="Pretendard-Medium, Pretendard" font-weight="500"><tspan x="-19.348" y="0">KS인증</tspan></text>
+    </g>
+  </g>
+</svg>

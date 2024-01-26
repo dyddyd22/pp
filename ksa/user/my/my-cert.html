@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA 통합인증플랫폼 | My 인증</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta name="Description" content="KSA 통합인증플랫폼 | My 인증" />
+        <meta http-equiv="Title" content="KSA 통합인증플랫폼 | My 인증" />
+        <meta http-equiv="Copyright" content="KSA 통합인증플랫폼 | My 인증" />
+        <meta property="og:url" content="페이지 url" />
+        <meta property="og:title" content="KSA 통합인증플랫폼 | My 인증" />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | My 인증"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="apple-touch-icon" href="../images/apple-icon-72.png" />
+        <link
+            rel="apple-touch-icon-precomposed"
+            href="../images/apple-icon-96.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../images/apple-icon-144.png"
+        />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="skip">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#main">본문 바로가기</a>
+        </div>
+
+        <div class="wrapper">
+            <header class="header">
+                <div class="head-inner">
+                    <h1 class="logo">
+                        <a href="#a">
+                            <img
+                                src="../images/logo.svg"
+                                alt="ksa통합인증플랫폼"
+                            />
+                        </a>
+                    </h1>
+                    <div id="gnb">
+                        <ul class="gnb-list">
+                            <li class="gnb-item">
+                                <a href="#a" class="main-nav">My인증</a>
+                                <ul class="gnb-sub-list">
+                                    <li class="depth2-tit">KS인증</li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">보유인증관리</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">심사신청현황</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">심사진행</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">인증서재발급신청</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">영문인증서신청</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">회사정보관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#a" class="main-nav">KSA인증서비스</a>
+                                <ul class="gnb-sub-list">
+                                    <li class="depth2-tit">KS인증</li>
+                                    <li class="gnb-sub-item item-three-tabs">
+                                        <a href="#a">심사안내</a>
+                                        <ul class="three-list">
+                                            <li>
+                                                <a href="#a"
+                                                    >· 공평성&윤리강령</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#a"
+                                                    >· KS심사기준 안내</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="gnb-sub-item item-three-tabs">
+                                        <a href="#a">심사준비</a>
+                                        <ul class="three-list">
+                                            <li>
+                                                <a href="#a">· 심사준비안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="#a">· 심사수수료</a>
+                                            </li>
+                                            <li>
+                                                <a href="#a">· 시험위탁기관</a>
+                                            </li>
+                                            <li>
+                                                <a href="#a">· 자가진단 </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">심사신청</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">인증위원회 개최정보</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">1년주기 심사대상</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#" class="main-nav">인증업체검색</a>
+                                <ul class="gnb-sub-list">
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">인증업체검색</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#" class="main-nav">고객센터</a>
+                                <ul class="gnb-sub-list">
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">공지사항</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">Q&A</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">FAQ</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">자료실</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">공동인증서 사용안내</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">담당자연락처</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">찾아오는 길</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">개인정보처리방침</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">서비스약관</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button-group">
+                        <!-- NOTE : 로그인 하지 않은 경우 -->
+                        <a href="#a" class="login"
+                            ><img src="../images/login.svg" alt="로그인"
+                        /></a>
+                        <!-- NOTE : 로그인 한 경우 -->
+                        <!-- <div class="logout">
+                        <a href="#a"
+                            ><span class="logout-name">현대제철</span></a
+                        >
+                        <a href="#a"
+                            ><img src="../images/sm-logout.svg" alt="로그아웃"
+                        /></a>
+                    </div> -->
+                        <button
+                            type="button"
+                            class="head-search"
+                            arai-label="전체 검색버튼"
+                        >
+                            <i class="ic-head-search"></i>
+                        </button>
+                        <button
+                            type="button"
+                            class="btn-all"
+                            aria-label="메뉴 열기"
+                        >
+                            <i class="ic-btn-all"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gnb-bg"></div>
+            </header>
+            <!-- NOTE : 전체 검색 버튼 클릭시 -->
+            <div class="all-search">
+                <div class="search-inner">
+                    <div class="search-box">
+                        <input type="text" placeholder="검색어를 입력하세요." />
+                        <a href="#a" aria-label="검색 이동"></a>
+                    </div>
+                    <button
+                        type="button"
+                        class="search-close"
+                        aria-label="전체 영역 닫기"
+                    >
+                        <i class="ic-search-close"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="sm-only gnb">
+                <div class="sm-header">
+                    <div class="logout">
+                        <a href="#a"
+                            ><span class="logout-name">현대제철</span></a
+                        >
+                        <a href="#a"
+                            ><img src="../images/sm-logout.svg" alt="로그아웃"
+                        /></a>
+                    </div>
+                    <button
+                        type="button"
+                        class="sm-close"
+                        aria-label="모바일 메뉴 닫기"
+                    ></button>
+                </div>
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#a" class="itme-link">My인증</a>
+                            <ul class="sub-list">
+                                <li class="depth2-tit">KS인증</li>
+                                <li class="sub-item">
+                                    <a href="#a">보유인증관리</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">심사신청현황</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">심사진행</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">인증서재발급신청</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">영문인증서신청</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">회사정보관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#a" class="itme-link">KSA인증서비스 </a>
+                            <ul class="sub-list subTabs">
+                                <li class="depth2-tit">KS인증</li>
+                                <li class="sub-item">
+                                    <a href="#a" class="sub-link">심사안내</a>
+                                    <ul class="sub-info-list">
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 공평성&윤리강령</a>
+                                        </li>
+                                        <li class="sub-info-item">
+                                            <a href="#a">· KS심사기준 안내</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a" class="sub-link">심사준비</a>
+                                    <ul class="sub-info-list">
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 심사준비안내</a>
+                                        </li>
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 심사수수료</a>
+                                        </li>
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 시험위탁기관</a>
+                                        </li>
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 자가진단 </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">심사신청</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">인증위원회 개최정보</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">1년주기 심사대상</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#a" class="itme-link">인증업체검색</a>
+                            <ul class="sub-list">
+                                <li class="sub-item">
+                                    <a href="#a">인증업체검색</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#a" class="itme-link">고객센터</a>
+                            <ul class="sub-list">
+                                <li class="sub-item">
+                                    <a href="#a">공지사항</a>
+                                </li>
+                                <li class="sub-item"><a href="#a">Q&A</a></li>
+                                <li class="sub-item"><a href="#a">FAQ</a></li>
+                                <li class="sub-item">
+                                    <a href="#a">자료실</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">공동인증서 사용안내</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">담당자연락처</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">찾아오는 길</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">개인정보처리방침</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">서비스약관</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <main id="main">
+                <aside class="side-menu">
+                    <div class="side-box">
+                        <ul class="side-list">
+                            <li class="side-item is-active">
+                                <a href="#a">My인증</a>
+                            </li>
+                            <li class="side-item">
+                                <a href="#a">보유인증관리</a>
+                            </li>
+                            <li class="side-item">
+                                <a href="#a">심사신청현황</a>
+                            </li>
+                            <li class="side-item"><a href="#a">심사진행</a></li>
+                            <li class="side-item">
+                                <a href="#a">인증서재발급신청</a>
+                            </li>
+                            <li class="side-item">
+                                <a href="#a">영문인증서신청</a>
+                            </li>
+                            <li class="side-item">
+                                <a href="#a">회사정보관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="location">
+                    <ul class="location-list">
+                        <li class="location-item">
+                            <a href="#a" class="home">home</a>
+                        </li>
+                        <li class="location-item">
+                            <a href="#a" class="is-active">My인증</a>
+                        </li>
+                    </ul>
+                </div>
+                <section class="section my-cert">
+                    <h2 class="visually-hidden">My인증</h2>
+                    <h3 class="title">My인증</h3>
+                    <div class="column-box column-bg">
+                        <div class="info-inner">
+                            <strong class="cert-title">
+                                주식회사 ABCD가나다라공업
+                                <span>님</span>
+                            </strong>
+                            <ul class="cert-list">
+                                <li class="cert-item">
+                                    <span class="name">사업자번호</span>
+                                    <p class="detail">
+                                        105-92-00000 (대표자 OOO)
+                                    </p>
+                                </li>
+                                <li class="cert-item">
+                                    <span class="name">공장소재지</span>
+                                    <p class="detail">
+                                        서울특별시 관악구 신림동 1432-123번지
+                                        703호
+                                    </p>
+                                </li>
+                                <li class="cert-item">
+                                    <span class="name">Tel</span>
+                                    <p class="detail">031-3333-4444</p>
+                                </li>
+                                <li class="cert-item">
+                                    <span class="name">Fax</span>
+                                    <p class="detail">031-2333-3333</p>
+                                </li>
+                            </ul>
+                            <div class="cert-bgBox">
+                                <ul class="bg-list">
+                                    <li class="bg-item">
+                                        <span class="bg-tit"
+                                            >· 주업무담당자</span
+                                        >
+                                        <ul class="bgBox-list">
+                                            <li class="bgBox-item">부서</li>
+                                            <li class="bgBox-item">홍길동</li>
+                                            <li class="bgBox-item">
+                                                010-0000-0000
+                                            </li>
+                                            <li class="bgBox-item">
+                                                aaaaa1234@abcdefg.com
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="bg-item">
+                                        <span class="bg-tit"
+                                            >· 품질관리담당자</span
+                                        >
+                                        <ul class="bgBox-list">
+                                            <li class="bgBox-item">부서</li>
+                                            <li class="bgBox-item">홍길동</li>
+                                            <li class="bgBox-item">
+                                                010-0000-0000
+                                            </li>
+                                            <li class="bgBox-item">
+                                                aaaaa1234@abcdefg.com
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-default">
+                                    회사정보관리
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnb-box column-full">
+                        <!--
+                            NOTE :
+                            text color red > class stop
+                            text color gray > class zero
+                            text color blue > class ing
+                        -->
+                        <div class="full-inner">
+                            <div class="full-box">
+                                <h4 class="box-title">보유인증</h4>
+                                <ul class="hold-list">
+                                    <li class="hold-item">
+                                        <div class="hold-box">
+                                            <strong class="box-name"
+                                                >유효</strong
+                                            >
+                                            <div class="box-detail">3</div>
+                                        </div>
+                                        <ul class="sub-hold-list">
+                                            <li class="sub-hold-item">
+                                                <em class="sub-hold-name"
+                                                    >제조중단</em
+                                                >
+                                                <span class="hold-num">1</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hold-item">
+                                        <div class="hold-box">
+                                            <strong class="box-name"
+                                                >6개월 내 정기심사대상</strong
+                                            >
+                                            <div class="box-detail">10</div>
+                                        </div>
+                                        <ul class="sub-hold-list">
+                                            <li class="sub-hold-item">
+                                                <em class="sub-hold-name"
+                                                    >심사신청 전</em
+                                                >
+                                                <span class="hold-num"
+                                                    >2<span>건</span></span
+                                                >
+                                            </li>
+                                            <li class="warning">
+                                                차기심사기한 45일 전 심사신청
+                                                필수
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hold-item">
+                                        <div class="hold-box">
+                                            <strong class="box-name"
+                                                >2023 1년 심사대상</strong
+                                            >
+                                            <div class="box-detail">10</div>
+                                        </div>
+                                        <ul class="sub-hold-list">
+                                            <li class="sub-hold-item">
+                                                <em class="sub-hold-name"
+                                                    >심사신청 전</em
+                                                >
+                                                <span class="hold-num"
+                                                    >8<span>건</span></span
+                                                >
+                                            </li>
+                                            <li class="warning">
+                                                동년도 정기심사/공장 이전심사
+                                                진행시 심사면제
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hold-item">
+                                        <div class="hold-box">
+                                            <strong class="box-name"
+                                                >행정처분중</strong
+                                            >
+                                            <div class="stop box-detail">9</div>
+                                        </div>
+                                        <div class="warning">
+                                            심사진행현황에서 행정처분 시정조치
+                                            결과 등록 필수
+                                        </div>
+                                        <ul class="sub-hold-list">
+                                            <li class="sub-hold-item">
+                                                <em class="sub-hold-name"
+                                                    >시판품 행정처분
+                                                    시정조치</em
+                                                >
+                                                <span class="hold-num">1</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hold-item">
+                                        <div class="hold-box">
+                                            <strong class="box-name"
+                                                >반납, 폐기, 취소</strong
+                                            >
+                                            <div class="box-detail zero">0</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="full-link">
+                                <h4 class="box-title">심사신청현황</h4>
+                                <ul class="link-list">
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit"
+                                                >임시저장</span
+                                            >
+                                            <span class="num">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit">신청</span>
+                                            <span class="num">3</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit"
+                                                >보완요청</span
+                                            >
+                                            <span class="stop num">10</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit">접수</span>
+                                            <span class="num">4</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit"
+                                                >검증완료 & 배정시작</span
+                                            >
+                                            <span class="num">0</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="full-link">
+                                <h4 class="box-title">심사진행현황</h4>
+                                <ul class="link-list">
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit"
+                                                >심사준비</span
+                                            >
+                                            <span class="ing num">1</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit">심사중</span>
+                                            <span class="num">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit"
+                                                >부적합 개선진행</span
+                                            >
+                                            <span class="ing num">3</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit"
+                                                >인증위원회 상정</span
+                                            >
+                                            <span class="ing num">1</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="#a">
+                                            <span class="link-tit">완료</span>
+                                            <span class="num">10</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box column-link-info">
+                        <h4 class="box-title">주요자재목록 신고현황</h4>
+                        <div class="info-inner">
+                            <div class="info-ing">
+                                <div class="ing-inner">
+                                    <strong class="ing-name"
+                                        >KS A 1234 6각 볼트</strong
+                                    >
+                                    <div class="ing-txt-box">
+                                        <ul class="ing-list mo-ing-list">
+                                            <li class="ing-item">YY-MM-DD</li>
+                                            <li class="ing-item">
+                                                반려 (YY-MM-DD)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-bd-basic">
+                                    상세보기
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-inner">
+                            <div class="info-ing">
+                                <div class="ing-inner">
+                                    <strong class="ing-name"
+                                        >KS A 1234 6각 볼트</strong
+                                    >
+                                    <div class="ing-txt-box">
+                                        <ul class="ing-list mo-ing-list">
+                                            <li class="ing-item">YY-MM-DD</li>
+                                            <li class="ing-item">접수</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-bd-basic">
+                                    상세보기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box column-link-info">
+                        <h4 class="box-title">제조중단 신고현황</h4>
+                        <div class="info-inner">
+                            <div class="info-ing">
+                                <div class="ing-inner">
+                                    <strong class="ing-name"
+                                        >KS A 1234 6각 볼트</strong
+                                    >
+                                    <div class="ing-txt-box">
+                                        <span class="txt-day"
+                                            >YY-MM-DD ~ YY-MM-DD</span
+                                        >
+                                        <p class="text stop">
+                                            YY-MM-DD까지 제조개시 신고해 주세요.
+                                        </p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-bd-basic">
+                                    제조개시신고
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box column-link-info">
+                        <h4 class="box-title">인증서재발급신청현황</h4>
+                        <div class="info-inner">
+                            <div class="info-ing">
+                                <div class="ing-inner">
+                                    <strong class="ing-name"
+                                        >KS A 1234 6각 볼트</strong
+                                    >
+                                    <ul class="ing-list">
+                                        <li class="ing-item">
+                                            신청,접수,진행중,완료,반려,취소
+                                        </li>
+                                        <li class="ing-item">
+                                            수수료 금액/결제수단/결제상태
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-bd-basic">
+                                    상세보기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box column-link-info">
+                        <h4 class="box-title">영문인증서발급</h4>
+                        <div class="info-inner">
+                            <div class="info-ing">
+                                <div class="ing-inner">
+                                    <strong class="ing-name"
+                                        >KS A 1234 6각 볼트</strong
+                                    >
+                                    <ul class="ing-list">
+                                        <li class="ing-item">
+                                            신청,접수,진행중,완료,반려,취소
+                                        </li>
+                                        <li class="ing-item">
+                                            수수료 금액/결제수단/결제상태
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-bd-basic">
+                                    상세보기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box column-link-info">
+                        <h4 class="box-title">Q&A 문의</h4>
+                        <div class="info-inner">
+                            <div class="info-ing qa">
+                                <div class="ing-txt-box">
+                                    <strong class="days"
+                                        >YY-MM-DD (신청일)</strong
+                                    >
+                                    <p class="text">
+                                        답변상태 (답변일 : YY-MM-DD)
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-bd-basic">
+                                    상세보기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="inner">
+                <ul class="ft-list">
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">찾아오는 길</a>
+                    </li>
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">담당자연락처</a>
+                    </li>
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">사업자등록증 · 계좌안내</a>
+                    </li>
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">공평성 & 윤리강령</a>
+                    </li>
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <div class="address-info">
+                    <ul class="address-list">
+                        <li class="address-item">
+                            사업자등록번호 : 105-82-00617
+                        </li>
+                        <li class="address-item">
+                            06160 서울시 강남구 테헤란로 69길 5
+                            <br class="sm-only" />(삼성동, DT센터)
+                        </li>
+                        <li class="address-item">
+                            대표전화 :
+                            <a href="tel:02-1670-6009">1670-6009</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright">
+                    Copyright &copy; 2023 Korean Standards Association. All
+                    rights reserved.
+                </p>
+                <div class="web">
+                    <img
+                        src="../images/web.svg"
+                        alt="과학기술정보통신부 web 접근성"
+                    />
+                </div>
+            </div>
+        </footer>
+
+        <div class="dim"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/swiper-bundle.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

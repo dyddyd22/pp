@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA 통합인증플랫폼 | 자원관리 | 유관기관관리 | 유관기관</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 자원관리 | 유관기관관리 | 유관기관"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 자원관리 | 유관기관관리 | 유관기관"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 자원관리 | 유관기관관리 | 유관기관"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 자원관리 | 유관기관관리 | 유관기관"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 자원관리 | 유관기관관리 | 유관기관"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="admin_aside">
+                <h1 class="admin_logo">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+
+                <div class="menu_box">
+                    <div class="lnb">
+                        <ul class="lnb_wrap">
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-standard">기준정보</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사표준</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">1년심사 대상관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자가진단항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증위원회 개최일정</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">코드관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-resource">자원관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">기업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item">
+                                        <a href="#a">유관기관관리</a>
+                                        <ul class="lnb_last_list">
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">유관기관 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">심사원 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">시험원 관리</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">운영자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-judge">심사관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사신청관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사진행관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사마감관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">시판품조사관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-subscription"
+                                    >인증관련 신청관리</a
+                                >
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 재발급 관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a"
+                                            >영문인증서 발급신청 관리</a
+                                        >
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">제조중단/개시 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">주요목록 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 반납신청 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="ic-certification">
+                                    인증서관리</a
+                                >
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-center">고객센터관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">공지사항관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">FAQ관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">Q&A관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">팝업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">배너관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자료실관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="admin-inner">
+                <header>
+                    <div class="head_user_info">
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a href="#a" class="home"></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">자원관리</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">유관기관관리</a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="#a">유관기관</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-box">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">김인증</a>님
+                                <div class="belong">(서울본부 / 운영자)</div>
+                            </div>
+                            <button
+                                type="button"
+                                class="log-out"
+                                aira-label="로그아웃"
+                            ></button>
+                        </div>
+                    </div>
+                </header>
+                <main class="admin_main">
+                    <div class="content">
+                        <div class="content-inner">
+                            <div class="page_head list-title">
+                                <h3 class="page_tit">유관기관</h3>
+                            </div>
+                            <div class="tbl_wrap tbl-bg left">
+                                <table class="tbl">
+                                    <caption>
+                                        기관구분, 상태
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 68px" />
+                                        <col style="width: 27.4657%" />
+                                        <col style="width: 64px" />
+                                        <col style="width: 30.7534%" />
+                                        <col style="width: 120px" />
+                                        <col style="width: 27.4657%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>기관구분</th>
+                                            <td>
+                                                <div class="chk-item">
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="radio"
+                                                            name="chk_rd"
+                                                            id="chk-tb1"
+                                                            checked=""
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="chk-tb1"
+                                                            >심사기관</label
+                                                        >
+                                                    </div>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="radio"
+                                                            name="chk_rd"
+                                                            id="chk-tb2"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="chk-tb2"
+                                                            >시험기관</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th>상태</th>
+                                            <td>
+                                                <div class="chk-item">
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="radio"
+                                                            name="rd-ing"
+                                                            id="chk-tb3"
+                                                            checked=""
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="chk-tb3"
+                                                            >정상</label
+                                                        >
+                                                    </div>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="radio"
+                                                            name="rd-ing"
+                                                            id="chk-tb4"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="chk-tb4"
+                                                            >중지</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th>
+                                                <select
+                                                    name=""
+                                                    id=""
+                                                    class="all_select select"
+                                                >
+                                                    <option value="">
+                                                        기관명
+                                                    </option>
+                                                    <option value="">
+                                                        소속자 성명
+                                                    </option>
+                                                    <option value="">
+                                                        소속자 ID
+                                                    </option>
+                                                    <option value="">
+                                                        소속자 휴대폰
+                                                    </option>
+                                                    <option value="">
+                                                        소속자 이메일
+                                                    </option>
+                                                </select>
+                                            </th>
+                                            <td>
+                                                <div class="input_search">
+                                                    <input
+                                                        type="text"
+                                                        placeholder="Search"
+                                                    />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_wrap">
+                                    <button
+                                        type="button"
+                                        class="btn btn-search"
+                                    >
+                                        검색
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="column_box">
+                                <div class="tbl_btn_inner every_info">
+                                    <div class="select_link">
+                                        <div class="nums_total">
+                                            총
+                                            <span class="total">0</span>건
+                                        </div>
+                                        <select name="" id="" class="select">
+                                            <option value="">
+                                                10개씩 보기
+                                            </option>
+                                            <option value="">
+                                                50개씩 보기
+                                            </option>
+                                            <option value="">
+                                                100개씩 보기
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="btn_box">
+                                        <a href="#a" class="btn btn-down"
+                                            >다운로드</a
+                                        >
+                                        <button
+                                            href="#a"
+                                            class="btn btn-default"
+                                        >
+                                            유관기관등록
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tbl_wrap">
+                                    <!--
+                                        NOTE : 04-04
+                                        table body 내용 있을 경우 class tbl on class 추가
+                                    -->
+                                    <table class="tbl">
+                                        <caption>
+                                            NO, 기관코드, 기관명, 표준코드,
+                                            시험횟수, 담당자정보, 지정상태,
+                                            최종수정일, 최초등록일
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 120px" />
+                                            <col style="width: 322px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 120px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2">
+                                                    기관코드
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    기관명
+                                                </th>
+                                                <th scope="col" colspan="2">
+                                                    기관구분
+                                                </th>
+                                                <th scope="col" colspan="2">
+                                                    심사기관
+                                                </th>
+                                                <th scope="col" colspan="2">
+                                                    시험기관
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    등록일
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    상태
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">심사기관</th>
+                                                <th scope="col">시험기관</th>
+                                                <th scope="col">품목수</th>
+                                                <th scope="col">시험원수</th>
+                                                <th scope="col">품목수</th>
+                                                <th
+                                                    scope="col"
+                                                    class="border-rt"
+                                                >
+                                                    시험원수
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <!--
+                                            NOTE : 04-04
+                                            table body 내용 있을 경우 노출
+                                         -->
+                                        <tbody>
+                                            <!-- <tr>
+                                                <td>
+                                                    <a href="#">35</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#"
+                                                        >한국시멘트협회</a
+                                                    >
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td>150</td>
+                                                <td>100</td>
+                                                <td>25</td>
+                                                <td>10</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">59</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">한국표준협회</a>
+                                                </td>
+                                                <td></td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>25</td>
+                                                <td>10</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="stop"
+                                                        >중지</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">11</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">기관명노출</a>
+                                                </td>
+                                                <td></td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>25</td>
+                                                <td>10</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">00</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">기관명노출</a>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td></td>
+                                                <td>150</td>
+                                                <td>100</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">00</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">기관명노출</a>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td></td>
+                                                <td>150</td>
+                                                <td>100</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">00</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">기관명노출</a>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td></td>
+                                                <td>150</td>
+                                                <td>100</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">00</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">기관명노출</a>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td></td>
+                                                <td>150</td>
+                                                <td>100</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">00</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">기관명노출</a>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td></td>
+                                                <td>150</td>
+                                                <td>100</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">00</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">기관명노출</a>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td></td>
+                                                <td>150</td>
+                                                <td>100</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">00</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">기관명노출</a>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="check"
+                                                        aria-label="기관결과 통과 체크"
+                                                    ></span>
+                                                </td>
+                                                <td></td>
+                                                <td>150</td>
+                                                <td>100</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <span class="normal"
+                                                        >정상</span
+                                                    >
+                                                </td>
+                                            </tr> -->
+                                            <tr class="border-0">
+                                                <td
+                                                    colspan="10"
+                                                    class="bg-transparent"
+                                                >
+                                                    <!--
+                                        NOTE :  04-04
+                                        검색 결과 없을 경우 노출
+                                    -->
+                                                    <!-- <div class="pagination">
+                                                        <ol class="paging_list">
+                                                            <li
+                                                                class="arrow_prev paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                    aria-label="이전페이지 이동"
+                                                                ></button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item is-active"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    1
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    2
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    3
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    4
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    ...
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    9
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    10
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="arrow_next paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                    aria-label="다음페이지 이동"
+                                                                ></button>
+                                                            </li>
+                                                        </ol>
+                                                    </div> -->
+                                                    <div
+                                                        class="pagination-info-not"
+                                                    >
+                                                        검색 결과가 없습니다.
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

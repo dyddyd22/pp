@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 공장심사</title>
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="Description" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 공장심사" />
+    <meta http-equiv="Title" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 공장심사" />
+    <meta http-equiv="Copyright" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 공장심사" />
+    <meta property="og:url" content="페이지 url" />
+    <meta property="og:title" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 공장심사" />
+    <meta property="og:description" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 공장심사" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+</head>
+
+<body>
+    <header>
+        <button type="button" class="m-btn-menu sm-only" aria-label="메뉴버튼 열기"></button>
+        <h1 class="logo">
+            <a href="../index-auditor.html">
+                <img src="../images/img-logo.svg" alt="KSA통합인증플랫폼 심사원 로고" />
+            </a>
+        </h1>
+
+        <div class="head_user_info">
+            <div class="user_name">
+                <a href="#a" class="name_color">김인증</a>님
+                <div class="belong">(KS인증센터 / 심사원)</div>
+            </div>
+            <button type="button" class="log-out lg-only" aria-label="로그아웃">
+                <i class="ic-logout" aria-hidden></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <aside class="gnb">
+                <div class="gnb-inner">
+                    <button type="button" class="btn-menu lg-only" aria-label="메뉴버튼 열기"></button>
+                    <div class="gnb-icon-inner">
+                        <ul class="gnb-icon-list">
+                            <li class="gnb-icon-item">
+                                <a href="../auditor/myinfo.html">
+                                    <i class="ic-myinfo" aria-label="내정보관리 아이콘"></i>
+                                </a>
+                            </li>
+                            <li class="gnb-icon-item">
+                                <a href="../mySchedule/schedule.html">
+                                    <i class="ic-schedule" aria-label="내일정관리 아이콘"></i>
+                                </a>
+                            </li>
+                            <li class="gnb-icon-item">
+                                <a href="../management/management.html" class="is-active">
+                                    <i class="ic-examine" aria-label="내심사관리 아이콘"></i>
+                                </a>
+                            </li>
+                            <li class="gnb-icon-item">
+                                <a href="../investigation/investigation.html">
+                                    <i class="ic-investigate" aria-label="내시판품조사관리 아이콘"></i>
+                                </a>
+                            </li>
+                            <li class="gnb-icon-item">
+                                <i class="ic-customer" aria-label="고객센터 아이콘"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gnb-on">
+                    <div class="head_user_info">
+                        <button type="button" class="btn-close" aria-label="닫기"></button>
+                        <div class="head-top sm-only">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">사용자</a>님
+                                <div class="belong">
+                                    (KS인증센터 / 심사원)
+                                </div>
+                            </div>
+                            <button type="button" class="log-out" aria-label="로그아웃">
+                                <i class="ic-logout" aria-hidden></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gnb-inner">
+                        <!-- <button
+                                type="button"
+                                class="btn-menu lg-only"
+                                aria-label="메뉴버튼 열기"
+                            ></button> -->
+                        <div class="gnb-icon-inner">
+                            <ul class="gnb-icon-list">
+                                <li class="gnb-icon-item">
+                                    <a href="../auditor/myinfo.html"><i class="ic-myinfo" aria-hidden></i>
+                                        내정보관리</a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../mySchedule/schedule.html"><i class="ic-schedule" aria-hidden></i>
+                                        내일정관리</a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../management/management.html" class="is-active"><i class="ic-examine"
+                                            aria-hidden></i>
+                                        내심사관리</a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../investigation/investigation.html"><i class="ic-investigate"
+                                            aria-hidden></i>
+                                        내시판품조사관리</a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <i class="ic-customer" aria-hidden></i>
+                                    <div class="gnb-customer-box">
+                                        <span class="customer-title">고객센터</span>
+                                        <ul class="customer-menu-list">
+                                            <li class="customer-menu-item">
+                                                <a href="#">공지사항</a>
+                                            </li>
+                                            <li class="customer-menu-item">
+                                                <a href="#">자료실</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content process">
+                <div class="page_head list-title">
+                    <h3 class="page_tit">내심사관리 상세정보</h3>
+                    <div class="location_inner">
+                        <ul class="location_list">
+                            <li class="location_item">
+                                <a href="../index-auditor.html" class="home"></a>
+                            </li>
+                            <li class="location_item">
+                                <a href="#a">심사원</a>
+                            </li>
+                            <li class="location_item">
+                                <a href="../management/management.html">내심사관리</a>
+                            </li>
+                            <li class="location_item active">
+                                <a href="../management/management-process.html">공장심사</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tbl_btn_inner every_info">
+                    <div class="btn_box">
+                        <a href="#a" class="btn btn-process">업체심사이력</a>
+                        <a href="#a" class="btn btn-process">KSA교육이력</a>
+                        <a href="#a" class="btn btn-process">처리이력</a>
+                        <a href="#a" class="btn btn-process">조회이력</a>
+                        <div class="nums_total">
+                            조회
+                            <span class="total">3,333</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_menu tab_type">
+                    <ul class="tab_list tabs tab-list-w7">
+                        <li class="tab_item">
+                            <a href="./management-detail.html" class="tab_btn">
+                                상세정보
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-status.html" class="tab_btn">
+                                주요현황심사 (<span>검토중</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item on">
+                            <a href="./management-process.html" class="tab_btn">
+                                공장심사 (<span>임시저장</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-product.html" class="tab_btn">
+                                제품시험 (<span>임시저장</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-business.html" class="tab_btn">
+                                사업장심사 (<span>임시저장</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-service.html" class="tab_btn">
+                                서비스심사 (<span>임시저장 1</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-incongruity.html" class="tab_btn">
+                                부적합 개선조치 (<span>진행중 1</span>)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column_box">
+                    <div class="btn_wrap person-box">
+                        <span class="person-name">최근작성된 시험의뢰서 불러오기</span>
+                        <select name="" id="" class="select">
+                            <option value="">선택</option>
+                            <option value="">선택1</option>
+                        </select>
+                        <button type="button" class="btn btn-page">
+                            불러오기
+                        </button>
+                    </div>
+
+                    <div class="page_head">
+                        <h3 class="page_tit">
+                            (참고사항) 신청사가 기재한 ISO인증 보유정보
+                        </h3>
+                        <div class="btn_wrap">
+                            <a href="#" class="btn btn-tblout">
+                                심사보고서 미리보기
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tbl_wrap">
+                        <table class="tbl left pd-lf-20 type-info">
+                            <caption>
+                                (참고사항) 신청사가 기재한 ISO인증 보유정보
+                                - 인증여부, 신청시 첨부한 인증참고서류,
+                                인증정보(인증기관, 인증범위, 유효기관)
+                            </caption>
+                            <colgroup>
+                                <col class="first-col" style="width: 6.6085%" />
+                                <col class="first-col" style="width: 6.6085%" />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">ISO인증여부</th>
+                                    <td class="normal">인증</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        신청시 첨부한 인증참고서류
+                                    </th>
+                                    <td>
+                                        <a href="#">iso인증서류.pdf (1,200kb)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3">
+                                        인증<br class="sm-only" />정보
+                                    </th>
+                                    <th>인증<br class="sm-only" />기관</th>
+                                    <td>한국표준협회</td>
+                                </tr>
+                                <tr>
+                                    <th>인증<br class="sm-only" />범위</th>
+                                    <td>A~Z</td>
+                                </tr>
+                                <tr>
+                                    <th>유효<br class="sm-only" />기간</th>
+                                    <td>2022-08-19 ~ 2022-08-20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="column_box">
+                    <div class="page_head start">
+                        <h3 class="page_tit">공장의 ISO인증 보유 여부</h3>
+                        <p class="txt_warning">
+                            ISO인증사 평가면제 항목에 아래 기재사항이 자동
+                            기입됩니다.
+                        </p>
+                    </div>
+
+                    <div class="tbl_wrap">
+                        <table class="tbl left pd-lf-20 type-info">
+                            <caption>
+                                공장의 ISO인증 보유 여부 - 인증여부,
+                                인증정보(인증기관, 인증범위, 유효기관)
+                            </caption>
+                            <colgroup>
+                                <col class="first-col" style="width: 6.6085%" />
+                                <col class="first-col" style="width: 6.6085%" />
+                                <col />
+                            </colgroup>
+                            <tbody class="chk-disabled-box">
+                                <tr>
+                                    <th colspan="2">
+                                        <span class="import">인증여부</span>
+                                    </th>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input type="radio" name="chk_rd" id="chk-tb1"
+                                                    class="visually-hidden chioce-true" checked />
+                                                <label for="chk-tb1">인증</label>
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input type="radio" name="chk_rd" id="chk-tb2"
+                                                    class="visually-hidden choice-false" />
+                                                <label for="chk-tb2">비인증</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3">
+                                        인증<br class="sm-only" />정보
+                                    </th>
+                                    <th>인증<br class="sm-only" />기관</th>
+                                    <td>
+                                        <input type="text" placeholder="내용을 입력해 주세요." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>인증<br class="sm-only" />범위</th>
+                                    <td>
+                                        <input type="text" placeholder="내용을 입력해 주세요." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>유효<br class="sm-only" />기간</th>
+                                    <td>
+                                        <div class="picker_from">
+                                            <!-- input 달력 -->
+                                            <div class="picker_box">
+                                                <input type="text" class="datepicker" placeholder="2023-01-01" />
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="picker_box">
+                                                <input type="text" class="datepicker" placeholder="2023-01-01" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="column_box">
+                    <div class="page_head">
+                        <h3 class="page_tit">심사사항별 평가사항</h3>
+                    </div>
+
+                    <div class="tbl_wrap">
+                        <table class="tbl">
+                            <caption>
+                                심사사항별 평가사항 - 심사사항, 평가항목수,
+                                평가전, 적합, 보류, 부적합(일반품질,
+                                핵심품질), 평가자, 최종수정일, 비고
+                            </caption>
+                            <colgroup>
+                                <col style="width: 280px" />
+                                <col style="width: 176px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 200px" />
+                                <col style="width: 220px" />
+                                <col style="width: 320px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">
+                                        심사사항
+                                    </th>
+                                    <th scope="col" rowspan="2">
+                                        평가항목수 (핵심품질)
+                                    </th>
+                                    <th scope="col" rowspan="2">평가전</th>
+                                    <th scope="col" rowspan="2">적합</th>
+                                    <th scope="col" rowspan="2">보류</th>
+                                    <th scope="col" colspan="2">부적합</th>
+                                    <th scope="col" rowspan="2">평가자</th>
+                                    <th scope="col" rowspan="2">
+                                        최종 수정일
+                                    </th>
+                                    <th scope="col" rowspan="2">비고</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">일반 품질</th>
+                                    <th scope="col" class="border-rt">
+                                        핵심 품질
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="left">1. 품질경영</td>
+                                    <td>5 (1)</td>
+                                    <td>0</td>
+                                    <td>
+                                        <strong>5</strong>
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>
+                                        <div class="manager">
+                                            <div class="manager-user">
+                                                <span class="manager-title">정</span>
+                                                박노근
+                                            </div>
+                                            <div class="manager-user">
+                                                <span class="manager-title">부</span>
+                                                이한일
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="./laypop-evaluation-detail.html" class="btn btn-sm">상세정보</a>
+                                            <a href="./laypop-evaluation.html" class="btn btn-sm">수정하기</a>
+                                            <a href="#" class="btn btn-sm">수정이력</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">2. 자재관리</td>
+                                    <td>5 (1)</td>
+                                    <td>0</td>
+                                    <td>
+                                        <strong>4</strong>
+                                    </td>
+                                    <td>0</td>
+                                    <td><span class="stop">1</span></td>
+                                    <td><span class="stop">1</span></td>
+                                    <td>
+                                        <div class="manager">
+                                            <div class="manager-user">
+                                                <span class="manager-title">정</span>
+                                                박노근
+                                            </div>
+                                            <div class="manager-user">
+                                                <span class="manager-title">부</span>
+                                                이한일
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="./laypop-evaluation-detail.html" class="btn btn-sm">상세정보</a>
+                                            <a href="./laypop-evaluation.html" class="btn btn-sm">수정하기</a>
+                                            <a href="#" class="btn btn-sm">수정이력</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        3. 공정ㆍ제조설비 관리
+                                    </td>
+                                    <td>5 (1)</td>
+                                    <td>0</td>
+                                    <td>
+                                        <strong>5</strong>
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>
+                                        <div class="manager">
+                                            <div class="manager-user">
+                                                <span class="manager-title">정</span>
+                                                박노근
+                                            </div>
+                                            <div class="manager-user">
+                                                <span class="manager-title">부</span>
+                                                이한일
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="./laypop-evaluation-detail.html" class="btn btn-sm">상세정보</a>
+                                            <a href="./laypop-evaluation.html" class="btn btn-sm">수정하기</a>
+                                            <a href="#" class="btn btn-sm">수정이력</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">4. 제품관리</td>
+                                    <td>5 (1)</td>
+                                    <td>0</td>
+                                    <td>
+                                        <strong>5</strong>
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>
+                                        <div class="manager">
+                                            <div class="manager-user">
+                                                <span class="manager-title">정</span>
+                                                박노근
+                                            </div>
+                                            <div class="manager-user">
+                                                <span class="manager-title">부</span>
+                                                이한일
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="./laypop-evaluation-detail.html" class="btn btn-sm">상세정보</a>
+                                            <a href="./laypop-evaluation.html" class="btn btn-sm">수정하기</a>
+                                            <a href="#" class="btn btn-sm">수정이력</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        5. 시험ㆍ검사설비 관리
+                                    </td>
+                                    <td>5 (1)</td>
+                                    <td>0</td>
+                                    <td>
+                                        <strong>5</strong>
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>
+                                        <div class="manager">
+                                            <div class="manager-user">
+                                                <span class="manager-title">정</span>
+                                                박노근
+                                            </div>
+                                            <div class="manager-user">
+                                                <span class="manager-title">부</span>
+                                                이한일
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="./laypop-evaluation-detail.html" class="btn btn-sm">상세정보</a>
+                                            <a href="./laypop-evaluation.html" class="btn btn-sm">수정하기</a>
+                                            <a href="#" class="btn btn-sm">수정이력</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        6. 소비자보호 및 환경ㆍ자원 관리
+                                    </td>
+                                    <td>5 (1)</td>
+                                    <td>0</td>
+                                    <td>
+                                        <strong>5</strong>
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>
+                                        <div class="manager">
+                                            <div class="manager-user">
+                                                <span class="manager-title">정</span>
+                                                박노근
+                                            </div>
+                                            <div class="manager-user">
+                                                <span class="manager-title">부</span>
+                                                이한일
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="./laypop-evaluation-detail.html" class="btn btn-sm">상세정보</a>
+                                            <a href="./laypop-evaluation.html" class="btn btn-sm">수정하기</a>
+                                            <a href="#" class="btn btn-sm">수정이력</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>합계</th>
+                                    <th>30 (6)</th>
+                                    <th>0</th>
+                                    <th>29</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                    <th>1</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="column_box">
+                    <div class="page_head">
+                        <h3 class="page_tit">심사결과 첨부파일</h3>
+                    </div>
+
+                    <div class="tbl_wrap">
+                        <table class="tbl">
+                            <caption>
+                                심사결과 첨부파일 - 보고서구분, 파일구분,
+                                양식 다운로드, 최종수정일, 파일명
+                            </caption>
+                            <colgroup>
+                                <col style="width: 11.217%" />
+                                <col style="width: 29.1643%" />
+                                <col style="width: 12.8996%" />
+                                <col style="width: 12.8996%" />
+                                <col style="width: 33.6511%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="9">
+                                        보고서구분
+                                    </th>
+                                    <th scope="col">파일구분</th>
+                                    <th scope="col">양식 다운로드</th>
+                                    <th scope="col">최종수정일</th>
+                                    <th scope="col">파일명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="9">공장심사</td>
+                                    <td class="left">
+                                        <span class="import">ISO인증 관련서류</span>
+                                    </td>
+                                    <td></td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner active">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    Drag files here
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        <span class="import">KS인증 청렴활동 및 공평성 준수
+                                            서약</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn btn-sm down">다운로드</a>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        <span class="import">부적합 보고서</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn btn-sm">부적합보고서</a>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        <span class="import">현장입회시험 결과 현황</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn btn-sm down">다운로드</a>
+                                        </div>
+                                    </td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        최근 12개월간 검사 평균 DATA 현황
+                                    </td>
+                                    <td></td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        <span class="import">핵심품질 부적합 사항 개선 완료
+                                            확인서</span>
+                                    </td>
+                                    <td></td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        <span class="import">외국 KS인증공장
+                                            인증계약서</span>
+                                    </td>
+                                    <td></td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        <span class="import">제품표시사항</span>
+                                    </td>
+                                    <td></td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">기타첨부</td>
+                                    <td></td>
+                                    <td>22-08-19 13:50 (박서준)</td>
+                                    <td class="left">
+                                        <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a href="#" class="btn btn-upload">파일선택</a>
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <div class="file_infobox">
+                                                    <span class="file_name">사업자등록증.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file_infobox">
+                                                    <span class="file_name">인감증명서.jpg</span>
+                                                    <div class="volume_info">
+                                                        <span class="file_volume">9MB</span>
+                                                        <button type="button" class="btn file_del">
+                                                            <span class="visually-hidden">지우기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="column_box">
+                    <div class="page_head">
+                        <h3 class="page_tit">심사결과 판정</h3>
+                    </div>
+
+                    <div class="tbl_wrap">
+                        <table class="tbl left pd-lf-20 table-info">
+                            <caption>
+                                심사결과 판정 - 심사결과 요약, 최종판정,
+                                불합격 사유, 기타 개선 권고사항
+                            </caption>
+                            <colgroup>
+                                <col class="first-col" style="width: 11%" />
+                                <col style="width: 89%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <span class="import">심사결과<br class="sm-only" />
+                                            요약</span>
+                                    </th>
+                                    <td>
+                                        <textarea class="textarea" placeholder="내용을 입력해 주세요."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>최종판정</th>
+                                    <td>부적합</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="import">불합격<br class="sm-only" />
+                                            사유</span>
+                                    </th>
+                                    <td>
+                                        <input type="text" placeholder="내용을 입력해 주세요." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="import">기타 개선<br class="sm-only" />
+                                            권고사항</span>
+                                    </th>
+                                    <td>
+                                        <input type="text" placeholder="내용을 입력해 주세요." />
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                        <th>진행상태</th>
+                                        <td>임시저장</td>
+                                    </tr> -->
+                                <tr>
+                                    <th>보완요청 사유</th>
+                                    <td>2023-10-15 13:20 (김품목)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="save-ing">
+                        <strong>진행상태 : </strong>
+                        <span>임시저장</span>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <a href="#" class="btn btn-tblout">목록</a>
+                    <button type="button" class="btn btn-page">
+                        임시저장
+                    </button>
+                    <button type="button" class="btn btn-layer-default">
+                        보고서 작성완료
+                    </button>
+                </div>
+
+                <!-- 작성완료시 노출 -->
+                <!-- <div class="btn_wrap btn-full">
+                        <a href="#" class="btn btn-tblout">목록</a>
+                        <button type="button" class="btn btn-layer-default">
+                            보고서 작성완료 취소
+                        </button>
+                    </div> -->
+
+                <!-- 서명완료시 노출 -->
+                <!-- <div class="btn_wrap btn-full">
+                        <a href="#" class="btn btn-tblout">목록</a>
+                        <button type="button" class="btn btn-layer-default">
+                            회수하기
+                        </button>
+                    </div> -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="fot-top">
+            <ul class="fot-top-list">
+                <li class="fot-top-item"><a href="#">찾아오시는길</a></li>
+                <li class="fot-top-item"><a href="#">담당자연락처</a></li>
+                <li class="fot-top-item">
+                    <a href="#">사업자등록증 · 계좌안내</a>
+                </li>
+                <li class="fot-top-item">
+                    <a href="#">공평성 & 윤리강령</a>
+                </li>
+                <li class="fot-top-item">
+                    <a href="#">개인정보처리방침</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="fot-bottom">
+            <h3 class="footer-logo">
+                <img src="../images/fot-logo.png" alt="KSA통합인증플랫폼" />
+            </h3>
+
+            <div class="address-inner">
+                <ul class="address-list">
+                    <li class="address-item">KSA한국표준협회</li>
+                    <li class="address-item">사업자번호 : 105-82-00617</li>
+                    <li class="address-item">대표전화 : 1670-6009</li>
+                    <li class="address-item">
+                        06160 서울시 강남구 테헤란로 69길 5 (삼성동,DT센터)
+                    </li>
+                </ul>
+                <address>
+                    Copyright(C) 2023 Korean Standards Association. All
+                    rights reserved.
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../js/opensrc/jquery-ui.min.js"></script>
+    <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/constants.js"></script>
+</body>
+
+</html>

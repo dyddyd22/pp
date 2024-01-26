@@ -1,0 +1,20 @@
+/* 모바일 */
+@media all and (max-width: 1280px) {
+}
+
+/* 모바일 */
+@media all and (max-width: 992px) {
+    .popup_inner {
+        background-color: var(--white);
+    }
+
+    .popup_inner .modal-type-popup {
+        margin: 0;
+        padding: 10px;
+        min-width: auto;
+        max-height: 95%;
+    }
+    .modal_popup .popup_bottom .btn_wrap.btn_pos {
+        right: 10px;
+    }
+}

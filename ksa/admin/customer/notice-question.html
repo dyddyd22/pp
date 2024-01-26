@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA 통합인증플랫폼 | 고객센터관리 | 1:1 문의관리</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 1:1 문의관리"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 1:1 문의관리"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 1:1 문의관리"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 1:1 문의관리"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 1:1 문의관리"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="admin_aside">
+                <h1 class="admin_logo">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+
+                <div class="menu_box">
+                    <div class="lnb">
+                        <ul class="lnb_wrap">
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-standard">기준정보</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사표준</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">1년심사 대상관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자가진단항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증위원회 개최일정</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">코드관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-resource">자원관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">기업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item">
+                                        <a href="#a">유관기관관리</a>
+                                        <ul class="lnb_last_list">
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">유관기관 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">심사원 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">시험원 관리</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">운영자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-judge">심사관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사신청관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사진행관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사마감관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">시판품조사관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-subscription"
+                                    >인증관련 신청관리</a
+                                >
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 재발급 관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a"
+                                            >영문인증서 발급신청 관리</a
+                                        >
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">제조중단/개시 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">주요목록 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 반납신청 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="ic-certification">
+                                    인증서관리</a
+                                >
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-center">고객센터관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">공지사항관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">FAQ관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">Q&A관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">팝업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">배너관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자료실관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="admin-inner">
+                <header>
+                    <div class="head_user_info">
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a href="#a" class="home"></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">고객센터관리</a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="#a">1:1문의관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-box">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">김인증</a>님
+                                <div class="belong">(서울본부 / 운영자)</div>
+                            </div>
+                            <button
+                                type="button"
+                                class="log-out"
+                                aira-label="로그아웃"
+                            ></button>
+                        </div>
+                    </div>
+                </header>
+                <main class="admin_main">
+                    <div class="content">
+                        <div class="content-inner">
+                            <div class="page_head list-title">
+                                <h3 class="page_tit">1:1문의관리</h3>
+                            </div>
+                            <div class="tbl_wrap tbl-bg left">
+                                <table class="tbl">
+                                    <caption>
+                                        등록일, 질의분야, 진행상태
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 70px" />
+                                        <col style="width: 27.7397%" />
+                                        <col style="width: 120px" />
+                                        <col style="width: 29.1095%" />
+                                        <col style="width: 100px" />
+                                        <col style="width: 26.4383%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>등록일</th>
+                                            <td>
+                                                <div class="picker_from">
+                                                    <!-- input 달력 -->
+                                                    <div class="picker_box">
+                                                        <input
+                                                            type="text"
+                                                            class="datepicker"
+                                                            placeholder="2023-01-01"
+                                                        />
+                                                    </div>
+                                                    <span class="hyphen"
+                                                        >-</span
+                                                    >
+                                                    <div class="picker_box">
+                                                        <input
+                                                            type="text"
+                                                            class="datepicker"
+                                                            placeholder="2023-01-01"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th>질의분야</th>
+                                            <td class="multi-cell">
+                                                <select
+                                                    name=""
+                                                    id=""
+                                                    multiple="multiple"
+                                                    name="somename0"
+                                                    class="multi-select"
+                                                    placeholder="전체"
+                                                >
+                                                    <option value="KS표준">
+                                                        KS표준
+                                                    </option>
+                                                    <option value="국제표준">
+                                                        국제표준
+                                                    </option>
+                                                    <option value="KS인증·심사">
+                                                        KS인증·심사
+                                                    </option>
+                                                    <option value="국제인증">
+                                                        국제인증
+                                                    </option>
+                                                    <option value="회원사">
+                                                        회원사
+                                                    </option>
+                                                    <option
+                                                        value="국가품질상·분임조"
+                                                    >
+                                                        국가품질상·분임조
+                                                    </option>
+                                                    <option value="품질">
+                                                        품질
+                                                    </option>
+                                                    <option value="교육">
+                                                        교육
+                                                    </option>
+                                                    <option value="자격증">
+                                                        자격증
+                                                    </option>
+                                                    <option
+                                                        value="서비스·지수·조사"
+                                                    >
+                                                        서비스·지수·조사
+                                                    </option>
+                                                    <option value="기타">
+                                                        기타
+                                                    </option>
+                                                </select>
+                                            </td>
+                                            <th>사이트구분</th>
+                                            <td>
+                                                <select
+                                                    multiple="multiple"
+                                                    name="somename0"
+                                                    class="multi-select"
+                                                    placeholder="전체"
+                                                >
+                                                    <option value="KS">
+                                                        KS
+                                                    </option>
+                                                    <option value="ISO">
+                                                        ISO
+                                                    </option>
+                                                    <option value="검인증">
+                                                        검인증
+                                                    </option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>진행상태</th>
+                                            <td>
+                                                <select
+                                                    name=""
+                                                    id=""
+                                                    class="select w-200"
+                                                >
+                                                    <option value="">
+                                                        제목
+                                                    </option>
+                                                    <option value="">
+                                                        접수
+                                                    </option>
+                                                    <option value="">
+                                                        처리중
+                                                    </option>
+                                                    <option value="">
+                                                        답변완료
+                                                    </option>
+                                                </select>
+                                            </td>
+                                            <th>
+                                                <select
+                                                    name=""
+                                                    id=""
+                                                    class="all_select select"
+                                                >
+                                                    <option value="">
+                                                        제목
+                                                    </option>
+                                                    <option value="">
+                                                        작성내용
+                                                    </option>
+                                                    <option value="">
+                                                        작성자
+                                                    </option>
+                                                    <option value="">
+                                                        답변내용
+                                                    </option>
+                                                    <option value="">
+                                                        답변자
+                                                    </option>
+                                                    <option value="">
+                                                        담당자
+                                                    </option>
+                                                </select>
+                                            </th>
+                                            <td>
+                                                <div class="input_search">
+                                                    <input
+                                                        type="text"
+                                                        placeholder="Search"
+                                                    />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_wrap">
+                                    <button
+                                        type="button"
+                                        class="btn btn-search"
+                                    >
+                                        검색
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="column_box">
+                                <div class="tbl_btn_inner every_info">
+                                    <div class="select_link">
+                                        <div class="nums_total">
+                                            총
+                                            <span class="total">100</span>건
+                                        </div>
+                                        <select name="" id="" class="select">
+                                            <option value="">
+                                                10개씩 보기
+                                            </option>
+                                            <option value="">
+                                                50개씩 보기
+                                            </option>
+                                            <option value="">
+                                                100개씩 보기
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            NO, 기관코드, 기관명, 표준코드,
+                                            시험횟수, 담당자정보, 지정상태,
+                                            최종수정일, 최초등록일
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 80px" />
+                                            <col style="width: 90px" />
+                                            <col style="width: 180px" />
+                                            <col style="width: 375px" />
+                                            <col style="width: 150px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 152px" />
+                                            <col style="width: 152px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 100px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">No</th>
+                                                <th scope="col">사이트구분</th>
+                                                <th scope="col">질의분야</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">작성자</th>
+                                                <th scope="col">작성일</th>
+                                                <th scope="col">담당자</th>
+                                                <th scope="col">답변자</th>
+                                                <th scope="col">답변일</th>
+                                                <th scope="col">진행상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">100</a>
+                                                </td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>
+                                                    <a href="#">KS표준</a>
+                                                </td>
+                                                <td class="left">
+                                                    <a href="#"
+                                                        >문의 제목이 출력됩니다.
+                                                        문의 제목이
+                                                        출력됩니다.</a
+                                                    >
+                                                </td>
+                                                <td>김지송(12ss)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>
+                                                    <span class="stop"
+                                                        >접수</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>99</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>국제표준</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>박가솔(wegf)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>
+                                                    <span class="stop"
+                                                        >접수</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>98</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>국제인증</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>정지훈(aaa)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>이담당(2ooo)</td>
+                                                <td>이운영(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>처리중</td>
+                                            </tr>
+                                            <tr>
+                                                <td>97</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>교육</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>정지훈(aaa)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>이담당(2ooo)</td>
+                                                <td>이운영(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>처리중</td>
+                                            </tr>
+                                            <tr>
+                                                <td>96</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>교육</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>정지훈(aaa)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>이담당(2ooo)</td>
+                                                <td>이운영(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>답변완료</td>
+                                            </tr>
+                                            <tr>
+                                                <td>95</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>기타</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>정지훈(aaa)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>이담당(2ooo)</td>
+                                                <td>이운영(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>답변완료</td>
+                                            </tr>
+                                            <tr>
+                                                <td>94</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>자격증</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>정지훈(aaa)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>이담당(2ooo)</td>
+                                                <td>이운영(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>답변완료</td>
+                                            </tr>
+                                            <tr>
+                                                <td>93</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>회원사</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>정지훈(aaa)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>이담당(2ooo)</td>
+                                                <td>이운영(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>답변완료</td>
+                                            </tr>
+                                            <tr>
+                                                <td>92</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>국가품질상 · 분임조</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>정지훈(aaa)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>이담당(2ooo)</td>
+                                                <td>이운영(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>답변완료</td>
+                                            </tr>
+                                            <tr>
+                                                <td>91</td>
+                                                <td><a href="#a">KS</a></td>
+                                                <td>서비스·지수 · 조사</td>
+                                                <td class="left">
+                                                    문의 제목이 출력됩니다. 문의
+                                                    제목이 출력됩니다.
+                                                </td>
+                                                <td>정지훈(aaa)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>이담당(2ooo)</td>
+                                                <td>이운영(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>답변완료</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="pagination">
+                                    <ol class="paging_list">
+                                        <li class="arrow_prev paging_item">
+                                            <button
+                                                type="button"
+                                                aria-label="이전페이지 이동"
+                                            ></button>
+                                        </li>
+                                        <li class="paging_item is-active">
+                                            <button type="button">1</button>
+                                        </li>
+                                        <li class="paging_item">
+                                            <button type="button">2</button>
+                                        </li>
+                                        <li class="paging_item">
+                                            <button type="button">3</button>
+                                        </li>
+                                        <li class="paging_item">
+                                            <button type="button">4</button>
+                                        </li>
+                                        <li class="paging_item">
+                                            <button type="button">...</button>
+                                        </li>
+                                        <li class="paging_item">
+                                            <button type="button">9</button>
+                                        </li>
+                                        <li class="paging_item">
+                                            <button type="button">10</button>
+                                        </li>
+                                        <li class="arrow_next paging_item">
+                                            <button
+                                                type="button"
+                                                aria-label="다음페이지 이동"
+                                            ></button>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

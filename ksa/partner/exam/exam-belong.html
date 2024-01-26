@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA통합인증플랫폼 KS시험기관 | 소속시험원</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA통합인증플랫폼 KS시험기관 | 소속시험원"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA통합인증플랫폼 KS시험기관 | 소속시험원"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA통합인증플랫폼 KS시험기관 | 소속시험원"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA통합인증플랫폼 KS시험기관 | 소속시험원"
+        />
+        <meta
+            property="og:description"
+            content="KSA통합인증플랫폼 KS시험기관 | 소속시험원"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/sub.css" />
+    </head>
+    <body>
+        <header>
+            <button
+                type="button"
+                class="m-btn-menu sm-only"
+                aria-label="메뉴버튼 열기"
+            ></button>
+            <h1 class="logo">
+                <a href="../index-exam.html">
+                    <img
+                        src="../images/logo-exam.svg"
+                        alt="KSA통합인증플랫폼 ks시험기관 로고"
+                        class="lg-only"
+                    />
+                    <img
+                        src="../images/logo-exam-sm.svg"
+                        alt="KSA통합인증플랫폼 ks시험기관 로고"
+                        class="sm-only"
+                    />
+                </a>
+            </h1>
+
+            <div class="head_user_info">
+                <div class="user_name">
+                    <a href="#a" class="name_color">김인증</a>님
+                    <div class="belong">(KS인증센터 / 심사원)</div>
+                </div>
+                <button
+                    type="button"
+                    class="log-out lg-only"
+                    aria-label="로그아웃"
+                >
+                    <i class="ic-logout" aria-hidden></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper">
+                <aside class="gnb">
+                    <div class="gnb-inner">
+                        <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button>
+                        <div class="gnb-icon-inner">
+                            <ul class="gnb-icon-list">
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-myinfo" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-product" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a" class="is-active"
+                                        ><i class="ic-belong" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-appointed" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <!-- <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-code" aria-hidden></i
+                                    ></a>
+                                </li> -->
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-customer" aria-hidden></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gnb-on">
+                        <div class="head_user_info">
+                            <button
+                                type="button"
+                                class="btn-close"
+                                aria-label="닫기"
+                            ></button>
+                            <div class="head-top sm-only">
+                                <div class="user_name">
+                                    <a href="#a" class="name_color">사용자</a>님
+                                    <div class="belong">
+                                        (KS인증센터 / 운영자)
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="log-out"
+                                    aria-label="로그아웃"
+                                >
+                                    <i class="ic-logout" aria-hidden></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gnb-inner">
+                            <!-- <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button> -->
+                            <div class="gnb-icon-inner">
+                                <ul class="gnb-icon-list">
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-myinfo.html"
+                                            ><i
+                                                class="ic-myinfo"
+                                                aria-hidden
+                                            ></i>
+                                            내정보관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-management.html"
+                                            ><i
+                                                class="ic-product"
+                                                aria-hidden
+                                            ></i>
+                                            제품시험관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a
+                                            href="./exam/exam-belong.html"
+                                            class="is-active"
+                                            ><i
+                                                class="ic-belong"
+                                                aria-hidden
+                                            ></i>
+                                            소속시험원</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-appointed.html"
+                                            ><i
+                                                class="ic-appointed"
+                                                aria-hidden
+                                            ></i>
+                                            제품시험지정품목</a
+                                        >
+                                    </li>
+                                    <!-- <li class="gnb-icon-item">
+                                        <a href="./exam/exam-code.html"
+                                            ><i class="ic-code" aria-hidden></i>
+                                            지정품목코드별 담당자</a
+                                        >
+                                    </li> -->
+                                    <li class="gnb-icon-item">
+                                        <i
+                                            class="ic-customer"
+                                            aria-hidden="고객센터 아이콘"
+                                        ></i>
+                                        <div class="gnb-customer-box">
+                                            <span class="customer-title"
+                                                >고객센터</span
+                                            >
+                                            <ul class="customer-menu-list">
+                                                <li class="customer-menu-item">
+                                                    <a href="#">공지사항</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">Q & A</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">자료실</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="content management exam-belong">
+                    <div class="page_head list-title">
+                        <h3 class="page_tit">소속시험원</h3>
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a
+                                        href="../index-exam.html"
+                                        class="home"
+                                    ></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">KS시험기관</a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="../exam/exam-belong.html"
+                                        >소속시험원</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- pc -->
+                    <div class="tbl_wrap tbl-bg lg-only">
+                        <table class="tbl left">
+                            <caption>
+                                계정등급, 계정상태
+                            </caption>
+                            <colgroup>
+                                <col style="width: 68px" />
+                                <col style="width: 28.8505%" />
+                                <col style="width: 88px" />
+                                <col style="width: 29.4252%" />
+                                <col style="width: 190px" />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>계정등급</th>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="rd-chk1"
+                                                />
+                                                <label for="rd-chk1"
+                                                    >일반</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="rd-chk2"
+                                                />
+                                                <label for="rd-chk2"
+                                                    >관리자</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th>계정상태</th>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="rd-chk3"
+                                                    name="rd-name2"
+                                                />
+                                                <label for="rd-chk3"
+                                                    >정상</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="rd-chk4"
+                                                    name="rd-name2"
+                                                />
+                                                <label for="rd-chk4"
+                                                    >중지</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th>
+                                        <select name="" id="" class="select">
+                                            <option value="">이름</option>
+                                            <option value="">ID</option>
+                                        </select>
+                                    </th>
+                                    <td>
+                                        <div class="input_search">
+                                            <input
+                                                type="text"
+                                                placeholder="Search"
+                                            />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn btn-search">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- tablets -->
+                    <div class="tbl_wrap tbl-bg md-only">
+                        <table class="tbl left">
+                            <caption>
+                                계정등급, 계정상태
+                            </caption>
+                            <colgroup>
+                                <col style="width: 88px" />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>계정등급</th>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="rd-chk5"
+                                                    name="rd-name3"
+                                                />
+                                                <label for="rd-chk5"
+                                                    >일반</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="rd-chk6"
+                                                    name="rd-name3"
+                                                />
+                                                <label for="rd-chk6"
+                                                    >관리자</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>계정상태</th>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="rd-chk7"
+                                                    name="rd-name4"
+                                                />
+                                                <label for="rd-chk7"
+                                                    >정상</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="rd-chk8"
+                                                    name="rd-name4"
+                                                />
+                                                <label for="rd-chk8"
+                                                    >중지</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        <select name="" id="" class="select">
+                                            <option value="">이름</option>
+                                            <option value="">ID</option>
+                                        </select>
+
+                                        <div class="input_search">
+                                            <input
+                                                type="text"
+                                                placeholder="Search"
+                                            />
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn btn-search">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- mobile -->
+                    <div class="tbl_wrap tbl-bg sm-only">
+                        <table class="tbl left">
+                            <caption>
+                                계정등급, 계정상태
+                            </caption>
+                            <colgroup>
+                                <col style="width: 100%" />
+                            </colgroup>
+                            <tbody>
+                                <tr class="border-0">
+                                    <th>계정등급</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="rd-chk9"
+                                                    name="rd-name5"
+                                                />
+                                                <label for="rd-chk9"
+                                                    >일반</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    id="rd-chk10"
+                                                    name="rd-name5"
+                                                />
+                                                <label for="rd-chk10"
+                                                    >관리자</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-0">
+                                    <th>계정상태</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="rd-chk11"
+                                                    name="rd-name6"
+                                                />
+                                                <label for="rd-chk11"
+                                                    >정상</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    class="visually-hidden"
+                                                    id="rd-chk12"
+                                                    name="rd-name6"
+                                                />
+                                                <label for="rd-chk12"
+                                                    >중지</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-0">
+                                    <th>
+                                        <select name="" id="" class="select">
+                                            <option value="">이름</option>
+                                            <option value="">ID</option>
+                                        </select>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input_search">
+                                            <input
+                                                type="text"
+                                                placeholder="Search"
+                                            />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn btn-search">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="column_box mb-0">
+                        <div class="tbl_btn_inner every_info">
+                            <div class="select_link">
+                                <div class="nums_total">
+                                    총
+                                    <span class="total">34</span>건
+                                </div>
+                                <select name="" id="" class="select">
+                                    <option value="">10개씩 보기</option>
+                                    <option value="">20개씩 보기</option>
+                                </select>
+                            </div>
+                            <div class="btn_box">
+                                <a href="#a" class="btn btn-process">SMS</a>
+                                <a href="#a" class="btn btn-process">이메일</a>
+                                <a href="#a" class="btn btn-layer-default"
+                                    >시험원 등록</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    체크박스, no, 성명, id, 소속기관, 부서명,
+                                    이메일, 휴대폰, 연락처, 계정등급, 계정상태,
+                                    등록일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 60px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 300px" />
+                                    <col style="width: 260px" />
+                                    <col style="width: 220px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 140px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">No</th>
+                                        <th scope="col">성명</th>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">소속기관</th>
+                                        <th scope="col">부서명</th>
+                                        <th scope="col">이메일</th>
+                                        <th scope="col">휴대폰</th>
+                                        <th scope="col">연락처</th>
+                                        <th scope="col">계정등급</th>
+                                        <th scope="col">계정상태</th>
+                                        <th scope="col">등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="chk1"
+                                                    class="visually-hidden"
+                                                    name="list-chk1"
+                                                />
+                                                <label for="chk1" class="label">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#">34</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">박노근</a>
+                                        </td>
+                                        <td>aaa</td>
+                                        <td>한국표준협회</td>
+                                        <td>KS인증센터</td>
+                                        <td>aaa@a.com</td>
+                                        <td>010-1234-1234</td>
+                                        <td>02-1234-1333</td>
+                                        <td>관리자</td>
+                                        <td>
+                                            <span class="normal">정상</span>
+                                        </td>
+                                        <td>YY-MM-DD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="chk2"
+                                                    class="visually-hidden"
+                                                    name="list-chk2"
+                                                />
+                                                <label for="chk2" class="label">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#">33</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">김방재</a>
+                                        </td>
+                                        <td>bbb</td>
+                                        <td>한국표준협회</td>
+                                        <td>KS인증센터</td>
+                                        <td>bbb@a.com</td>
+                                        <td>010-1234-1234</td>
+                                        <td>02-1234-1333</td>
+                                        <td>일반</td>
+                                        <td>
+                                            <span class="normal">정상</span>
+                                        </td>
+                                        <td>YY-MM-DD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="chk3"
+                                                    class="visually-hidden"
+                                                    name="list-chk3"
+                                                />
+                                                <label for="chk3" class="label">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#">32</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">성선화</a>
+                                        </td>
+                                        <td>ccc</td>
+                                        <td>한국표준협회</td>
+                                        <td>KS인증센터</td>
+                                        <td>ccc@a.com</td>
+                                        <td>010-1234-1234</td>
+                                        <td>02-1234-1333</td>
+                                        <td>일반</td>
+                                        <td>
+                                            <span class="normal">정상</span>
+                                        </td>
+                                        <td>YY-MM-DD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="chk4"
+                                                    class="visually-hidden"
+                                                    name="list-chk4"
+                                                />
+                                                <label for="chk4" class="label">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#">31</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">김인증</a>
+                                        </td>
+                                        <td>ddd</td>
+                                        <td>한국표준협회</td>
+                                        <td>KS인증센터</td>
+                                        <td>ddd@a.com</td>
+                                        <td>010-1234-1234</td>
+                                        <td>02-1234-1333</td>
+                                        <td>일반</td>
+                                        <td>
+                                            <span class="stop">중지</span>
+                                        </td>
+                                        <td>YY-MM-DD</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pagination">
+                            <ol class="paging_list">
+                                <li class="arrow_prev paging_item">
+                                    <button
+                                        type="button"
+                                        aria-label="이전페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="paging_item is-active">
+                                    <button type="button">1</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">2</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">3</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">4</button>
+                                </li>
+                                <!-- 
+                                    <li class="paging_item">
+                                        <button type="button">...</button>
+                                    </li>
+                                    <li class="paging_item">
+                                        <button type="button">9</button>
+                                    </li>
+                                    <li class="paging_item">
+                                        <button type="button">10</button>
+                                    </li> 
+                                -->
+                                <li class="arrow_next paging_item">
+                                    <button
+                                        type="button"
+                                        aria-label="다음페이지 이동"
+                                    ></button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="fot-top">
+                <ul class="fot-top-list">
+                    <li class="fot-top-item"><a href="#">찾아오시는길</a></li>
+                    <li class="fot-top-item"><a href="#">담당자연락처</a></li>
+                    <li class="fot-top-item">
+                        <a href="#">사업자등록증 · 계좌안내</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">공평성 & 윤리강령</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fot-bottom">
+                <h3 class="footer-logo">
+                    <img src="../images/fot-logo.png" alt="KSA통합인증플랫폼" />
+                </h3>
+
+                <div class="address-inner">
+                    <ul class="address-list">
+                        <li class="address-item">KSA한국표준협회</li>
+                        <li class="address-item">사업자번호 : 105-82-00617</li>
+                        <li class="address-item">대표전화 : 1670-6009</li>
+                        <li class="address-item">
+                            06160 서울시 강남구 테헤란로 69길 5 (삼성동,DT센터)
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright(C) 2023 Korean Standards Association. All
+                        rights reserved.
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

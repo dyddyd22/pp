@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta name="Description" content="Login" />
+        <meta http-equiv="Title" content="Login" />
+        <meta http-equiv="Copyright" content="Login" />
+        <meta property="og:url" content="페이지 url" />
+        <meta property="og:title" content="Login" />
+        <meta property="og:description" content="Login" />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="login_wrap">
+            <div class="login-inner">
+                <h1 class="login_logo">
+                    <img
+                        src="../images/logo-period.svg"
+                        alt="ks인증지원시스템 ks심사기관"
+                    />
+                </h1>
+                <form action="" class="form-box">
+                    <div class="input_box input_id">
+                        <input type="text" placeholder="아이디" />
+                        <button type="button" class="btn btn_del">
+                            <span class="visually-hidden">지우기버튼</span>
+                        </button>
+                    </div>
+                    <div class="input_box input_pw">
+                        <!-- NOTE : 05-03
+                            id, pw 틀렸을 경우 input class error 추가시 border color 값 변경, input_error class is-active 추가시 텍스트 노출 
+                        -->
+                        <input
+                            type="password"
+                            placeholder="비밀번호"
+                            class="error"
+                        />
+                        <button type="button" class="btn btn_del">
+                            <span class="visually-hidden">지우기버튼</span>
+                        </button>
+                        <p class="input_error is-active">
+                            아이디 또는 비밀번호가 올바르지 않습니다.
+                        </p>
+                    </div>
+                    <div class="user_info_find">
+                        <div class="user_find">
+                            <div class="chk-inner">
+                                <input
+                                    type="checkbox"
+                                    name="chk_application"
+                                    id="chk-id"
+                                    class="visually-hidden"
+                                />
+                                <label for="chk-id">아이디 저장</label>
+                            </div>
+                            <a href="#a" class="find_pw">비밀번호찾기</a>
+                        </div>
+                    </div>
+                </form>
+                <button type="button" class="btn blue">로그인</button>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

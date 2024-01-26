@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA통합인증플랫폼 KS시험기관 | 내심사관리</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA통합인증플랫폼 KS시험기관 | 내심사관리"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA통합인증플랫폼 KS시험기관 | 내심사관리"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA통합인증플랫폼 KS시험기관 | 내심사관리"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA통합인증플랫폼 KS시험기관 | 내심사관리"
+        />
+        <meta
+            property="og:description"
+            content="KSA통합인증플랫폼 KS시험기관 | 내심사관리"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/sub.css" />
+    </head>
+    <body>
+        <header>
+            <button
+                type="button"
+                class="m-btn-menu sm-only"
+                aria-label="메뉴버튼 열기"
+            ></button>
+            <h1 class="logo">
+                <a href="../index-exam.html">
+                    <img
+                        src="../images/logo-exam.svg"
+                        alt="KSA통합인증플랫폼 ks시험기관 로고"
+                        class="lg-only"
+                    />
+                    <img
+                        src="../images/logo-exam-sm.svg"
+                        alt="KSA통합인증플랫폼 ks시험기관 로고"
+                        class="sm-only"
+                    />
+                </a>
+            </h1>
+
+            <div class="head_user_info">
+                <div class="user_name">
+                    <a href="#a" class="name_color">김인증</a>님
+                    <div class="belong">(KS인증센터 / 심사원)</div>
+                </div>
+                <button
+                    type="button"
+                    class="log-out lg-only"
+                    aria-label="로그아웃"
+                >
+                    <i class="ic-logout" aria-hidden></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper">
+                <aside class="gnb">
+                    <div class="gnb-inner">
+                        <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button>
+                        <div class="gnb-icon-inner">
+                            <ul class="gnb-icon-list">
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-myinfo" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a" class="is-active"
+                                        ><i class="ic-product" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-belong" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-appointed" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <!-- <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-code" aria-hidden></i
+                                    ></a>
+                                </li> -->
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-customer" aria-hidden></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gnb-on">
+                        <div class="head_user_info">
+                            <button
+                                type="button"
+                                class="btn-close"
+                                aria-label="닫기"
+                            ></button>
+                            <div class="head-top sm-only">
+                                <div class="user_name">
+                                    <a href="#a" class="name_color">사용자</a>님
+                                    <div class="belong">
+                                        (KS인증센터 / 운영자)
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="log-out"
+                                    aria-label="로그아웃"
+                                >
+                                    <i class="ic-logout" aria-hidden></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gnb-inner">
+                            <!-- <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button> -->
+                            <div class="gnb-icon-inner">
+                                <ul class="gnb-icon-list">
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-myinfo.html"
+                                            ><i
+                                                class="ic-myinfo"
+                                                aria-hidden
+                                            ></i>
+                                            내정보관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a
+                                            href="./exam/exam-management.html"
+                                            class="is-active"
+                                            ><i
+                                                class="ic-product"
+                                                aria-hidden
+                                            ></i>
+                                            제품시험관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-belong.html"
+                                            ><i
+                                                class="ic-belong"
+                                                aria-hidden
+                                            ></i>
+                                            소속시험원</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-appointed.html"
+                                            ><i
+                                                class="ic-appointed"
+                                                aria-hidden
+                                            ></i>
+                                            제품시험지정품목</a
+                                        >
+                                    </li>
+                                    <!-- <li class="gnb-icon-item">
+                                        <a href="./exam/exam-code.html"
+                                            ><i class="ic-code" aria-hidden></i>
+                                            지정품목코드별 담당자</a
+                                        >
+                                    </li> -->
+                                    <li class="gnb-icon-item">
+                                        <i
+                                            class="ic-customer"
+                                            aria-hidden="고객센터 아이콘"
+                                        ></i>
+                                        <div class="gnb-customer-box">
+                                            <span class="customer-title"
+                                                >고객센터</span
+                                            >
+                                            <ul class="customer-menu-list">
+                                                <li class="customer-menu-item">
+                                                    <a href="#">공지사항</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">Q & A</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">자료실</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="content management exam-management">
+                    <div class="page_head list-title">
+                        <h3 class="page_tit">제품시험관리</h3>
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a
+                                        href="../index-exam.html"
+                                        class="home"
+                                    ></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">KS시험기관</a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="../exam/exam-management.html"
+                                        >제품시험관리</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- pc -->
+                    <div class="tbl_wrap tbl-bg lg-only">
+                        <table class="tbl left">
+                            <caption>
+                                제품시험관리 - 시험의뢰일, 시험 진행상태,
+                                시험결과 선택
+                            </caption>
+                            <colgroup>
+                                <col style="width: 80px" />
+                                <col style="width: 27.2413%" />
+                                <col style="width: 116px" />
+                                <col style="width: 27.816%" />
+                                <col style="width: 116px" />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>시험의뢰일</th>
+                                    <td>
+                                        <div class="picker_from">
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th>시험 진행상태</th>
+                                    <td>
+                                        <select
+                                            multiple="multiple"
+                                            name="somename0"
+                                            class="multi-select"
+                                            placeholder="심사원명"
+                                        >
+                                            <option value="요청" selected>
+                                                요청
+                                            </option>
+                                            <option value="임시저장" selected>
+                                                임시저장
+                                            </option>
+                                            <option value="작성완료" selected>
+                                                작성완료
+                                            </option>
+                                            <option value="승인">승인</option>
+                                            <option value="반려" selected>
+                                                반려
+                                            </option>
+                                        </select>
+                                    </td>
+                                    <th>시험결과 선택</th>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios3"
+                                                    id="product1"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="product3"
+                                                    >합격</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios1"
+                                                    id="product4"
+                                                    class="visually-hidden"
+                                                />
+                                                <label for="product4"
+                                                    >불합격</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="6">
+                                        <div class="company_txt">
+                                            <select
+                                                multiple="multiple"
+                                                name="somename0"
+                                                class="multi-select"
+                                                placeholder="업체명"
+                                            >
+                                                <option value="표준번호">
+                                                    표준번호
+                                                </option>
+                                                <option value="표준명">
+                                                    표준명
+                                                </option>
+                                                <option value="사업자번호">
+                                                    사업자번호
+                                                </option>
+                                            </select>
+                                            <div class="input_search">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Search"
+                                                />
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn btn-search">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- tablets -->
+                    <div class="tbl_wrap tbl-bg md-only">
+                        <table class="tbl left">
+                            <caption>
+                                시험의뢰일, 시험진행상태, 시험결과 선택
+                            </caption>
+                            <colgroup>
+                                <col style="width: 96px" />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>시험의뢰일</th>
+                                    <td>
+                                        <div class="picker_from">
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>시험 진행상태</th>
+                                    <td>
+                                        <select
+                                            multiple="multiple"
+                                            name="somename0"
+                                            class="multi-select"
+                                            placeholder="심사원명"
+                                        >
+                                            <option value="요청" selected>
+                                                요청
+                                            </option>
+                                            <option value="임시저장">
+                                                임시저장
+                                            </option>
+                                            <option value="작성완료">
+                                                작성완료
+                                            </option>
+                                            <option value="승인">승인</option>
+                                            <option value="반려" selected>
+                                                반려
+                                            </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>시험결과 선택</th>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios3"
+                                                    id="product1"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="product3"
+                                                    >합격</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios1"
+                                                    id="product4"
+                                                    class="visually-hidden"
+                                                />
+                                                <label for="product4"
+                                                    >불합격</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        <div class="company_txt">
+                                            <select
+                                                multiple="multiple"
+                                                name="somename0"
+                                                class="multi-select"
+                                                placeholder="업체명"
+                                            >
+                                                <option value="표준번호">
+                                                    표준번호
+                                                </option>
+                                                <option value="표준명">
+                                                    표준명
+                                                </option>
+                                                <option value="사업자번호">
+                                                    사업자번호
+                                                </option>
+                                            </select>
+                                            <div class="input_search">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Search"
+                                                />
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn btn-search">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- mobile -->
+                    <div class="tbl_wrap tbl-bg sm-only">
+                        <table class="tbl left">
+                            <caption>
+                                시험의뢰일, 시험진행상태, 시험결과선택
+                            </caption>
+                            <colgroup>
+                                <col style="width: 100%" />
+                            </colgroup>
+                            <tbody>
+                                <tr class="border-0">
+                                    <th>시험의뢰일</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="picker_from">
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-0">
+                                    <th>시험 진행상태</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select
+                                            multiple="multiple"
+                                            name="somename0"
+                                            class="multi-select"
+                                            placeholder="심사원명"
+                                        >
+                                            <option value="요청" selected>
+                                                요청
+                                            </option>
+                                            <option value="임시저장">
+                                                임시저장
+                                            </option>
+                                            <option value="작성완료">
+                                                작성완료
+                                            </option>
+                                            <option value="승인">승인</option>
+                                            <option value="반려" selected>
+                                                반려
+                                            </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="border-0">
+                                    <th>시험결과 선택</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios3"
+                                                    id="product1"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="product3"
+                                                    >합격</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios1"
+                                                    id="product4"
+                                                    class="visually-hidden"
+                                                />
+                                                <label for="product4"
+                                                    >불합격</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-0">
+                                    <th>
+                                        <select
+                                            multiple="multiple"
+                                            name="somename0"
+                                            class="multi-select"
+                                            placeholder="업체명"
+                                        >
+                                            <option value="표준번호">
+                                                표준번호
+                                            </option>
+                                            <option value="표준명">
+                                                표준명
+                                            </option>
+                                            <option value="사업자번호">
+                                                사업자번호
+                                            </option>
+                                        </select>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input_search">
+                                            <input
+                                                type="text"
+                                                placeholder="Search"
+                                            />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_wrap">
+                            <button type="button" class="btn btn-search">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="column_box mb-0">
+                        <div class="page_head border-bm">
+                            <h3 class="page_tit tit-medium">제품시험 리스트</h3>
+                        </div>
+                        <div class="tbl_btn_inner every_info">
+                            <div class="select_link">
+                                <div class="nums_total">
+                                    총
+                                    <span class="total">27</span>건
+                                </div>
+                                <select name="" id="" class="select">
+                                    <option value="">10개씩 보기</option>
+                                    <option value="">20개씩 보기</option>
+                                </select>
+                            </div>
+                            <div class="btn_box">
+                                <a href="#a" class="btn btn-down">다운로드</a>
+                            </div>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    심사종류, 업체명, 표준번호, 표준명,
+                                    공정심사결과, 시험의뢰일, 시험결과
+                                    최종수정일, 시험(종류등급명, 결과, 진행상태)
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 4.2624%" />
+                                    <col style="width: 5.3841%" />
+                                    <col style="width: 20.7515%" />
+                                    <col style="width: 6.7302%" />
+                                    <col style="width: 8.9736%" />
+                                    <col style="width: 6.7302%" />
+                                    <col style="width: 8.9736%" />
+                                    <col style="width: 11.217%" />
+                                    <col style="width: 13.4604%" />
+                                    <col style="width: 6.7302%" />
+                                    <col style="width: 6.7302%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" rowspan="2">No</th>
+                                        <th scope="col" rowspan="2">
+                                            심사종류
+                                        </th>
+                                        <th scope="col" rowspan="2">업체명</th>
+                                        <th scope="col" rowspan="2">
+                                            표준번호
+                                        </th>
+                                        <th scope="col" rowspan="2">표준명</th>
+                                        <th scope="col" rowspan="2">
+                                            공장심사결과
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            시험의뢰일
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            시험결과 최종수정일
+                                        </th>
+                                        <th scope="col" colspan="3">시험</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">종류등급명</th>
+                                        <th scope="col">결과</th>
+                                        <th scope="col">진행상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="4">
+                                            <a href="#">27</a>
+                                        </td>
+                                        <td rowspan="4">
+                                            <a href="#">정기</a>
+                                        </td>
+                                        <td rowspan="4">
+                                            <a href="#">한국건설생활연구원</a>
+                                        </td>
+                                        <td rowspan="4">KS L 2002</td>
+                                        <td rowspan="4">도자기</td>
+                                        <td rowspan="4">적합</td>
+                                        <td rowspan="4">YY-MM-DD</td>
+                                        <td rowspan="4">22-09-25 (김시험)</td>
+                                        <td>정사각형100*100</td>
+                                        <td>
+                                            <span class="normal">합격</span>
+                                        </td>
+                                        <td>승인</td>
+                                    </tr>
+                                    <tr>
+                                        <td>정사각형10*10</td>
+                                        <td>
+                                            <span class="stop">불합격</span>
+                                        </td>
+                                        <td>승인</td>
+                                    </tr>
+                                    <tr class="is-active">
+                                        <td>정사각형10*20</td>
+                                        <td>
+                                            <span class="normal">합격</span>
+                                        </td>
+                                        <td><span class="stop">반려</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>정사각형10*20</td>
+                                        <td>
+                                            <span class="normal">합격</span>
+                                        </td>
+                                        <td>작성완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">26</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">신규</a>
+                                        </td>
+                                        <td>
+                                            <a href="#"
+                                                >우석종합건설㈜ 화성공장</a
+                                            >
+                                        </td>
+                                        <td>KS L 2015</td>
+                                        <td>고로 슬래그 시멘트</td>
+                                        <td>적합</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>22-09-25 (김시험)</td>
+                                        <td>정사각형100*100</td>
+                                        <td>
+                                            <span class="normal">합격</span>
+                                        </td>
+                                        <td>승인</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <a href="#">25</a>
+                                        </td>
+                                        <td rowspan="2">
+                                            <a href="#">1년심사</a>
+                                        </td>
+                                        <td rowspan="2">
+                                            <a href="#"
+                                                >(주)케이씨씨 안성공장</a
+                                            >
+                                        </td>
+                                        <td rowspan="2">KS B 6879</td>
+                                        <td rowspan="2">열화수형 환기장치</td>
+                                        <td rowspan="2">심사전</td>
+                                        <td rowspan="2">YY-MM-DD</td>
+                                        <td rowspan="2">22-09-25 (김시험)</td>
+                                        <td>정사각형10*10</td>
+                                        <td>
+                                            <span class="normal">합격</span>
+                                        </td>
+                                        <td>작성완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>정사각형10*10</td>
+                                        <td></td>
+                                        <td>요청</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">24</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">정기</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">한국건설생활연구원2</a>
+                                        </td>
+                                        <td>KS L 2015</td>
+                                        <td>콜센터</td>
+                                        <td>심사전</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>22-09-25 (김시험)</td>
+                                        <td>정사각형10*20</td>
+                                        <td></td>
+                                        <td>요청</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">23</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">정기</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">한국건설생활연구원2</a>
+                                        </td>
+                                        <td>KS L 2015</td>
+                                        <td>콜센터</td>
+                                        <td>심사전</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>22-09-25 (김시험)</td>
+                                        <td>정사각형10*20</td>
+                                        <td></td>
+                                        <td>요청</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">22</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">정기</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">한국건설생활연구원2</a>
+                                        </td>
+                                        <td>KS L 2015</td>
+                                        <td>콜센터</td>
+                                        <td>심사전</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>22-09-25 (김시험)</td>
+                                        <td>정사각형10*20</td>
+                                        <td></td>
+                                        <td>요청</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">21</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">정기</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">한국건설생활연구원2</a>
+                                        </td>
+                                        <td>KS L 2015</td>
+                                        <td>콜센터</td>
+                                        <td>심사전</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>22-09-25 (김시험)</td>
+                                        <td>정사각형10*20</td>
+                                        <td></td>
+                                        <td>요청</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pagination">
+                            <ol class="paging_list">
+                                <li class="arrow_prev paging_item">
+                                    <button
+                                        type="button"
+                                        aria-label="이전페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="paging_item is-active">
+                                    <button type="button">1</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">2</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">3</button>
+                                </li>
+                                <!-- <li class="paging_item">
+                                                <button type="button">4</button>
+                                            </li>
+                                            <li class="paging_item">
+                                                <button type="button">...</button>
+                                            </li>
+                                            <li class="paging_item">
+                                                <button type="button">9</button>
+                                            </li>
+                                            <li class="paging_item">
+                                                <button type="button">10</button>
+                                            </li> -->
+                                <li class="arrow_next paging_item">
+                                    <button
+                                        type="button"
+                                        aria-label="다음페이지 이동"
+                                    ></button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="fot-top">
+                <ul class="fot-top-list">
+                    <li class="fot-top-item"><a href="#">찾아오시는길</a></li>
+                    <li class="fot-top-item"><a href="#">담당자연락처</a></li>
+                    <li class="fot-top-item">
+                        <a href="#">사업자등록증 · 계좌안내</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">공평성 & 윤리강령</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fot-bottom">
+                <h3 class="footer-logo">
+                    <img src="../images/fot-logo.png" alt="KSA통합인증플랫폼" />
+                </h3>
+
+                <div class="address-inner">
+                    <ul class="address-list">
+                        <li class="address-item">KSA한국표준협회</li>
+                        <li class="address-item">사업자번호 : 105-82-00617</li>
+                        <li class="address-item">대표전화 : 1670-6009</li>
+                        <li class="address-item">
+                            06160 서울시 강남구 테헤란로 69길 5 (삼성동,DT센터)
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright(C) 2023 Korean Standards Association. All
+                        rights reserved.
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

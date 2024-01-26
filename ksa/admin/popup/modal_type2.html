@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal_type2</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="popup_inner open" data-index="1" id="pop">
+        <div class="modal_popup modal_type2">
+            <!-- NOTE : content 내용 popup_content 클래스 내부에 -->
+            <h2 class="modal_title">제목</h2>
+            <div class="popup_content">
+                <p class="content_txt">내용</p>
+            </div>
+
+            <!-- NOTE : btn 내용 popup_bottom 클래스 내부에 -->
+            <div class="popup_bottom">
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-layer-default">
+                        확인
+                    </button>
+                    <button type="button" class="btn btn-layer-cancel">
+                        취소
+                    </button>
+                </div>
+                <!-- 확인 버튼만 있을 경우 -->
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-layer-default">
+                        확인
+                    </button>
+                    <!-- <button type="button" class="btn btn_cancel">취소</button> -->
+                </div>
+                <input type="checkbox" id="pop_chk" class="visually-hidden" />
+                <label for="pop_chk">일주일간 이 창을 열지 않음</label>
+                <div class="btn_wrap btn_pos">
+                    <button type="button" class="btn pop_close">
+                        <span class="visually-hidden">닫기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim open"></div>
+    <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>

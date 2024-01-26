@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login | 비밀번호 찾기 | 비밀번호 변경</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="Login | 비밀번호 찾기 | 비밀번호 변경"
+        />
+        <meta
+            http-equiv="Title"
+            content="Login | 비밀번호 찾기 | 비밀번호 변경"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="Login | 비밀번호 찾기 | 비밀번호 변경"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="Login | 비밀번호 찾기 | 비밀번호 변경"
+        />
+        <meta
+            property="og:description"
+            content="Login | 비밀번호 찾기 | 비밀번호 변경"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="log-wrapper">
+            <h1 class="login_logo">
+                <a href="#">
+                    <img src="../images/img-logo.svg" alt="ks인증지원시스템" />
+                </a>
+            </h1>
+
+            <section class="pw-inner">
+                <div class="pw-info">
+                    <h2 class="sub-title">비밀번호 변경</h2>
+                    <p class="pw-text">
+                        비밀번호는 영문,숫자,특수문자를 포함하여 8자~16자로
+                        입력해 주세요
+                    </p>
+                </div>
+                <div class="pw-box pw-search">
+                    <div class="label_field">
+                        <span class="tit_import">ID</span>
+                        <p class="id-name">KSA</p>
+                    </div>
+                    <div class="label_field">
+                        <span class="tit_import import">현재 비밀번호</span>
+                        <input
+                            type="password"
+                            placeholder="현재 비밀번호를 입력해 주세요."
+                        />
+                    </div>
+                    <div class="label_field">
+                        <span class="tit_import import">새 비밀번호</span>
+                        <input
+                            type="password"
+                            placeholder="새 비밀번호를 입력해 주세요."
+                        />
+                    </div>
+                    <!-- 
+                                NOTE : 05-03
+                                label_field class align-top 추가시 input_error class에 is-active 추가 적용
+                             -->
+                    <div class="label_field align-top">
+                        <span class="tit_import import">새 비밀번호 확인</span>
+                        <div class="input_pw">
+                            <input
+                                type="password"
+                                placeholder="새 비밀번호를 한번 더 입력해 주세요."
+                            />
+                            <p class="input_error is-active">
+                                새 비밀번호가 일치하지 않습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-layer-default">
+                        변경
+                    </button>
+                </div>
+            </section>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+    </body>
+</html>

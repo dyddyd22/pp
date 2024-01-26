@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사신청상세조회 |
+            기타정보수정
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사신청상세조회 | 기타정보수정"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사신청상세조회 | 기타정보수정"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사신청상세조회 | 기타정보수정"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사신청상세조회 | 기타정보수정"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사신청상세조회 | 기타정보수정"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup_inner open" data-index="1">
+            <div class="modal_popup modal-type-popup">
+                <h2 class="modal_title">기타 정보 수정</h2>
+                <div class="popup_content etc-content">
+                    <p class="business-important">
+                        <strong>사업자 단위 과세적용사업자</strong>는 심사 대상
+                        공장 주소 확인이 가능한 '별지'까지 반드시 첨부해주시기
+                        바랍니다.
+                    </p>
+
+                    <div class="tbl_wrap mb-0">
+                        <table class="tbl left pd-lf-20">
+                            <caption>
+                                사업자등록증 사본, 공장등록증 (제조장허가증),
+                                ISO인증, 주요공정 외주가공 처리여부, 외부 시험
+                                검사 설비 사용여부
+                            </caption>
+                            <colgroup>
+                                <col style="width: 19.4444%" />
+                                <col style="width: 140px" />
+                                <col style="width: 69.4444%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <span class="import"
+                                            >사업자등록증 사본</span
+                                        >
+                                    </th>
+                                    <td colspan="2">
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-upload"
+                                                    >파일선택</a
+                                                >
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <!-- 등록된 파일 내용 노출할 경우 -->
+                                                <!-- <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >사업자등록증.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >인감증명서.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div> -->
+
+                                                <!-- 등록한 파일 없을 경우 드래그 내용 노출한 경우 -->
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>공장등록증 (제조장허가증)</th>
+                                    <td colspan="2">
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-upload"
+                                                    >파일선택</a
+                                                >
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <!-- 등록된 파일 내용 노출할 경우 -->
+                                                <!-- <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >사업자등록증.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >인감증명서.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div> -->
+
+                                                <!-- 등록한 파일 없을 경우 드래그 내용 노출한 경우 -->
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="5">ISO인증</th>
+                                    <th>보유여부</th>
+                                    <td>
+                                        <div class="chk-item start">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios"
+                                                    id="rd1"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="rd1">예</label>
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios"
+                                                    id="rd2"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="rd2">아니오</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>인증기관</th>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            placeholder="내용을 입력해 주세요."
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>인증범위</th>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            placeholder="내용을 입력해 주세요."
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>인증 유효기간</th>
+                                    <td>
+                                        <div class="picker_from">
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-upload"
+                                                    >파일선택</a
+                                                >
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <!-- 등록된 파일 내용 노출할 경우 -->
+                                                <!-- <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >사업자등록증.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >인감증명서.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div> -->
+
+                                                <!-- 등록한 파일 없을 경우 드래그 내용 노출한 경우 -->
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>처리여부</th>
+                                    <td>
+                                        <div class="chk-item start">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios2"
+                                                    id="rd3"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="rd3">예</label>
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios2"
+                                                    id="rd4"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="rd4">아니오</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        주요공정 외주가공 처리여부
+                                        <p class="txt_warning">
+                                            외주 가공 업체 현황 첨부
+                                        </p>
+                                    </th>
+                                    <td colspan="2">
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-upload"
+                                                    >파일선택</a
+                                                >
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <!-- 등록된 파일 내용 노출할 경우 -->
+                                                <!-- <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >사업자등록증.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >인감증명서.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div> -->
+
+                                                <!-- 등록한 파일 없을 경우 드래그 내용 노출한 경우 -->
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">
+                                        외부 시험 검사 설비 사용여부
+                                        <p class="txt_warning">
+                                            외부 설비업체 현황
+                                        </p>
+                                    </th>
+                                    <th>사용여부</th>
+                                    <td>
+                                        <div class="chk-item start">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios3"
+                                                    id="rd5"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="rd5">예</label>
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="radios3"
+                                                    id="rd6"
+                                                    class="visually-hidden"
+                                                    checked=""
+                                                />
+                                                <label for="rd6">아니오</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="file_inner">
+                                            <div class="file_choice">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-upload"
+                                                    >파일선택</a
+                                                >
+                                                <p class="txt_warning">
+                                                    개당 10MB까지 등록
+                                                    가능합니다.
+                                                </p>
+                                            </div>
+                                            <div class="choice_file_Box">
+                                                <!-- 등록된 파일 내용 노출할 경우 -->
+                                                <!-- <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >사업자등록증.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="file_infobox"
+                                                        >
+                                                            <span
+                                                                class="file_name"
+                                                                >인감증명서.jpg</span
+                                                            >
+                                                            <div
+                                                                class="volume_info"
+                                                            >
+                                                                <span
+                                                                    class="file_volume"
+                                                                    >9MB</span
+                                                                >
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    <span
+                                                                        class="visually-hidden"
+                                                                        >지우기</span
+                                                                    >
+                                                                </button>
+                                                            </div>
+                                                        </div> -->
+
+                                                <!-- 등록한 파일 없을 경우 드래그 내용 노출한 경우 -->
+                                                <div class="file-drag">
+                                                    <span aria-hidden=""></span>
+                                                    파일을 여기에 끌어다
+                                                    놓으세요.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="popup_bottom">
+                    <div class="btn_wrap">
+                        <button type="button" class="btn btn-layer-cancel">
+                            취소
+                        </button>
+                        <button type="button" class="btn btn-layer-default">
+                            저장
+                        </button>
+                    </div>
+
+                    <div class="btn_wrap btn_pos">
+                        <button type="button" class="btn pop_close">
+                            <span class="visually-hidden">닫기</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

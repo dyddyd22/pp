@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA 통합인증플랫폼 | 심사이력 팝업</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta name="Description" content="KSA 통합인증플랫폼 | 심사이력 팝업" />
+        <meta http-equiv="Title" content="KSA 통합인증플랫폼 | 심사이력 팝업" />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 심사이력 팝업"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 심사이력 팝업"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 심사이력 팝업"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="apple-touch-icon" href="../../images/apple-icon-72.png" />
+        <link
+            rel="apple-touch-icon-precomposed"
+            href="../../images/apple-icon-96.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../../images/apple-icon-144.png"
+        />
+        <link rel="stylesheet" href="../../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../../css/opensrc/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/main.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+    </head>
+    <body>
+        <div class="com-popup-inner pop-1800 open">
+            <div class="com-modal-popup">
+                <div class="com-popup-head">
+                    <h2 class="modal-title">심사이력</h2>
+                    <button type="button" class="pop-close">
+                        <span class="visually-hidden">닫기</span>
+                    </button>
+                </div>
+                <div class="com-popup-content pop-record">
+                    <div class="column-box">
+                        <div class="numbers-total">
+                            총
+                            <strong>00</strong>
+                            건
+                        </div>
+                        <div class="tbl-wrap">
+                            <table class="tbl">
+                                <caption>
+                                    심사이력 - no, 심사종류, 업체명, 표준번호,
+                                    표준명, 신청일, 심사원, 심사기간, 신청상태,
+                                    심사 처리상태, 심사원 배정상태, 신청비,
+                                    심사비, 심사보고서(공장, 제품,사업장,
+                                    서비스), 인증위 차수
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 80px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 120px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" rowspan="2">No</th>
+                                        <th scope="col" rowspan="2">
+                                            심사종류
+                                        </th>
+                                        <th scope="col" rowspan="2">업체명</th>
+                                        <th scope="col" rowspan="2">
+                                            표준번호
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            표준명(종류수)
+                                        </th>
+                                        <th scope="col" rowspan="2">신청일</th>
+                                        <th scope="col" rowspan="2">심사원</th>
+                                        <th scope="col" rowspan="2">
+                                            심사기간
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            신청상태
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            심사 처리상태
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            심사원 배정상태
+                                        </th>
+                                        <th scope="col" rowspan="2">신청비</th>
+                                        <th scope="col" rowspan="2">심사비</th>
+                                        <th scope="col" colspan="4">
+                                            심사보고서
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            인증위 차수<br />
+                                            (개최일)
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">공장</th>
+                                        <th scope="col">제품</th>
+                                        <th scope="col">사업장</th>
+                                        <th scope="col" class="br-1">서비스</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >정기</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(2)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>
+                                            불합격
+                                            <p class="stop">
+                                                개선진행중 45일경과
+                                            </p>
+                                        </td>
+                                        <td>
+                                            합격 2<br />
+                                            불합격 1
+                                        </td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>621 (22-08-31)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>
+                                            <a href="#a" class="link-info"
+                                                >품목추가</a
+                                            >
+                                        </td>
+                                        <td>text</td>
+                                        <td>KS L 2002</td>
+                                        <td>도자기(1)</td>
+                                        <td>YY-MM-DD</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    박노근
+                                                </div>
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    이한일
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>YY-MM-DD ~ YY-MM-DD</td>
+                                        <td>심사준비</td>
+                                        <td>심사중</td>
+                                        <td>배정완료</td>
+                                        <td>
+                                            <div class="pop-money">55,000</div>
+                                            (결제완료)
+                                        </td>
+                                        <td>
+                                            <div class="pop-money">110,000</div>
+                                            (입금대기)
+                                        </td>
+                                        <td>합격</td>
+                                        <td>합격</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <ol class="paging-list">
+                                <li class="arrow-prev paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="이전페이지 이동"
+                                    ></button>
+                                </li>
+                                <li class="paging-item is-active">
+                                    <button type="button">1</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">2</button>
+                                </li>
+                                <li class="paging-item">
+                                    <button type="button">3</button>
+                                </li>
+                                <li class="arrow-next paging-item">
+                                    <button
+                                        type="button"
+                                        aria-label="다음페이지 이동"
+                                    ></button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-basic">
+                            확인
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+        <script src="../../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../../js/opensrc/swiper-bundle.min.js"></script>
+        <script src="../../js/common.js"></script>
+        <script src="../../js/constants.js"></script>
+    </body>
+</html>

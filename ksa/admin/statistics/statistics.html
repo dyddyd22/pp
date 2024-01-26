@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA 통합인증플랫폼 | 통계관리</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta name="Description" content="KSA 통합인증플랫폼 | 통계관리" />
+        <meta http-equiv="Title" content="KSA 통합인증플랫폼 | 통계관리" />
+        <meta http-equiv="Copyright" content="KSA 통합인증플랫폼 | 통계관리" />
+        <meta property="og:url" content="페이지 url" />
+        <meta property="og:title" content="KSA 통합인증플랫폼 | 통계관리" />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 통계관리"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="admin_aside">
+                <h1 class="admin_logo">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+
+                <div class="menu_box">
+                    <div class="lnb">
+                        <ul class="lnb_wrap">
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-standard">기준정보</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사표준</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">1년심사 대상관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자가진단항목 관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증위원회 개최일정</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">코드관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">권역관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">지역본부관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-resource">자원관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">기업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item">
+                                        <a href="#a">유관기관관리</a>
+                                        <ul class="lnb_last_list">
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">유관기관 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">심사원 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">시험원 관리</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">운영자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-judge">심사관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사신청관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사진행관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사마감관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">시판품조사관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-subscription"
+                                    >인증관련 신청관리</a
+                                >
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 재발급 관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a"
+                                            >영문인증서 발급신청 관리</a
+                                        >
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">제조중단/개시 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">주요목록 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 반납신청 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="ic-certification">
+                                    인증서관리</a
+                                >
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="ksSubmit">
+                                    KS인증기관협의회 전송관리</a
+                                >
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="total">정산관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">매줄정산</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사원정산</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">PG결제현황</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">PG정산</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">PG반제</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="statistic"> 통계관리</a>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="report">레포트</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">KS인증지표</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">KS인증현황</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">KS심사현황</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">KS제품심사의뢰현황</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">KS심사원이력</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">제조중단/개시현황</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">행정처분현황</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">KSA 점유율 현황</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">기관 유입/이탈 현황</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">처리이력현황</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-center">고객센터관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">공지사항관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">FAQ관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">Q&A관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">팝업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">배너관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자료실관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="admin-inner">
+                <header>
+                    <div class="head_user_info">
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a href="#a" class="home"></a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="#a">통계관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-box">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">김인증</a>님
+                                <div class="belong">(서울본부 / 운영자)</div>
+                            </div>
+                            <button
+                                type="button"
+                                class="log-out"
+                                aira-label="로그아웃"
+                            ></button>
+                        </div>
+                    </div>
+                </header>
+                <main class="admin_main">
+                    <div class="content con-statis">
+                        <div class="content-inner">
+                            <div class="page_head list-title">
+                                <h3 class="page_tit">KS인증 통계</h3>
+                            </div>
+                            <div class="progress-inner">
+                                <p>
+                                    시기별 통계정보 제공을 위해 매월 말일
+                                    기준으로 인증서정보를 별도 보관하고
+                                    있으며,<br />
+                                    아래 정보는 별도 보관된 시기별 통계
+                                    데이터에서 추출 제공됩니다.
+                                </p>
+                            </div>
+
+                            <div class="column_box">
+                                <div class="tbl_wrap tbl-bg left">
+                                    <table class="tbl">
+                                        <caption>
+                                            심사구분,심사종류, 담당지역본부,
+                                            신청상태, 심사처리상태, 심사비
+                                            결제상태, 신청비 결제상태, 심사원
+                                            배정상태, 심사방식
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 60px" />
+                                            <col />
+                                            <col style="width: 113px" />
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>기준 월</th>
+                                                <td>
+                                                    <div class="company_txt">
+                                                        <select class="select">
+                                                            <option value="">
+                                                                2023년 10월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 9월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 8월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 7월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 6월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 5월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 4월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 3월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 2월
+                                                            </option>
+                                                            <option value="">
+                                                                2023년 1월
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <th>담당지역본부</th>
+                                                <td>
+                                                    <select class="select">
+                                                        <option value="">
+                                                            전체
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="btn_wrap">
+                                        <button
+                                            type="button"
+                                            class="btn btn-search"
+                                        >
+                                            검색
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column_box">
+                                <div class="page_head">
+                                    <h3 class="page_tit">월별 인증건수</h3>
+                                    <div class="btn_wrap">
+                                        <button
+                                            type="button"
+                                            class="btn btn-down"
+                                        >
+                                            2023년 02월 인증서현황 다운로드
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            유효 인증서 수, 월별
+                                            증감현황(1~12월)
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 110px" />
+                                            <col style="width: 110px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th
+                                                    scope="col"
+                                                    colspan="3"
+                                                    class="bg-green"
+                                                >
+                                                    유효 인증서 수
+                                                </th>
+                                                <th scope="col" colspan="12">
+                                                    월별 증감현황
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th
+                                                    scope="col"
+                                                    class="bg-green"
+                                                >
+                                                    전년도 12월
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="bg-green"
+                                                >
+                                                    2023년 02월
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="bg-green"
+                                                >
+                                                    증감
+                                                </th>
+                                                <th scope="col">1월</th>
+                                                <th scope="col">2월</th>
+                                                <th scope="col">3월</th>
+                                                <th scope="col">4월</th>
+                                                <th scope="col">5월</th>
+                                                <th scope="col">6월</th>
+                                                <th scope="col">7월</th>
+                                                <th scope="col">8월</th>
+                                                <th scope="col">9월</th>
+                                                <th scope="col">10월</th>
+                                                <th scope="col">11월</th>
+                                                <th scope="col">12월</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th rowspan="2">7,000</th>
+                                                <th rowspan="2">7,050</th>
+                                                <th rowspan="2">
+                                                    <div class="available-num">
+                                                        <div class="up">50</div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="flex">
+                                                        <span>유효</span>
+                                                        <div class="nums">
+                                                            7,100
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="flex">
+                                                        <span>유효</span>
+                                                        <div class="nums">
+                                                            7,100
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="flex">
+                                                        <span class="stop"
+                                                            >신규</span
+                                                        >
+                                                        <span class="stop"
+                                                            >100</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="stop"
+                                                            >유입</span
+                                                        >
+                                                        <span class="stop"
+                                                            >50</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum"
+                                                            >반납</span
+                                                        >
+                                                        <span class="sum"
+                                                            >0</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum"
+                                                            >이탈</span
+                                                        >
+                                                        <span class="sum"
+                                                            >50</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum"
+                                                            >취소</span
+                                                        >
+                                                        <span class="sum"
+                                                            >0</span
+                                                        >
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="flex">
+                                                        <span class="stop"
+                                                            >신규</span
+                                                        >
+                                                        <span class="stop"
+                                                            >100</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="stop"
+                                                            >유입</span
+                                                        >
+                                                        <span class="stop"
+                                                            >50</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum"
+                                                            >반납</span
+                                                        >
+                                                        <span class="sum"
+                                                            >0</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum"
+                                                            >이탈</span
+                                                        >
+                                                        <span class="sum"
+                                                            >50</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum"
+                                                            >취소</span
+                                                        >
+                                                        <span class="sum"
+                                                            >0</span
+                                                        >
+                                                    </div>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="3">월 증감</td>
+                                                <td class="right">
+                                                    <div class="available-num">
+                                                        <div class="up">
+                                                            100
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="right">
+                                                    <div class="available-num">
+                                                        <div class="down">
+                                                            50
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    전 년도 12월대비 증감
+                                                </td>
+                                                <td class="right">
+                                                    <div class="available-num">
+                                                        <div class="up">
+                                                            100
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="right">
+                                                    <div class="available-num">
+                                                        <div class="up">50</div>
+                                                    </div>
+                                                </td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="column_box">
+                                <div class="page_head">
+                                    <h3 class="page_tit">
+                                        기준월 인증서정보 현황
+                                    </h3>
+                                </div>
+                                <div class="tbl_btn_inner">
+                                    <strong>· 품목코드별</strong>
+                                </div>
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            품목코드,유효인증서수,신규,유입,반납,이탈,취소
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 200px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th
+                                                    scope="col"
+                                                    class="bg-green"
+                                                >
+                                                    품목코드
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="bg-purple"
+                                                >
+                                                    유효 인증서 수
+                                                </th>
+                                                <th scope="col" class="bg-pink">
+                                                    신규
+                                                </th>
+                                                <th scope="col" class="bg-pink">
+                                                    유입 (인증기관변경)
+                                                </th>
+                                                <th scope="col" class="bg-blue">
+                                                    반납 (전부반납)
+                                                </th>
+                                                <th scope="col" class="bg-blue">
+                                                    이탈 (인증기관변경)
+                                                </th>
+                                                <th scope="col" class="bg-blue">
+                                                    취소
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>기본(A)</th>
+                                                <td>400</td>
+                                                <td>100</td>
+                                                <td>50</td>
+                                                <td>0</td>
+                                                <td>50</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th>기계(B)</th>
+                                                <td>600</td>
+                                                <td>50</td>
+                                                <td>30</td>
+                                                <td>0</td>
+                                                <td>30</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <th>전기(C)</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>금속(D)</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>광산(E)</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>토건(F)</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>일용품(G)</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>식료품(H)</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>미지정</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>합계</td>
+                                                <td><strong>7,710</strong></td>
+                                                <td><strong>150</strong></td>
+                                                <td><strong>80</strong></td>
+                                                <td><strong>0</strong></td>
+                                                <td><strong>80</strong></td>
+                                                <td><strong>1</strong></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="column_box">
+                                <div class="tbl_btn_inner">
+                                    <strong>· 지역본부별</strong>
+                                </div>
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            지역본부,
+                                            유효인증서수,신규,유입,반납,이탈,취소
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 200px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                            <col style="width: 220px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th
+                                                    scope="col"
+                                                    class="bg-green"
+                                                >
+                                                    지역본부
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    class="bg-purple"
+                                                >
+                                                    유효 인증서 수
+                                                </th>
+                                                <th scope="col" class="bg-pink">
+                                                    신규
+                                                </th>
+                                                <th scope="col" class="bg-pink">
+                                                    유입 (인증기관변경)
+                                                </th>
+                                                <th scope="col" class="bg-blue">
+                                                    반납 (전부반납)
+                                                </th>
+                                                <th scope="col" class="bg-blue">
+                                                    이탈 (인증기관변경)
+                                                </th>
+                                                <th scope="col" class="bg-blue">
+                                                    취소
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>본부</th>
+                                                <td>400</td>
+                                                <td>100</td>
+                                                <td>50</td>
+                                                <td>0</td>
+                                                <td>50</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th>부산지역본부</th>
+                                                <td>600</td>
+                                                <td>50</td>
+                                                <td>30</td>
+                                                <td>0</td>
+                                                <td>30</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <th>대구경북지역본부</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>경기지역본부</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>경기강원지역본부</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>강원지부</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>충북지역본부</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>대전세종충남지역본부</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>미지정</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>합계</td>
+                                                <td><strong>7,710</strong></td>
+                                                <td><strong>150</strong></td>
+                                                <td><strong>80</strong></td>
+                                                <td><strong>0</strong></td>
+                                                <td><strong>80</strong></td>
+                                                <td><strong>1</strong></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="column_box">
+                                <div class="page_head">
+                                    <h3 class="page_tit">
+                                        기준연도의 심사진행현황
+                                    </h3>
+                                </div>
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            총
+                                            심사건수,신규,정기,1년,공장이전,품목추가,종류추가,인증기관변경,확인심사(핵심,일반),시판품조사
+                                            시정조치
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 210px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 130px" />
+                                            <col style="width: 140px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th
+                                                    scope="col"
+                                                    class="bg-green"
+                                                >
+                                                    총 심사건수
+                                                </th>
+                                                <th scope="col">신규</th>
+                                                <th scope="col">정기</th>
+                                                <th scope="col">1년</th>
+                                                <th scope="col">공장이전</th>
+                                                <th scope="col">품목추가</th>
+                                                <th scope="col">종류추가</th>
+                                                <th scope="col">
+                                                    인증기관변경
+                                                </th>
+                                                <th scope="col">
+                                                    확인심사(핵심)
+                                                </th>
+                                                <th scope="col">
+                                                    확인심사(일반)
+                                                </th>
+                                                <th scope="col">
+                                                    시판품조사 시정조치
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>411</th>
+                                                <td>152</td>
+                                                <td>30</td>
+                                                <td>44</td>
+                                                <td>10</td>
+                                                <td>30</td>
+                                                <td>50</td>
+                                                <td>30</td>
+                                                <td>20</td>
+                                                <td>35</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

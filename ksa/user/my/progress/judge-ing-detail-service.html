@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회
+    </title>
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="Description" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회" />
+    <meta http-equiv="Title" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회" />
+    <meta http-equiv="Copyright" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회" />
+    <meta property="og:url" content="페이지 url" />
+    <meta property="og:title" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회" />
+    <meta property="og:description" content="KSA 통합인증플랫폼 | My 인증 | 심사진행 | 심사진행 상세조회" />
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../images/apple-icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-icon-96.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-icon-144.png" />
+    <link rel="stylesheet" href="../../css/opensrc/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../css/opensrc/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+    <div class="skip">
+        <a href="#gnb">메뉴 바로가기</a>
+        <a href="#main">본문 바로가기</a>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="head-inner">
+                <h1 class="logo">
+                    <a href="#a">
+                        <img src="../../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+                <div id="gnb">
+                    <ul class="gnb-list">
+                        <li class="gnb-item">
+                            <a href="#a" class="main-nav">My인증</a>
+                            <ul class="gnb-sub-list">
+                                <li class="depth2-tit">KS인증</li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">보유인증관리</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">심사신청현황</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">심사진행</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">인증서재발급신청</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">영문인증서신청</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">회사정보관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#a" class="main-nav">KSA인증서비스</a>
+                            <ul class="gnb-sub-list">
+                                <li class="depth2-tit">KS인증</li>
+                                <li class="gnb-sub-item item-three-tabs">
+                                    <a href="#a">심사안내</a>
+                                    <ul class="three-list">
+                                        <li>
+                                            <a href="#a">· 공평성&윤리강령</a>
+                                        </li>
+                                        <li>
+                                            <a href="#a">· KS심사기준 안내</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb-sub-item item-three-tabs">
+                                    <a href="#a">심사준비</a>
+                                    <ul class="three-list">
+                                        <li>
+                                            <a href="#a">· 심사준비안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#a">· 심사수수료</a>
+                                        </li>
+                                        <li>
+                                            <a href="#a">· 시험위탁기관</a>
+                                        </li>
+                                        <li>
+                                            <a href="#a">· 자가진단 </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">심사신청</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">인증위원회 개최정보</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">1년주기 심사대상</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#" class="main-nav">인증업체검색</a>
+                            <ul class="gnb-sub-list">
+                                <li class="gnb-sub-item">
+                                    <a href="#a">인증업체검색</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#" class="main-nav">고객센터</a>
+                            <ul class="gnb-sub-list">
+                                <li class="gnb-sub-item">
+                                    <a href="#a">공지사항</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">Q&A</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">FAQ</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">자료실</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">공동인증서 사용안내</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">담당자연락처</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">찾아오는 길</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">개인정보처리방침</a>
+                                </li>
+                                <li class="gnb-sub-item">
+                                    <a href="#a">서비스약관</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-group">
+                    <!-- NOTE : 로그인 하지 않은 경우 -->
+                    <a href="#a" class="login"><img src="../../images/login.svg" alt="로그인" /></a>
+                    <!-- NOTE : 로그인 한 경우 -->
+                    <!-- <div class="logout">
+                            <a href="#a"><span class="logout-name">현대제철</span></a>
+                            <a href="#a"><img src="../../images/logout.svg" alt="로그아웃" /></a>
+                        </div> -->
+                    <button type="button" class="head-search" arai-label="전체 검색버튼">
+                        <i class="ic-head-search"></i>
+                    </button>
+                    <button type="button" class="btn-all" aria-label="메뉴 열기">
+                        <i class="ic-btn-all"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="gnb-bg"></div>
+        </header>
+        <!-- NOTE : 전체 검색 버튼 클릭시 -->
+        <div class="all-search">
+            <div class="search-inner">
+                <div class="search-box">
+                    <input type="text" placeholder="검색어를 입력하세요." />
+                    <a href="#a" aria-label="검색 이동"></a>
+                </div>
+                <button type="button" class="search-close" aria-label="전체 영역 닫기">
+                    <i class="ic-search-close"></i>
+                </button>
+            </div>
+        </div>
+        <div class="sm-only gnb">
+            <div class="sm-header">
+                <div class="logout">
+                    <a href="#a"><span class="logout-name">현대제철</span></a>
+                    <a href="#a"><img src="../../images/sm-logout.svg" alt="로그아웃" /></a>
+                </div>
+                <button type="button" class="sm-close" aria-label="모바일 메뉴 닫기"></button>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#a" class="itme-link">My인증</a>
+                        <ul class="sub-list">
+                            <li class="depth2-tit">KS인증</li>
+                            <li class="sub-item">
+                                <a href="#a">보유인증관리</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">심사신청현황</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">심사진행</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">인증서재발급신청</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">영문인증서신청</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">회사정보관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#a" class="itme-link">KSA인증서비스 </a>
+                        <ul class="sub-list subTabs">
+                            <li class="depth2-tit">KS인증</li>
+                            <li class="sub-item">
+                                <a href="#a" class="sub-link">심사안내</a>
+                                <ul class="sub-info-list">
+                                    <li class="sub-info-item">
+                                        <a href="#a">· 공평성&윤리강령</a>
+                                    </li>
+                                    <li class="sub-info-item">
+                                        <a href="#a">· KS심사기준 안내</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a" class="sub-link">심사준비</a>
+                                <ul class="sub-info-list">
+                                    <li class="sub-info-item">
+                                        <a href="#a">· 심사준비안내</a>
+                                    </li>
+                                    <li class="sub-info-item">
+                                        <a href="#a">· 심사수수료</a>
+                                    </li>
+                                    <li class="sub-info-item">
+                                        <a href="#a">· 시험위탁기관</a>
+                                    </li>
+                                    <li class="sub-info-item">
+                                        <a href="#a">· 자가진단 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">심사신청</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">인증위원회 개최정보</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">1년주기 심사대상</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#a" class="itme-link">인증업체검색</a>
+                        <ul class="sub-list">
+                            <li class="sub-item">
+                                <a href="#a">인증업체검색</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#a" class="itme-link">고객센터</a>
+                        <ul class="sub-list">
+                            <li class="sub-item">
+                                <a href="#a">공지사항</a>
+                            </li>
+                            <li class="sub-item"><a href="#a">Q&A</a></li>
+                            <li class="sub-item"><a href="#a">FAQ</a></li>
+                            <li class="sub-item">
+                                <a href="#a">자료실</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">공동인증서 사용안내</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">담당자연락처</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">찾아오는 길</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">개인정보처리방침</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#a">서비스약관</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main id="main">
+            <aside class="side-menu">
+                <div class="side-box">
+                    <ul class="side-list">
+                        <li class="side-item">
+                            <a href="#a">My인증</a>
+                        </li>
+                        <li class="side-item">
+                            <a href="#a">보유인증관리</a>
+                        </li>
+                        <li class="side-item">
+                            <a href="#a">심사신청현황</a>
+                        </li>
+                        <li class="side-item is-active">
+                            <a href="#a">심사진행</a>
+                        </li>
+                        <li class="side-item">
+                            <a href="#a">인증서재발급신청</a>
+                        </li>
+                        <li class="side-item">
+                            <a href="#a">영문인증서신청</a>
+                        </li>
+                        <li class="side-item">
+                            <a href="#a">회사정보관리</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="location">
+                <ul class="location-list">
+                    <li class="location-item">
+                        <a href="#a" class="home">home</a>
+                    </li>
+                    <li class="location-item sub-item">
+                        <a href="#a">My인증</a>
+                    </li>
+                    <li class="location-item sub-item">
+                        <a href="#a">심사진행</a>
+                    </li>
+                    <li class="location-item">
+                        <a href="#a" class="is-active">심사진행 상세조회</a>
+                    </li>
+                </ul>
+            </div>
+            <section class="section ing-detail ing-detail-service">
+                <h2 class="visually-hidden">심사진행 상세조회</h2>
+                <h3 class="title">심사진행 상세조회</h3>
+                <div class="column-box column-detail">
+                    <div class="tbl-bg mb-0">
+                        <div class="bg-body">
+                            <!--
+                                    NOTE :
+                                    text color blue 신청 class ing 추가
+                                    text color red 반려 class stop 추가
+                                    text color green 반려 class normal 추가
+                                -->
+                            <ul class="bg-body-list pt-0">
+                                <li class="bg-body-item">
+                                    <span class="name">심사종류</span>
+                                    <div class="item-text">품목추가</div>
+                                </li>
+                                <li class="bg-body-item">
+                                    <span class="name">심사상태</span>
+                                    <div class="item-text">
+                                        <span class="normal">심사중</span>
+                                    </div>
+                                </li>
+                                <li class="bg-body-item">
+                                    <span class="name">신청일</span>
+                                    <div class="item-text">
+                                        YYYY-MM-DD (신청자명)
+                                    </div>
+                                </li>
+                                <li class="bg-body-item">
+                                    <span class="name">신청비</span>
+                                    <div class="item-text">
+                                        <div>
+                                            <span class="money-num">550,000</span>
+                                            원 (<span class="normal">결제완료</span>)
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bg-body-item">
+                                    <span class="name">심사비</span>
+                                    <div class="item-text">
+                                        <div>
+                                            <span class="money-num">1,250,000</span>
+                                            원 (<span class="stop">입금대기</span>)
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bg-body-item">
+                                    <span class="name">심사기간</span>
+                                    <div class="item-text">
+                                        YYYY-MM-DD ~ YYYY-MM-DD
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop-warning warning-info mb-60">
+                    <div class="warning-box">
+                        <span>신청비가 결제 전입니다. 빠른시일내 결제해
+                            주세요.</span>
+                        <div class="btn-wrap">
+                            <a href="#a" class="btn btn-default">
+                                결제현황 보기
+                            </a>
+                        </div>
+                    </div>
+                    <div class="warning-box">
+                        <span>심사비가 결제 전입니다. 심사시작 3일 전까지
+                            결제해 주세요.</span>
+                        <div class="btn-wrap">
+                            <a href="#a" class="btn btn-default">
+                                결제현황 보기
+                            </a>
+                        </div>
+                    </div>
+                    <div class="warning-box">
+                        <span>심사합격공문 출력이 가능합니다.</span>
+                        <div class="btn-wrap">
+                            <button type="button" class="link-info">
+                                심사합격공문 보기
+                            </button>
+                        </div>
+                    </div>
+                    <div class="warning-box">
+                        <span>심사만족도 설문이 진행중입니다. 빠짐없이 참여해
+                            주세요.</span>
+                        <div class="btn-wrap">
+                            <button type="button" class="link-info retouch ft12">
+                                심사만족도설문 참여하기
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div class="warning-box">
+                            <span>인증서가 발급되었습니다.</span>
+                            <div class="btn-wrap">
+                                <button type="button" class="link-info ft12">
+                                    인증서 발급공문 보기
+                                </button>
+                            </div>
+                        </div> -->
+                </div>
+
+                <div class="column-box">
+                    <h3 class="sub-title">심사품목</h3>
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                표준번호, 인증일, 인증번호, 차기 심사일,
+                                인증상태
+                            </caption>
+                            <colgroup>
+                                <col style="width: 61.4035%" />
+                                <col style="width: 10.5263%" />
+                                <col style="width: 8.7719%" />
+                                <col style="width: 10.5263%" />
+                                <col style="width: 8.7719%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">표준번호</th>
+                                    <th scope="col">인증일</th>
+                                    <th scope="col">인증번호</th>
+                                    <th scope="col">차기 심사일</th>
+                                    <th scope="col">인증상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="lf">
+                                        <div class="flex">
+                                            <span>
+                                                KS S 1004-2 시설 관리
+                                                서비스－제2부：기반 구조
+                                            </span>
+                                            <a href="#a" class="link-info">심사기준</a>
+                                        </div>
+                                    </td>
+                                    <td>2022-08-01</td>
+                                    <td>12345</td>
+                                    <td>2022-10-01</td>
+                                    <td>
+                                        <span class="normal">유효</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="column-box column-judge">
+                    <h3 class="sub-title">심사원</h3>
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                구속, 소속, 심사원명, 심사기간, 휴대폰,
+                                이메일
+                            </caption>
+                            <colgroup>
+                                <col style="width: 10%" />
+                                <col style="width: 20%" />
+                                <col style="width: 14%" />
+                                <col style="width: 26%" />
+                                <col style="width: 15%" />
+                                <col style="width: 15%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">소속</th>
+                                    <th scope="col">심사원명</th>
+                                    <th scope="col">심사기간</th>
+                                    <th scope="col">휴대폰</th>
+                                    <th scope="col">이메일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>정심사원</td>
+                                    <td>한국표준협회</td>
+                                    <td>박노근</td>
+                                    <td>2022-06-10 ~ 2022-06-20</td>
+                                    <td>010-1234-5555</td>
+                                    <td>bbb@a.com</td>
+                                </tr>
+                                <tr>
+                                    <td>부심사원</td>
+                                    <td>한국표준협회</td>
+                                    <td>강심사</td>
+                                    <td>2022-06-10 ~ 2022-06-20</td>
+                                    <td>010-1234-2222</td>
+                                    <td>aaa@a.com</td>
+                                </tr>
+                                <tr>
+                                    <td>부심사원</td>
+                                    <td>한국표준협회</td>
+                                    <td>이심사</td>
+                                    <td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+                                    <td>010-1234-5422</td>
+                                    <td>ccc@a.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="column-box column-link-info">
+                    <div class="pop-warning warning-info">
+                        <div class="warning-box">
+                            <span>부적합 개선조치중입니다. 개선조치를 회신해
+                                주세요.</span>
+                            <div class="btn-wrap">
+                                <a href="#a" class="btn btn-default">
+                                    부적합 개선조치 회신
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="entire-box">
+                        <h3 class="sub-title">심사진행현황(사업장심사)</h3>
+                    </div>
+                    <div class="entire-box mb-0 bm-0">
+                        <h4 class="box-title">주요현황심사</h4>
+                        <p class="warning">
+                            심사원 검토중 일 경우는 “수정하기” 버튼을
+                            클릭하여 정보수정 가능합니다.
+                        </p>
+                    </div>
+                    <ul class="status-list">
+                        <li class="status-item">
+                            <div class="info-inner">
+                                <div class="info-ing">
+                                    <div class="ing-inner">
+                                        <strong class="ing-name">회사현황
+                                            <span class="green-box">검토중</span></strong>
+                                        <ul class="ing-list">
+                                            <li class="ing-item">
+                                                수정 : YY-MM-DD HH:MM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn btn-view on">
+                                        수정
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="status-item">
+                            <div class="info-inner">
+                                <div class="info-ing">
+                                    <div class="ing-inner">
+                                        <strong class="ing-name">서비스인증 추가정보
+                                            <span class="green-box">검토중</span></strong>
+                                        <ul class="ing-list">
+                                            <li class="ing-item">
+                                                수정 : YY-MM-DD HH:MM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn btn-view">
+                                        상세보기
+                                    </button>
+                                    <!-- NOTE : as-is data 첨부파일만 있는 경우 노출 -->
+                                    <!-- <a href="#a" class="btn btn-down"
+                                            >다운로드</a
+                                        > -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="status-item">
+                            <div class="info-inner">
+                                <div class="info-ing">
+                                    <div class="ing-inner">
+                                        <strong class="ing-name">주요 시설.설비.장비
+                                            보유현황
+                                            <span class="gray-box">검토완료</span></strong>
+                                        <ul class="ing-list">
+                                            <li class="ing-item">
+                                                수정 : YY-MM-DD HH:MM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn btn-view">
+                                        상세보기
+                                    </button>
+                                    <!-- NOTE : as-is data 첨부파일만 있는 경우 노출 -->
+                                    <!-- <a href="#a" class="btn btn-down"
+                                            >다운로드</a
+                                        > -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="status-item">
+                            <div class="info-inner">
+                                <div class="info-ing">
+                                    <div class="ing-inner">
+                                        <strong class="ing-name">주요 연락처 정보 (품질담당자 /
+                                            국내연락처)
+                                            <span class="gray-box">검토완료</span></strong>
+                                        <ul class="ing-list">
+                                            <li class="ing-item">
+                                                수정 : YY-MM-DD HH:MM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn btn-view">
+                                        상세보기
+                                    </button>
+                                    <!-- NOTE : as-is data 첨부파일만 있는 경우 노출 -->
+                                    <!-- <a href="#a" class="btn btn-down"
+                                            >다운로드</a
+                                        > -->
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column-box">
+                    <div class="pop-warning warning-info">
+                        <div class="warning-box">
+                            <span>부적합 개선조치중입니다. 개선조치를 회신해
+                                주세요.</span>
+                            <div class="btn-wrap">
+                                <a href="#a" class="btn btn-default">
+                                    부적합 개선조치 회신
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="entire-box between">
+                        <h3 class="sub-title">서비스심사</h3>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-bd-link">
+                                부적합개선조치보고서
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                사업장시험결과, 공장심사결과, 부적합
+                                개선조치, 최종판정, 인증위원회 개최일
+                            </caption>
+                            <colgroup>
+                                <col style="width: 13%" />
+                                <col style="width: 15%" />
+                                <col style="width: 15%" />
+                                <col style="width: 11%" />
+                                <col style="width: 11%" />
+                                <col style="width: 13%" />
+                                <col style="width: 13%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">
+                                        사업장시험결과
+                                    </th>
+                                    <th scope="col" colspan="4">
+                                        부적합 개선조치
+                                    </th>
+                                    <th scope="col" rowspan="2">
+                                        최종판정
+                                    </th>
+                                    <th scope="col" rowspan="2">
+                                        인증위원회(회차)<br />
+                                        개최일
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="tbl-bg">
+                                        부적합
+                                    </th>
+                                    <th scope="col" class="tbl-bg">
+                                        진행상태
+                                    </th>
+                                    <th scope="col" class="tbl-bg">경과</th>
+                                    <th scope="col" class="tbl-bg br-1">
+                                        이력
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="stop">불합격 2</div>
+                                        <button type="button" class="link-info">
+                                            심사보고서
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="result">
+                                            <span>[핵심품질] 1</span>,
+                                            <span>일반품질 1</span>
+                                        </div>
+                                        <button type="button" class="link-info">
+                                            부적합요약서
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="stop">
+                                            개선조치중 (반려)
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="#a" class="btn btn-search">
+                                                개선조치 회신
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>45일</td>
+                                    <td>
+                                        <a href="#a" class="link-file">3건</a>
+                                    </td>
+                                    <td>
+                                        <span class="normal">적합</span>
+                                    </td>
+                                    <td>
+                                        <span>760차 / </span><br />YYYY-MM-DD
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="column-box">
+                    <div class="pop-warning warning-info">
+                        <div class="warning-box">
+                            <span>부적합 개선조치중입니다. 개선조치를 회신해
+                                주세요.</span>
+                            <div class="btn-wrap">
+                                <a href="#a" class="btn btn-default">
+                                    부적합 개선조치 회신
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="entire-box between">
+                        <h3 class="sub-title">
+                            심사진행현황(KGB 송파대리점)
+                        </h3>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-bd-link">
+                                부적합개선조치보고서
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                서비스사업장 심사결과, 부적합 개선조치,
+                                최종판정, 인증위원회 개최일
+                            </caption>
+                            <colgroup>
+                                <col style="width: 13%" />
+                                <col style="width: 15%" />
+                                <col style="width: 15%" />
+                                <col style="width: 11%" />
+                                <col style="width: 11%" />
+                                <col style="width: 13%" />
+                                <col style="width: 13%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">
+                                        서비스사업장<br />
+                                        심사결과
+                                    </th>
+                                    <th scope="col" colspan="4">
+                                        부적합 개선조치
+                                    </th>
+                                    <th scope="col" rowspan="2">
+                                        최종판정
+                                    </th>
+                                    <th scope="col" rowspan="2">
+                                        인증위원회(회차)<br />
+                                        개최일
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="tbl-bg">
+                                        부적합
+                                    </th>
+                                    <th scope="col" class="tbl-bg">
+                                        진행상태
+                                    </th>
+                                    <th scope="col" class="tbl-bg">경과</th>
+                                    <th scope="col" class="tbl-bg br-1">
+                                        이력
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="stop">불합격</div>
+                                        <button type="button" class="link-info">
+                                            심사보고서
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="result">
+                                            <span>[핵심품질] 1</span>,
+                                            <span>일반품질 1</span>
+                                        </div>
+                                        <button type="button" class="link-info">
+                                            부적합요약서
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="stop">
+                                            개선조치중 (반려)
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="#a" class="btn btn-search">
+                                                개선조치 회신
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>45일</td>
+                                    <td>
+                                        <a href="#a" class="link-file">3건</a>
+                                    </td>
+                                    <td>
+                                        <span class="normal">적합</span>
+                                    </td>
+                                    <td>
+                                        <span>760차 / </span><br />YYYY-MM-DD
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="column-box column-passage mb-0">
+                    <span class="name">· 문의</span>
+                    <ul class="passage-list">
+                        <li class="passage-item">
+                            <strong class="passage-name">신청비/심사비 관련</strong>
+                            <div class="passage-box">
+                                <ul class="sub-passage-list">
+                                    <li class="sub-passage-item">
+                                        02-6240-4536
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="passage-item">
+                            <strong class="passage-name">심사관련</strong>
+                            <div class="passage-box">
+                                <ul class="sub-passage-list">
+                                    <li class="sub-passage-item">
+                                        02-6240-3333
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="inner">
+            <ul class="ft-list">
+                <li class="ft-item">
+                    <a href="#a" class="ft-link">찾아오는 길</a>
+                </li>
+                <li class="ft-item">
+                    <a href="#a" class="ft-link">담당자연락처</a>
+                </li>
+                <li class="ft-item">
+                    <a href="#a" class="ft-link">사업자등록증 · 계좌안내</a>
+                </li>
+                <li class="ft-item">
+                    <a href="#a" class="ft-link">공평성 & 윤리강령</a>
+                </li>
+                <li class="ft-item">
+                    <a href="#a" class="ft-link">개인정보처리방침</a>
+                </li>
+            </ul>
+            <div class="address-info">
+                <ul class="address-list">
+                    <li class="address-item">
+                        사업자등록번호 : 105-82-00617
+                    </li>
+                    <li class="address-item">
+                        06160 서울시 강남구 테헤란로 69길 5
+                        <br class="sm-only" />(삼성동, DT센터)
+                    </li>
+                    <li class="address-item">
+                        대표전화 :
+                        <a href="tel:02-1670-6009">1670-6009</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">
+                Copyright &copy; 2023 Korean Standards Association. All
+                rights reserved.
+            </p>
+            <div class="web">
+                <img src="../../images/web.svg" alt="과학기술정보통신부 web 접근성" />
+            </div>
+        </div>
+    </footer>
+
+    <div class="dim"></div>
+
+    <script src="../../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../../js/opensrc/jquery-ui.min.js"></script>
+    <script src="../../js/opensrc/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/constants.js"></script>
+</body>
+
+</html>

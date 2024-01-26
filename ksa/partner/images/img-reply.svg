@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="그룹_166813" data-name="그룹 166813" transform="translate(-1400 -354)">
+    <circle id="타원_9493" data-name="타원 9493" cx="40" cy="40" r="40" transform="translate(1400 354)" fill="#fff"/>
+    <g id="그룹_166196" data-name="그룹 166196" transform="translate(-19.5 -324)">
+      <path id="패스_85942" data-name="패스 85942" d="M25.75.75.75,16.475V43.844a4.131,4.131,0,0,0,4.178,4.083H46.572a4.131,4.131,0,0,0,4.178-4.083V16.475Z" transform="translate(1433.75 693.25)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <rect id="사각형_151264" data-name="사각형 151264" width="33.457" height="34.036" transform="translate(1442.5 700.791)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_4098" data-name="선 4098" x2="20.968" transform="translate(1448.5 713.267)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_4105" data-name="선 4105" x2="20.968" transform="translate(1448.5 705.894)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_4104" data-name="선 4104" x2="20.968" transform="translate(1448.5 720.641)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_85944" data-name="패스 85944" d="M.75,20.532l25,16.129,25-16.129V48.6a4.184,4.184,0,0,1-4.179,4.188H4.928A4.183,4.183,0,0,1,.75,48.6Z" transform="translate(1433.75 689.21)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="그룹_166195" data-name="그룹 166195" transform="translate(1449 717.177)">
+        <g id="그룹_166193" data-name="그룹 166193">
+          <g id="타원_9511" data-name="타원 9511" fill="#fff" stroke="#194da1" stroke-width="1.5">
+            <circle cx="10" cy="10" r="10" stroke="none"/>
+            <circle cx="10" cy="10" r="9.25" fill="none"/>
+          </g>
+          <g id="check" transform="translate(5.957 7.3)">
+            <path id="check-2" data-name="check" d="M12.724,6l-6,5.816L4,9.173" transform="translate(-4 -6)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

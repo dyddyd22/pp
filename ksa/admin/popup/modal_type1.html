@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal_type1</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="popup_inner open" data-index="1">
+        <div class="modal_popup modal_type1">
+            <!-- NOTE : content 내용 popup_content 클래스 내부에 -->
+            <div class="popup_content">
+                <p class="user_inner">
+                    <span class="user_name">user</span>님, 심사비용<br />
+                    <span class="user_money">1,000</span>원 입금
+                    완료되었습니다.
+                </p>
+            </div>
+
+            <!-- NOTE : btn 내용 popup_bottom 클래스 내부에 -->
+            <div class="popup_bottom">
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-layer-default">
+                        확인
+                    </button>
+                    <button type="button" class="btn btn-layer-cancel">
+                        취소
+                    </button>
+                </div>
+                <!-- 확인 버튼만 있을 경우 -->
+                <div class="btn_wrap">
+                    <button type="button" class="btn">확인</button>
+                    <!-- <button type="button" class="btn btn_cancel">취소</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim open"></div>
+    <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>

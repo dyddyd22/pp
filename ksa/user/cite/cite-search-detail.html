@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA 통합인증플랫폼 | 인증업체 검색 | 인증업체 검색결과 상세조회
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 인증업체 검색 | 인증업체 검색결과 상세조회"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 인증업체 검색 | 인증업체 검색결과 상세조회"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 인증업체 검색 | 인증업체 검색결과 상세조회"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 인증업체 검색 | 인증업체 검색결과 상세조회"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 인증업체 검색 | 인증업체 검색결과 상세조회"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="apple-touch-icon" href="../images/apple-icon-72.png" />
+        <link
+            rel="apple-touch-icon-precomposed"
+            href="../images/apple-icon-96.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../images/apple-icon-144.png"
+        />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="skip">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#main">본문 바로가기</a>
+        </div>
+
+        <div class="wrapper">
+            <header class="header">
+                <div class="head-inner">
+                    <h1 class="logo">
+                        <a href="#a">
+                            <img
+                                src="../images/logo.svg"
+                                alt="ksa통합인증플랫폼"
+                            />
+                        </a>
+                    </h1>
+                    <div id="gnb">
+                        <ul class="gnb-list">
+                            <li class="gnb-item">
+                                <a href="#a" class="main-nav">My인증</a>
+                                <ul class="gnb-sub-list">
+                                    <li class="depth2-tit">KS인증</li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">보유인증관리</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">심사신청현황</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">심사진행</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">인증서재발급신청</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">영문인증서신청</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">회사정보관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#a" class="main-nav">KSA인증서비스</a>
+                                <ul class="gnb-sub-list">
+                                    <li class="depth2-tit">KS인증</li>
+                                    <li class="gnb-sub-item item-three-tabs">
+                                        <a href="#a">심사안내</a>
+                                        <ul class="three-list">
+                                            <li>
+                                                <a href="#a"
+                                                    >· 공평성&윤리강령</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#a"
+                                                    >· KS심사기준 안내</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="gnb-sub-item item-three-tabs">
+                                        <a href="#a">심사준비</a>
+                                        <ul class="three-list">
+                                            <li>
+                                                <a href="#a">· 심사준비안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="#a">· 심사수수료</a>
+                                            </li>
+                                            <li>
+                                                <a href="#a">· 시험위탁기관</a>
+                                            </li>
+                                            <li>
+                                                <a href="#a">· 자가진단 </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">심사신청</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">인증위원회 개최정보</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">1년주기 심사대상</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#" class="main-nav">인증업체검색</a>
+                                <ul class="gnb-sub-list">
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">인증업체검색</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#" class="main-nav">고객센터</a>
+                                <ul class="gnb-sub-list">
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">공지사항</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">Q&A</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">FAQ</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">자료실</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">공동인증서 사용안내</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">담당자연락처</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">찾아오는 길</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">개인정보처리방침</a>
+                                    </li>
+                                    <li class="gnb-sub-item">
+                                        <a href="#a">서비스약관</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button-group">
+                        <!-- NOTE : 로그인 하지 않은 경우 -->
+                        <a href="#a" class="login"
+                            ><img src="../images/login.svg" alt="로그인"
+                        /></a>
+                        <!-- NOTE : 로그인 한 경우 -->
+                        <!-- <div class="logout">
+                        <a href="#a"
+                            ><span class="logout-name">현대제철</span></a
+                        >
+                        <a href="#a"
+                            ><img src="../images/sm-logout.svg" alt="로그아웃"
+                        /></a>
+                    </div> -->
+                        <button
+                            type="button"
+                            class="head-search"
+                            arai-label="전체 검색버튼"
+                        >
+                            <i class="ic-head-search"></i>
+                        </button>
+                        <button
+                            type="button"
+                            class="btn-all"
+                            aria-label="메뉴 열기"
+                        >
+                            <i class="ic-btn-all"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gnb-bg"></div>
+            </header>
+            <!-- NOTE : 전체 검색 버튼 클릭시 -->
+            <div class="all-search">
+                <div class="search-inner">
+                    <div class="search-box">
+                        <input type="text" placeholder="검색어를 입력하세요." />
+                        <a href="#a" aria-label="검색 이동"></a>
+                    </div>
+                    <button
+                        type="button"
+                        class="search-close"
+                        aria-label="전체 영역 닫기"
+                    >
+                        <i class="ic-search-close"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="sm-only gnb">
+                <div class="sm-header">
+                    <div class="logout">
+                        <a href="#a"
+                            ><span class="logout-name">현대제철</span></a
+                        >
+                        <a href="#a"
+                            ><img src="../images/sm-logout.svg" alt="로그아웃"
+                        /></a>
+                    </div>
+                    <button
+                        type="button"
+                        class="sm-close"
+                        aria-label="모바일 메뉴 닫기"
+                    ></button>
+                </div>
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#a" class="itme-link">My인증</a>
+                            <ul class="sub-list">
+                                <li class="depth2-tit">KS인증</li>
+                                <li class="sub-item">
+                                    <a href="#a">보유인증관리</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">심사신청현황</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">심사진행</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">인증서재발급신청</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">영문인증서신청</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">회사정보관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#a" class="itme-link">KSA인증서비스 </a>
+                            <ul class="sub-list subTabs">
+                                <li class="depth2-tit">KS인증</li>
+                                <li class="sub-item">
+                                    <a href="#a" class="sub-link">심사안내</a>
+                                    <ul class="sub-info-list">
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 공평성&윤리강령</a>
+                                        </li>
+                                        <li class="sub-info-item">
+                                            <a href="#a">· KS심사기준 안내</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a" class="sub-link">심사준비</a>
+                                    <ul class="sub-info-list">
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 심사준비안내</a>
+                                        </li>
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 심사수수료</a>
+                                        </li>
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 시험위탁기관</a>
+                                        </li>
+                                        <li class="sub-info-item">
+                                            <a href="#a">· 자가진단 </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">심사신청</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">인증위원회 개최정보</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">1년주기 심사대상</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#a" class="itme-link">인증업체검색</a>
+                            <ul class="sub-list">
+                                <li class="sub-item">
+                                    <a href="#a">인증업체검색</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#a" class="itme-link">고객센터</a>
+                            <ul class="sub-list">
+                                <li class="sub-item">
+                                    <a href="#a">공지사항</a>
+                                </li>
+                                <li class="sub-item"><a href="#a">Q&A</a></li>
+                                <li class="sub-item"><a href="#a">FAQ</a></li>
+                                <li class="sub-item">
+                                    <a href="#a">자료실</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">공동인증서 사용안내</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">담당자연락처</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">찾아오는 길</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">개인정보처리방침</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="#a">서비스약관</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <main id="main">
+                <div class="location">
+                    <ul class="location-list">
+                        <li class="location-item">
+                            <a href="#a" class="home">home</a>
+                        </li>
+                        <li class="location-item sub-item">
+                            <a href="#a">인증업체 검색</a>
+                        </li>
+                        <li class="location-item">
+                            <a href="#a" class="is-active"
+                                >인증업체 검색결과 상세조회</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <section class="section cite-detail">
+                    <h2 class="visually-hidden">인증업체 검색결과 상세조회</h2>
+                    <h3 class="title">인증업체 검색결과 상세조회</h3>
+                    <div class="column-box">
+                        <div class="entire-box">
+                            <h3 class="sub-title">인증서 정보</h3>
+                            <a href="#a" class="btn btn-bd">인쇄하기</a>
+                        </div>
+                        <div class="tbl-bg">
+                            <dl class="detail-list">
+                                <div class="detail-item">
+                                    <dt class="detail-title">인증번호</dt>
+                                    <dd class="detail-info">123456</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">인증상태</dt>
+                                    <dd class="detail-info">
+                                        <span class="answer">유효</span>
+                                    </dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">표준번호</dt>
+                                    <dd class="detail-info">KS A 1234</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">표준명</dt>
+                                    <dd class="detail-info">6각 볼트</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">업체명</dt>
+                                    <dd class="detail-info">현대제철</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">대표자명</dt>
+                                    <dd class="detail-info">김현대</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">사업자번호</dt>
+                                    <dd class="detail-info">123-12-12345</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">전화번호</dt>
+                                    <dd class="detail-info">02-1234-1234</dd>
+                                </div>
+                                <div class="detail-item item-full">
+                                    <dt class="detail-title">
+                                        공장소재지(국가)
+                                    </dt>
+                                    <dd class="detail-info">
+                                        경상북도 포항시 남구 동해안로 6363(한국)
+                                    </dd>
+                                </div>
+                                <div class="detail-item item-full">
+                                    <dt class="detail-title">최초인증일</dt>
+                                    <dd class="detail-info">YYYY-MM-DD</dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">특이사항</dt>
+                                    <dd class="detail-info">
+                                        <span class="point">행정처분중</span>
+                                    </dd>
+                                </div>
+                                <div class="detail-item">
+                                    <dt class="detail-title">차기심사기한</dt>
+                                    <dd class="detail-info">YYYY-MM-DD</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="con-inner">
+                            <div class="con-box">
+                                <h4 class="box-title">
+                                    종류등급 · 호칭 정보(<span class="num"
+                                        >2</span
+                                    >건)
+                                </h4>
+                                <ul class="product-list">
+                                    <li class="product-item">
+                                        <strong class="item-title"
+                                            >종류 및 등급 호칭</strong
+                                        >
+                                    </li>
+                                    <li class="product-item">
+                                        <dl class="item-list">
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    인증일
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">상태</dt>
+                                                <dd class="info-product">
+                                                    유효
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    취소/반납일
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <ul class="product-list">
+                                    <li class="product-item">
+                                        <strong class="item-title"
+                                            >강, B, 8.8 차량용 티타늄
+                                            철판</strong
+                                        >
+                                    </li>
+                                    <li class="product-item">
+                                        <dl class="item-list">
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    인증일
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">상태</dt>
+                                                <dd class="info-product">
+                                                    유효
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    취소/반납일
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="con-box">
+                                <h4 class="box-title">
+                                    사업장 정보(<span class="num">2</span>건)
+                                </h4>
+                                <ul class="product-list">
+                                    <li class="product-item">
+                                        <strong class="item-title"
+                                            >1. 사업장명</strong
+                                        >
+                                    </li>
+                                    <li class="product-item">
+                                        <dl class="item-list">
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    인증일
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">주소</dt>
+                                                <dd class="info-product">
+                                                    경상북도 포항시 남구
+                                                    동해안로 6363(한국)
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <ul class="product-list">
+                                    <li class="product-item">
+                                        <strong class="item-title"
+                                            >2. 현대제철</strong
+                                        >
+                                    </li>
+                                    <li class="product-item">
+                                        <dl class="item-list">
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    인증일
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">주소</dt>
+                                                <dd class="info-product">
+                                                    경상북도 포항시 남구
+                                                    동해안로 6363(한국)
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="con-box">
+                                <h4 class="box-title">
+                                    제조중단 / 개시 이력(<span class="num"
+                                        >1</span
+                                    >건)
+                                </h4>
+                                <ul class="product-list">
+                                    <li class="product-item">
+                                        <strong class="item-title"
+                                            >강, B, 8.8 차량용 티타늄
+                                            철판</strong
+                                        >
+                                    </li>
+                                    <li class="product-item">
+                                        <dl class="item-list">
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    제조중단기간
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD ~ YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    제조개시일
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    처리상태
+                                                </dt>
+                                                <dd class="info-product">
+                                                    제조중단중 OR 제조개시완료
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="con-box">
+                                <h4 class="box-title">
+                                    행정처분 진행건(<span class="num">1</span
+                                    >건)
+                                </h4>
+                                <ul class="product-list">
+                                    <li class="product-item">
+                                        <strong class="item-title"
+                                            >강, B, 8.8 차량용 티타늄
+                                            철판</strong
+                                        >
+                                    </li>
+                                    <li class="product-item">
+                                        <dl class="item-list">
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    행정처분기간
+                                                </dt>
+                                                <dd class="info-product">
+                                                    YYYY-MM-DD ~ YYYY-MM-DD
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    행정처분종류
+                                                </dt>
+                                                <dd class="info-product">
+                                                    3개월 표시정지
+                                                </dd>
+                                            </div>
+                                            <div class="list-info">
+                                                <dt class="info-title">
+                                                    처리상태
+                                                </dt>
+                                                <dd class="info-product">
+                                                    행정처분중
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="inner">
+                <ul class="ft-list">
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">찾아오는 길</a>
+                    </li>
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">담당자연락처</a>
+                    </li>
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">사업자등록증 · 계좌안내</a>
+                    </li>
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">공평성 & 윤리강령</a>
+                    </li>
+                    <li class="ft-item">
+                        <a href="#a" class="ft-link">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <div class="address-info">
+                    <ul class="address-list">
+                        <li class="address-item">
+                            사업자등록번호 : 105-82-00617
+                        </li>
+                        <li class="address-item">
+                            06160 서울시 강남구 테헤란로 69길 5
+                            <br class="sm-only" />(삼성동, DT센터)
+                        </li>
+                        <li class="address-item">
+                            대표전화 :
+                            <a href="tel:02-1670-6009">1670-6009</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright">
+                    Copyright &copy; 2023 Korean Standards Association. All
+                    rights reserved.
+                </p>
+                <div class="web">
+                    <img
+                        src="../images/web.svg"
+                        alt="과학기술정보통신부 web 접근성"
+                    />
+                </div>
+            </div>
+        </footer>
+
+        <div class="dim"></div>
+
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/swiper-bundle.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

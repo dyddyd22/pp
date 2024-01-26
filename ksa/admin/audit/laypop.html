@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사원 배정현황 팝업
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사원 배정현황 팝업"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사원 배정현황 팝업"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사원 배정현황 팝업"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사원 배정현황 팝업"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리 | 심사원 배정현황 팝업"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="popup_inner open" data-index="1">
+            <div class="modal_popup modal-type-popup">
+                <h2 class="modal_title">심사원 배정현황</h2>
+                <div class="popup_content">
+                    <div class="tbl_wrap tbl-bg left">
+                        <table class="tbl">
+                            <caption>
+                                조회기간, 보유코드
+                            </caption>
+                            <colgroup>
+                                <col style="width: 68px" />
+                                <col style="width: 737px" />
+                                <col style="width: 120px" />
+                                <col style="width: 676px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>조회기간</th>
+                                    <td>
+                                        <div class="picker_from">
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th>
+                                        <select
+                                            name=""
+                                            id=""
+                                            class="all_select select"
+                                        >
+                                            <option value="">심사원</option>
+                                            <option value="">심사기관명</option>
+                                        </select>
+                                    </th>
+                                    <td>
+                                        <div class="input_search">
+                                            <input
+                                                type="text"
+                                                placeholder="Search"
+                                            />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-0">
+                                    <th>보유코드</th>
+                                    <td colspan="3">
+                                        <div class="chk-inner start">
+                                            <input
+                                                type="checkbox"
+                                                name="chk_save"
+                                                id="chk-tb1"
+                                                class="visually-hidden"
+                                            />
+                                            <label for="chk-tb1"
+                                                >전체 선택</label
+                                            >
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">
+                                        <div class="chk-item">
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk2"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                    checked=""
+                                                />
+                                                <label for="tbl-chk2"
+                                                    >A(기본)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk3"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk3"
+                                                    >B(기계)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk4"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk4"
+                                                    >C(전기전자)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk5"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk5"
+                                                    >D(금속)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk6"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk6"
+                                                    >E(광산)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk7"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk7"
+                                                    >F(건설)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk8"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk8"
+                                                    >G(일용품)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk9"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk9"
+                                                    >H(식료품)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk10"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk10"
+                                                    >I(환경)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk11"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk11"
+                                                    >J(생물)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk12"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk12"
+                                                    >K(섬유)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk13"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk13"
+                                                    >L(요업)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk14"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk14"
+                                                    >M(화학)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk15"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk15"
+                                                    >P(의료)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk16"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk16"
+                                                    >Q(품질경영)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk17"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk17"
+                                                    >R(수송기계)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk18"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk18"
+                                                    >S(서비스)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk19"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk19"
+                                                    >T(물류)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk20"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk20"
+                                                    >V(조선)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk21"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk21"
+                                                    >W(항공우주)</label
+                                                >
+                                            </div>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tbl-chk22"
+                                                    class="visually-hidden"
+                                                    name="list-chk"
+                                                />
+                                                <label for="tbl-chk22"
+                                                    >X(정보통신)</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="btn_wrap">
+                            <button type="button" class="btn btn-search">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="column_box mb-0">
+                        <div class="tbl_btn_inner every_info">
+                            <div class="btn_box">
+                                <a href="#a" class="btn btn-down"
+                                    >리스트 다운로드</a
+                                >
+                                <a href="#a" class="btn btn-down"
+                                    >갤린더 다운로드</a
+                                >
+                            </div>
+                            <div class="btn_box">
+                                <button type="button" class="btn btn-default">
+                                    개인일정등록
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl tbl-schedule">
+                                <caption>
+                                    NO, 심사원명, 보유코드, 소속, 휴대폰, 주소,
+                                    배정일수, 년도, 월, 요일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 80px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 320px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row" rowspan="2">No</th>
+                                        <th scope="row" rowspan="2">
+                                            심사원명<br />(ID)
+                                        </th>
+                                        <th scope="row" rowspan="2">
+                                            보유코드
+                                        </th>
+                                        <th scope="row" rowspan="2">소속</th>
+                                        <th scope="row" rowspan="2">휴대폰</th>
+                                        <th scope="row" rowspan="2">주소</th>
+                                        <th scope="row" rowspan="2">
+                                            배정일수
+                                        </th>
+                                        <th scope="row" colspan="31">
+                                            23년 4월
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">01(토)</th>
+                                        <th scope="row">02(일)</th>
+                                        <th scope="row">03(월)</th>
+                                        <th scope="row">04(화)</th>
+                                        <th scope="row">05(수)</th>
+                                        <th scope="row">06(목)</th>
+                                        <th scope="row">07(금)</th>
+                                        <th scope="row">08(토)</th>
+                                        <th scope="row">09(일)</th>
+                                        <th scope="row">10(월)</th>
+                                        <th scope="row">11(화)</th>
+                                        <th scope="row">12(수)</th>
+                                        <th scope="row">13(목)</th>
+                                        <th scope="row">14(금)</th>
+                                        <th scope="row">15(토)</th>
+                                        <th scope="row">16(일)</th>
+                                        <th scope="row">17(월)</th>
+                                        <th scope="row">18(화)</th>
+                                        <th scope="row">19(수)</th>
+                                        <th scope="row">20(목)</th>
+                                        <th scope="row">21(금)</th>
+                                        <th scope="row">22(토)</th>
+                                        <th scope="row">23(일)</th>
+                                        <th scope="row">24(월)</th>
+                                        <th scope="row">25(화)</th>
+                                        <th scope="row">26(수)</th>
+                                        <th scope="row">27(목)</th>
+                                        <th scope="row">28(금)</th>
+                                        <th scope="row">29(토)</th>
+                                        <th scope="row">30(일)</th>
+                                        <th scope="row">31(월)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            박노근 <br />
+                                            (knowpark)
+                                        </td>
+                                        <td>A,B,D,F</td>
+                                        <td>한국표준협회</td>
+                                        <td>010-1235-1234</td>
+                                        <td>
+                                            서울시 강남구 테헤란로 69길 5
+                                            (삼성동,DT센터)
+                                        </td>
+                                        <td>15</td>
+                                        <td class="on">
+                                            <span class="ellipsis"
+                                                >[정기]순천_현대제철..</span
+                                            >
+                                            C1234, D 1234
+                                            <div class="tbl-hover">
+                                                <span class="hover-title"
+                                                    >[정기]@@제철(순천)</span
+                                                >
+                                                <p class="hover-text">
+                                                    KS A 1234, KS B 1234
+                                                </p>
+                                                <div class="manager">
+                                                    <div class="manager-user">
+                                                        <span
+                                                            class="manager-title"
+                                                            >정</span
+                                                        >
+                                                        박노근
+                                                    </div>
+                                                    <div class="manager-user">
+                                                        <span
+                                                            class="manager-title"
+                                                            >부</span
+                                                        >
+                                                        이한일
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="ellipsis"
+                                                >[정기]순천_현대제철..</span
+                                            >
+                                            C1234, D 1234
+                                        </td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="schedule-chk1"
+                                                    class="visually-hidden"
+                                                />
+                                                <label
+                                                    for="schedule-chk1"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="schedule-chk2"
+                                                    class="visually-hidden"
+                                                />
+                                                <label
+                                                    for="schedule-chk2"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            홍진호<br />
+                                            (id)
+                                        </td>
+                                        <td>C,L</td>
+                                        <td>한국도자기협회</td>
+                                        <td>010-1235-1234</td>
+                                        <td>
+                                            서울시 강남구 테헤란로 69길 5
+                                            (삼성동,DT센터)
+                                        </td>
+                                        <td>10</td>
+                                        <td>개인일정</td>
+                                        <td>개인일정</td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="schedule-chk3"
+                                                    class="visually-hidden"
+                                                />
+                                                <label
+                                                    for="schedule-chk3"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="schedule-chk4"
+                                                    class="visually-hidden"
+                                                />
+                                                <label
+                                                    for="schedule-chk4"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    NO, 심사원명, 보유코드, 소속, 휴대폰, 주소,
+                                    배정일수, 년도, 월, 요일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 80px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 320px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                    <col style="width: 65px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row" rowspan="2">No</th>
+                                        <th scope="row" rowspan="2">
+                                            심사원명<br />(ID)
+                                        </th>
+                                        <th scope="row" rowspan="2">
+                                            보유코드
+                                        </th>
+                                        <th scope="row" rowspan="2">소속</th>
+                                        <th scope="row" rowspan="2">휴대폰</th>
+                                        <th scope="row" rowspan="2">주소</th>
+                                        <th scope="row" rowspan="2">
+                                            배정일수
+                                        </th>
+                                        <th scope="row" colspan="31">
+                                            23년 5월
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">01(월)</th>
+                                        <th scope="row">02(화)</th>
+                                        <th scope="row">03(수)</th>
+                                        <th scope="row">04(목)</th>
+                                        <th scope="row">05(금)</th>
+                                        <th scope="row">06(토)</th>
+                                        <th scope="row">07(일)</th>
+                                        <th scope="row">08(월)</th>
+                                        <th scope="row">09(화)</th>
+                                        <th scope="row">10(수)</th>
+                                        <th scope="row">11(목)</th>
+                                        <th scope="row">12(금)</th>
+                                        <th scope="row">13(토)</th>
+                                        <th scope="row">14(일)</th>
+                                        <th scope="row">15(월)</th>
+                                        <th scope="row">16(화)</th>
+                                        <th scope="row">17(수)</th>
+                                        <th scope="row">18(목)</th>
+                                        <th scope="row">19(금)</th>
+                                        <th scope="row">20(토)</th>
+                                        <th scope="row">21(일)</th>
+                                        <th scope="row">22(월)</th>
+                                        <th scope="row">23(화)</th>
+                                        <th scope="row">24(수)</th>
+                                        <th scope="row">25(목)</th>
+                                        <th scope="row">26(금)</th>
+                                        <th scope="row">27(토)</th>
+                                        <th scope="row">28(일)</th>
+                                        <th scope="row">29(월)</th>
+                                        <th scope="row">30(화)</th>
+                                        <th scope="row">31(수)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            박노근 <br />
+                                            (knowpark)
+                                        </td>
+                                        <td>A,B,D,F</td>
+                                        <td>한국표준협회</td>
+                                        <td>010-1235-1234</td>
+                                        <td>
+                                            서울시 강남구 테헤란로 69길 5
+                                            (삼성동,DT센터)
+                                        </td>
+                                        <td>15</td>
+                                        <td class="on">
+                                            <span class="ellipsis"
+                                                >[정기]순천_현대제철..</span
+                                            >
+                                            C1234, D 1234
+                                            <div class="tbl-hover">
+                                                <span class="hover-title"
+                                                    >[정기]@@제철(순천)</span
+                                                >
+                                                <p class="hover-text">
+                                                    KS A 1234, KS B 1234
+                                                </p>
+                                                <div class="manager">
+                                                    <div class="manager-user">
+                                                        <span
+                                                            class="manager-title"
+                                                            >정</span
+                                                        >
+                                                        박노근
+                                                    </div>
+                                                    <div class="manager-user">
+                                                        <span
+                                                            class="manager-title"
+                                                            >부</span
+                                                        >
+                                                        이한일
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td>
+                                            <span class="ellipsis"
+                                                >[정기]순천_현대제철..</span
+                                            >
+                                            C1234, D 1234
+                                        </td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            홍진호<br />
+                                            (id)
+                                        </td>
+                                        <td>C,L</td>
+                                        <td>한국도자기협회</td>
+                                        <td>010-1235-1234</td>
+                                        <td>
+                                            서울시 강남구 테헤란로 69길 5
+                                            (삼성동,DT센터)
+                                        </td>
+                                        <td>10</td>
+                                        <td></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                        <td class="tbl-disabled"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_bottom">
+                    <div class="btn_wrap">
+                        <button type="button" class="btn btn-layer-default">
+                            확인
+                        </button>
+                    </div>
+
+                    <div class="btn_wrap btn_pos">
+                        <button type="button" class="btn pop_close">
+                            <span class="visually-hidden">닫기</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dim open"></div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

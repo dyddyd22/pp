@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal_type3</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="popup_inner open" data-index="1">
+        <div class="modal_popup modal_type3">
+            <!-- NOTE : content 내용 popup_content 클래스 내부에 -->
+            <h2 class="modal_title">단건등록</h2>
+            <div class="popup_content">
+                <dl class="detail_info_box">
+                    <div class="info_content">
+                        <dt class="con_tit">시험기관</dt>
+                        <dd class="con_txt">
+                            <select name="" id="">
+                                <option value="">전체</option>
+                            </select>
+                        </dd>
+                    </div>
+                    <div class="info_content">
+                        <dt class="con_tit">표준코드</dt>
+                        <dd class="con_txt">
+                            <form action="" class="form-box">
+                                <div class="input_search">
+                                    <input type="text" />
+                                    <!-- <button type="button">
+                                        <span class="visually-hidden"
+                                            >검색버튼</span
+                                        >
+                                    </button> -->
+                                </div>
+                            </form>
+                        </dd>
+                    </div>
+                    <div class="info_content">
+                        <dt class="con_tit">지정상태</dt>
+                        <dd class="con_txt">
+                            <div class="chk-item">
+                                <div class="chk-inner">
+                                    <input type="radio" name="radios" id="rd" class="visually-hidden" checked="" />
+                                    <label for="rd">라디오버튼</label>
+                                    <input type="radio" name="radios" id="rd1" class="visually-hidden" />
+                                    <label for="rd1">라디오버튼</label>
+                                </div>
+                            </div>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+
+            <!-- NOTE : btn 내용 popup_bottom 클래스 내부에 -->
+            <div class="popup_bottom">
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-layer-cancel">
+                        취소
+                    </button>
+                    <button type="button" class="btn btn-layer-default">
+                        저장
+                    </button>
+                </div>
+                <div class="btn_wrap btn_pos">
+                    <button type="button" class="btn pop_close">
+                        <span class="visually-hidden">닫기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim open"></div>
+    <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>

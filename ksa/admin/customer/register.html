@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 공지사항 등록
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 공지사항 등록"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 공지사항 등록"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 공지사항 등록"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 공지사항 등록"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 공지사항 등록"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="admin_aside">
+                <h1 class="admin_logo">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+
+                <div class="menu_box">
+                    <div class="lnb">
+                        <ul class="lnb_wrap">
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-standard">기준정보</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사표준</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">1년심사 대상관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자가진단항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증위원회 개최일정</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">코드관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-resource">자원관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">기업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item">
+                                        <a href="#a">유관기관관리</a>
+                                        <ul class="lnb_last_list">
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">유관기관 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">심사원 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">시험원 관리</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">운영자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-judge">심사관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사신청관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사진행관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사마감관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">시판품조사관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-subscription"
+                                    >인증관련 신청관리</a
+                                >
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 재발급 관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a"
+                                            >영문인증서 발급신청 관리</a
+                                        >
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">제조중단/개시 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">주요목록 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 반납신청 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="ic-certification">
+                                    인증서관리</a
+                                >
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-center">고객센터관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">공지사항관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">FAQ관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">Q&A관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">팝업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">배너관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자료실관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="admin-inner">
+                <header>
+                    <div class="head_user_info">
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a href="#a" class="home"></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">고객센터관리</a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="#a">공지사항 등록</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-box">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">김인증</a>님
+                                <div class="belong">(서울본부 / 운영자)</div>
+                            </div>
+                            <button
+                                type="button"
+                                class="log-out"
+                                aira-label="로그아웃"
+                            ></button>
+                        </div>
+                    </div>
+                </header>
+                <main class="admin_main">
+                    <div class="content">
+                        <div class="content-inner">
+                            <div class="page_head list-title">
+                                <h3 class="page_tit">공지사항 등록</h3>
+                            </div>
+                            <div class="tbl_registration">
+                                <table class="tbl_post pd-lf-20">
+                                    <caption>
+                                        공지사항 등록 - 노출구분, 주요공지여부
+                                        선택, 제목, 내용, 첨부파일
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 200px" />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <span class="import"
+                                                    >사이트구분</span
+                                                >
+                                            </th>
+                                            <td>
+                                                <div class="chk-item">
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="radio"
+                                                            name="site-chk"
+                                                            id="site-chk1"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="site-chk1"
+                                                            >KS</label
+                                                        >
+                                                    </div>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="radio"
+                                                            name="site-chk"
+                                                            id="site-chk2"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="site-chk2"
+                                                            >ISO</label
+                                                        >
+                                                    </div>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="radio"
+                                                            name="site-chk"
+                                                            id="site-chk3"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="site-chk3"
+                                                            >검인증</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="import"
+                                                    >노출구분</span
+                                                >
+                                            </th>
+                                            <td>
+                                                <div class="chk-item">
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            name="chk_save"
+                                                            id="chk-tb1"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="chk-tb1"
+                                                            >사업자</label
+                                                        >
+                                                    </div>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            name="chk_application"
+                                                            id="chk-tb2"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="chk-tb2"
+                                                            >시험기관</label
+                                                        >
+                                                    </div>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            name="chk_receipt"
+                                                            id="chk-tb3"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="chk-tb3"
+                                                            >심사기관</label
+                                                        >
+                                                    </div>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            name="chk_verification"
+                                                            id="chk-tb4"
+                                                            class="visually-hidden"
+                                                        />
+                                                        <label for="chk-tb4"
+                                                            >운영자</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>주요공지여부 선택</th>
+                                            <td>
+                                                <!--
+                                                    NOTE : 04-10
+                                                    주요공지 checkbox 체크시 input disabled 해제
+                                                -->
+                                                <div
+                                                    class="company_box company-expose"
+                                                >
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            name="chk-info"
+                                                            id="chk-tb5"
+                                                            class="visually-hidden"
+                                                            onclick="checkbox(this)"
+                                                        />
+                                                        <label for="chk-tb5"
+                                                            >주요공지</label
+                                                        >
+                                                    </div>
+                                                    <div class="noti-picker">
+                                                        <strong
+                                                            >공지노출기간</strong
+                                                        >
+                                                        <div
+                                                            class="picker_from"
+                                                        >
+                                                            <div
+                                                                class="picker_box"
+                                                            >
+                                                                <input
+                                                                    type="text"
+                                                                    class="datepicker"
+                                                                    disabled
+                                                                    placeholder="2023-01-01"
+                                                                />
+                                                            </div>
+                                                            <span class="hyphen"
+                                                                >-</span
+                                                            >
+                                                            <div
+                                                                class="picker_box"
+                                                            >
+                                                                <input
+                                                                    type="text"
+                                                                    class="datepicker"
+                                                                    disabled
+                                                                    placeholder="2023-01-01"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <p class="txt_warning">
+                                                            주요공지의
+                                                            게시종료일 미지정 시
+                                                            게시물은 계속
+                                                            노출됩니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="import">제목</span>
+                                            </th>
+                                            <td>
+                                                <input
+                                                    type="text"
+                                                    placeholder="제목을 입력해 주세요."
+                                                />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="import">내용</span>
+                                            </th>
+                                            <td>
+                                                <textarea
+                                                    id="summernote"
+                                                    class="summer-control"
+                                                ></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>첨부파일</th>
+                                            <td>
+                                                <!-- <form action="">
+                                                            <div class="file_inner">
+                                                                <input
+                                                                    type="file"
+                                                                    multiple
+                                                                />
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn file_del"
+                                                                >
+                                                                    삭제
+                                                                </button>
+                                                            </div>
+                                                        </form> -->
+                                                <div class="file_inner">
+                                                    <div class="file_choice">
+                                                        <button
+                                                            type="button"
+                                                            class="btn btn-upload"
+                                                        >
+                                                            파일선택
+                                                        </button>
+                                                        <p class="txt_warning">
+                                                            개당 10MB까지 등록
+                                                            가능합니다.
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="choice_file_Box"
+                                                    >
+                                                        <!-- 등록된 파일 내용 노출할 경우 -->
+                                                        <!-- <div
+                                                                    class="file_infobox"
+                                                                >
+                                                                    <span
+                                                                        class="file_name"
+                                                                        >사업자등록증.jpg</span
+                                                                    >
+                                                                    <div
+                                                                        class="volume_info"
+                                                                    >
+                                                                        <span
+                                                                            class="file_volume"
+                                                                            >9MB</span
+                                                                        >
+                                                                        <button
+                                                                            type="button"
+                                                                            class="btn file_del"
+                                                                        >
+                                                                            <span
+                                                                                class="visually-hidden"
+                                                                                >지우기</span
+                                                                            >
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="file_infobox"
+                                                                >
+                                                                    <span
+                                                                        class="file_name"
+                                                                        >인감증명서.jpg</span
+                                                                    >
+                                                                    <div
+                                                                        class="volume_info"
+                                                                    >
+                                                                        <span
+                                                                            class="file_volume"
+                                                                            >9MB</span
+                                                                        >
+                                                                        <button
+                                                                            type="button"
+                                                                            class="btn file_del"
+                                                                        >
+                                                                            <span
+                                                                                class="visually-hidden"
+                                                                                >지우기</span
+                                                                            >
+                                                                        </button>
+                                                                    </div>
+                                                                </div> -->
+                                                        <!-- 등록한 파일 없을 경우 드래그 내용 노출한 경우 -->
+                                                        <div class="file-drag">
+                                                            <span
+                                                                aria-hidden=""
+                                                            ></span>
+                                                            파일을 여기에 끌어다
+                                                            놓으세요.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_wrap">
+                                    <button
+                                        type="button"
+                                        class="btn btn-cancel"
+                                    >
+                                        취소
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-default"
+                                    >
+                                        저장
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="그룹_164911" data-name="그룹 164911" transform="translate(-1844 -27)">
+    <g id="그룹_164904" data-name="그룹 164904">
+      <g id="그룹_164906" data-name="그룹 164906">
+        <g id="그룹_164909" data-name="그룹 164909">
+          <g id="타원_31" data-name="타원 31" transform="translate(1844 27)" fill="#fff" stroke="#487be2" stroke-width="1">
+            <circle cx="18" cy="18" r="18" stroke="none"/>
+            <circle cx="18" cy="18" r="17.5" fill="none"/>
+          </g>
+          <g id="그룹_164908" data-name="그룹 164908">
+            <path id="패스_85809" data-name="패스 85809" d="M-14899.281-19878v-6.5h14v18h-14v-6.516" transform="translate(16754.781 19921)" fill="none" stroke="#1161f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_164910" data-name="그룹 164910">
+      <g id="그룹_164907" data-name="그룹 164907">
+        <path id="패스_85807" data-name="패스 85807" d="M-16699.574-19711.143h-14" transform="translate(18563.074 19756.643)" fill="none" stroke="#1161f8" stroke-linecap="round" stroke-width="1"/>
+      </g>
+      <path id="패스_85808" data-name="패스 85808" d="M4,0,0,4,4,8" transform="translate(1864.5 49.5) rotate(180)" fill="none" stroke="#1161f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

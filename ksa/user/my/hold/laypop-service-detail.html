@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        KSA 통합인증플랫폼 | 서비스중단/개시신고 상세조회 팝업
+    </title>
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="Description" content="KSA 통합인증플랫폼 | 서비스중단/개시신고 상세조회 팝업" />
+    <meta http-equiv="Title" content="KSA 통합인증플랫폼 | 서비스중단/개시신고 상세조회 팝업" />
+    <meta http-equiv="Copyright" content="KSA 통합인증플랫폼 | 서비스중단/개시신고 상세조회 팝업" />
+    <meta property="og:url" content="페이지 url" />
+    <meta property="og:title" content="KSA 통합인증플랫폼 | 서비스중단/개시신고 상세조회 팝업" />
+    <meta property="og:description" content="KSA 통합인증플랫폼 | 서비스중단/개시신고 상세조회 팝업" />
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../images/apple-icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" href="../../images/apple-icon-96.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-icon-144.png" />
+    <link rel="stylesheet" href="../../css/opensrc/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../css/opensrc/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+    <div class="popup-inner open">
+        <div class="modal-popup pop-1200">
+            <h2 class="modal-title">서비스중단 / 개시신고 상세조회</h2>
+            <div class="popup-content holdStop-pop">
+                <div class="column-box">
+                    <div class="entire-box">
+                        <h3 class="sub-title">KS A 1234</h3>
+                    </div>
+                    <h4 class="box-title">대상</h4>
+                    <div class="tbl-wrap">
+                        <table class="tbl">
+                            <caption>
+                                no, 표준명, 인증일, 상태
+                            </caption>
+                            <colgroup>
+                                <col style="width: 7.0175%" />
+                                <col />
+                                <col style="width: 10.5263%" class="hold-col" />
+                                <col style="width: 10.5263%" class="hold-col" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">표준명</th>
+                                    <th scope="col">인증일</th>
+                                    <th scope="col">상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="lf">시설 관리 서비스－제2부：기반 구조</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>
+                                        <span class="normal">유효</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="lf">시장 및 여론 조사 서비스 ㅡ 제1부: 프로세스</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>
+                                        <span class="normal">유효</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="lf">시장 및 여론 조사 서비스 ㅡ 제2부: 기반 구조</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>
+                                        <span class="normal">유효</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="column-box">
+                    <div class="entire-box">
+                        <h4 class="box-title">서비스중단</h4>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-search">
+                                서비스개시 신고
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info-inner">
+                        <!-- 
+                                NOTE : 
+                                text color 완료 class normal
+                            -->
+
+                        <dl class="info-list">
+                            <div class="info-item">
+                                <dt class="item-name">신고일시</dt>
+                                <dd class="item-write">YYYY-MM-DD HH:MM</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">중단기간</dt>
+                                <dd class="item-write">
+                                    YYYY-MM-DD ~ YYYY-MM-DD
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">서비스개시 예정일</dt>
+                                <dd class="item-write">YYYY-MM-DD</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">중단사유</dt>
+                                <dd class="item-write">
+                                    기타 [입력된 중단 사유가 노출됩니다.]
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">중단보고서 첨부</dt>
+                                <dd class="item-write">
+                                    <a href="#a" class="link-info">서비스중단보고서</a>
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">신청자</dt>
+                                <dd class="item-write">
+                                    <ul class="user-list">
+                                        <li class="user-item">신청자명</li>
+                                        <li class="user-item">
+                                            010-1234-1234
+                                        </li>
+                                        <li class="user-item">
+                                            02-1233-1111
+                                        </li>
+                                        <li class="user-item">
+                                            aaa@asdf.com
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="item-name">진행상태</dt>
+                                <dd class="item-write">
+                                    <span class="normal">완료</span>
+                                    (YYYY-MM-DD HH:MM, {처리자명})
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-del">
+                            삭제
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            수정
+                        </button>
+                        <!-- NOTE : 재신고 -->
+                        <!-- <button type="button" class="btn btn-default">
+                                    재신고
+                                </button> -->
+                    </div>
+                </div>
+
+                <!-- <div class="column-box">
+                        <h4 class="box-title">제조개시</h4>
+                        <div class="info-inner">
+                            <dl class="info-list">
+                                <div class="info-item">
+                                    <dt class="item-name">신고일시</dt>
+                                    <dd class="item-write">YYYY-MM-DD HH:MM</dd>
+                                </div>
+                                <div class="info-item">
+                                    <dt class="item-name">개시일</dt>
+                                    <dd class="item-write">YYYY-MM-DD</dd>
+                                </div>
+                                <div class="info-item">
+                                    <dt class="item-name">개시보고서 첨부</dt>
+                                    <dd class="item-write">
+                                        <a href="#a" class="link-info"
+                                            >서비스중단보고서</a
+                                        >
+                                    </dd>
+                                </div>
+                                <div class="info-item">
+                                    <dt class="item-name">신청자</dt>
+                                    <dd class="item-write">
+                                        <ul class="user-list">
+                                            <li class="user-item">신청자명</li>
+                                            <li class="user-item">
+                                                010-1234-1234
+                                            </li>
+                                            <li class="user-item">
+                                                02-1233-1111
+                                            </li>
+                                            <li class="user-item">
+                                                aaa@asdf.com
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </div>
+                                <div class="info-item">
+                                    <dt class="item-name">진행상태</dt>
+                                    <dd class="item-write">
+                                        <span class="normal">완료</span>
+                                        (YYYY-MM-DD HH:MM, {처리자명})
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-del">
+                                삭제
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                재신고
+                            </button>
+                        </div>
+                    </div> -->
+            </div>
+
+            <div class="popup-bottom">
+                <div class="btn-wrap btn-pos">
+                    <button type="button" class="btn pop-close">
+                        <span class="visually-hidden">닫기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dim open"></div>
+    <script src="../../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../../js/opensrc/jquery-ui.min.js"></script>
+    <script src="../../js/opensrc/swiper-bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/constants.js"></script>
+</body>
+
+</html>

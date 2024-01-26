@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="그룹_167289" data-name="그룹 167289" transform="translate(-1160 -298)">
+    <circle id="타원_9496" data-name="타원 9496" cx="40" cy="40" r="40" transform="translate(1160 298)" fill="#fff"/>
+    <g id="그룹_165617" data-name="그룹 165617" transform="translate(-190 -8.332)">
+      <g id="사각형_150589" data-name="사각형 150589" transform="translate(1365 321.333)" fill="#fff" stroke="#194da1" stroke-width="1.5">
+        <rect width="40" height="48.331" stroke="none"/>
+        <rect x="0.75" y="0.75" width="38.5" height="46.831" fill="none"/>
+      </g>
+      <line id="선_574" data-name="선 574" x2="14" transform="translate(1383 331.4)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_575" data-name="선 575" x2="14" transform="translate(1383 340.46)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_3522" data-name="선 3522" x2="14" transform="translate(1383 349.52)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_3523" data-name="선 3523" x2="14" transform="translate(1383 359.587)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="check" transform="translate(1372.143 328.914)">
+        <path id="check-2" data-name="check" d="M10.429,6l-4.42,4.286L4,8.338" transform="translate(-4 -6)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="check-3" data-name="check" transform="translate(1372.143 338.268)">
+        <path id="check-4" data-name="check" d="M10.429,6l-4.42,4.286L4,8.338" transform="translate(-4 -6)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="check-5" data-name="check" transform="translate(1372.143 347.621)">
+        <path id="check-6" data-name="check" d="M10.429,6l-4.42,4.286L4,8.338" transform="translate(-4 -6)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="check-7" data-name="check" transform="translate(1372.143 356.975)">
+        <path id="check-8" data-name="check" d="M10.429,6l-4.42,4.286L4,8.338" transform="translate(-4 -6)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <path id="패스_83226" data-name="패스 83226" d="M17.411,5.473a8.442,8.442,0,1,1-11.938,0A8.442,8.442,0,0,1,17.411,5.473Zm7.018,18.956-6.75-6.75" transform="translate(1390.571 346.904)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

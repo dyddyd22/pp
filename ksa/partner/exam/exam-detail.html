@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA통합인증플랫폼 KS시험기관 | 제품시험관리 | 제품시험관리 상세조회
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA통합인증플랫폼 KS시험기관 | 제품시험관리 | 제품시험관리 상세조회"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA통합인증플랫폼 KS시험기관 | 제품시험관리 | 제품시험관리 상세조회"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA통합인증플랫폼 KS시험기관 | 제품시험관리 | 제품시험관리 상세조회"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA통합인증플랫폼 KS시험기관 | 제품시험관리 | 제품시험관리 상세조회"
+        />
+        <meta
+            property="og:description"
+            content="KSA통합인증플랫폼 KS시험기관 | 제품시험관리 | 제품시험관리 상세조회"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/sub.css" />
+    </head>
+    <body>
+        <header>
+            <button
+                type="button"
+                class="m-btn-menu sm-only"
+                aria-label="메뉴버튼 열기"
+            ></button>
+            <h1 class="logo">
+                <a href="../index-exam.html">
+                    <img
+                        src="../images/logo-exam.svg"
+                        alt="KSA통합인증플랫폼 ks시험기관 로고"
+                        class="lg-only"
+                    />
+                    <img
+                        src="../images/logo-exam-sm.svg"
+                        alt="KSA통합인증플랫폼 ks시험기관 로고"
+                        class="sm-only"
+                    />
+                </a>
+            </h1>
+
+            <div class="head_user_info">
+                <div class="user_name">
+                    <a href="#a" class="name_color">김인증</a>님
+                    <div class="belong">(KS인증센터 / 심사원)</div>
+                </div>
+                <button
+                    type="button"
+                    class="log-out lg-only"
+                    aria-label="로그아웃"
+                >
+                    <i class="ic-logout" aria-hidden></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper">
+                <aside class="gnb">
+                    <div class="gnb-inner">
+                        <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button>
+                        <div class="gnb-icon-inner">
+                            <ul class="gnb-icon-list">
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-myinfo" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a" class="is-active"
+                                        ><i class="ic-product" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-belong" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-appointed" aria-hidden></i
+                                    ></a>
+                                </li>
+                                <!-- <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-code" aria-hidden></i
+                                    ></a>
+                                </li> -->
+                                <li class="gnb-icon-item">
+                                    <a href="#a"
+                                        ><i class="ic-customer" aria-hidden></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gnb-on">
+                        <div class="head_user_info">
+                            <button
+                                type="button"
+                                class="btn-close"
+                                aria-label="닫기"
+                            ></button>
+                            <div class="head-top sm-only">
+                                <div class="user_name">
+                                    <a href="#a" class="name_color">사용자</a>님
+                                    <div class="belong">
+                                        (KS인증센터 / 운영자)
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="log-out"
+                                    aria-label="로그아웃"
+                                >
+                                    <i class="ic-logout" aria-hidden></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gnb-inner">
+                            <!-- <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button> -->
+                            <div class="gnb-icon-inner">
+                                <ul class="gnb-icon-list">
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-myinfo.html"
+                                            ><i
+                                                class="ic-myinfo"
+                                                aria-hidden
+                                            ></i>
+                                            내정보관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a
+                                            href="./exam/exam-management.html"
+                                            class="is-active"
+                                            ><i
+                                                class="ic-product"
+                                                aria-hidden
+                                            ></i>
+                                            제품시험관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-belong.html"
+                                            ><i
+                                                class="ic-belong"
+                                                aria-hidden
+                                            ></i>
+                                            소속시험원</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="./exam/exam-appointed.html"
+                                            ><i
+                                                class="ic-appointed"
+                                                aria-hidden
+                                            ></i>
+                                            제품시험지정품목</a
+                                        >
+                                    </li>
+                                    <!-- <li class="gnb-icon-item">
+                                        <a href="./exam/exam-code.html"
+                                            ><i class="ic-code" aria-hidden></i>
+                                            지정품목코드별 담당자</a
+                                        >
+                                    </li> -->
+                                    <li class="gnb-icon-item">
+                                        <i
+                                            class="ic-customer"
+                                            aria-hidden="고객센터 아이콘"
+                                        ></i>
+                                        <div class="gnb-customer-box">
+                                            <span class="customer-title"
+                                                >고객센터</span
+                                            >
+                                            <ul class="customer-menu-list">
+                                                <li class="customer-menu-item">
+                                                    <a href="#">공지사항</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">Q & A</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">자료실</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="content exam-detail">
+                    <div class="page_head list-title">
+                        <h3 class="page_tit">제품시험관리 상세조회</h3>
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a
+                                        href="../index-exam.html"
+                                        class="home"
+                                    ></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#">KS시험기관</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="../exam/exam-management.html"
+                                        >제품시험관리</a
+                                    >
+                                </li>
+                                <li class="location_item active">
+                                    <a href="./exam-detail.html"
+                                        >제품시험관리 상세조회</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tbl_btn_inner every_info">
+                        <div class="btn_box">
+                            <a href="#a" class="btn btn-process">처리이력</a>
+                            <a href="#a" class="btn btn-process">조회이력</a>
+                            <div class="nums_total">
+                                조회
+                                <span class="total">3,333</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">심사신청정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    심사신청정보 - 심사종류, 회사명,
+                                    공장심사결과, 표준번호, 표준명, 종류등급,
+                                    기타
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 114px" />
+                                    <col style="width: 294px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 220px" />
+                                    <col style="width: 420px" />
+                                    <col style="width: 514px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">심사종류</th>
+                                        <th scope="col">회사명</th>
+                                        <th scope="col">공장심사결과</th>
+                                        <th scope="col">표준번호</th>
+                                        <th scope="col">표준명</th>
+                                        <th scope="col">종류등급</th>
+                                        <th scope="col">기타사항</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">1년심사</td>
+                                        <td rowspan="2">
+                                            (주)케이씨씨 안성공장
+                                        </td>
+                                        <td rowspan="2">적합</td>
+                                        <td rowspan="2">KS L 2002</td>
+                                        <td rowspan="2">열화수형 환기장치</td>
+                                        <td class="bg-rowth left">
+                                            <div class="row-box">
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        1. 종류별(구조형태)
+                                                    </li>
+                                                    <li class="row-item">
+                                                        덕트형
+                                                    </li>
+                                                </ul>
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        2. 종류별(구성)
+                                                    </li>
+                                                    <li class="row-item">
+                                                        열회수형 환기장치 세트
+                                                    </li>
+                                                </ul>
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        3. 종류별(정격 풍량)
+                                                    </li>
+
+                                                    <li class="row-item">
+                                                        소형(300m~~)
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="lf">
+                                            호칭 : aaa<br />전자파적합성
+                                            시험모델 : TM5-064A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-rowth left">
+                                            <div class="row-box">
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        1. 종류별(구조형태)
+                                                    </li>
+                                                    <li class="row-item">
+                                                        무덕트형
+                                                    </li>
+                                                </ul>
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        2. 종류별(구성)
+                                                    </li>
+                                                    <li class="row-item">
+                                                        열회수형 환기장치 세트
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="lf">
+                                            호칭 : bbb<br />전자파적합성
+                                            시험모델 : TM5-064Q
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">관련 연락처</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20 table-info">
+                                <caption>
+                                    관련 연락처 - 업체 품질관리담당자,
+                                    시료채취자, 품목담당자
+                                </caption>
+                                <colgroup>
+                                    <col
+                                        class="first-col"
+                                        style="width: 200px"
+                                    />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            업체 품질관리<br
+                                                class="sm-only"
+                                            />담당자
+                                        </th>
+                                        <td>
+                                            오영준<span class="hyphen"></span
+                                            >차장<span class="hyphen"></span>
+                                            010-1234-5678<span
+                                                class="hyphen"
+                                            ></span>
+                                            031-1234-4444<span
+                                                class="hyphen"
+                                            ></span
+                                            >a@a.com
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>시료채취자</th>
+                                        <td>
+                                            박노근<span class="hyphen"></span
+                                            >한국표준협회<span
+                                                class="hyphen"
+                                            ></span
+                                            >심사원<span class="hyphen"></span>
+                                            010-2222-3333<span
+                                                class="hyphen"
+                                            ></span
+                                            >02-1234-1000 aaa@a.com
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>품목담당자</th>
+                                        <td>
+                                            조철호<span class="hyphen"></span
+                                            >한국표준협회<span
+                                                class="hyphen"
+                                            ></span
+                                            >위원<span class="hyphen"></span>
+                                            010-2222-4444<span
+                                                class="hyphen"
+                                            ></span
+                                            >02-1234-1111<span
+                                                class="hyphen"
+                                            ></span
+                                            >ccc@a.com
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">제품시험 의뢰서</h3>
+                            <div class="btn_wrap">
+                                <button
+                                    type="button"
+                                    class="btn btn-layer-default"
+                                >
+                                    제품시험의뢰서
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="tbl_wrap mb-20">
+                            <table class="tbl">
+                                <caption>
+                                    제품시험 의뢰서 - 종류등급 및 호칭, 재고량,
+                                    시료번호, 시료크기, 시료수 (로트번호),
+                                    시험방법 및 시험항목, 전자파적합성 시험모델
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 234px" />
+                                    <col style="width: 134px" />
+                                    <col style="width: 300px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 594px" />
+                                    <col style="width: 200px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">종류등급 및 호칭</th>
+                                        <th scope="col">재고량</th>
+                                        <th scope="col">시료번호</th>
+                                        <th scope="col">시료크기</th>
+                                        <th scope="col">시료수 (로트번호)</th>
+                                        <th scope="col">
+                                            시험방법 및 시험항목
+                                        </th>
+                                        <th scope="col">
+                                            전자파적합성 시험모델
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>정사각형 100*100</td>
+                                        <td>20EA</td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td>N=1</td>
+                                        <td>40EA (202110)</td>
+                                        <td class="lf">
+                                            ※ KS C 9806:2014의 시험항목 및 시험
+                                            방법에 따름
+                                        </td>
+                                        <td>aaaa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>직사각형 100*10</td>
+                                        <td>20EA</td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td>N=1</td>
+                                        <td>40EA (202110)</td>
+                                        <td class="lf">
+                                            ※ KS C 9806:2014의 시험항목 및 시험
+                                            방법에 따름
+                                        </td>
+                                        <td>aaaa</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20 table-info">
+                                <caption>
+                                    제품시험 의뢰처, 샘플링(시료 채취)방식,
+                                    공시체 제작방법, 공시체 규격, 제작자,
+                                    시료채취자, 품질관리담당자, 기타 추가정보,
+                                    첨부파일
+                                </caption>
+                                <colgroup>
+                                    <col
+                                        class="first-col"
+                                        style="width: 200px"
+                                    />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>제품시험 의뢰처</th>
+                                        <td>한국기계전기전자시험연구원</td>
+                                    </tr>
+                                    <tr>
+                                        <th>샘플링(시료 채취)방식</th>
+                                        <td>
+                                            KS Q 1003(랜덤샘플링방법)에 따름
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>공시체 제작방법</th>
+                                        <td>해당없음</td>
+                                    </tr>
+                                    <tr>
+                                        <th>공시체 규격</th>
+                                        <td>TEXT</td>
+                                    </tr>
+                                    <tr>
+                                        <th>제작자</th>
+                                        <td>한국표준협회 품질관리담당자</td>
+                                    </tr>
+                                    <tr>
+                                        <th>시료채취자</th>
+                                        <td>박노근</td>
+                                    </tr>
+                                    <tr>
+                                        <th>품질관리담당자</th>
+                                        <td>이담당</td>
+                                    </tr>
+                                    <tr>
+                                        <th>기타 추가정보</th>
+                                        <td>TEXT</td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부파일</th>
+                                        <td>
+                                            <a href="#">aaa.Xls (1,200kb)</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">제품심사 결과 등록</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    제품심사 결과 등록 - 종류등급 및
+                                    호칭,시료번호,제품심사결과,시험완료일,진행상태,결과파일,비고
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 240px" />
+                                    <col style="width: 300px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 190px" />
+                                    <col style="width: 220px" />
+                                    <col style="width: 340px" />
+                                    <col style="width: 330px" />
+                                </colgroup>
+                                <thead>
+                                    <th scope="col">종류등급 및 호칭</th>
+                                    <th scope="col">시료번호</th>
+                                    <th scope="col">
+                                        <span class="import">제품심사결과</span>
+                                    </th>
+                                    <th scope="col">시험완료일</th>
+                                    <th scope="col">
+                                        <span class="import">진행상태</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span class="import">결과파일</span>
+                                    </th>
+                                    <th scope="col">비고</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>정사각형 100*100</td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td>합격</td>
+                                        <td>22-09-23</td>
+                                        <td>담당자승인</td>
+                                        <td class="left">
+                                            <a href="#"
+                                                >첨부파일.pdf (1,200kb)</a
+                                            >
+                                            <span>22-09-23 10:12</span>
+                                        </td>
+                                        <td class="lf"></td>
+                                    </tr>
+                                    <tr class="is-active">
+                                        <td>직사각형 100*10</td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td>
+                                            <div class="chk-item center">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-yesno"
+                                                        id="td-yes"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-yes"
+                                                        >합격</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-yesno"
+                                                        id="td-no"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-no"
+                                                        >불합격</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>22-09-23</td>
+                                        <td>
+                                            <div class="chk-item center">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-saves"
+                                                        id="td-save"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-save"
+                                                        >임시저장</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-saves"
+                                                        id="td-final"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-final"
+                                                        >작성완료</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="left">
+                                            <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                            <div class="file_inner on">
+                                                <div class="file_choice">
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-upload"
+                                                        >파일선택</a
+                                                    >
+                                                    <p class="txt_warning">
+                                                        개당 10MB까지 등록
+                                                        가능합니다.
+                                                    </p>
+                                                </div>
+                                                <div class="choice_file_Box">
+                                                    <div class="file_infobox">
+                                                        <span class="file_name"
+                                                            >사업자등록증.jpg</span
+                                                        >
+                                                        <div
+                                                            class="volume_info"
+                                                        >
+                                                            <span
+                                                                class="file_volume"
+                                                                >9MB</span
+                                                            >
+                                                            <button
+                                                                type="button"
+                                                                class="btn file_del"
+                                                            >
+                                                                <span
+                                                                    class="visually-hidden"
+                                                                    >지우기</span
+                                                                >
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-drag">
+                                                        <span
+                                                            aria-hidden=""
+                                                        ></span>
+                                                        파일을 여기에 끌어다
+                                                        놓으세요.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="lf">
+                                            <span class="stop"
+                                                >품목담당자 반려</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>직사각형 100*10</td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td>
+                                            <div class="chk-item center">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-yesno1"
+                                                        id="td-yes1"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-yes1"
+                                                        >합격</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-yesno1"
+                                                        id="td-no1"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-no1"
+                                                        >불합격</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>22-09-23</td>
+                                        <td>
+                                            <div class="chk-item center">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-saves1"
+                                                        id="td-save1"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-save1"
+                                                        >임시저장</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-saves1"
+                                                        id="td-final1"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-final1"
+                                                        >작성완료</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="left">
+                                            <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                            <div class="file_inner">
+                                                <div class="file_choice">
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-upload"
+                                                        >파일선택</a
+                                                    >
+                                                    <p class="txt_warning">
+                                                        개당 10MB까지 등록
+                                                        가능합니다.
+                                                    </p>
+                                                </div>
+                                                <div class="choice_file_Box">
+                                                    <div class="file_infobox">
+                                                        <span class="file_name"
+                                                            >사업자등록증.jpg</span
+                                                        >
+                                                        <div
+                                                            class="volume_info"
+                                                        >
+                                                            <span
+                                                                class="file_volume"
+                                                                >9MB</span
+                                                            >
+                                                            <button
+                                                                type="button"
+                                                                class="btn file_del"
+                                                            >
+                                                                <span
+                                                                    class="visually-hidden"
+                                                                    >지우기</span
+                                                                >
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-drag">
+                                                        <span
+                                                            aria-hidden=""
+                                                        ></span>
+                                                        파일을 여기에 끌어다
+                                                        놓으세요.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="lf"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="ellipsis">
+                                                덕트형 열회수형 환기장치…
+                                            </p>
+                                            <div class="btn_wrap">
+                                                <a href="#a" class="btn btn-sm"
+                                                    >더보기</a
+                                                >
+                                            </div>
+                                        </td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td>
+                                            <div class="chk-item center">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-yesno2"
+                                                        id="td-yes2"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-yes2"
+                                                        >합격</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-yesno2"
+                                                        id="td-no2"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-no2"
+                                                        >불합격</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="picker_box">
+                                                <input
+                                                    type="text"
+                                                    class="datepicker"
+                                                    placeholder="2023-01-01"
+                                                />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="chk-item center">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-saves2"
+                                                        id="td-save2"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-save2"
+                                                        >임시저장</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="rd-saves2"
+                                                        id="td-final2"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="td-final2"
+                                                        >작성완료</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="left">
+                                            <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                            <div class="file_inner">
+                                                <div class="file_choice">
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-upload"
+                                                        >파일선택</a
+                                                    >
+                                                    <p class="txt_warning">
+                                                        개당 10MB까지 등록
+                                                        가능합니다.
+                                                    </p>
+                                                </div>
+                                                <div class="choice_file_Box">
+                                                    <div class="file_infobox">
+                                                        <span class="file_name"
+                                                            >사업자등록증.jpg</span
+                                                        >
+                                                        <div
+                                                            class="volume_info"
+                                                        >
+                                                            <span
+                                                                class="file_volume"
+                                                                >9MB</span
+                                                            >
+                                                            <button
+                                                                type="button"
+                                                                class="btn file_del"
+                                                            >
+                                                                <span
+                                                                    class="visually-hidden"
+                                                                    >지우기</span
+                                                                >
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="file-drag">
+                                                        <span
+                                                            aria-hidden=""
+                                                        ></span>
+                                                        파일을 여기에 끌어다
+                                                        놓으세요.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="lf"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="last-info">
+                            최종수정일 :
+                            <span class="info-date">22-09-05 13:02</span>
+                            <span class="info-name">박노근</span>
+                        </p>
+                    </div>
+
+                    <!-- 제품시험관리 상세조회 (조회)시 노출 -->
+                    <!-- <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">제품심사 결과 등록</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    제품심사 결과 등록 - 종류등급 및
+                                    호칭,시료번호,제품심사결과,시험완료일,진행상태,결과파일,비고
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 240px" />
+                                    <col style="width: 300px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 220px" />
+                                    <col style="width: 340px" />
+                                    <col style="width: 340px" />
+                                </colgroup>
+                                <thead>
+                                    <th scope="col">종류등급 및 호칭</th>
+                                    <th scope="col">시료번호</th>
+                                    <th scope="col">
+                                        <span class="import">제품심사결과</span>
+                                    </th>
+                                    <th scope="col">시험완료일</th>
+                                    <th scope="col">
+                                        <span class="import">진행상태</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span class="import">결과파일</span>
+                                    </th>
+                                    <th scope="col">비고</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>정사각형 100*100</td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td>합격</td>
+                                        <td>22-09-23</td>
+                                        <td>담당자승인</td>
+                                        <td class="left">
+                                            <a href="#"
+                                                >첨부파일.pdf (1,200kb)</a
+                                            >
+                                            <span>22-09-23 10:12</span>
+                                        </td>
+                                        <td class="lf"></td>
+                                    </tr>
+                                    <tr class="is-active">
+                                        <td>직사각형 100*10</td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td>합격</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="lf">
+                                            <span class="stop"
+                                                >품목담당자 반려</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>직사각형 100*20</td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="lf"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="ellipsis">
+                                                덕트형 열회수형 환기장치…
+                                            </p>
+                                            <div class="btn_wrap">
+                                                <a href="#a" class="btn btn-sm"
+                                                    >더보기</a
+                                                >
+                                            </div>
+                                        </td>
+                                        <td>NT01~04 *모델명:C151K</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="lf"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="last-info">
+                            최종수정일 :
+                            <span class="info-date">22-09-05 13:02</span>
+                            <span class="info-name">박노근</span>
+                        </p>
+                    </div> -->
+
+                    <div class="btn_wrap">
+                        <button type="button" class="btn btn-bd">목록</button>
+                        <button type="button" class="btn btn-layer-default">
+                            저장
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="fot-top">
+                <ul class="fot-top-list">
+                    <li class="fot-top-item"><a href="#">찾아오시는길</a></li>
+                    <li class="fot-top-item"><a href="#">담당자연락처</a></li>
+                    <li class="fot-top-item">
+                        <a href="#">사업자등록증 · 계좌안내</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">공평성 & 윤리강령</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fot-bottom">
+                <h3 class="footer-logo">
+                    <img src="../images/fot-logo.png" alt="KSA통합인증플랫폼" />
+                </h3>
+
+                <div class="address-inner">
+                    <ul class="address-list">
+                        <li class="address-item">KSA한국표준협회</li>
+                        <li class="address-item">사업자번호 : 105-82-00617</li>
+                        <li class="address-item">대표전화 : 1670-6009</li>
+                        <li class="address-item">
+                            06160 서울시 강남구 테헤란로 69길 5 (삼성동,DT센터)
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright(C) 2023 Korean Standards Association. All
+                        rights reserved.
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

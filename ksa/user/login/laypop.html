@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSA 통합인증플랫폼 | 로그인 | 미등록기업 등록 팝업</title>
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="Description" content="KSA 통합인증플랫폼 | 로그인 | 미등록기업 등록 팝업" />
+    <meta http-equiv="Title" content="KSA 통합인증플랫폼 | 로그인 | 미등록기업 등록 팝업" />
+    <meta http-equiv="Copyright" content="KSA 통합인증플랫폼 | 로그인 | 미등록기업 등록 팝업" />
+    <meta property="og:url" content="페이지 url" />
+    <meta property="og:title" content="KSA 통합인증플랫폼 | 로그인 | 미등록기업 등록 팝업" />
+    <meta property="og:description" content="KSA 통합인증플랫폼 | 로그인 | 미등록기업 등록 팝업" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../images/apple-icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" href="../images/apple-icon-96.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-144.png" />
+    <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/opensrc/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+    <div class="popup-inner open">
+        <div class="modal-popup pop-1200">
+            <h2 class="modal-title">미등록기업 등록</h2>
+            <div class="popup-content un-regist-pop">
+                <div class="pop-info-inner">
+                    <h3 class="title">미등록기업 홈페이지 이용방법</h3>
+                    <p class="tit-info">
+                        한국표준협회 미등록 고객사이거나 기존 등록기업 중<br class="lg-only" />
+                        사업장이 추가로 필요한 경우 하단의 정보를 입력 후
+                        제출해 주세요.
+                    </p>
+                </div>
+
+                <div class="con-list-inner">
+                    <ul class="con-list">
+                        <li class="con-item">
+                            <div class="item-img-box sm-only">
+                                <img src="../images/img-submit.svg" alt="사업자등록증 제출 아이콘">
+                                <span class="sm-only num">1</span>
+                            </div>
+                            <span class="item-tit submit">사업자등록증<br class="md-only" />
+                                제출</span>
+                        </li>
+                        <li class="con-item">
+                            <div class="item-img-box sm-only">
+                                <img src="../images/img-check.svg" alt="관할지역본부 확인, 고객등록 아이콘">
+                                <span class="sm-only num">2</span>
+                            </div>
+                            <span class="item-tit check">관할지역본부 확인 &<br class="md-only" />
+                                고객등록</span>
+                        </li>
+                        <li class="con-item">
+                            <div class="item-img-box sm-only">
+                                <img src="../images/img-info.svg" alt="관할지역본부에서 안내 아이콘">
+                                <span class="sm-only num">3</span>
+                            </div>
+                            <span class="item-tit info">관할지역본부에서<br class="md-only" />
+                                안내</span>
+                        </li>
+                        <li class="con-item">
+                            <div class="item-img-box sm-only">
+                                <img src="../images/img-homepage.svg" alt="홈페이지 이용 아이콘">
+                                <span class="sm-only num">4</span>
+                            </div>
+                            <span class="item-tit homepage">홈페이지<br class="md-only" />
+                                이용</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column-box company-inner">
+                    <div class="company-item">
+                        <span class="import">회사명</span>
+                        <input type="text" placeholder="회사명을 입력해 주세요" />
+                    </div>
+                    <div class="company-item">
+                        <span class="import">안내 받을 연락처</span>
+                        <input type="text" placeholder="- 포함하여 입력해 주세요" />
+                    </div>
+                    <div class="company-item">
+                        <span class="import">사업자등록증 첨부</span>
+                        <div class="file-inner">
+                            <div class="file-choice">
+                                <a href="#" class="btn btn-upload">파일선택</a>
+                                <p class="warning">
+                                    개당 10MB까지 등록 가능합니다.
+                                </p>
+                            </div>
+
+                            <!-- 등록된 파일 내용 노출할 경우 -->
+                            <div class="choice-file-Box">
+                                <div class="file-infobox">
+                                    <span class="file_name">사업자등록증.jpg</span>
+                                    <div class="volume-info">
+                                        <span class="file-volume">9MB</span>
+                                        <button type="button" class="btn-file-del">
+                                            <span class="visually-hidden">지우기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- <div class="file-drag">
+                                        <span aria-hidden=""></span>
+                                        파일을 여기에 끌어다 놓으세요.
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-item">
+                        <span class="import">관할지역본부</span>
+                        <select name="" id="" class="select">
+                            <option value="">선택</option>
+                            <option value="">
+                                지역본부명,Tel.전화번호, (관할지역)
+                            </option>
+                            <option value="">
+                                본부 Tel. 02-6240-0000 (서울,해외)
+                            </option>
+                            <option value="">
+                                경기지역본부 Tel.031-1234-1234 (경기,강원)
+                            </option>
+                        </select>
+                        <p class="warning">
+                            회사소재지 인근으로 선택하세요.
+                        </p>
+                    </div>
+                    <div class="company-item">
+                        <span class="tit">이용 서비스</span>
+                        <div class="chk-item">
+                            <div class="chk-inner">
+                                <input type="checkbox" class="visually-hidden" id="ks-chk" />
+                                <label for="ks-chk">KS인증</label>
+                            </div>
+                            <div class="chk-inner">
+                                <input type="checkbox" class="visually-hidden" id="iso-chk" />
+                                <label for="iso-chk">ISO인증</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-box privacy-inner">
+                    <h3 class="privacy-tit">개인정보 수집 및 활용동의</h3>
+                    <div class="privacy-info">
+                        <ul class="privacy-list">
+                            <li class="privacy-item">
+                                1. 개인정보의 수집·이용 목적 : 사업장 추가
+                                등록 후 필요 시 민원인에 대한 연락, 답변
+                                등록 시 알림 서비스
+                            </li>
+                            <li class="privacy-item">
+                                2. 수집하려는 개인정보의 항목 : 이름,
+                                E-mail. 휴대폰번호, 연락처
+                            </li>
+                            <li class="privacy-item">
+                                3. 개인정보의 보유 및 이용기간 : 3년
+                                (전자상거래 등에서의 소비자보호에 관한 법률
+                                및 시행령)
+                            </li>
+                            <li class="privacy-item">
+                                4. 거부 권리 및 거부에 따른 불이익 :
+                                개인정보보호법에 따라 동의를 거부할 수
+                                있으며, 이 경우 민원신청 서비스를 제공받을
+                                수 없습니다.
+                            </li>
+                        </ul>
+                        <strong class="agreement">개인정보 수집 및 이용에 대하여
+                            동의하십니까?</strong>
+                        <div class="chk-item">
+                            <div class="chk-inner">
+                                <input type="radio" class="visually-hidden" id="chk-rd1" name="chk-rd" />
+                                <label for="chk-rd1">동의합니다.</label>
+                            </div>
+                            <div class="chk-inner">
+                                <input type="radio" class="visually-hidden" id="chk-rd2" name="chk-rd" />
+                                <label for="chk-rd2">동의하지 않습니다.</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-cancel">
+                        취소
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        제출
+                    </button>
+                </div>
+            </div>
+
+            <div class="popup-bottom">
+                <div class="btn-wrap btn-pos">
+                    <button type="button" class="btn pop-close">
+                        <span class="visually-hidden">닫기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dim open"></div>
+    <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../js/opensrc/jquery-ui.min.js"></script>
+    <script src="../js/opensrc/swiper-bundle.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/constants.js"></script>
+</body>
+
+</html>

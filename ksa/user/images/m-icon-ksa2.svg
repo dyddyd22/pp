@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="그룹_167770" data-name="그룹 167770" transform="translate(-205 -279)">
+    <circle id="타원_9494" data-name="타원 9494" cx="30" cy="30" r="30" transform="translate(205 279)" fill="#fff"/>
+    <g id="그룹_167764" data-name="그룹 167764" transform="translate(-4 -25)">
+      <g id="그룹_165377" data-name="그룹 165377" transform="translate(225 319)">
+        <path id="패스_83199" data-name="패스 83199" d="M28.578,1,24.366,5.23V28.61h20.6V1Z" transform="translate(-24.366 -1)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_83201" data-name="패스 83201" d="M28.487,5.121H24.366L28.487,1Z" transform="translate(-24.366 -1)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_574" data-name="선 574" x2="11" transform="translate(5 8)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_575" data-name="선 575" x2="11" transform="translate(5 11.6)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_576" data-name="선 576" x2="9" transform="translate(5 15.2)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_3507" data-name="선 3507" x2="9" transform="translate(5 18.8)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_86258" data-name="패스 86258" d="M0,0H9" transform="translate(5 22.4)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-width="1"/>
+      </g>
+      <path id="사각형_150529" data-name="사각형 150529" d="M0,0H11a0,0,0,0,1,0,0V1.31a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V0A0,0,0,0,1,0,0Z" transform="translate(243 345.455)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect id="사각형_150532" data-name="사각형 150532" width="11" height="2.31" transform="translate(243 343.145)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect id="사각형_150535" data-name="사각형 150535" width="11" height="2.31" transform="translate(243 340.835)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect id="사각형_150538" data-name="사각형 150538" width="11" height="2.31" transform="translate(243 338.525)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect id="사각형_150553" data-name="사각형 150553" width="11" height="2.31" transform="translate(243 336.215)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect id="사각형_150556" data-name="사각형 150556" width="11" height="2.31" transform="translate(243 333.905)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="사각형_150559" data-name="사각형 150559" d="M1,0h9a1,1,0,0,1,1,1V2.31a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1A1,1,0,0,1,1,0Z" transform="translate(243 331.595)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="사각형_150541" data-name="사각형 150541" d="M0,0H10.3a0,0,0,0,1,0,0V1.308a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V0A0,0,0,0,1,0,0Z" transform="translate(237.041 346.692)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect id="사각형_150544" data-name="사각형 150544" width="10.302" height="2.308" transform="translate(237.041 344.385)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect id="사각형_150547" data-name="사각형 150547" width="10.302" height="2.308" transform="translate(237.041 342.077)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="사각형_150550" data-name="사각형 150550" d="M1,0H9.3a1,1,0,0,1,1,1V2.308a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1A1,1,0,0,1,1,0Z" transform="translate(237.041 339.769)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

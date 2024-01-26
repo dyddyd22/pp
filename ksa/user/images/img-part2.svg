@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="그룹_168277" data-name="그룹 168277" transform="translate(-130 -279)">
+    <circle id="타원_9494" data-name="타원 9494" cx="30" cy="30" r="30" transform="translate(130 279)" fill="#fff"/>
+    <g id="그룹_167778" data-name="그룹 167778" transform="translate(55 -145)">
+      <path id="패스_83235" data-name="패스 83235" d="M0,0H30V7.659H0Z" transform="translate(90 441.941)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-width="1"/>
+      <g id="그룹_165384" data-name="그룹 165384" transform="translate(96 440)">
+        <line id="선_3503" data-name="선 3503" y2="3.6" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_3515" data-name="선 3515" y2="3.6" transform="translate(6.531)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_3516" data-name="선 3516" y2="3.6" transform="translate(12.469)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_3517" data-name="선 3517" y2="3.6" transform="translate(19)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <rect id="사각형_150564" data-name="사각형 150564" width="30" height="20" transform="translate(90 449)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g id="그룹_167777" data-name="그룹 167777" transform="translate(11)">
+        <g id="그룹_167776" data-name="그룹 167776">
+          <g id="그룹_167775" data-name="그룹 167775">
+            <g id="타원_9506" data-name="타원 9506" transform="translate(87 452)" fill="#fff" stroke="#194da1" stroke-width="1">
+              <circle cx="7" cy="7" r="7" stroke="none"/>
+              <circle cx="7" cy="7" r="6.5" fill="none"/>
+            </g>
+            <path id="패스_84527" data-name="패스 84527" d="M-12721-6198v4.76h3.57" transform="translate(12814.875 6652.875)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

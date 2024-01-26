@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal popup</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="popup_inner open" data-index="1" id="pop">
+        <div class="modal_popup">
+            <!-- NOTE : content 내용 popup_content 클래스 내부에 -->
+            <h2 class="modal_title">popup title area</h2>
+            <div class="popup_content">
+                <p class="popup_info_txt">설명글 표시 영역</p>
+                <table class="modal_table">
+                    <caption>
+                        글 제목, 글 내용, 내용 입력
+                    </caption>
+                    <colgroup>
+                        <col style="width: 100px" />
+                        <col />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>글 제목</th>
+                            <td>
+                                <div>내용</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>글 제목</th>
+                            <td>
+                                <div class="modal_td_info">
+                                    <input type="text" placeholder="입력해 주세요" />
+                                    <div class="modal_num">
+                                        <span class="num_first">0</span> /
+                                        <span class="num_last">5</span>
+                                        자
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- NOTE : btn 내용 popup_bottom 클래스 내부에 -->
+            <div class="popup_bottom">
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-layer-cancel pop_close">
+                        취소
+                    </button>
+                    <button type="button" class="btn btn-layer-default">
+                        확인
+                    </button>
+                </div>
+                <!-- 확인 버튼만 있을 경우 -->
+                <div class="btn_wrap">
+                    <button type="button" class="btn">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim open"></div>
+    <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>

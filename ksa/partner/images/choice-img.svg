@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="그룹_165223" data-name="그룹 165223" transform="translate(-310 -985)">
+    <g id="사각형_149633" data-name="사각형 149633" transform="translate(310 985)" fill="#fff" stroke="#929292" stroke-width="1" stroke-dasharray="3">
+      <rect width="200" height="200" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="199" height="199" rx="5.5" fill="none"/>
+    </g>
+    <g id="그룹_165015" data-name="그룹 165015" transform="translate(-370 -72.999)">
+      <text id="이미지를_여기에_끌어다_놓으세요." data-name="이미지를 여기에
+끌어다 놓으세요." transform="translate(780 1186)" fill="#272727" font-size="14" font-family="Pretendard-Regular, Pretendard"><tspan x="-44.105" y="0">이미지를 여기에</tspan><tspan x="-45.883" y="24">끌어다 놓으세요.</tspan></text>
+      <g id="image" transform="translate(760 1103.133)">
+        <rect id="사각형_147612" data-name="사각형 147612" width="40" height="40" rx="2" transform="translate(0 -0.134)" fill="none" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <circle id="타원_9373" data-name="타원 9373" cx="3.5" cy="3.5" r="3.5" transform="translate(9 8.866)" fill="none" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_83180" data-name="패스 83180" d="M40.456,21.08,29.376,10,5,34.376" transform="translate(-0.568 5.49)" fill="none" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

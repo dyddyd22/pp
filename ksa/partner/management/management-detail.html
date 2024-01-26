@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리 상세조회
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리 상세조회"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리 상세조회"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리 상세조회"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리 상세조회"
+        />
+        <meta
+            property="og:description"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리 상세조회"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/sub.css" />
+    </head>
+    <body>
+        <header>
+            <button
+                type="button"
+                class="m-btn-menu sm-only"
+                aria-label="메뉴버튼 열기"
+            ></button>
+            <h1 class="logo">
+                <a href="../index-auditor.html">
+                    <img
+                        src="../images/img-logo.svg"
+                        alt="KSA통합인증플랫폼 심사원 로고"
+                    />
+                </a>
+            </h1>
+
+            <div class="head_user_info">
+                <div class="user_name">
+                    <a href="#a" class="name_color">김인증</a>님
+                    <div class="belong">(KS인증센터 / 심사원)</div>
+                </div>
+                <button
+                    type="button"
+                    class="log-out lg-only"
+                    aria-label="로그아웃"
+                >
+                    <i class="ic-logout" aria-hidden></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper">
+                <aside class="gnb">
+                    <div class="gnb-inner">
+                        <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button>
+                        <div class="gnb-icon-inner">
+                            <ul class="gnb-icon-list">
+                                <li class="gnb-icon-item">
+                                    <a href="../auditor/myinfo.html">
+                                        <i
+                                            class="ic-myinfo"
+                                            aria-label="내정보관리 아이콘"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../mySchedule/schedule.html">
+                                        <i
+                                            class="ic-schedule"
+                                            aria-label="내일정관리 아이콘"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a
+                                        href="../management/management.html"
+                                        class="is-active"
+                                    >
+                                        <i
+                                            class="ic-examine"
+                                            aria-label="내심사관리 아이콘"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a
+                                        href="../investigation/investigation.html"
+                                    >
+                                        <i
+                                            class="ic-investigate"
+                                            aria-label="내시판품조사관리 아이콘"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <i
+                                        class="ic-customer"
+                                        aria-label="고객센터 아이콘"
+                                    ></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gnb-on">
+                        <div class="head_user_info">
+                            <button
+                                type="button"
+                                class="btn-close"
+                                aria-label="닫기"
+                            ></button>
+                            <div class="head-top sm-only">
+                                <div class="user_name">
+                                    <a href="#a" class="name_color">사용자</a>님
+                                    <div class="belong">
+                                        (KS인증센터 / 심사원)
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="log-out"
+                                    aria-label="로그아웃"
+                                >
+                                    <i class="ic-logout" aria-hidden></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gnb-inner">
+                            <!-- <button
+                                type="button"
+                                class="btn-menu lg-only"
+                                aria-label="메뉴버튼 열기"
+                            ></button> -->
+                            <div class="gnb-icon-inner">
+                                <ul class="gnb-icon-list">
+                                    <li class="gnb-icon-item">
+                                        <a href="../auditor/myinfo.html"
+                                            ><i
+                                                class="ic-myinfo"
+                                                aria-hidden
+                                            ></i>
+                                            내정보관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="../mySchedule/schedule.html"
+                                            ><i
+                                                class="ic-schedule"
+                                                aria-hidden
+                                            ></i>
+                                            내일정관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a
+                                            href="../management/management.html"
+                                            class="is-active"
+                                            ><i
+                                                class="ic-examine"
+                                                aria-hidden
+                                            ></i>
+                                            내심사관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a
+                                            href="../investigation/investigation.html"
+                                            ><i
+                                                class="ic-investigate"
+                                                aria-hidden
+                                            ></i>
+                                            내시판품조사관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <i class="ic-customer" aria-hidden></i>
+                                        <div class="gnb-customer-box">
+                                            <span class="customer-title"
+                                                >고객센터</span
+                                            >
+                                            <ul class="customer-menu-list">
+                                                <li class="customer-menu-item">
+                                                    <a href="#">공지사항</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">Q & A</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">자료실</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="content mgment-detail">
+                    <div class="page_head list-title">
+                        <h3 class="page_tit">내심사관리 상세조회</h3>
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a
+                                        href="../index-auditor.html"
+                                        class="home"
+                                    ></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">심사원</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="../management/management.html"
+                                        >내심사관리</a
+                                    >
+                                </li>
+                                <li class="location_item active">
+                                    <a
+                                        href="../management/management-detail.html"
+                                        >내심사관리 상세조회</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tbl_btn_inner every_info">
+                        <div class="btn_box">
+                            <a href="#a" class="btn btn-process"
+                                >업체심사이력</a
+                            >
+                            <a href="#a" class="btn btn-process">KSA교육이력</a>
+                            <a href="#a" class="btn btn-process">처리이력</a>
+                            <a href="#a" class="btn btn-process">조회이력</a>
+                            <div class="nums_total">
+                                조회
+                                <span class="total">3,333</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_menu tab_type">
+                        <ul class="tab_list tabs tab-list-w7">
+                            <li class="tab_item on">
+                                <a
+                                    href="./management-detail.html"
+                                    class="tab_btn"
+                                >
+                                    상세정보
+                                </a>
+                            </li>
+                            <li class="tab_item">
+                                <a
+                                    href="./management-status.html"
+                                    class="tab_btn"
+                                >
+                                    주요현황심사 (<span>검토중</span>)
+                                </a>
+                            </li>
+                            <li class="tab_item">
+                                <a
+                                    href="./management-process.html"
+                                    class="tab_btn"
+                                >
+                                    공장심사 (<span>임시저장</span>)
+                                </a>
+                            </li>
+                            <li class="tab_item">
+                                <a
+                                    href="./management-product.html"
+                                    class="tab_btn"
+                                >
+                                    제품시험 (<span>임시저장</span>)
+                                </a>
+                            </li>
+                            <li class="tab_item">
+                                <a
+                                    href="./management-business.html"
+                                    class="tab_btn"
+                                >
+                                    사업장심사 (<span>임시저장</span>)
+                                </a>
+                            </li>
+                            <li class="tab_item">
+                                <a
+                                    href="./management-service.html"
+                                    class="tab_btn"
+                                >
+                                    서비스심사 (<span>임시저장 1</span>)
+                                </a>
+                            </li>
+                            <li class="tab_item">
+                                <a
+                                    href="./management-incongruity.html"
+                                    class="tab_btn"
+                                >
+                                    부적합 개선조치 (<span>진행중 1</span>)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_wrap end">
+                        <a href="./laypop-info.html" class="btn btn-tblout">
+                            심사보고서 내용 가져오기
+                        </a>
+                    </div>
+                    <div class="ordered-info">
+                        <ol class="info-list">
+                            <li class="info-item on">
+                                <div class="item-bg-box">
+                                    <span aria-hidden="" class="step-bg"></span>
+                                    <span
+                                        aria-hidden=""
+                                        class="outside-bg"
+                                    ></span>
+                                </div>
+                                <strong class="step-title lg-only">신청</strong>
+                                <strong class="step-title md-only sm-only"
+                                    >1. 신청</strong
+                                >
+                                <ul class="step-list">
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 신청일
+                                            </span>
+                                            <div class="item-result">
+                                                22-10-01
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 신청비
+                                            </span>
+                                            <div class="item-result">
+                                                결제완료
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 신청검증
+                                            </span>
+                                            <div class="item-result">
+                                                박노근
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="info-item on">
+                                <div class="item-bg-box">
+                                    <span aria-hidden="" class="step-bg"></span>
+                                    <span
+                                        aria-hidden=""
+                                        class="outside-bg"
+                                    ></span>
+                                </div>
+                                <strong class="step-title lg-only"
+                                    >심사준비</strong
+                                >
+                                <strong class="step-title md-only sm-only"
+                                    >2. 심사준비</strong
+                                >
+                                <ul class="step-list">
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 심사원배정
+                                            </span>
+                                            <div class="item-result">
+                                                배정완료
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 심사비
+                                            </span>
+                                            <div class="item-result">
+                                                입금대기
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="info-item is-active">
+                                <div class="item-bg-box">
+                                    <span aria-hidden="" class="step-bg"></span>
+                                    <span
+                                        aria-hidden=""
+                                        class="outside-bg"
+                                    ></span>
+                                </div>
+                                <strong class="step-title lg-only"
+                                    >심사진행</strong
+                                >
+                                <strong class="step-title md-only sm-only"
+                                    >3. 심사진행</strong
+                                >
+                                <ul class="step-list">
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title">
+                                                · 주요현황
+                                            </span>
+                                            <div class="item-result">
+                                                검토완료 (1) / 검토중 (4)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 공장심사
+                                            </span>
+                                            <div class="item-result">
+                                                임시저장
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 제품시험의뢰
+                                            </span>
+                                            <div class="item-result">
+                                                작성완료
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 사업장심사
+                                            </span>
+                                            <div class="item-result">
+                                                작성완료
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 서비스심사
+                                            </span>
+                                            <div class="item-result">
+                                                임시저장(1) / 작성완료(2)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 정심사원
+                                            </span>
+                                            <div class="item-result">
+                                                서명완료<br
+                                                    class="sm-only"
+                                                />(홍길동 22-10-28 15:30)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 부심사원
+                                            </span>
+                                            <div class="item-result">
+                                                서명완료<br
+                                                    class="sm-only"
+                                                />(홍길동 22-10-28 15:20)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 부적합개선조치
+                                            </span>
+                                            <div class="item-result">
+                                                개선조치중
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 행정처분 시정조치
+                                            </span>
+                                            <div class="item-result">
+                                                개선조치완료
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="info-item">
+                                <div class="item-bg-box">
+                                    <span aria-hidden="" class="step-bg"></span>
+                                    <span
+                                        aria-hidden=""
+                                        class="outside-bg"
+                                    ></span>
+                                </div>
+                                <strong class="step-title lg-only"
+                                    >심사마감</strong
+                                >
+                                <strong class="step-title md-only sm-only"
+                                    >4. 심사마감</strong
+                                >
+                                <ul class="step-list">
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 품목담당자
+                                            </span>
+                                            <div class="item-result">
+                                                승인 (22-10-28)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 부서장결재
+                                            </span>
+                                            <div class="item-result">대기</div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 인증위원회
+                                            </span>
+                                            <div class="item-result">
+                                                621회차 (22-11-15)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="item-box">
+                                            <span class="item-title"
+                                                >· 최종완료일
+                                            </span>
+                                            <div class="item-result">
+                                                22-11-15
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="page_head head-bg">
+                        <h3 class="page_tit">공유 메모</h3>
+                    </div>
+                    <div class="note_write bg-not">
+                        <div class="note-box">
+                            <div class="note_info">
+                                <div class="note_txt_item">
+                                    <p class="txt_info">
+                                        KB인증센터/홍길동<span
+                                            aria-hidden=""
+                                        ></span
+                                        >YYYY-DD-HH:MM
+                                    </p>
+                                </div>
+                                <p class="answer">
+                                    인증기관 변경 방법 문의가 있었음. 답변완료
+                                    하였음.
+                                </p>
+                            </div>
+                            <div class="note_info">
+                                <div class="note_txt_item">
+                                    <p class="txt_info">
+                                        KB인증센터/홍길동<span
+                                            aria-hidden=""
+                                        ></span
+                                        >YYYY-DD-HH:MM
+                                    </p>
+                                </div>
+                                <p class="answer">
+                                    인증기관 변경 방법 문의가 있었음. 답변완료
+                                    하였음.
+                                </p>
+                            </div>
+                            <div class="note_info">
+                                <div class="note_txt_item">
+                                    <p class="txt_info">
+                                        KB인증센터/홍길동<span
+                                            aria-hidden=""
+                                        ></span
+                                        >YYYY-DD-HH:MM
+                                    </p>
+                                </div>
+                                <p class="answer">
+                                    인증기관 변경 방법 문의가 있었음. 답변완료
+                                    하였음.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">신청회사</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <!-- NOTE : 가로 테이블 중 행이 3개인 경우 중
+                                모바일 환경에서 두개의 행이 같고 나머지 하나만 다른경우
+                                tbl class 위치에 type-info class 추가 
+                                colgroup > col 중 가장 마지막 col 에 class item-col 추가
+                            -->
+                            <table class="tbl left pd-lf-20 type-info">
+                                <caption>
+                                    신청회사 - 심사종류, 신청일, 회사명, 대표자,
+                                    공장소재지, 국적, 주요 확인사항, 기보유
+                                    인증수, 비고
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 9.5344%" />
+                                    <col style="width: 11.217%" />
+                                    <col class="item-col" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>심사종류</th>
+                                        <td colspan="2">신규심사 / 제품</td>
+                                    </tr>
+                                    <tr>
+                                        <th>신청일</th>
+                                        <td colspan="2">22-08-29 10:30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>회사명</th>
+                                        <td colspan="2">
+                                            한국표준협회 (0000123456,
+                                            105-82-00617)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>대표자</th>
+                                        <td colspan="2">강명수</td>
+                                    </tr>
+                                    <tr>
+                                        <th>공장소재지</th>
+                                        <td colspan="2">
+                                            (12345) 서울 강남구 테헤란로 69길 5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>국적</th>
+                                        <td colspan="2">한국(KR)</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3">주요 확인사항</th>
+                                        <td>ISO인증여부</td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>주요공정 외주가공 처리여부</td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                            <span class="hyphen">/</span>
+                                            <a href="#"
+                                                >행정소송 관련 첨부파일.pdf
+                                                (1,200kb)</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>외부시험 검사설비 사용여부</td>
+                                        <td>
+                                            <span class="stop">아니오</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>기보유 인증수</th>
+                                        <td colspan="2">
+                                            <div class="company_txt">
+                                                1
+                                                <div class="btn_wrap">
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        인증서 정보
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>비고</th>
+                                        <td colspan="2">
+                                            사업자가 신청 시 비고란에 입력한
+                                            사항이 노출됩니다.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="tbl_btn_inner every_info btn-info">
+                            <div class="select_link">
+                                <div class="nums_total bold">연락처</div>
+                                <div class="btn_box">
+                                    <a href="#a" class="btn btn-process">SMS</a>
+                                    <a href="#a" class="btn btn-process"
+                                        >이메일</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20">
+                                <caption>
+                                    신청회사 - 심사종류, 신청일, 회사명, 대표자,
+                                    공장소재지, 국적, 주요 확인사항, 기보유
+                                    인증수, 비고
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 5.6085%" />
+                                    <col style="width: 11.217%" />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tel-chk1"
+                                                    class="visually-hidden"
+                                                />
+                                                <label
+                                                    for="tel-chk1"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td class="tbl-bg">신청자</td>
+                                        <td>
+                                            박서준<span class="hyphen"></span
+                                            >KS인증센터<span
+                                                class="hyphen"
+                                            ></span
+                                            >위원<span class="hyphen"></span
+                                            >010-1234-1333<span
+                                                class="hyphen"
+                                            ></span
+                                            >02-1234-1333<span
+                                                class="hyphen"
+                                            ></span
+                                            >bbb@a.com
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    id="tel-chk2"
+                                                    class="visually-hidden"
+                                                />
+                                                <label
+                                                    for="tel-chk2"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td class="tbl-bg">품질관리 담당자</td>
+                                        <td>
+                                            이서진<span class="hyphen"></span
+                                            >KS인증센터<span
+                                                class="hyphen"
+                                            ></span
+                                            >대리<span class="hyphen"></span
+                                            >010-1234-1234<span
+                                                class="hyphen"
+                                            ></span
+                                            >02-1234-1000<span
+                                                class="hyphen"
+                                            ></span
+                                            >ccc@a.com
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">진행정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20">
+                                <caption>
+                                    진행정보 - 담당지역본부, 서비스인증서
+                                    발급방법, 심사방식, 청구심사비, 업무담당자,
+                                    심사 처리상태, 심사보고서, 품목담당자
+                                    승인상태
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 11.217%" />
+                                    <col style="width: 38.6988%" />
+                                    <col style="width: 11.217%" />
+                                    <col style="width: 38.6988%" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>담당지역본부</th>
+                                        <td>본부</td>
+                                        <th>서비스인증서 발급방법</th>
+                                        <td>
+                                            사업장전체인증(법인단위) /
+                                            사업장일부인증(사업장일부단위)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>심사방식</th>
+                                        <td>대면</td>
+                                        <th>청구심사비</th>
+                                        <td>1,250,000원 (입금대기)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>업무담당자</th>
+                                        <td>
+                                            <dl class="tbl-drop">
+                                                <dt class="drop-tit">
+                                                    신청검증 :
+                                                </dt>
+                                                <dd class="drop-info">
+                                                    KS인증센터 박노근 위원
+                                                </dd>
+                                                <dd class="drop-info">
+                                                    (02-6240-4642,
+                                                    010-1234-3333)
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="tbl-drop">
+                                                <dt class="drop-tit">
+                                                    품목담당 :
+                                                </dt>
+                                                <dd class="drop-info">
+                                                    KS인증센터 박노근 위원
+                                                </dd>
+                                                <dd class="drop-info">
+                                                    (02-6240-4642,
+                                                    010-1234-3333)
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                        <th>심사 처리상태</th>
+                                        <td>심사준비</td>
+                                    </tr>
+                                    <tr>
+                                        <th>심사보고서</th>
+                                        <td>
+                                            <div class="txt-chk-box">
+                                                <p class="text-chk">
+                                                    공장심사(심사)
+                                                </p>
+                                                <p class="text-chk">
+                                                    제품시험(면제)
+                                                </p>
+                                                <p class="text-chk">
+                                                    사업장심사(심사)
+                                                </p>
+                                                <br />
+                                                <p class="text-chk">
+                                                    서비스심사(2개 심사)
+                                                </p>
+                                            </div>
+                                        </td>
+                                        <th>품목담당자 승인상태</th>
+                                        <td>
+                                            <div class="condition">
+                                                <div class="condition-item">
+                                                    <span class="stop"
+                                                        >반려
+                                                    </span>
+                                                    <div class="condition-days">
+                                                        (2022-09-03 14:20,
+                                                        조수경)
+                                                    </div>
+                                                </div>
+
+                                                <div class="condition-item">
+                                                    <span class="title"
+                                                        >검토의견</span
+                                                    >
+                                                    <span class="hyphen"
+                                                        >:</span
+                                                    >
+                                                    <p class="text">
+                                                        부적합개선의견 조치
+                                                        파일이 누락되었음. 개선
+                                                        요청합니다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>재심사여부</th>
+                                        <td colspan="3">예 OR 아니오</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head mb-10">
+                            <h3 class="page_tit">심사품목정보</h3>
+                        </div>
+
+                        <div class="tbl_btn_inner">
+                            <div class="select_link">
+                                <strong>· 심사품목</strong>
+                                <div class="btn_box">
+                                    <a href="#a" class="btn btn-process"
+                                        >표준정보</a
+                                    >
+                                    <a href="#a" class="btn btn-process"
+                                        >심사기준</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbl_wrap mb-20">
+                            <table class="tbl">
+                                <caption>
+                                    표준번호, 표준명, 종류 및 등급 갯수,
+                                    인증번호, 최초인증일, 상태, 차기정기심사일,
+                                    비고
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 15.3387%" />
+                                    <col style="width: 26.1071%" />
+                                    <col style="width: 10.6034%" />
+                                    <col style="width: 7.8519%" />
+                                    <col style="width: 11.7302%" />
+                                    <col style="width: 8.8519%" />
+                                    <col style="width: 11.6085%" />
+                                    <col style="width: 7.8519%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">표준번호</th>
+                                        <th scope="col">표준명</th>
+                                        <th scope="col">종류 및 등급 갯수</th>
+                                        <th scope="col">인증번호</th>
+                                        <th scope="col">최초인증일</th>
+                                        <th scope="col">상태</th>
+                                        <th scope="col">차기정기심사일</th>
+                                        <th scope="col">비고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            KS B 1002
+                                            <div class="revision">
+                                                개정 YY-MM-DD
+                                            </div>
+                                        </td>
+                                        <td>
+                                            6각 볼트 (<span class="stop"
+                                                >현재</span
+                                            >)
+                                        </td>
+                                        <td>3</td>
+                                        <td>5893</td>
+                                        <td>1988-03-12</td>
+                                        <td>
+                                            <div class="normal">유효</div>
+                                            (
+                                            <span class="stop">제조중단중</span>
+                                            )
+                                        </td>
+                                        <td>2022-09-30</td>
+                                        <td>
+                                            <div class="btn_wrap">
+                                                <a href="#a" class="btn btn-sm"
+                                                    >인증서정보</a
+                                                >
+                                                <a href="#a" class="btn btn-sm"
+                                                    >인증서출력</a
+                                                >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="page_head">
+                            <strong>· 종류등급</strong>
+                        </div>
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    표준번호, 표준명, 종류 및 등급 갯수,
+                                    인증번호, 최초인증일, 상태, 차기정기심사일,
+                                    비고
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 80px" />
+                                    <col style="width: 500px" />
+                                    <col style="width: 640px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 240px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">종류 및 등급</th>
+                                        <th scope="col">기타사항</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">인증일</th>
+                                        <th scope="col">상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="bg-rowth">
+                                            <div class="row-box">
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        1. 종류별
+                                                    </li>
+                                                    <li class="row-item">
+                                                        JA형
+                                                    </li>
+                                                </ul>
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        2. 등급별
+                                                    </li>
+                                                    <li class="row-item">
+                                                        4.6
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="lf">
+                                            호칭 : aaa <br />전자파적합성
+                                            시험모델 : TM5-064A
+                                        </td>
+                                        <td>
+                                            <div class="btn_wrap">
+                                                <a href="#" class="btn btn-sm"
+                                                    >품목상세</a
+                                                >
+                                            </div>
+                                        </td>
+                                        <td>1988-01-01</td>
+                                        <td>
+                                            <div class="normal">유효</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="bg-rowth">
+                                            <div class="row-box">
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        집적입력
+                                                    </li>
+                                                    <li class="row-item">
+                                                        벨트 1
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="lf">
+                                            호칭 : aaa<br />전자파적합성
+                                            시험모델 : TM5-064A
+                                        </td>
+                                        <td>
+                                            <div class="btn_wrap">
+                                                <a href="#" class="btn btn-sm"
+                                                    >품목상세</a
+                                                >
+                                            </div>
+                                        </td>
+                                        <td>1988-01-01</td>
+                                        <td>
+                                            <div class="stop">행정처분</div>
+                                            (개선명령)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="bg-rowth">
+                                            <div class="row-box">
+                                                <ul class="row-list">
+                                                    <li class="row-item">
+                                                        집적입력
+                                                    </li>
+                                                    <li class="row-item">
+                                                        벨트 1
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="lf">
+                                            호칭 : aaa<br />전자파적합성
+                                            시험모델 : TM5-064A
+                                        </td>
+                                        <td>
+                                            <div class="btn_wrap">
+                                                <a href="#" class="btn btn-sm"
+                                                    >품목상세</a
+                                                >
+                                            </div>
+                                        </td>
+                                        <td>1988-01-01</td>
+                                        <td>
+                                            <div class="stop">행정처분</div>
+                                            (개선명령)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">인증기관 변경심사 추가정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20 table-info">
+                                <caption>
+                                    인증기관 변경심사 추가정보 - 표준번호, 이전
+                                    심사기관, 인증번호, 최초인증일, 최종 심사일,
+                                    최종심사종류, 공정심사 희망 협력기관
+                                </caption>
+                                <colgroup>
+                                    <col
+                                        class="first-col"
+                                        style="width: 200px"
+                                    />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>표준번호</th>
+                                        <td>KS B 6879</td>
+                                    </tr>
+                                    <tr>
+                                        <th>이전 심사기관</th>
+                                        <td>한국표준협회</td>
+                                    </tr>
+                                    <tr>
+                                        <th>인증번호</th>
+                                        <td>12345</td>
+                                    </tr>
+                                    <tr>
+                                        <th>최초인증일</th>
+                                        <td>22-08-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th>최종심사일</th>
+                                        <td>22-08-20</td>
+                                    </tr>
+                                    <tr>
+                                        <th>최종심사종류</th>
+                                        <td>3년정기심사</td>
+                                    </tr>
+                                    <tr>
+                                        <th>공장심사 희망 협력기관</th>
+                                        <td>한국표준협회A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">사업장(지점)정보</h3>
+                        </div>
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    사업장(지점)정보 - no, 사업장심사 대상여부
+                                    (주사업장), 서비스심사 대상여부, 사업장명,
+                                    대표자명, 사업자 번호, 소재지, 총인원
+                                    (합계), 경영간부, 전문기술직, 서비스
+                                    품질관리담당자, 사업장 담당자명, 사업장
+                                    담당자연락처, 설립년월일
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 76px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 234px" />
+                                    <col style="width: 116px" />
+                                    <col style="width: 196px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 120px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">
+                                            사업장심사 대상여부 (주사업장)
+                                        </th>
+                                        <th scope="col">
+                                            서비스심사<br />
+                                            대상여부
+                                        </th>
+                                        <th scope="col">사업장명</th>
+                                        <th scope="col">대표자명</th>
+                                        <th scope="col">사업자 번호</th>
+                                        <th scope="col">소재지</th>
+                                        <th scope="col">총인원 (합계)</th>
+                                        <th scope="col">경영간부</th>
+                                        <th scope="col">전문기술직</th>
+                                        <th scope="col">
+                                            서비스<br />
+                                            품질관리담당자
+                                        </th>
+                                        <th scope="col">사업장 담당자명</th>
+                                        <th scope="col">사업장 담당자연락처</th>
+                                        <th scope="col">설립년월일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>KGB 송파동부1</td>
+                                        <td>김홍동</td>
+                                        <td>220-81-40254</td>
+                                        <td>서울</td>
+                                        <td>30</td>
+                                        <td>4</td>
+                                        <td>26</td>
+                                        <td>조석규</td>
+                                        <td>이호정</td>
+                                        <td>010-111-1234</td>
+                                        <td>YYYY-MM-DD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <span>아니오</span>
+                                        </td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>현대제철</td>
+                                        <td>이장우</td>
+                                        <td>210-20-12345</td>
+                                        <td>경기도</td>
+                                        <td>105</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                        <td>주진모</td>
+                                        <td>이병헌</td>
+                                        <td>010-111-1234</td>
+                                        <td>YYYY-MM-DD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>KGB 송파동부2</td>
+                                        <td>김홍동</td>
+                                        <td>220-81-40254</td>
+                                        <td>서울</td>
+                                        <td>30</td>
+                                        <td>4</td>
+                                        <td>26</td>
+                                        <td>조석규</td>
+                                        <td>이호정</td>
+                                        <td>010-111-1234</td>
+                                        <td>YYYY-MM-DD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>KGB 송파동부3</td>
+                                        <td>김홍동</td>
+                                        <td>220-81-40254</td>
+                                        <td>서울</td>
+                                        <td>30</td>
+                                        <td>4</td>
+                                        <td>26</td>
+                                        <td>조석규</td>
+                                        <td>이호정</td>
+                                        <td>010-111-1234</td>
+                                        <td>YYYY-MM-DD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>
+                                            <span class="normal">예</span>
+                                        </td>
+                                        <td>KGB 송파동부4</td>
+                                        <td>김홍동</td>
+                                        <td>220-81-40254</td>
+                                        <td>서울</td>
+                                        <td>30</td>
+                                        <td>4</td>
+                                        <td>26</td>
+                                        <td>조석규</td>
+                                        <td>이호정</td>
+                                        <td>010-111-1234</td>
+                                        <td>YYYY-MM-DD</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">시판품조사 행정처분 사항</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20 table-info">
+                                <caption>
+                                    시판품조사 행정처분 기입사항 - 행정처분일,
+                                    행정처분종류, 행정처분기간, 행정소송여부,
+                                    행정처분 대상 종류등급 및 호칭
+                                </caption>
+                                <colgroup>
+                                    <col
+                                        class="first-col"
+                                        style="width: 200px"
+                                    />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>행정처분일</th>
+                                        <td>2022-09-15</td>
+                                    </tr>
+                                    <tr>
+                                        <th>행정처분종류</th>
+                                        <td>
+                                            표시정지 및 판매정지
+                                            <span class="disposition">3</span
+                                            >개월
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>행정처분기간</th>
+                                        <td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+                                    </tr>
+                                    <tr>
+                                        <th>행정소송여부</th>
+                                        <td>
+                                            <span class="normal">예</span
+                                            ><span class="hyphen">/</span>
+                                            <a href="#"
+                                                >행정소송 관련 첨부파일.pdf
+                                                (1,200kb)</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>행정처분 관련서류</th>
+                                        <td>
+                                            <a href="#"
+                                                >행정처분 관련 첨부파일.pdf
+                                                (1,200kb)</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            행정처분 대상<br />
+                                            종류등급 및 호칭
+                                        </th>
+                                        <td>
+                                            <div class="tbl_wrap">
+                                                <table class="tbl center">
+                                                    <caption>
+                                                        종류등급, 호칭
+                                                    </caption>
+                                                    <colgroup>
+                                                        <col
+                                                            class="first-col"
+                                                            style="
+                                                                width: 74.3589%;
+                                                            "
+                                                        />
+                                                        <col />
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                종류등급
+                                                            </th>
+                                                            <th scope="col">
+                                                                호칭
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                정사각형 100*100
+                                                            </td>
+                                                            <td>aaa</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                정사각형 100*100
+                                                            </td>
+                                                            <td>bbb</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="tbl_btn_inner every_info btn-info">
+                            <div class="select_link">
+                                <div class="nums_total bold">심사원</div>
+                                <div class="btn_box">
+                                    <a href="#a" class="btn btn-process">SMS</a>
+                                    <a href="#a" class="btn btn-process"
+                                        >이메일</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    심사원 - 선택, 구분, 소속, 심사원, 연락처,
+                                    심사기간(소요일)
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 5.3841%" />
+                                    <col style="width: 16.6012%" />
+                                    <col style="width: 16.8255%" />
+                                    <col style="width: 14.5821%" />
+                                    <col style="width: 16.6012%" />
+                                    <col style="width: 29.9495%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">선택</th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">소속</th>
+                                        <th scope="col">심사원</th>
+                                        <th scope="col">연락처</th>
+                                        <th scope="col">심사기간 (소요일)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    name="tbl-chk"
+                                                    id="chk-label1"
+                                                />
+                                                <label
+                                                    for="chk-label1"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="normal">정심사원</span>
+                                        </td>
+                                        <td>한국표준협회</td>
+                                        <td>박노근</td>
+                                        <td>010-1234-1234</td>
+                                        <td>22-08-29 ~ 22-08-30 (2)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    name="tbl-chk"
+                                                    id="chk-label2"
+                                                />
+                                                <label
+                                                    for="chk-label2"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="normal">부심사원</span>
+                                        </td>
+                                        <td>방재시험연구원</td>
+                                        <td>김방재</td>
+                                        <td>010-2222-3333</td>
+                                        <td>22-08-29 ~ 22-08-28 (1)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="checkbox"
+                                                    class="visually-hidden"
+                                                    name="tbl-chk"
+                                                    id="chk-label3"
+                                                />
+                                                <label
+                                                    for="chk-label3"
+                                                    class="label"
+                                                ></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="normal">참관인</span>
+                                        </td>
+                                        <td>한국표준협회</td>
+                                        <td>성선화</td>
+                                        <td>010-2222-4444</td>
+                                        <td>22-08-29 ~ 22-08-28 (1)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">심사진행현황</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    심사진행현황 - 구분, 보고서 진행상태,
+                                    심사진행현황 전자서명, 부적합조치(조치상태,
+                                    경과일), 심사기간, 비고
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 16.2647%" />
+                                    <col style="width: 9.6466%" />
+                                    <col style="width: 13.4604%" />
+                                    <col style="width: 11.217%" />
+                                    <col style="width: 11.217%" />
+                                    <col style="width: 11.217%" />
+                                    <col style="width: 13.4604%" />
+                                    <col style="width: 13.4604%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" rowspan="2">구분</th>
+                                        <th scope="col" rowspan="2">
+                                            보고서 진행상태
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            심사진행현황 심사결과
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            전자서명
+                                        </th>
+                                        <th scope="col" colspan="2">
+                                            부적합조치
+                                        </th>
+
+                                        <th scope="col" rowspan="2">
+                                            심사기간
+                                        </th>
+                                        <th scope="col" rowspan="2">비고</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">조치상태</th>
+                                        <th scope="col" class="border-rt">
+                                            경과일
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="left">주요현황심사</td>
+                                        <td>검토중</td>
+                                        <td>
+                                            검토완료
+                                            <span class="num-finish">1</span>,
+                                            검토중
+                                            <span class="num-ing">4</span>
+                                        </td>
+                                        <td>서명완료</td>
+                                        <td>
+                                            <span class="stop">개선조치중</span>
+                                        </td>
+                                        <td>
+                                            <span class="stop">45일</span>
+                                        </td>
+                                        <td>22-08-29 ~ 22-08-30</td>
+                                        <td>
+                                            <span class="sum">핵심품질 1</span>,
+                                            일반품질 1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">공장심사</td>
+                                        <td>서명완료</td>
+                                        <td>
+                                            <span class="stop">부적합</span>
+                                        </td>
+                                        <td>서명완료</td>
+                                        <td>
+                                            <span class="stop">개선조치중</span>
+                                        </td>
+                                        <td>
+                                            <span class="stop">45일</span>
+                                        </td>
+                                        <td>22-08-29 ~ 22-08-30</td>
+                                        <td>
+                                            <span class="sum">핵심품질 1</span>,
+                                            일반품질 1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">제품시험의뢰</td>
+                                        <td>작성완료</td>
+                                        <td>적합</td>
+                                        <td>서명완료</td>
+                                        <td>개선조치완료</td>
+                                        <td>
+                                            <span class="stop">50일</span>
+                                        </td>
+                                        <td>22-08-29 ~ 22-08-30</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">확인심사 (공장)</td>
+                                        <td>서명중</td>
+                                        <td>적합</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    서명완료
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>개선조치완료</td>
+                                        <td>
+                                            <span class="stop">50일</span>
+                                        </td>
+                                        <td>22-08-29 ~ 22-08-30</td>
+                                        <td>
+                                            <div class="btn_wrap">
+                                                <a href="#" class="btn btn-sm"
+                                                    >심사보고서 바로가기</a
+                                                >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">사업장심사</td>
+                                        <td>서명완료</td>
+                                        <td>적합</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    서명완료
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>반려</td>
+                                        <td>
+                                            <span class="stop">40일</span>
+                                        </td>
+                                        <td>22-08-29 ~ 22-08-30</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">
+                                            서비스심사 (KGB 송파)
+                                        </td>
+                                        <td>서명완료</td>
+                                        <td>적합</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    서명완료
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>개선조치완료</td>
+                                        <td>
+                                            <span class="stop">60일</span>
+                                        </td>
+                                        <td>22-08-29 ~ 22-08-30</td>
+                                        <td>
+                                            <span class="sum">핵심품질 1</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">
+                                            서비스심사 (KGB 성동)
+                                        </td>
+                                        <td>서명완료</td>
+                                        <td>적합</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >부</span
+                                                    >
+                                                    서명완료
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>개선조치완료</td>
+                                        <td>
+                                            <span class="stop">60일</span>
+                                        </td>
+                                        <td>22-08-29 ~ 22-08-30</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">
+                                            확인심사 (KGB 송파)
+                                        </td>
+                                        <td>서명완료</td>
+                                        <td>적합</td>
+                                        <td>
+                                            <div class="manager">
+                                                <div class="manager-user">
+                                                    <span class="manager-title"
+                                                        >정</span
+                                                    >
+                                                    서명완료
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>개선조치완료</td>
+                                        <td>
+                                            <span class="stop">60일</span>
+                                        </td>
+                                        <td>22-08-29 ~ 22-08-30</td>
+                                        <td>
+                                            <div class="btn_wrap">
+                                                <a href="#" class="btn btn-sm"
+                                                    >심사보고서 바로가기</a
+                                                >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="fot-top">
+                <ul class="fot-top-list">
+                    <li class="fot-top-item"><a href="#">찾아오시는길</a></li>
+                    <li class="fot-top-item"><a href="#">담당자연락처</a></li>
+                    <li class="fot-top-item">
+                        <a href="#">사업자등록증 · 계좌안내</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">공평성 & 윤리강령</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fot-bottom">
+                <h3 class="footer-logo">
+                    <img src="../images/fot-logo.png" alt="KSA통합인증플랫폼" />
+                </h3>
+
+                <div class="address-inner">
+                    <ul class="address-list">
+                        <li class="address-item">KSA한국표준협회</li>
+                        <li class="address-item">사업자번호 : 105-82-00617</li>
+                        <li class="address-item">대표전화 : 1670-6009</li>
+                        <li class="address-item">
+                            06160 서울시 강남구 테헤란로 69길 5 (삼성동,DT센터)
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright(C) 2023 Korean Standards Association. All
+                        rights reserved.
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA통합인증플랫폼 심사원 | 심사원 | 내시판품조사관리 | 상세조회
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내시판품조사관리 | 상세조회"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내시판품조사관리 | 상세조회"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내시판품조사관리 | 상세조회"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내시판품조사관리 | 상세조회"
+        />
+        <meta
+            property="og:description"
+            content="KSA통합인증플랫폼 심사원 | 심사원 | 내시판품조사관리 | 상세조회"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/sub.css" />
+    </head>
+    <body>
+        <header>
+            <button
+                type="button"
+                class="m-btn-menu sm-only"
+                aria-label="메뉴버튼 열기"
+            ></button>
+            <h1 class="logo">
+                <a href="../index-auditor.html">
+                    <img
+                        src="../images/logo.png"
+                        alt="KSA통합인증플랫폼 심사원 로고"
+                    />
+                </a>
+            </h1>
+
+            <div class="head_user_info">
+                <div class="user_name">
+                    <a href="#a" class="name_color">김인증</a>님
+                    <div class="belong">(KS인증센터 / 심사원)</div>
+                </div>
+                <button
+                    type="button"
+                    class="log-out lg-only"
+                    aria-label="로그아웃"
+                >
+                    <i class="ic-logout" aria-hidden></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper">
+                <aside class="gnb">
+                    <div class="gnb-inner">
+                        <button
+                            type="button"
+                            class="btn-menu lg-only"
+                            aria-label="메뉴버튼 열기"
+                        ></button>
+                        <div class="gnb-icon-inner">
+                            <ul class="gnb-icon-list">
+                                <li class="gnb-icon-item">
+                                    <a href="../auditor/myinfo.html">
+                                        <i
+                                            class="ic-myinfo"
+                                            aria-label="내정보관리 아이콘"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../mySchedule/schedule.html">
+                                        <i
+                                            class="ic-schedule"
+                                            aria-label="내일정관리 아이콘"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../management/management.html">
+                                        <i
+                                            class="ic-examine"
+                                            aria-label="내심사관리 아이콘"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a
+                                        href="../investigation/investigation.html"
+                                    >
+                                        <i
+                                            class="ic-investigate"
+                                            aria-label="내시판품조사관리 아이콘"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <i
+                                        class="ic-customer"
+                                        aria-label="고객센터 아이콘"
+                                    ></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gnb-on">
+                        <div class="head_user_info">
+                            <button
+                                type="button"
+                                class="btn-close"
+                                aria-label="닫기"
+                            ></button>
+                            <div class="head-top sm-only">
+                                <div class="user_name">
+                                    <a href="#a" class="name_color">사용자</a>님
+                                    <div class="belong">
+                                        (KS인증센터 / 심사원)
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="log-out"
+                                    aria-label="로그아웃"
+                                >
+                                    <i class="ic-logout" aria-hidden></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gnb-inner">
+                            <!-- <button
+                                type="button"
+                                class="btn-menu lg-only"
+                                aria-label="메뉴버튼 열기"
+                            ></button> -->
+                            <div class="gnb-icon-inner">
+                                <ul class="gnb-icon-list">
+                                    <li class="gnb-icon-item">
+                                        <a href="../auditor/myinfo.html"
+                                            ><i
+                                                class="ic-myinfo"
+                                                aria-hidden
+                                            ></i>
+                                            내정보관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="../mySchedule/schedule.html"
+                                            ><i
+                                                class="ic-schedule"
+                                                aria-hidden
+                                            ></i>
+                                            내일정관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a href="../management/management.html"
+                                            ><i
+                                                class="ic-examine"
+                                                aria-hidden
+                                            ></i>
+                                            내심사관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <a
+                                            href="../investigation/investigation.html"
+                                            ><i
+                                                class="ic-investigate"
+                                                aria-hidden
+                                            ></i>
+                                            내시판품조사관리</a
+                                        >
+                                    </li>
+                                    <li class="gnb-icon-item">
+                                        <i class="ic-customer" aria-hidden></i>
+                                        <div class="gnb-customer-box">
+                                            <span class="customer-title"
+                                                >고객센터</span
+                                            >
+                                            <ul class="customer-menu-list">
+                                                <li class="customer-menu-item">
+                                                    <a href="#">공지사항</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">Q & A</a>
+                                                </li>
+                                                <li class="customer-menu-item">
+                                                    <a href="#">자료실</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="content invest-detail">
+                    <div class="page_head list-title">
+                        <h3 class="page_tit">상세조회</h3>
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a
+                                        href="../index-auditor.html"
+                                        class="home"
+                                    ></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">심사원</a>
+                                </li>
+                                <li class="location_item">
+                                    <a
+                                        href="../investigation/investigation.html"
+                                        >내시판품조사관리</a
+                                    >
+                                </li>
+                                <li class="location_item active">
+                                    <a
+                                        href="../investigation/investigation-detail.html"
+                                        >상세조회</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tbl_btn_inner every_info">
+                        <div class="btn_box">
+                            <a href="#a" class="btn btn-process">조회이력</a>
+                            <div class="nums_total">
+                                조회
+                                <span class="total">3,333</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column_box mb-20">
+                        <div class="page_head">
+                            <h3 class="page_tit">기본정보</h3>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20 table-info">
+                                <caption>
+                                    기본정보 - 제목, 조사기간, 담당자, 상태,
+                                    최초등록일시, 최종수정일시
+                                </caption>
+                                <colgroup>
+                                    <col
+                                        class="first-col"
+                                        style="width: 200px"
+                                    />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>제목</th>
+                                        <td>23년 1분기 시판품조사</td>
+                                    </tr>
+                                    <tr>
+                                        <th>조사기간</th>
+                                        <td>2023-02-01 ~ 2024-01-31</td>
+                                    </tr>
+                                    <tr>
+                                        <th>담당자</th>
+                                        <td>
+                                            이서진<span class="hyphen"></span
+                                            >KS인증센터<span
+                                                class="hyphen"
+                                            ></span
+                                            >위원<span class="hyphen"></span>
+                                            010-1234-1234<span
+                                                class="hyphen"
+                                            ></span
+                                            >02-1234-1000<span
+                                                class="hyphen"
+                                            ></span
+                                            >ccc@a.com
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>상태</th>
+                                        <td>정상</td>
+                                    </tr>
+                                    <tr>
+                                        <th>최초등록일시</th>
+                                        <td>22-08-19 13:50 (박서준)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>최종수정일시</th>
+                                        <td>22-08-19 13:50 (박서준)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box mb-20">
+                        <div class="page_head">
+                            <strong>· 안내자료</strong>
+                        </div>
+
+                        <div class="tbl_wrap">
+                            <table class="tbl left pd-lf-20 table-info">
+                                <caption>
+                                    안내자료 - 공문서 첨부, 시료재취 메뉴얼
+                                    첨부, 기타 참고자료, 심사원 안내사항
+                                </caption>
+                                <colgroup>
+                                    <col
+                                        class="first-col"
+                                        style="width: 200px"
+                                    />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>공문서 첨부</th>
+                                        <td>
+                                            <ul class="invest-list">
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>시료채취 매뉴얼 첨부</th>
+                                        <td>
+                                            <ul class="invest-list">
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>기타 참고자료</th>
+                                        <td>
+                                            <ul class="invest-list">
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                                <li class="invest-item">
+                                                    <a href="#a"
+                                                        >첨부파일명.pdf</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>심사원 안내사항</th>
+                                        <td>
+                                            <ul class="invest-list">
+                                                <li class="invest-item">
+                                                    심사원 안내사항 텍스트가
+                                                    노출합니다.
+                                                </li>
+                                                <li class="invest-item">
+                                                    심사원 안내사항 텍스트가
+                                                    노출합니다.
+                                                </li>
+                                                <li class="invest-item">
+                                                    심사원 안내사항 텍스트가
+                                                    노출합니다.
+                                                </li>
+                                                <li class="invest-item">
+                                                    심사원 안내사항 텍스트가
+                                                    노출합니다.
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <strong
+                                >· 대상리스트(<span class="total">2</span
+                                >건)</strong
+                            >
+                        </div>
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    대상리스트 - No, 고유번호, 차수, 표준번호,
+                                    표준명, 업체명, 고객코드, 인증기관명,
+                                    인증번호, 인증상태, 국가, 지역, 주소, 구분,
+                                    협력기관명, 심사일, 심사기관A(심사기관명,
+                                    심사원명, 연락처), 심사기관B(심사기관명,
+                                    심사원명, 연락처), 실시결과(시료채취,
+                                    현장조사, 유통구매, 시험기관, 시료번호,
+                                    특이사항, 실시확인서 첨부, 담당자검토)
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 80px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 90px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 300px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 80px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 240px" />
+                                    <col style="width: 240px" />
+                                    <col style="width: 320px" />
+                                    <col style="width: 90px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" rowspan="2">No</th>
+                                        <th scope="col" rowspan="2">
+                                            고유번호
+                                        </th>
+                                        <th scope="col" rowspan="2">차수</th>
+                                        <th scope="col" rowspan="2">
+                                            표준번호
+                                        </th>
+                                        <th scope="col" rowspan="2">표준명</th>
+                                        <th scope="col" rowspan="2">업체명</th>
+                                        <th scope="col" rowspan="2">
+                                            고객코드
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            인증기관명
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            인증번호
+                                        </th>
+                                        <th scope="col" rowspan="2">
+                                            인증상태
+                                        </th>
+                                        <th scope="col" rowspan="2">국가</th>
+                                        <th scope="col" rowspan="2">지역</th>
+                                        <th scope="col" rowspan="2">주소</th>
+                                        <th scope="col" rowspan="2">구분</th>
+                                        <th scope="col" rowspan="2">
+                                            협력기관명
+                                        </th>
+                                        <th scope="col" rowspan="2">심사일</th>
+                                        <th scope="col" colspan="3">
+                                            심사기관 A
+                                        </th>
+                                        <th scope="col" colspan="3">
+                                            심사기관 B
+                                        </th>
+                                        <th scope="col" colspan="8">
+                                            실시결과
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">심사기관명</th>
+                                        <th scope="col">심사원명</th>
+                                        <th scope="col">연락처</th>
+                                        <th scope="col">심사기관명</th>
+                                        <th scope="col">심사원명</th>
+                                        <th scope="col">연락처</th>
+                                        <th scope="col">
+                                            <span class="import">시료채취</span>
+                                        </th>
+                                        <th scope="col">
+                                            <span class="import">현장조사</span>
+                                        </th>
+                                        <th scope="col">
+                                            <span class="import">유통구매</span>
+                                        </th>
+                                        <th scope="col">시험기관</th>
+                                        <th scope="col">
+                                            <span class="import">시료번호</span>
+                                        </th>
+                                        <th scope="col">특이사항</th>
+                                        <th scope="col">
+                                            <span class="import"
+                                                >실시확인서 첨부</span
+                                            >
+                                        </th>
+                                        <th scope="col">담당자검토</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1차</td>
+                                        <td>KS B 2308</td>
+                                        <td>볼 밸브</td>
+                                        <td>한국화이자</td>
+                                        <td>0000123456</td>
+                                        <td>한국표준협회</td>
+                                        <td>12-1234</td>
+                                        <td>
+                                            <div class="company_txt center">
+                                                유효
+                                                <div class="btn_wrap">
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                        >상세</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>한국</td>
+                                        <td>경기</td>
+                                        <td class="lf">
+                                            경기도 화성시 팔탄면 시청로 895-20
+                                        </td>
+                                        <td>일반품목</td>
+                                        <td>KTR</td>
+                                        <td>2023-03-20</td>
+                                        <td>한국표준협회</td>
+                                        <td>서강준</td>
+                                        <td>010-1234-1234</td>
+                                        <td>한국표준협회</td>
+                                        <td>이도현</td>
+                                        <td>010-1234-1234</td>
+                                        <td>
+                                            <div class="chk-item start">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radios"
+                                                        id="rd"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd">예</label>
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radios"
+                                                        id="rd1"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd1"
+                                                        >아니오</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="chk-item start">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radios1"
+                                                        id="rd2"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd2">예</label>
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radios1"
+                                                        id="rd3"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd3"
+                                                        >아니오</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="chk-item start">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radios2"
+                                                        id="rd4"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd4">예</label>
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radios2"
+                                                        id="rd5"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd5"
+                                                        >아니오</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>KTL</td>
+                                        <td>
+                                            <input
+                                                type="text"
+                                                placeholder="번호를 입력해 주세요."
+                                            />
+                                        </td>
+                                        <td>
+                                            <input
+                                                type="text"
+                                                placeholder="번호를 입력해 주세요."
+                                            />
+                                        </td>
+                                        <td class="left">
+                                            <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                            <div
+                                                class="file_inner file-single on"
+                                            >
+                                                <div class="file_choice">
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-upload"
+                                                        >파일선택</a
+                                                    >
+                                                    <p class="txt_warning">
+                                                        개당 10MB까지 등록
+                                                        가능합니다.
+                                                    </p>
+                                                </div>
+                                                <div class="choice_file_Box">
+                                                    <!-- 등록된 파일 내용 노출할 경우 -->
+                                                    <div class="file_infobox">
+                                                        <span class="file_name"
+                                                            >사업자등록증.jpg</span
+                                                        >
+                                                        <div
+                                                            class="volume_info"
+                                                        >
+                                                            <span
+                                                                class="file_volume"
+                                                                >9MB</span
+                                                            >
+                                                            <button
+                                                                type="button"
+                                                                class="btn file_del"
+                                                            >
+                                                                <span
+                                                                    class="visually-hidden"
+                                                                    >지우기</span
+                                                                >
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 등록한 파일 없을 경우 드래그 내용 노출한 경우 -->
+                                                    <!-- <div class="file-drag">
+                                                        <span aria-hidden=""></span>
+                                                        파일을 여기에 끌어다
+                                                        놓으세요.
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>검토전</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>2차</td>
+                                        <td>KS C 5471</td>
+                                        <td>육각볼트</td>
+                                        <td>시웅건설</td>
+                                        <td>0000123451</td>
+                                        <td>한국표준협회</td>
+                                        <td>12-1234</td>
+                                        <td>
+                                            <div class="company_txt center">
+                                                유효
+
+                                                <div class="btn_wrap">
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                        >상세</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>한국</td>
+                                        <td>경기</td>
+                                        <td class="lf">
+                                            경기도 안산시 단원구 산단로
+                                            325,CA-178
+                                        </td>
+                                        <td>레미콘</td>
+                                        <td>KTR</td>
+                                        <td>2023-03-20</td>
+                                        <td>한국표준협회</td>
+                                        <td>서강준</td>
+                                        <td>010-1234-1234</td>
+                                        <td>한국표준협회</td>
+                                        <td>이도현</td>
+                                        <td>010-1234-1234</td>
+                                        <td>
+                                            <div class="chk-item start">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radio-1"
+                                                        id="rd-chk1"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd-chk1"
+                                                        >예</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radio-1"
+                                                        id="rd-chk2"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd-chk2"
+                                                        >아니오</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="chk-item start">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radio-2"
+                                                        id="rd-chk3"
+                                                        .
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd-chk3"
+                                                        >예</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radio-2"
+                                                        id="rd-chk4"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd-chk4"
+                                                        >아니오</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="chk-item start">
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radio-3"
+                                                        id="rd-chk5"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd-chk5"
+                                                        >예</label
+                                                    >
+                                                </div>
+                                                <div class="chk-inner">
+                                                    <input
+                                                        type="radio"
+                                                        name="radio-3"
+                                                        id="rd-chk6"
+                                                        class="visually-hidden"
+                                                    />
+                                                    <label for="rd-chk6"
+                                                        >아니오</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>KTL</td>
+                                        <td>
+                                            <input
+                                                type="text"
+                                                placeholder="KSF4009-102-1~10"
+                                                disabled
+                                            />
+                                        </td>
+                                        <td>
+                                            <input
+                                                type="text"
+                                                placeholder="번호를 입력해 주세요."
+                                            />
+                                        </td>
+                                        <td class="left">
+                                            <!-- class on 추가시 class txt_warning display none 처리 됨 -->
+                                            <div class="file_inner file-single">
+                                                <div class="file_choice">
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-upload"
+                                                        >파일선택</a
+                                                    >
+                                                    <p class="txt_warning">
+                                                        개당 10MB까지 등록
+                                                        가능합니다.
+                                                    </p>
+                                                </div>
+                                                <div class="choice_file_Box">
+                                                    <!-- 등록된 파일 내용 노출할 경우 -->
+                                                    <div class="file_infobox">
+                                                        <span class="file_name"
+                                                            >사업자등록증.jpg</span
+                                                        >
+                                                        <div
+                                                            class="volume_info"
+                                                        >
+                                                            <span
+                                                                class="file_volume"
+                                                                >9MB</span
+                                                            >
+                                                            <button
+                                                                type="button"
+                                                                class="btn file_del"
+                                                            >
+                                                                <span
+                                                                    class="visually-hidden"
+                                                                    >지우기</span
+                                                                >
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>검토전</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="btn_wrap">
+                        <button type="button" class="btn btn-layer-cancel">
+                            목록
+                        </button>
+                        <button type="button" class="btn btn-layer-default">
+                            저장
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="fot-top">
+                <ul class="fot-top-list">
+                    <li class="fot-top-item"><a href="#">찾아오시는길</a></li>
+                    <li class="fot-top-item"><a href="#">담당자연락처</a></li>
+                    <li class="fot-top-item">
+                        <a href="#">사업자등록증 · 계좌안내</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">공평성 & 윤리강령</a>
+                    </li>
+                    <li class="fot-top-item">
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fot-bottom">
+                <h3 class="footer-logo">
+                    <img src="../images/fot-logo.png" alt="KSA통합인증플랫폼" />
+                </h3>
+
+                <div class="address-inner">
+                    <ul class="address-list">
+                        <li class="address-item">KSA한국표준협회</li>
+                        <li class="address-item">사업자번호 : 105-82-00617</li>
+                        <li class="address-item">대표전화 : 1670-6009</li>
+                        <li class="address-item">
+                            06160 서울시 강남구 테헤란로 69길 5 (삼성동,DT센터)
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright(C) 2023 Korean Standards Association. All
+                        rights reserved.
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

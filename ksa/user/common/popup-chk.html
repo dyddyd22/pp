@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1800" />
+    <title>KSA 통합인증플랫폼 | 인증확인서 팝업</title>
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="Description" content="KSA 통합인증플랫폼 | 인증확인서 팝업" />
+    <meta http-equiv="Title" content="KSA 통합인증플랫폼 | 인증확인서 팝업" />
+    <meta http-equiv="Copyright" content="KSA 통합인증플랫폼 | 인증확인서 팝업" />
+    <meta property="og:url" content="페이지 url" />
+    <meta property="og:title" content="KSA 통합인증플랫폼 | 인증확인서 팝업" />
+    <meta property="og:description" content="KSA 통합인증플랫폼 | 인증확인서 팝업" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../images/apple-icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" href="../images/apple-icon-96.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-144.png" />
+    <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/opensrc/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+</head>
+
+<body>
+    <div class="page-full">
+        <div class="print-popup-inner chk-popup-inner open">
+            <div class="print-modal-popup">
+                <div class="print-popup-head">
+                    <h2 class="print-modal-title">인증확인서</h2>
+                    <button type="button" class="print-pop-close">
+                        <span class="visually-hidden">닫기</span>
+                    </button>
+                </div>
+                <div class="print-popup-content">
+                    <h2 class="print-sub-title">인증확인서</h2>
+
+                    <div class="print-column-box">
+                        <div class="print-tbl-wrap">
+                            <table class="print-tbl">
+                                <caption>
+                                    인증확인서 - 인증번호, 업체명,
+                                    대표자성명, 업체 소재지, 인증제품
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 240px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 340px" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>인증번호</th>
+                                        <td colspan="2">21-1234</td>
+                                    </tr>
+                                    <tr>
+                                        <th>업체명</th>
+                                        <td colspan="2">ABC기업</td>
+                                    </tr>
+                                    <tr>
+                                        <th>대표자 성명</th>
+                                        <td colspan="2">김대표</td>
+                                    </tr>
+                                    <tr>
+                                        <th>업체 소재지</th>
+                                        <td colspan="2">
+                                            전라북도 군산시 자유로 222
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3">인증제품</th>
+                                        <td class="tbl-bg">표준명</td>
+                                        <td>6각 볼트</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-bg">표준번호</td>
+                                        <td>KS A 1234</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-bg">
+                                            종류등급 또는 호칭
+                                        </td>
+                                        <td>SGLCC, 11111, 22222, 33333</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="chk-text">
+                            위 인증내용은 사실과 같음을 확인합니다.
+                        </p>
+                        <p class="chk-info">
+                            다만, KS인증의 경우 관계 법령에 따라 행정처분 및
+                            표시 정지 등의 처분이 실시간으로 이루어지고,<br />
+                            신고를 통한 제조 중단이 가능합니다.<br> 해당 여부는
+                            한국표준협회 통합인증지원 플랫폼을 통해 반드시 직접 확인하시기 바랍니다.
+                        </p>
+                        <!-- <a href="#a" class="link-info">[KS인증업체검색 바로가기]</a> -->
+                    </div>
+
+                    <div class="main-name">
+                        <span class="day">YYYY년 MM월 DD일</span>
+                    </div>
+
+                    <p class="main-company">
+                        <strong>한국표준협회장</strong>
+                        <img src="../images/stamp.png" alt="직인" />
+                    </p>
+                </div>
+
+                <div class="print-popup-bottom">
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-cancel">
+                            취소
+                        </button>
+                        <button type="button" class="btn btn-default" onclick="window.print()">
+                            인쇄
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dim"></div>
+    <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../js/opensrc/jquery-ui.min.js"></script>
+    <script src="../js/opensrc/swiper-bundle.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/constants.js"></script>
+</body>
+
+</html>

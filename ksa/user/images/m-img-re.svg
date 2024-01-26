@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="그룹_167754" data-name="그룹 167754" transform="translate(-10 -279)">
+    <circle id="타원_9492" data-name="타원 9492" cx="30" cy="30" r="30" transform="translate(10 279)" fill="#fff"/>
+    <g id="그룹_166570" data-name="그룹 166570" transform="translate(-432 -49)">
+      <path id="패스_83199" data-name="패스 83199" d="M29.032,1,24.366,5.6V31H47.192V1Z" transform="translate(434.634 342)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_83201" data-name="패스 83201" d="M29.016,5.65h-4.65L29.016,1V5.65Z" transform="translate(434.634 342)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_574" data-name="선 574" x2="13.2" transform="translate(463.813 350.793)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_575" data-name="선 575" x2="13.2" transform="translate(463.813 354.396)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_576" data-name="선 576" x2="10.8" transform="translate(463.813 358.601)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_3507" data-name="선 3507" x2="10.8" transform="translate(463.813 362.205)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_3508" data-name="선 3508" x2="10.8" transform="translate(463.813 366.409)" fill="none" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="사각형_150527" data-name="사각형 150527" d="M.856,0h0a.856.856,0,0,1,.856.856V4.281a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V.856A.856.856,0,0,1,.856,0Z" transform="translate(487.632 352.582) rotate(37)" fill="#fff" stroke="#194da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_83217" data-name="패스 83217" d="M0,0V10.686a.59.59,0,0,0,.039.215l.745,1.88c.033.085.112.085.145,0l.745-1.88a.59.59,0,0,0,.039-.215V0Z" transform="translate(485.056 356.011) rotate(37)" fill="#fff" stroke="#194da1" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

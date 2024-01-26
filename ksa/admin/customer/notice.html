@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA 통합인증플랫폼 | 고객센터관리 | 공지사항</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="admin_aside">
+                <h1 class="admin_logo">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+
+                <div class="menu_box">
+                    <div class="lnb">
+                        <ul class="lnb_wrap">
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-standard">기준정보</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사표준</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">1년심사 대상관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자가진단항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증위원회 개최일정</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">코드관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-resource">자원관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">기업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item">
+                                        <a href="#a">유관기관관리</a>
+                                        <ul class="lnb_last_list">
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">유관기관 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">심사원 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">시험원 관리</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">운영자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-judge">심사관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사신청관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사진행관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사마감관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">시판품조사관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-subscription"
+                                    >인증관련 신청관리</a
+                                >
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 재발급 관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a"
+                                            >영문인증서 발급신청 관리</a
+                                        >
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">제조중단/개시 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">주요목록 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 반납신청 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="ic-certification">
+                                    인증서관리</a
+                                >
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-center">고객센터관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">공지사항관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">FAQ관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">Q&A관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">팝업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">배너관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자료실관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="admin-inner">
+                <header>
+                    <div class="head_user_info">
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a href="#a" class="home"></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">고객센터관리</a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="#a">공지사항관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-box">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">김인증</a>님
+                                <div class="belong">(서울본부 / 운영자)</div>
+                            </div>
+                            <button
+                                type="button"
+                                class="log-out"
+                                aira-label="로그아웃"
+                            ></button>
+                        </div>
+                    </div>
+                </header>
+                <main class="admin_main">
+                    <div class="content">
+                        <div class="content-inner">
+                            <div class="page_head list-title">
+                                <h3 class="page_tit">공지사항관리</h3>
+                            </div>
+                            <div class="tbl_wrap tbl-bg left">
+                                <table class="tbl">
+                                    <caption>
+                                        등록일, 노출구분
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 130px" />
+                                        <col style="width: 27.7397%" />
+                                        <col style="width: 88px" />
+                                        <col style="width: 29.1095%" />
+                                        <col style="width: 100px" />
+                                        <col style="width: 23.5616%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>등록일</th>
+                                            <td>
+                                                <div class="picker_from">
+                                                    <!-- input 달력 -->
+                                                    <div class="picker_box">
+                                                        <input
+                                                            type="text"
+                                                            class="datepicker"
+                                                            placeholder="2023-01-01"
+                                                        />
+                                                    </div>
+                                                    <span class="hyphen"
+                                                        >-</span
+                                                    >
+                                                    <div class="picker_box">
+                                                        <input
+                                                            type="text"
+                                                            class="datepicker"
+                                                            placeholder="2023-01-01"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th>노출구분</th>
+                                            <td>
+                                                <select
+                                                    multiple="multiple"
+                                                    name="somename0"
+                                                    class="multi-select"
+                                                    placeholder="선택"
+                                                >
+                                                    <option value="사업자">
+                                                        사업자
+                                                    </option>
+                                                    <option value="시험기관">
+                                                        시험기관
+                                                    </option>
+                                                    <option value="심사기관">
+                                                        심사기관
+                                                    </option>
+                                                    <option value="운영자">
+                                                        운영자
+                                                    </option>
+                                                </select>
+                                            </td>
+                                            <th>사이트구분</th>
+                                            <td>
+                                                <select
+                                                    multiple="multiple"
+                                                    name="somename0"
+                                                    class="multi-select"
+                                                    placeholder="전체"
+                                                >
+                                                    <option value="KS">
+                                                        KS
+                                                    </option>
+                                                    <option value="ISO">
+                                                        ISO
+                                                    </option>
+                                                    <option value="검인증">
+                                                        검인증
+                                                    </option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <select
+                                                    name=""
+                                                    id=""
+                                                    class="all_select select"
+                                                >
+                                                    <option value="">
+                                                        제목
+                                                    </option>
+                                                    <option value="">
+                                                        내용
+                                                    </option>
+                                                </select>
+                                            </th>
+                                            <td>
+                                                <div class="input_search">
+                                                    <input
+                                                        type="text"
+                                                        placeholder="Search"
+                                                    />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_wrap">
+                                    <button
+                                        type="button"
+                                        class="btn btn-search"
+                                    >
+                                        검색
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="column_box">
+                                <div class="tbl_btn_inner every_info">
+                                    <div class="select_link">
+                                        <div class="nums_total">
+                                            총 <span class="total">98</span>건
+                                        </div>
+                                        <select name="" id="" class="select">
+                                            <option value="">
+                                                10개씩 보기
+                                            </option>
+                                            <option value="">
+                                                50개씩 보기
+                                            </option>
+                                            <option value="">
+                                                100개씩 보기
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="btn_box">
+                                        <a href="#" class="btn btn-default"
+                                            >등록</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="tbl_wrap tbl_type1">
+                                    <!--
+                                        NOTE : 04-04
+                                        table body 내용 있을 경우 class tbl on class 추가
+                                    -->
+                                    <table class="tbl">
+                                        <caption>
+                                            NO, 기관코드, 기관명, 표준코드,
+                                            시험횟수, 담당자정보, 지정상태,
+                                            최종수정일, 최초등록일
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 60px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 200px" />
+                                            <col style="width: 522px" />
+                                            <col style="width: 180px" />
+                                            <col style="width: 200px" />
+                                            <col style="width: 200px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box1"
+                                                        />
+                                                        <label
+                                                            for="chk-box1"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">No</th>
+                                                <th scope="col">사이트구분</th>
+                                                <th scope="col">노출구분</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">등록자</th>
+                                                <th scope="col">등록일</th>
+                                                <th scope="col">조회수</th>
+                                            </tr>
+                                        </thead>
+                                        <!--
+                                            NOTE : 04-04
+                                            table body 내용 있을 경우 노출
+                                         -->
+                                        <tbody>
+                                            <!-- <tr class="tbl_noti">
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box2"
+                                                        />
+                                                        <label
+                                                            for="chk-box2"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>[주요공지]</td>
+                                                <td>테스트</td>
+                                                <td>전체</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr class="tbl_noti">
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box3"
+                                                        />
+                                                        <label
+                                                            for="chk-box3"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>[주요공지]</td>
+                                                <td>테스트</td>
+                                                <td>전체</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box4"
+                                                        />
+                                                        <label
+                                                            for="chk-box4"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>98</td>
+                                                <td>테스트</td>
+                                                <td>사업자</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box5"
+                                                        />
+                                                        <label
+                                                            for="chk-box5"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>97</td>
+                                                <td>테스트</td>
+                                                <td>시험기관</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box6"
+                                                        />
+                                                        <label
+                                                            for="chk-box6"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>96</td>
+                                                <td>테스트</td>
+                                                <td>심사기관</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box7"
+                                                        />
+                                                        <label
+                                                            for="chk-box7"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>95</td>
+                                                <td>테스트</td>
+                                                <td>운영자</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box8"
+                                                        />
+                                                        <label
+                                                            for="chk-box8"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>94</td>
+                                                <td>테스트</td>
+                                                <td>사업자</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box9"
+                                                        />
+                                                        <label
+                                                            for="chk-box9"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>93</td>
+                                                <td>테스트</td>
+                                                <td>사업자</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box10"
+                                                        />
+                                                        <label
+                                                            for="chk-box10"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>92</td>
+                                                <td>테스트</td>
+                                                <td>사업자/운영자/심사기관</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-box11"
+                                                        />
+                                                        <label
+                                                            for="chk-box11"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>91</td>
+                                                <td>테스트</td>
+                                                <td>사업자</td>
+                                                <td class="txt_info">
+                                                    <a
+                                                        href="#a"
+                                                        class="txt_box"
+                                                    >
+                                                        공지사항 제목이
+                                                        출력됩니다.공지사항
+                                                        제목이
+                                                        출력됩니다.공지사항
+                                                        제목이 출력됩니다.
+                                                    </a>
+                                                </td>
+                                                <td>박공지(asae1)</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>000,000</td>
+                                            </tr> -->
+                                            <tr class="border-0">
+                                                <td
+                                                    colspan="8"
+                                                    class="bg-transparent"
+                                                >
+                                                    <!-- <div class="pagination">
+                                                        <ol class="paging_list">
+                                                            <li
+                                                                class="arrow_prev paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                    aria-label="이전페이지 이동"
+                                                                ></button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item is-active"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    1
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    2
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    3
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    4
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    ...
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    9
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                >
+                                                                    10
+                                                                </button>
+                                                            </li>
+                                                            <li
+                                                                class="arrow_next paging_item"
+                                                            >
+                                                                <button
+                                                                    type="button"
+                                                                    aria-label="다음페이지 이동"
+                                                                ></button>
+                                                            </li>
+                                                        </ol>
+                                                    </div> -->
+                                                    <!--
+                                        NOTE :  04-04
+                                        검색 결과 없을 경우 노출
+                                    -->
+                                                    <div
+                                                        class="pagination-info-not"
+                                                    >
+                                                        검색 결과가 없습니다.
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

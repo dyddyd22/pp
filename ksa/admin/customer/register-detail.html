@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 상세조회
+        </title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 상세조회"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 상세조회"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 상세조회"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 상세조회"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 고객센터관리 | 공지사항관리 | 상세조회"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="admin_aside">
+                <h1 class="admin_logo">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+
+                <div class="menu_box">
+                    <div class="lnb">
+                        <ul class="lnb_wrap">
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-standard">기준정보</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사표준</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">1년심사 대상관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자가진단항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증위원회 개최일정</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">코드관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-resource">자원관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">기업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item">
+                                        <a href="#a">유관기관관리</a>
+                                        <ul class="lnb_last_list">
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">유관기관 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">심사원 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">시험원 관리</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">운영자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-judge">심사관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사신청관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사진행관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사마감관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">시판품조사관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-subscription"
+                                    >인증관련 신청관리</a
+                                >
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 재발급 관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a"
+                                            >영문인증서 발급신청 관리</a
+                                        >
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">제조중단/개시 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">주요목록 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 반납신청 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="ic-certification">
+                                    인증서관리</a
+                                >
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-center">고객센터관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">공지사항관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">FAQ관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">Q&A관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">팝업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">배너관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자료실관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="admin-inner">
+                <header>
+                    <div class="head_user_info">
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a href="#a" class="home"></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">고객센터관리</a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="#a">공지사항 상세조회</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-box">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">김인증</a>님
+                                <div class="belong">(서울본부 / 운영자)</div>
+                            </div>
+                            <button
+                                type="button"
+                                class="log-out"
+                                aira-label="로그아웃"
+                            ></button>
+                        </div>
+                    </div>
+                </header>
+                <main class="admin_main">
+                    <div class="content">
+                        <div class="content-inner">
+                            <div class="page_head list-title">
+                                <h3 class="page_tit">공지사항 상세조회</h3>
+                            </div>
+                            <div class="tbl_wrap mb-20">
+                                <table class="tbl left pd-lf-20">
+                                    <caption>
+                                        등록자, 등록일, 노출구분, 조회수,
+                                        주요공지여부, 제목, 내용, 첨부파일
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 180px" />
+                                        <col style="width: 27.8888%" />
+                                        <col style="width: 180px" />
+                                        <col style="width: 27.8888%" />
+                                        <col style="width: 8.987%" />
+                                        <col style="width: 180px" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>등록자</th>
+                                            <td>박공지(asae1)</td>
+                                            <th>등록일</th>
+                                            <td>YYYY-MM-DD</td>
+                                            <th>조회수</th>
+                                            <td>3,333</td>
+                                        </tr>
+                                        <tr>
+                                            <th>사이트구분</th>
+                                            <td>KS</td>
+                                            <th>노출구분</th>
+                                            <td>시험기관/심사기관/운영자</td>
+                                        </tr>
+                                        <tr>
+                                            <th>주요공지여부</th>
+                                            <td colspan="5">
+                                                <div class="company_txt">
+                                                    <span class="normal"
+                                                        >예</span
+                                                    >
+                                                    <div class="noti-days">
+                                                        <strong class="noti-tit"
+                                                            >공지노출기관</strong
+                                                        >
+                                                        <span class="days"
+                                                            >YYYY-MM-DD ~
+                                                            YYYY-MM-DD</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>제목</th>
+                                            <td colspan="5">
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>내용</th>
+                                            <td colspan="5" class="info-txt">
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                                게시판 제목이 출력됩니다. 게시판
+                                                제목이 출력됩니다<br />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>첨부파일</th>
+                                            <td colspan="5">
+                                                <div class="down-file">
+                                                    <a
+                                                        href="#"
+                                                        class="link-file"
+                                                        >첨부파일1.pdf
+                                                        (1,200kb)</a
+                                                    >
+                                                </div>
+                                                <div class="down-file">
+                                                    <a
+                                                        href="#"
+                                                        class="link-file"
+                                                        >첨부파일2.pdf
+                                                        (1,200kb)</a
+                                                    >
+                                                </div>
+                                                <div class="down-file">
+                                                    <a
+                                                        href="#"
+                                                        class="link-file"
+                                                        >첨부파일3.pdf
+                                                        (1,200kb)</a
+                                                    >
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_wrap start">
+                                    <button type="button" class="btn btn-page">
+                                        삭제
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="btn_wrap">
+                                <button type="button" class="btn btn-page">
+                                    목록
+                                </button>
+                                <button type="button" class="btn btn-default">
+                                    저장
+                                </button>
+                            </div>
+                            <div class="tbl_wrap mt-150">
+                                <table class="tbl left pd-lf-20">
+                                    <caption>
+                                        이전글, 다음글
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 200px" />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                이전글
+                                                <i
+                                                    class="ic-up"
+                                                    aria-hidden
+                                                ></i>
+                                            </th>
+                                            <td>
+                                                <a href="#"
+                                                    >게시판 제목이 출력됩니다.
+                                                    게시판 제목이 출력됩니다</a
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                다음글
+                                                <i
+                                                    class="ic-down"
+                                                    aria-hidden
+                                                ></i>
+                                            </th>
+                                            <td>다음글이 없습니다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

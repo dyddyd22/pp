@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KSA 통합인증플랫폼 | 심사관리 | 심사신청관리</title>
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta
+            name="Description"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리"
+        />
+        <meta
+            http-equiv="Title"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리"
+        />
+        <meta
+            http-equiv="Copyright"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리"
+        />
+        <meta property="og:url" content="페이지 url" />
+        <meta
+            property="og:title"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리"
+        />
+        <meta
+            property="og:description"
+            content="KSA 통합인증플랫폼 | 심사관리 | 심사신청관리"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="admin_aside">
+                <h1 class="admin_logo">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="ksa통합인증플랫폼" />
+                    </a>
+                </h1>
+
+                <div class="menu_box">
+                    <div class="lnb">
+                        <ul class="lnb_wrap">
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-standard">기준정보</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사표준</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">1년심사 대상관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자가진단항목</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증위원회 개최일정</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">코드관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-resource">자원관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">기업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item">
+                                        <a href="#a">유관기관관리</a>
+                                        <ul class="lnb_last_list">
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">유관기관 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">심사원 관리</a>
+                                            </li>
+                                            <li class="lnb_last_item noDepth">
+                                                <a href="#a">시험원 관리</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">운영자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-judge">심사관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사신청관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사진행관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">심사마감관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">시판품조사관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-subscription"
+                                    >인증관련 신청관리</a
+                                >
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 재발급 관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a"
+                                            >영문인증서 발급신청 관리</a
+                                        >
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">제조중단/개시 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">주요목록 신고관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">인증서 반납신청 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lnb_first_item noDepth">
+                                <a href="#a" class="ic-certification">
+                                    인증서관리</a
+                                >
+                            </li>
+                            <li class="lnb_first_item">
+                                <a href="#a" class="ic-center">고객센터관리</a>
+                                <ul class="lnb_second_list">
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">공지사항관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">FAQ관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">Q&A관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">팝업관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">배너관리</a>
+                                    </li>
+                                    <li class="lnb_second_item noDepth">
+                                        <a href="#a">자료실관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="admin-inner">
+                <header>
+                    <div class="head_user_info">
+                        <div class="location_inner">
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a href="#a" class="home"></a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">심사관리</a>
+                                </li>
+                                <li class="location_item active">
+                                    <a href="#a">심사신청관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-box">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">김인증</a>님
+                                <div class="belong">(서울본부 / 운영자)</div>
+                            </div>
+                            <button
+                                type="button"
+                                class="log-out"
+                                aira-label="로그아웃"
+                            ></button>
+                        </div>
+                    </div>
+                </header>
+                <main class="admin_main">
+                    <div class="content">
+                        <div class="content-inner">
+                            <div class="page_head list-title">
+                                <h3 class="page_tit">심사신청관리</h3>
+                            </div>
+                            <div class="column_box">
+                                <div class="tbl_wrap tbl-bg left">
+                                    <table class="tbl">
+                                        <caption>
+                                            심사구분,심사종류, 담당지역본부,
+                                            신청상태, 심사처리상태, 심사비
+                                            결제상태, 신청비 결제상태, 심사원
+                                            배정상태, 심사방식
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 120px" />
+                                            <col style="width: 24.178%" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 25.5479%" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 23.6986%" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <select
+                                                        name=""
+                                                        id=""
+                                                        class="select"
+                                                    >
+                                                        <option value="">
+                                                            신청일
+                                                        </option>
+                                                        <option value="">
+                                                            심사일
+                                                        </option>
+                                                    </select>
+                                                </th>
+                                                <td>
+                                                    <div class="picker_from">
+                                                        <div class="picker_box">
+                                                            <input
+                                                                type="text"
+                                                                class="datepicker"
+                                                                placeholder="2023-01-01"
+                                                            />
+                                                        </div>
+                                                        <span class="hyphen"
+                                                            >-</span
+                                                        >
+                                                        <div class="picker_box">
+                                                            <input
+                                                                type="text"
+                                                                class="datepicker"
+                                                                placeholder="2023-01-01"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <th>KS인증 구분</th>
+                                                <td>
+                                                    <div class="chk-item">
+                                                        <div class="chk-inner">
+                                                            <input
+                                                                type="radio"
+                                                                id="item-radio1"
+                                                                class="visually-hidden"
+                                                                name="ks-item"
+                                                            />
+                                                            <label
+                                                                for="item-radio1"
+                                                                >제품</label
+                                                            >
+                                                        </div>
+                                                        <div class="chk-inner">
+                                                            <input
+                                                                type="radio"
+                                                                id="item-radio2"
+                                                                class="visually-hidden"
+                                                                name="ks-item"
+                                                            />
+                                                            <label
+                                                                for="item-radio2"
+                                                                >서비스</label
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <th>심사종류</th>
+                                                <td
+                                                    class="multi-cell"
+                                                    style="z-index: 90"
+                                                >
+                                                    <select
+                                                        multiple="multiple"
+                                                        name="somename0"
+                                                        class="multi-select"
+                                                        placeholder="선택"
+                                                    >
+                                                        <option
+                                                            value="신규심사"
+                                                        >
+                                                            신규심사
+                                                        </option>
+                                                        <option
+                                                            value="정기심사"
+                                                        >
+                                                            정기심사
+                                                        </option>
+                                                        <option
+                                                            value="1년주기심사"
+                                                        >
+                                                            1년주기심사
+                                                        </option>
+                                                        <option
+                                                            value="공장이전심사"
+                                                        >
+                                                            공장이전심사
+                                                        </option>
+                                                        <option
+                                                            value="품목 추가"
+                                                        >
+                                                            품목 추가
+                                                        </option>
+                                                        <option
+                                                            value="종류 추가"
+                                                        >
+                                                            종류 추가
+                                                        </option>
+                                                        <option
+                                                            value="인증기관 변경"
+                                                        >
+                                                            인증기관 변경
+                                                        </option>
+                                                        <option
+                                                            value="1년이내 재심사"
+                                                        >
+                                                            1년이내 재심사
+                                                        </option>
+                                                        <option
+                                                            value="확인심사 (핵심)"
+                                                        >
+                                                            확인심사 (핵심)
+                                                        </option>
+                                                        <option
+                                                            value="확인심사 (일반)"
+                                                        >
+                                                            확인심사 (일반)
+                                                        </option>
+                                                        <option
+                                                            value="시판품조사"
+                                                        >
+                                                            시판품조사
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>담당지역본부</th>
+                                                <td
+                                                    class="multi-cell"
+                                                    style="z-index: 80"
+                                                >
+                                                    <select
+                                                        multiple="multiple"
+                                                        name="somename0"
+                                                        class="multi-select"
+                                                        placeholder="전체"
+                                                    >
+                                                        <option value="전체">
+                                                            전체
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                                <th>신청상태</th>
+                                                <td
+                                                    class="multi-cell"
+                                                    style="z-index: 80"
+                                                >
+                                                    <select
+                                                        multiple="multiple"
+                                                        name="somename0"
+                                                        class="multi-select"
+                                                        placeholder="선택"
+                                                    >
+                                                        <option
+                                                            value="임시저장"
+                                                        >
+                                                            임시저장
+                                                        </option>
+                                                        <option
+                                                            value="신청"
+                                                            selected
+                                                        >
+                                                            신청
+                                                        </option>
+                                                        <option value="접수">
+                                                            접수
+                                                        </option>
+                                                        <option
+                                                            value="신청검증"
+                                                            selected
+                                                        >
+                                                            신청검증
+                                                        </option>
+                                                        <option
+                                                            value="심사원배정"
+                                                            selected
+                                                        >
+                                                            심사원배정
+                                                        </option>
+                                                        <option value="보완">
+                                                            보완
+                                                        </option>
+                                                        <option value="반려">
+                                                            반려
+                                                        </option>
+                                                        <option
+                                                            value="심사준비"
+                                                        >
+                                                            심사준비
+                                                        </option>
+                                                        <option value="철회">
+                                                            철회
+                                                        </option>
+                                                        <option value="완료">
+                                                            완료
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                                <th>심사 처리상태</th>
+                                                <td
+                                                    class="multi-cell"
+                                                    style="z-index: 80"
+                                                >
+                                                    <select
+                                                        multiple="multiple"
+                                                        name="somename0"
+                                                        class="multi-select"
+                                                        placeholder="선택"
+                                                    >
+                                                        <option
+                                                            value="임시저장"
+                                                        >
+                                                            임시저장
+                                                        </option>
+                                                        <option value="접수">
+                                                            접수
+                                                        </option>
+                                                        <option value="신청">
+                                                            신청
+                                                        </option>
+                                                        <option
+                                                            value="보완요청"
+                                                        >
+                                                            보완요청
+                                                        </option>
+                                                        <option
+                                                            value="신청검증"
+                                                        >
+                                                            신청검증
+                                                        </option>
+                                                        <option
+                                                            value="심사준비"
+                                                        >
+                                                            심사준비
+                                                        </option>
+                                                        <option value="심사중">
+                                                            심사중
+                                                        </option>
+                                                        <option
+                                                            value="부서장상신"
+                                                        >
+                                                            부서장상신
+                                                        </option>
+                                                        <option
+                                                            value="인증위원회상정"
+                                                        >
+                                                            인증위원회상정
+                                                        </option>
+                                                        <option value="GW결재">
+                                                            GW결재
+                                                        </option>
+                                                        <option value="완료">
+                                                            완료
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="multi-cell">
+                                                <th>심사비 결제상태</th>
+                                                <td class="multi-cell">
+                                                    <select
+                                                        multiple="multiple"
+                                                        name="somename0"
+                                                        class="multi-select"
+                                                        placeholder="선택"
+                                                    >
+                                                        <option
+                                                            value="입금대기"
+                                                        >
+                                                            입금대기
+                                                        </option>
+                                                        <option
+                                                            value="결제완료"
+                                                        >
+                                                            결제완료
+                                                        </option>
+                                                        <option
+                                                            value="결제취소"
+                                                        >
+                                                            결제취소
+                                                        </option>
+                                                        <option value="철회">
+                                                            철회
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                                <th>신청비 결제상태</th>
+                                                <td class="multi-cell">
+                                                    <select
+                                                        multiple="multiple"
+                                                        name="somename0"
+                                                        class="multi-select"
+                                                        placeholder="선택"
+                                                    >
+                                                        <option
+                                                            value="입금대기"
+                                                        >
+                                                            입금대기
+                                                        </option>
+                                                        <option
+                                                            value="결제완료"
+                                                        >
+                                                            결제완료
+                                                        </option>
+                                                        <option
+                                                            value="결제취소"
+                                                        >
+                                                            결제취소
+                                                        </option>
+                                                        <option value="철회">
+                                                            철회
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                                <th>심사원 배정상태</th>
+                                                <td class="multi-cell">
+                                                    <select
+                                                        multiple="multiple"
+                                                        name="somename0"
+                                                        class="multi-select"
+                                                        placeholder="선택"
+                                                    >
+                                                        <option
+                                                            value="임시저장"
+                                                        >
+                                                            임시저장
+                                                        </option>
+                                                        <option
+                                                            value="심사비산정중"
+                                                        >
+                                                            심사비산정중
+                                                        </option>
+                                                        <option
+                                                            value="결제요청"
+                                                        >
+                                                            결제요청
+                                                        </option>
+                                                        <option
+                                                            value="배정완료"
+                                                        >
+                                                            배정완료
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>심사방식</th>
+                                                <td>
+                                                    <div class="chk-item">
+                                                        <div class="chk-inner">
+                                                            <input
+                                                                type="radio"
+                                                                class="visually-hidden"
+                                                                id="item-radio3"
+                                                                name="method-item"
+                                                            />
+                                                            <label
+                                                                for="item-radio3"
+                                                                >대면</label
+                                                            >
+                                                        </div>
+                                                        <div class="chk-inner">
+                                                            <input
+                                                                type="radio"
+                                                                class="visually-hidden"
+                                                                id="item-radio4"
+                                                                name="method-item"
+                                                            />
+                                                            <label
+                                                                for="item-radio4"
+                                                                >비대면</label
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <select
+                                                        name=""
+                                                        id=""
+                                                        class="all_select select"
+                                                    >
+                                                        <option value="">
+                                                            업체명
+                                                        </option>
+                                                        <option value="">
+                                                            표준번호
+                                                        </option>
+                                                        <option value="">
+                                                            업무담당자
+                                                        </option>
+                                                        <option value="">
+                                                            고객코드
+                                                        </option>
+                                                        <option value="">
+                                                            사업자번호
+                                                        </option>
+                                                        <option value="">
+                                                            인증번호
+                                                        </option>
+                                                        <option value="">
+                                                            인증위원회
+                                                        </option>
+                                                        <option value="">
+                                                            차수
+                                                        </option>
+                                                        <option value="">
+                                                            심사원
+                                                        </option>
+                                                        <option value="">
+                                                            심사기관명
+                                                        </option>
+                                                    </select>
+                                                </th>
+                                                <td>
+                                                    <div class="input_search">
+                                                        <input
+                                                            type="text"
+                                                            placeholder="Search"
+                                                        />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="btn_wrap">
+                                        <button
+                                            type="button"
+                                            class="btn btn-search"
+                                        >
+                                            검색
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column_box">
+                                <div class="tbl_btn_inner every_info">
+                                    <div class="select_link">
+                                        <div class="nums_total">
+                                            총
+                                            <span class="total">3</span>건
+                                        </div>
+                                        <select name="" id="" class="select">
+                                            <option value="">10개 보기</option>
+                                            <option value="">50개 보기</option>
+                                            <option value="">100개 보기</option>
+                                        </select>
+                                    </div>
+                                    <div class="btn_box">
+                                        <button
+                                            type="button"
+                                            class="btn btn-down"
+                                        >
+                                            다운로드
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-page"
+                                        >
+                                            심사원 배정현황
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-default"
+                                        >
+                                            심사신청 추가
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            심사종류, 업체명, 표준번호,
+                                            표준명(종류수),담당지부,신청일,
+                                            심사원, 심사기간, 신청상태, 심사
+                                            처리상태, 심사원 배정상태, 신청비,
+                                            신청비
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 60px" />
+                                            <col style="width: 80px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 80px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 110px" />
+                                            <col style="width: 105px" />
+                                            <col style="width: 105px" />
+                                            <col style="width: 110px" />
+                                            <col style="width: 105px" />
+                                            <col style="width: 105px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2">
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-label1"
+                                                        />
+                                                        <label
+                                                            for="chk-label1"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    심사종류
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    업체명
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    표준번호
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    표준명(종류수)
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    담당지부
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    신청일
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    심사원
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    심사기간
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    신청상태
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    심사 처리상태
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    심사원 배정상태
+                                                </th>
+                                                <th scope="col" colspan="3">
+                                                    신청비
+                                                </th>
+                                                <th scope="col" colspan="3">
+                                                    청구심사비
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">금액</th>
+                                                <th scope="col">결제수단</th>
+                                                <th scope="col">결제상태</th>
+                                                <th scope="col">심사비</th>
+                                                <th scope="col">결제수단</th>
+                                                <th scope="col">결제상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-label2"
+                                                        />
+                                                        <label
+                                                            for="chk-label2"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">정기</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">현대제철</a>
+                                                </td>
+                                                <td>
+                                                    KS L 2002<br />
+                                                    KS L 2015
+                                                </td>
+                                                <td>
+                                                    도자기(2)<br />
+                                                    도자기(1)
+                                                </td>
+                                                <td>인천</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <div class="manager">
+                                                        <div
+                                                            class="manager-user"
+                                                        >
+                                                            <span
+                                                                class="manager-title"
+                                                                >정</span
+                                                            >
+                                                            박노근
+                                                        </div>
+                                                        <div
+                                                            class="manager-user"
+                                                        >
+                                                            <span
+                                                                class="manager-title"
+                                                                >부</span
+                                                            >
+                                                            이한일
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    YY-MM-DD ~<br />
+                                                    YY-MM-DD
+                                                </td>
+                                                <td>심사준비</td>
+                                                <td>심사준비</td>
+                                                <td>
+                                                    심사비산정중
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        배정처리
+                                                    </a>
+                                                </td>
+                                                <td>55,000</td>
+                                                <td>가상계좌</td>
+                                                <td>입금완료</td>
+                                                <td>55,000</td>
+                                                <td>-</td>
+                                                <td>입금대기</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-label3"
+                                                        />
+                                                        <label
+                                                            for="chk-label3"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">공장이전</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">현대제철</a>
+                                                </td>
+                                                <td>KS L 2015</td>
+                                                <td>도자기(1)</td>
+                                                <td>부산</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <div class="manager">
+                                                        <div
+                                                            class="manager-user"
+                                                        >
+                                                            <span
+                                                                class="manager-title"
+                                                                >정</span
+                                                            >
+                                                            박노근
+                                                        </div>
+                                                        <div
+                                                            class="manager-user"
+                                                        >
+                                                            <span
+                                                                class="manager-title"
+                                                                >부</span
+                                                            >
+                                                            이한일
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    YY-MM-DD ~<br />
+                                                    YY-MM-DD
+                                                </td>
+                                                <td>심사준비</td>
+                                                <td>심사준비</td>
+                                                <td>
+                                                    배정완료
+                                                    <!-- <button
+                                                        type="button"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        배정처리
+                                                    </button> -->
+                                                </td>
+                                                <td>55,000</td>
+                                                <td>무통장<br />(영수증)</td>
+                                                <td>
+                                                    입금대기
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        매출처리
+                                                    </a>
+                                                </td>
+                                                <td>10,000</td>
+                                                <td>무통장<br />(영수증)</td>
+                                                <td>
+                                                    입금대기
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        매출처리
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input
+                                                            type="checkbox"
+                                                            class="visually-hidden"
+                                                            name="tbl-chk"
+                                                            id="chk-label4"
+                                                        />
+                                                        <label
+                                                            for="chk-label4"
+                                                            class="label"
+                                                        ></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">1년심사</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">현대제철</a>
+                                                </td>
+                                                <td>KS L 2022</td>
+                                                <td>도자기(1)</td>
+                                                <td>본부</td>
+                                                <td>YY-MM-DD</td>
+                                                <td>
+                                                    <div class="manager">
+                                                        <div
+                                                            class="manager-user"
+                                                        >
+                                                            <span
+                                                                class="manager-title"
+                                                                >정</span
+                                                            >
+                                                            박노근
+                                                        </div>
+                                                        <div
+                                                            class="manager-user"
+                                                        >
+                                                            <span
+                                                                class="manager-title"
+                                                                >부</span
+                                                            >
+                                                            이한일
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    YY-MM-DD ~<br />
+                                                    YY-MM-DD
+                                                </td>
+                                                <td>
+                                                    <span class="stop"
+                                                        >철회</span
+                                                    >
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>55,000</td>
+                                                <td>
+                                                    해외송금
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        INVOICE
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    입금대기
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        매출처리
+                                                    </a>
+                                                </td>
+                                                <td>10,000</td>
+                                                <td>
+                                                    해외송금
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        INVOICE
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    입금대기
+                                                    <a
+                                                        href="#"
+                                                        class="btn btn-sm"
+                                                    >
+                                                        매출처리
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="pagination">
+                                    <ol class="paging_list">
+                                        <li class="arrow_prev paging_item">
+                                            <button
+                                                type="button"
+                                                aria-label="이전페이지 이동"
+                                            ></button>
+                                        </li>
+                                        <li class="paging_item is-active">
+                                            <button type="button">1</button>
+                                        </li>
+                                        <!-- <li class="paging_item">
+                                                <button type="button">2</button>
+                                            </li>
+                                            <li class="paging_item">
+                                                <button type="button">3</button>
+                                            </li>
+                                            <li class="paging_item">
+                                                <button type="button">4</button>
+                                            </li>
+                                            <li class="paging_item">
+                                                <button type="button">...</button>
+                                            </li>
+                                            <li class="paging_item">
+                                                <button type="button">9</button>
+                                            </li>
+                                            <li class="paging_item">
+                                                <button type="button">10</button>
+                                            </li> -->
+                                        <li class="arrow_next paging_item">
+                                            <button
+                                                type="button"
+                                                aria-label="다음페이지 이동"
+                                            ></button>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="../js/opensrc/jquery-ui.min.js"></script>
+        <script src="../js/opensrc/summernote-ko-KR.js"></script>
+        <script src="../js/opensrc/summernote-lite.js"></script>
+        <script src="../js/opensrc/MonthPicker.min.js"></script>
+        <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/constants.js"></script>
+    </body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리
+        주요현황심사
+    </title>
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="Description" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리
+            주요현황심사" />
+    <meta http-equiv="Title" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리
+            주요현황심사" />
+    <meta http-equiv="Copyright" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리
+            주요현황심사" />
+    <meta property="og:url" content="페이지 url" />
+    <meta property="og:title" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리
+            주요현황심사" />
+    <meta property="og:description" content="KSA통합인증플랫폼 심사원 | 심사원 | 내심사관리 | 내심사관리
+            주요현황심사" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/opensrc/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/opensrc/sumoselect.min.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+</head>
+
+<body>
+    <header>
+        <button type="button" class="m-btn-menu sm-only" aria-label="메뉴버튼 열기"></button>
+        <h1 class="logo">
+            <a href="../index-auditor.html">
+                <img src="../images/img-logo.svg" alt="KSA통합인증플랫폼 심사원 로고" />
+            </a>
+        </h1>
+
+        <div class="head_user_info">
+            <div class="user_name">
+                <a href="#a" class="name_color">김인증</a>님
+                <div class="belong">(KS인증센터 / 심사원)</div>
+            </div>
+            <button type="button" class="log-out lg-only" aria-label="로그아웃">
+                <i class="ic-logout" aria-hidden></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <aside class="gnb">
+                <div class="gnb-inner">
+                    <button type="button" class="btn-menu lg-only" aria-label="메뉴버튼 열기"></button>
+                    <div class="gnb-icon-inner">
+                        <ul class="gnb-icon-list">
+                            <li class="gnb-icon-item">
+                                <a href="../auditor/myinfo.html">
+                                    <i class="ic-myinfo" aria-label="내정보관리 아이콘"></i>
+                                </a>
+                            </li>
+                            <li class="gnb-icon-item">
+                                <a href="../mySchedule/schedule.html">
+                                    <i class="ic-schedule" aria-label="내일정관리 아이콘"></i>
+                                </a>
+                            </li>
+                            <li class="gnb-icon-item">
+                                <a href="../management/management.html" class="is-active">
+                                    <i class="ic-examine" aria-label="내심사관리 아이콘"></i>
+                                </a>
+                            </li>
+                            <li class="gnb-icon-item">
+                                <a href="../investigation/investigation.html">
+                                    <i class="ic-investigate" aria-label="내시판품조사관리 아이콘"></i>
+                                </a>
+                            </li>
+                            <li class="gnb-icon-item">
+                                <i class="ic-customer" aria-label="고객센터 아이콘"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gnb-on">
+                    <div class="head_user_info">
+                        <button type="button" class="btn-close" aria-label="닫기"></button>
+                        <div class="head-top sm-only">
+                            <div class="user_name">
+                                <a href="#a" class="name_color">사용자</a>님
+                                <div class="belong">
+                                    (KS인증센터 / 심사원)
+                                </div>
+                            </div>
+                            <button type="button" class="log-out" aria-label="로그아웃">
+                                <i class="ic-logout" aria-hidden></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gnb-inner">
+                        <!-- <button
+                                type="button"
+                                class="btn-menu lg-only"
+                                aria-label="메뉴버튼 열기"
+                            ></button> -->
+                        <div class="gnb-icon-inner">
+                            <ul class="gnb-icon-list">
+                                <li class="gnb-icon-item">
+                                    <a href="../auditor/myinfo.html"><i class="ic-myinfo" aria-hidden></i>
+                                        내정보관리</a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../mySchedule/schedule.html"><i class="ic-schedule" aria-hidden></i>
+                                        내일정관리</a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../management/management.html" class="is-active"><i class="ic-examine"
+                                            aria-hidden></i>
+                                        내심사관리</a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <a href="../investigation/investigation.html"><i class="ic-investigate"
+                                            aria-hidden></i>
+                                        내시판품조사관리</a>
+                                </li>
+                                <li class="gnb-icon-item">
+                                    <i class="ic-customer" aria-hidden></i>
+                                    <div class="gnb-customer-box">
+                                        <span class="customer-title">고객센터</span>
+                                        <ul class="customer-menu-list">
+                                            <li class="customer-menu-item">
+                                                <a href="#">공지사항</a>
+                                            </li>
+                                            <li class="customer-menu-item">
+                                                <a href="#">Q & A</a>
+                                            </li>
+                                            <li class="customer-menu-item">
+                                                <a href="#">자료실</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content status">
+                <div class="page_head list-title">
+                    <h3 class="page_tit">내심사관리 상세정보</h3>
+                    <div class="location_inner">
+                        <ul class="location_list">
+                            <li class="location_item">
+                                <a href="../index-auditor.html" class="home"></a>
+                            </li>
+                            <li class="location_item">
+                                <a href="#a">심사원</a>
+                            </li>
+                            <li class="location_item">
+                                <a href="../management/management.html">내심사관리</a>
+                            </li>
+                            <li class="location_item active">
+                                <a href="../management/management-status.html">주요현황심사</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tbl_btn_inner every_info">
+                    <div class="btn_box">
+                        <a href="#a" class="btn btn-process">업체심사이력</a>
+                        <a href="#a" class="btn btn-process">KSA교육이력</a>
+                        <a href="#a" class="btn btn-process">처리이력</a>
+                        <a href="#a" class="btn btn-process">조회이력</a>
+                        <div class="nums_total">
+                            조회
+                            <span class="total">3,333</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_menu tab_type">
+                    <ul class="tab_list tabs tab-list-w7">
+                        <li class="tab_item">
+                            <a href="./management-detail.html" class="tab_btn">
+                                상세정보
+                            </a>
+                        </li>
+                        <li class="tab_item on">
+                            <a href="./management-status.html" class="tab_btn">
+                                주요현황심사 (<span>검토중</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-process.html" class="tab_btn">
+                                공장심사 (<span>임시저장</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-product.html" class="tab_btn">
+                                제품시험 (<span>임시저장</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-business.html" class="tab_btn">
+                                사업장심사 (<span>임시저장</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-service.html" class="tab_btn">
+                                서비스심사 (<span>임시저장 1</span>)
+                            </a>
+                        </li>
+                        <li class="tab_item">
+                            <a href="./management-incongruity.html" class="tab_btn">
+                                부적합 개선조치 (<span>진행중 1</span>)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column_box">
+                    <div class="page_head">
+                        <h3 class="page_tit">주요현황심사</h3>
+                    </div>
+
+                    <div class="tbl_wrap">
+                        <table class="tbl">
+                            <caption>
+                                주요현황심사 - 구분, 최종수정일, 심사원
+                                검토, 비고
+                            </caption>
+                            <colgroup>
+                                <col style="width: 38.1379%" class="st-one" />
+                                <col style="width: 21.434%" class="st-two" />
+                                <col style="width: 15.8255%" class="st-three" />
+                                <col style="width: 24.434%" class="st-four" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">최종수정일</th>
+                                    <th scope="col">심사원 검토</th>
+                                    <th scope="col">비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="left">회사현황</td>
+                                    <td>22-10-03 13:00 (박서준)</td>
+                                    <td>
+                                        <button class="btn btn-tblout-bg">
+                                            검토중
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap start">
+                                            <a href="#" class="btn btn-sm">
+                                                상세정보
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정하기
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정이력
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        품목별 연간 생산현황
+                                    </td>
+                                    <td>22-10-03 13:00 (박서준)</td>
+                                    <td>
+                                        <button class="btn btn-disable">
+                                            검토완료
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap start">
+                                            <a href="#" class="btn btn-sm">
+                                                상세정보
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정하기
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정이력
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        제조(가공)설비 정보
+                                    </td>
+                                    <td>22-10-03 13:00 (박서준)</td>
+                                    <td>
+                                        <button class="btn btn-disable">
+                                            검토완료
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap start">
+                                            <a href="#" class="btn btn-sm">
+                                                상세정보
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정하기
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정이력
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        시험(검사)설비 정보
+                                    </td>
+                                    <td>22-10-03 13:00 (박서준)</td>
+                                    <td>
+                                        <button class="btn btn-disable">
+                                            검토완료
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap start">
+                                            <a href="#" class="btn btn-sm">
+                                                상세정보
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정하기
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정이력
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">주요자재목록 정보</td>
+                                    <td>22-10-03 13:00 (박서준)</td>
+                                    <td>
+                                        <button class="btn btn-disable">
+                                            검토완료
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap start">
+                                            <a href="#" class="btn btn-sm">
+                                                상세정보
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정하기
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정이력
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        주요 연락처 정보
+                                        (품질담당자/국내연락처)
+                                    </td>
+                                    <td>22-10-03 13:00 (박서준)</td>
+                                    <td>
+                                        <button class="btn btn-disable">
+                                            검토완료
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap start">
+                                            <a href="#" class="btn btn-sm">
+                                                상세정보
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정하기
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정이력
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        서비스인증 추가정보
+                                    </td>
+                                    <td>22-10-03 13:00 (박서준)</td>
+                                    <td>
+                                        <button class="btn btn-disable">
+                                            검토완료
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap start">
+                                            <a href="#" class="btn btn-sm">
+                                                상세정보
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정하기
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정이력
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        주요 시설 · 설비 · 장비
+                                        보유현황
+                                    </td>
+                                    <td>22-10-03 13:00 (박서준)</td>
+                                    <td>
+                                        <button class="btn btn-disable">
+                                            검토완료
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap start">
+                                            <a href="#" class="btn btn-sm">
+                                                상세정보
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정하기
+                                            </a>
+                                            <a href="#" class="btn btn-sm">
+                                                수정이력
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="fot-top">
+            <ul class="fot-top-list">
+                <li class="fot-top-item"><a href="#">찾아오시는길</a></li>
+                <li class="fot-top-item"><a href="#">담당자연락처</a></li>
+                <li class="fot-top-item">
+                    <a href="#">사업자등록증 · 계좌안내</a>
+                </li>
+                <li class="fot-top-item">
+                    <a href="#">공평성 & 윤리강령</a>
+                </li>
+                <li class="fot-top-item">
+                    <a href="#">개인정보처리방침</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="fot-bottom">
+            <h3 class="footer-logo">
+                <img src="../images/fot-logo.png" alt="KSA통합인증플랫폼" />
+            </h3>
+
+            <div class="address-inner">
+                <ul class="address-list">
+                    <li class="address-item">KSA한국표준협회</li>
+                    <li class="address-item">사업자번호 : 105-82-00617</li>
+                    <li class="address-item">대표전화 : 1670-6009</li>
+                    <li class="address-item">
+                        06160 서울시 강남구 테헤란로 69길 5 (삼성동,DT센터)
+                    </li>
+                </ul>
+                <address>
+                    Copyright(C) 2023 Korean Standards Association. All
+                    rights reserved.
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="../js/opensrc/jquery-ui.min.js"></script>
+    <script src="../js/opensrc/jquery.sumoselect.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/constants.js"></script>
+</body>
+
+</html>
