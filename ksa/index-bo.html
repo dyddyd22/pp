@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feature | all</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            table-layout: fixed;
+        }
+
+        table:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        table th {
+            border-right: 1px solid #fff;
+            height: 50px;
+        }
+
+        table th:last-child {
+            border: 0;
+        }
+
+        table td {
+            height: 40px;
+            font-size: 14px;
+        }
+
+        table tbody tr {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tbody tr th {
+            background-color: #d9e0e6;
+        }
+
+        table tbody tr th:last-child {
+            border: 0;
+        }
+
+        table tbody tr td {
+            padding: 10px;
+            border-right: 1px solid #ddd;
+        }
+
+        table tbody tr td:last-child {
+            border-right: 0;
+        }
+
+        a {
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .final {
+            background-color: #2ccb46;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .before {
+            background-color: #ef0000;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- BO -->
+    <table>
+        <colgroup>
+            <col style="width: 12%" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+            <col style="width: 200px" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th rowspan="41">BO | Admin</th>
+                <th>1Depth</th>
+                <th>2Depth</th>
+                <th>3Depth</th>
+                <th>link</th>
+                <th>비고</th>
+            </tr>
+            <tr>
+                <td class="bold">퍼블 공통 스타일 가이드</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/style.html" target="_blank">style.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">페이지 로딩</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/loading.html" target="_blank">loading.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <!-- <tr>
+                    <td class="bold">탭 버튼 스크롤 상단 고정</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="./admin/admin_1.html" target="_blank"
+                            >admin_1.html</a
+                        >
+                    </td>
+                    <td></td>
+                </tr> -->
+            <tr>
+                <td class="bold">팝업</td>
+                <td>팝업1</td>
+                <td></td>
+                <td>
+                    <a href="./admin/popup/modal_popup.html" target="_blank">modal_popup.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>팝업3</td>
+                <td></td>
+                <td>
+                    <a href="./admin/popup/modal_type2.html" target="_blank">modal_type2.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>팝업4</td>
+                <td></td>
+                <td>
+                    <a href="./admin/popup/modal_type3.html" target="_blank">modal_type3.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>팝업5</td>
+                <td></td>
+                <td>
+                    <a href="./admin/popup/modal_type4.html" target="_blank">modal_type4.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>팝업6</td>
+                <td></td>
+                <td>
+                    <a href="./admin/popup/modal_type5.html" target="_blank">modal_type5.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>풀 팝업</td>
+                <td></td>
+                <td>
+                    <a href="./admin/popup/modal-pull.html" target="_blank">modal-pull.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">Error400</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/error400.html" target="_blank">error400.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">Error403</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/con-error403.html" target="_blank">con-error403.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">Error500</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/error500.html" target="_blank">error500.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">Error service</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/error-service.html" target="_blank">error-service.html</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bold">메인</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/index.html" target="_blank">index.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold">로그인</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/login/login.html" target="_blank">login.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>비밀번호 찾기</td>
+                <td></td>
+                <td>
+                    <a href="./admin/login/pw.html" target="_blank">pw.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>새비밀번호 입력</td>
+                <td>
+                    <a href="./admin/login/pw-search.html" target="_blank">pw-search.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>비밀번호 변경</td>
+                <td>
+                    <a href="./admin/login/pw-search-change.html" target="_blank">pw-search-change.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>비밀번호 변경 오류</td>
+                <td>
+                    <a href="./admin/login/pw-search-error.html" target="_blank">pw-search-error.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>비밀번호 변경(6개월)</td>
+                <td>
+                    <a href="./admin/login/pw-change-period.html" target="_blank">pw-change-period.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold">자원관리</td>
+                <td>유관기관관리</td>
+                <td>유관기관</td>
+                <td>
+                    <a href="./admin/institutions/institutions.html" target="_blank">institutions.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold">심사관리</td>
+                <td>심사신청관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/audit/audit.html" target="_blank">audit.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세 페이지</td>
+                <td>
+                    <a href="./admin/audit/audit-detail.html" target="_blank">audit-detail.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>업체 신청현황</td>
+                <td>
+                    <a href="./admin/audit/audit-company.html" target="_blank">audit-company.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <!-- <tr>
+                    <td class="bold"></td>
+                    <td></td>
+                    <td>심사원 배정현황</td>
+                    <td>
+                        <a href="./admin/audit/laypop.html" target="_blank"
+                            >laypop.html</a
+                        >
+                    </td>
+                    <td class="final">디자인 컨펌 완료</td>
+                </tr> -->
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>심사원 배정현황 풀화면</td>
+                <td>
+                    <a href="./admin/audit/laypop-full.html" target="_blank">laypop-full.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>기타정보수정</td>
+                <td>
+                    <a href="./admin/audit/laypop-etc.html" target="_blank">laypop-etc.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>회사현황</td>
+                <td>
+                    <a href="./admin/audit/laypop-company.html" target="_blank">laypop-company.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold">고객센터관리</td>
+                <td>공지사항관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/customer/notice.html" target="_blank">notice.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공지사항 등록</td>
+                <td>
+                    <a href="./admin/customer/register.html" target="_blank">register.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세조회</td>
+                <td>
+                    <a href="./admin/customer/register-detail.html" target="_blank">register-detail.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>공지사항 수정</td>
+                <td>
+                    <a href="./admin/customer/register-modify.html" target="_blank">register-modify.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td>문의관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/customer/notice-question.html" target="_blank">notice-question.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>상세조회</td>
+                <td>
+                    <a href="./admin/customer/notice-question-detail.html"
+                        target="_blank">notice-question-detail.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>팝업</td>
+                <td>
+                    <a href="./admin/customer/laypop-search.html" target="_blank">laypop-search.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>1:1문의 답변등록</td>
+                <td>
+                    <a href="./admin/customer/notice-search.html" target="_blank">notice-search.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>1:1문의 답변수정</td>
+                <td>
+                    <a href="./admin/customer/notice-search-amend.html" target="_blank">notice-search-amend.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold"></td>
+                <td></td>
+                <td>1:1문의 상세조회</td>
+                <td>
+                    <a href="./admin/customer/notice-search-detail.html" target="_blank">notice-search-detail.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold">고객센터</td>
+                <td>통계관리</td>
+                <td></td>
+                <td>
+                    <a href="./admin/statistics/statistics.html" target="_blank">statistics.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold">종류등급 상세보기</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="./admin/laypop-detail.html" target="_blank">laypop-detail.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+            <tr>
+                <td class="bold">심사결과 보완요청하기</td>
+                <td>팝업</td>
+                <td></td>
+                <td>
+                    <a href="./admin/laypop-security.html" target="_blank">laypop-security.html</a>
+                </td>
+                <td class="final">디자인 컨펌 완료</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

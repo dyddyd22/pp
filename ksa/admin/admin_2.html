@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>admin_2</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/opensrc/jquery-ui.min.css" />
+        <link rel="stylesheet" href="./css/opensrc/summernote-lite.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="admin_header">
+                <h1 class="admin_logo">
+                    <img src="" alt="ks인증지원시스템" />
+                </h1>
+                <div class="head_user_info">
+                    <p class="user_name">
+                        <a href="#a" class="name_color">김인증</a>님
+                    </p>
+                    <button type="button" class="btn">로그아웃</button>
+                </div>
+            </header>
+            <main class="admin_main">
+                <div class="lnb">
+                    <div class="menu_box">
+                        <button type="button" class="btn_menu"></button>
+                    </div>
+                    <ul class="lnb_wrap">
+                        <li class="lnb_first_item">
+                            <a href="#a">기준정보</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사표준</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사항목</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">1년심사 대상관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">자가진단항목</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">인증위원회 개최일정</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">코드관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a">자원관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">기업관리</a>
+                                </li>
+                                <li class="lnb_second_item">
+                                    <a href="#a">유관기관관리</a>
+                                    <ul class="lnb_last_list">
+                                        <li class="lnb_last_item noDepth">
+                                            <a href="#a">유관기관 관리</a>
+                                        </li>
+                                        <li class="lnb_last_item noDepth">
+                                            <a href="#a">심사원 관리</a>
+                                        </li>
+                                        <li class="lnb_last_item noDepth">
+                                            <a href="#a">시험원 관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">운영자 관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a">심사관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사신청관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사진행관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사마감관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a">인증관련 신청관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">인증서 재발급 관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">영문인증서 발급신청 관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">제조중단/개시 신고관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">주요목록 신고관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item noDepth">
+                            <a href="#a">인증서관리</a>
+                        </li>
+                        <li class="lnb_first_item noDepth">
+                            <a href="#a">KS인증기관협의회 전송관리</a>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a">정산관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">고객사 정산</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사원 정산</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">PG 결제현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">PG사 정산</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">PG 환불</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">PG 반제</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a">레포트</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS인증지표</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS인증현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS심사현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS제품심사의뢰현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS심사원이력</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">제조중단/개시현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">행정처분현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KSA 점유율 현황</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a">고객센터</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">공지사항관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">1:1문의관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS인증 이의신청관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">자료실관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">구인구직관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">FAQ관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">팝업관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">내정보</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">Page title</h3>
+                            <ul class="location_list">
+                                <li class="location_item">
+                                    <a href="#a">Home</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">depth 1</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">depth 2</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">depth 3</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">depth 4</a>
+                                </li>
+                                <li class="location_item">
+                                    <a href="#a">depth 5</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tbl_head">
+                            <select name="" id="" class="tbl_select select">
+                                <option value="">10개 보기</option>
+                            </select>
+                            <div class="tbl_head_info">
+                                <select name="" id="" class="select_tit select">
+                                    <option value="">제목</option>
+                                </select>
+                                <form action="" class="form-box">
+                                    <input type="text" placeholder="Search" />
+                                    <button type="button" class="btn">
+                                        <span class="visually-hidden"
+                                            >조회</span
+                                        >
+                                    </button>
+                                </form>
+                                <div class="btn_wrap">
+                                    <button type="button" class="btn">
+                                        등록
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbl_wrap tbl_type1">
+                            <table class="tbl">
+                                <caption>
+                                    번호, 제목, 등록일, 등록자, 조회수
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 7%" />
+                                    <col style="width: 53%" />
+                                    <col style="width: 20%" />
+                                    <col style="width: 10%" />
+                                    <col style="width: 10%" />
+                                    <!-- <col style="width: 70px" />
+                                <col style="width: 500px" />
+                                <col style="width: 200px" />
+                                <col style="width: 150px" />
+                                <col style="width: 150px" /> -->
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row">번호</th>
+                                        <th scope="row">제목</th>
+                                        <th scope="row">등록일</th>
+                                        <th scope="row">등록자</th>
+                                        <th scope="row">조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="tbl_noti">
+                                        <td>[공지]</td>
+                                        <td class="txt_info">
+                                            <a href="#a" class="txt_box">
+                                                공지사항 제목이
+                                                출력됩니다.공지사항 제목이
+                                                출력됩니다.공지사항 제목이
+                                                출력됩니다.
+                                            </a>
+                                        </td>
+                                        <td>0000-00-00</td>
+                                        <td>관리자 ID</td>
+                                        <td>000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td class="txt_info txt_left">
+                                            <a href="#a" class="txt_box">
+                                                공지사항 제목이
+                                                출력됩니다.공지사항 제목이
+                                                출력됩니다.공지사항 제목이
+                                                출력됩니다.
+                                            </a>
+                                        </td>
+                                        <td>0000-00-00</td>
+                                        <td>관리자 ID</td>
+                                        <td>000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="txt_info txt_left">
+                                            <a href="#a" class="txt_box">
+                                                공지사항 제목이 출력됩니다.
+                                            </a>
+                                        </td>
+                                        <td>0000-00-00</td>
+                                        <td>관리자 ID</td>
+                                        <td>000.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <ul class="paging_list">
+                                <li class="arrow_prev paging_item">
+                                    <button type="button">&lt;</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">1</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">2</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">3</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">4</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">...</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">9</button>
+                                </li>
+                                <li class="paging_item">
+                                    <button type="button">10</button>
+                                </li>
+                                <li class="arrow_next paging_item">
+                                    <button type="button">&gt;</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column_box">
+                        <div class="page_head">
+                            <h3 class="page_tit">Page title</h3>
+                        </div>
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <caption>
+                                    지정상태, 기관명, 시험의뢰기관
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 80px" />
+                                    <col style="width: 35%" />
+                                    <col style="width: 15%" />
+                                    <col style="width: 35%" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">지정상태</th>
+                                        <td>
+                                            <div class="chk-inner">
+                                                <input
+                                                    type="radio"
+                                                    name="chk_rd"
+                                                    id="chk_rd1"
+                                                    class="visually-hidden"
+                                                    checked
+                                                />
+                                                <label for="chk_rd1"
+                                                    >정상</label
+                                                >
+                                                <input
+                                                    type="radio"
+                                                    name="chk_rd"
+                                                    id="chk_rd2"
+                                                    class="visually-hidden"
+                                                />
+                                                <label for="chk_rd2"
+                                                    >중지</label
+                                                >
+                                            </div>
+                                        </td>
+                                        <th scope="row">기관명</th>
+                                        <td>
+                                            <form action="" class="form-box">
+                                                <div class="input_search">
+                                                    <input
+                                                        type="text"
+                                                        placeholder="Search"
+                                                    />
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">시험의뢰기간</th>
+                                        <td colspan="3">
+                                            <div class="picker_from">
+                                                <!-- input 달력 -->
+                                                <div class="picker_box">
+                                                    <input
+                                                        type="text"
+                                                        class="datepicker2"
+                                                    />
+                                                </div>
+                                                <span class="hyphen">-</span>
+                                                <div class="picker_box">
+                                                    <input
+                                                        type="text"
+                                                        class="datepicker2"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn_wrap">
+                                <button type="button" class="btn">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="./js/opensrc/jquery-3.6.3.min.js"></script>
+        <script src="./js/opensrc/jquery-ui.min.js"></script>
+        <script src="./js/opensrc/summernote-ko-KR.js"></script>
+        <script src="./js/opensrc/summernote-lite.js"></script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>

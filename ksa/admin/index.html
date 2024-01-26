@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSA 통합인증플랫폼</title>
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="Description" content="KSA 통합인증플랫폼" />
+    <meta http-equiv="Title" content="KSA 통합인증플랫폼" />
+    <meta http-equiv="Copyright" content="KSA 통합인증플랫폼" />
+    <meta property="og:url" content="페이지 url" />
+    <meta property="og:title" content="KSA 통합인증플랫폼" />
+    <meta property="og:description" content="KSA 통합인증플랫폼" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/opensrc/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./css/opensrc/summernote-lite.css" />
+    <link rel="stylesheet" href="./css/opensrc/sumoselect.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="admin_aside">
+            <h1 class="admin_logo">
+                <a href="#">
+                    <img src="./images/logo.svg" alt="ksa통합인증플랫폼" />
+                </a>
+            </h1>
+
+            <div class="menu_box">
+                <div class="lnb">
+                    <ul class="lnb_wrap">
+                        <li class="lnb_first_item">
+                            <a href="#a" class="ic-standard">기준정보</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사표준</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사항목</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">1년심사 대상관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">자가진단항목 관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">인증위원회 개최일정</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">코드관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">권역관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">지역본부관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a" class="ic-resource">자원관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">기업관리</a>
+                                </li>
+                                <li class="lnb_second_item">
+                                    <a href="#a">유관기관관리</a>
+                                    <ul class="lnb_last_list">
+                                        <li class="lnb_last_item noDepth">
+                                            <a href="#a">유관기관 관리</a>
+                                        </li>
+                                        <li class="lnb_last_item noDepth">
+                                            <a href="#a">심사원 관리</a>
+                                        </li>
+                                        <li class="lnb_last_item noDepth">
+                                            <a href="#a">시험원 관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">운영자 관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a" class="ic-judge">심사관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사신청관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사진행관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사마감관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">시판품조사관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a" class="ic-subscription">인증관련 신청관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">인증서 재발급 관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">영문인증서 발급신청 관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">제조중단/개시 신고관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">주요목록 신고관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">인증서 반납신청 관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item noDepth">
+                            <a href="#a" class="ic-certification">
+                                인증서관리</a>
+                        </li>
+                        <li class="lnb_first_item noDepth">
+                            <a href="#a" class="ksSubmit">
+                                KS인증기관협의회 전송관리</a>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a" class="total">정산관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">매줄정산</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">심사원정산</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">PG결제현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">PG정산</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">PG반제</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item noDepth">
+                            <a href="#a" class="statistic"> 통계관리</a>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a" class="report">레포트</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS인증지표</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS인증현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS심사현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS제품심사의뢰현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KS심사원이력</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">제조중단/개시현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">행정처분현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">KSA 점유율 현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">기관 유입/이탈 현황</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">처리이력현황</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_first_item">
+                            <a href="#a" class="ic-center">고객센터관리</a>
+                            <ul class="lnb_second_list">
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">공지사항관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">FAQ관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">Q&A관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">팝업관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">배너관리</a>
+                                </li>
+                                <li class="lnb_second_item noDepth">
+                                    <a href="#a">자료실관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 
+                NOTE : 04-07
+                main 전체 변경 있을 경우 class bg-graywhite 추가
+                그 외에 배경 없는경우 클래스 제거
+             -->
+        <div class="admin-inner">
+            <header>
+                <div class="head_user_info end">
+                    <div class="user-box">
+                        <div class="user_name">
+                            <a href="#a" class="name_color">운영자</a>님
+                            <div class="belong">(서울본부 / 운영자)</div>
+                        </div>
+                        <button type="button" class="log-out" aira-label="로그아웃"></button>
+                    </div>
+                </div>
+            </header>
+            <main class="admin_main">
+                <div class="content">
+                    <p class="user-introduction">
+                        안녕하세요 OO 직위님, 나의 담당업무는
+                        <strong>KS인증분야 본부담당자 (담당품목 A, C),
+                            인증서관리자, 지역본부, 시스템관리</strong>
+                        입니다.
+                    </p>
+                    <div class="group">
+                        <div class="group-body">
+                            <div class="group-inner">
+                                <div class="notice_news">
+                                    <div class="news_name">
+                                        <div class="news_link">
+                                            <strong class="name_tit">공지사항</strong>
+                                            <a href="#" class="news_nums">
+                                                <span>10</span>건
+                                                <i class="ic-more" aria-hidden></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <ul class="news_list">
+                                        <li class="news_item">
+                                            <a href="#a" class="news_txt">
+                                                게시판 제목이 길어지면
+                                                말줄임 게시판 제목이
+                                                길어지면 말줄임 게시판
+                                                제목이 길어지면 말줄임
+                                            </a>
+                                            <span class="news_data">2023-02-17</span>
+                                        </li>
+                                        <li class="news_item">
+                                            <a href="#a" class="news_txt">
+                                                게시판 제목이 길어지면
+                                                말줄임 게시판 제목이
+                                                길어지면 말줄임 게시판
+                                                제목이 길어지면 말줄임
+                                            </a>
+                                            <span class="news_data">2023-02-17</span>
+                                        </li>
+                                        <li class="news_item">
+                                            <a href="#a" class="news_txt">
+                                                게시판 제목이 길어지면
+                                                말줄임 게시판 제목이
+                                                길어지면 말줄임 게시판
+                                                제목이 길어지면 말줄임
+                                            </a>
+                                            <span class="news_data">2023-02-17</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="notice_news">
+                                    <div class="news_name">
+                                        <div class="news_link">
+                                            <strong class="name_tit">자료실</strong>
+                                            <a href="#" class="news_nums">
+                                                <span>5</span>건
+                                                <i class="ic-more" aria-hidden></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <ul class="news_list">
+                                        <li class="news_item">
+                                            <a href="#a" class="news_txt">
+                                                게시판 제목이 길어지면
+                                                말줄임 게시판 제목이
+                                                길어지면 말줄임 게시판
+                                                제목이 길어지면 말줄임
+                                            </a>
+                                            <span class="news_data">2023-02-17</span>
+                                        </li>
+                                        <li class="news_item">
+                                            <a href="#a" class="news_txt">
+                                                게시판 제목이 길어지면
+                                                말줄임 게시판 제목이
+                                                길어지면 말줄임 게시판
+                                                제목이 길어지면 말줄임
+                                            </a>
+                                            <span class="news_data">2023-02-17</span>
+                                        </li>
+                                        <li class="news_item">
+                                            <a href="#a" class="news_txt">
+                                                게시판 제목이 길어지면
+                                                말줄임 게시판 제목이
+                                                길어지면 말줄임 게시판
+                                                제목이 길어지면 말줄임
+                                            </a>
+                                            <span class="news_data">2023-02-17</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-head">
+                            <div class="title-box">
+                                <div class="picker_oneday">
+                                    <input type="text" class="datepicker" placeholder="2023-02-21" />
+                                </div>
+                            </div>
+                            <div class="title-box">
+                                <h3 class="box-title">
+                                    <span> 담당지역본부 </span>
+                                </h3>
+                                <select class="select">
+                                    <option value="">선택</option>
+                                    <option value="">경기지역본부</option>
+                                    <option value="">강원지역본부</option>
+                                    <option value="">서울지역본부</option>
+                                    <option value="">춘천지역본부</option>
+                                    <option value="">충북지역본부</option>
+                                    <option value="">호남지역본부</option>
+                                    <option value="">전북지역본부</option>
+                                    <option value="">전남지역본부</option>
+                                    <option value="">영남지역본부</option>
+                                    <option value="">제주지역본부</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <ul class="major_list border-0 pd-0">
+                                        <li class="major_item">
+                                            <span class="item_name">심사신청</span>
+                                            <div class="major_link">
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <span class="item_name">심사중</span>
+                                            <div class="major_link">
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-head">
+                            <div class="title-box">
+                                <div class="picker_oneday">
+                                    <input type="text" class="datepicker" placeholder="2023" />
+                                </div>
+                            </div>
+                            <div class="title-box">
+                                <h3 class="box-title">
+                                    <span> 담당지역본부 </span>
+                                </h3>
+                                <select class="select">
+                                    <option value="">선택</option>
+                                    <option value="">경기지역본부</option>
+                                    <option value="">강원지역본부</option>
+                                    <option value="">서울지역본부</option>
+                                    <option value="">춘천지역본부</option>
+                                    <option value="">충북지역본부</option>
+                                    <option value="">호남지역본부</option>
+                                    <option value="">전북지역본부</option>
+                                    <option value="">전남지역본부</option>
+                                    <option value="">영남지역본부</option>
+                                    <option value="">제주지역본부</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="group-body group-total">
+                            <div class="group-inner">
+                                <div class="page_head">
+                                    <p class="head-replace">
+                                        (+ / - 전년대비 증감)
+                                    </p>
+                                </div>
+                                <div class="group-tbl">
+                                    <div class="tbl_wrap tbl-total">
+                                        <table class="tbl">
+                                            <caption>
+                                                코드별 인증서 - total, 기본,
+                                                기계, 전기전자, 금속, 광산,
+                                                건설, 일용품, 식료품, 환경,
+                                                생물, 섬유, 요업, 화학,
+                                                의료, 품질경영, 수송기계,
+                                                서비스, 물류, 조선,
+                                                항공우주, 정보통신
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width: 217px" />
+                                                <col style="width: 217px" />
+                                                <col style="width: 217px" />
+                                                <col style="width: 217px" />
+                                                <col style="width: 217px" />
+                                                <col style="width: 217px" />
+                                                <col style="width: 217px" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>Total</th>
+                                                    <td colspan="6">
+                                                        <a href="#">205</a>
+                                                        <span>(+1)</span>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col">
+                                                        A(기본)
+                                                    </th>
+                                                    <th scope="col">
+                                                        B(기계)
+                                                    </th>
+                                                    <th scope="col">
+                                                        C(전기전자)
+                                                    </th>
+                                                    <th scope="col">
+                                                        D(금속)
+                                                    </th>
+                                                    <th scope="col">
+                                                        E(광산)
+                                                    </th>
+                                                    <th scope="col">
+                                                        F(건설)
+                                                    </th>
+                                                    <th scope="col">
+                                                        G(일용품)
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <!--
+                                                                    NOTE : 04-03
+                                                                    link, 증가, 감소 카운트 있을 경우
+                                                                -->
+                                                        <div class="tbl-body-item">
+                                                            <a href="#" class="body-item-link">1</a>
+                                                            <span class="body-item-number">(+1)</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <!--
+                                                                    NOTE : 04-03
+                                                                    link, 증가, 감소 카운트 있을 경우
+                                                                -->
+                                                        <div class="tbl-body-item">
+                                                            <a href="#" class="body-item-link">2</a>
+                                                            <span class="body-item-number">(-1)</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">
+                                                        H(식료품)
+                                                    </th>
+                                                    <th scope="col">
+                                                        I(환경)
+                                                    </th>
+                                                    <th scope="col">
+                                                        J(생물)
+                                                    </th>
+                                                    <th scope="col">
+                                                        K(섬유)
+                                                    </th>
+                                                    <th scope="col">
+                                                        L(요업)
+                                                    </th>
+                                                    <th scope="col">
+                                                        M(화학)
+                                                    </th>
+                                                    <th scope="col">
+                                                        P(의료)
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">
+                                                        Q(품질경영)
+                                                    </th>
+                                                    <th scope="col">
+                                                        R(수송기계)
+                                                    </th>
+                                                    <th scope="col">
+                                                        S(서비스)
+                                                    </th>
+                                                    <th scope="col">
+                                                        T(물류)
+                                                    </th>
+                                                    <th scope="col">
+                                                        V(조선)
+                                                    </th>
+                                                    <th scope="col">
+                                                        W(항공우주)
+                                                    </th>
+                                                    <th scope="col">
+                                                        X(정보통신)
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title">
+                            <div class="title-box">
+                                <h3 class="box-title">월별 KS인증건수</h3>
+                            </div>
+                        </div>
+
+                        <div class="company_txt">
+                            <!-- <div class="multi-boxs">
+                                    <span class="normal">기준년도</span>
+                                    <div class="picker_oneday">
+                                        <input
+                                            type="text"
+                                            class="datepicker"
+                                            placeholder="2023"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="title-box">
+                                    <span class="normal">담당지역본부</span>
+                                    <select class="select">
+                                        <option value="">선택</option>
+                                        <option value="">경기지역본부</option>
+                                        <option value="">강원지역본부</option>
+                                        <option value="">서울지역본부</option>
+                                        <option value="">춘천지역본부</option>
+                                        <option value="">충북지역본부</option>
+                                        <option value="">호남지역본부</option>
+                                        <option value="">전북지역본부</option>
+                                        <option value="">전남지역본부</option>
+                                        <option value="">영남지역본부</option>
+                                        <option value="">제주지역본부</option>
+                                    </select>
+                                    <button class="btn btn-registered">
+                                        검색
+                                    </button>
+                                </div> -->
+                            <div class="btn_wrap end pd-0">
+                                <button type="button" class="btn btn-down">
+                                    2023년 02월 인증서현황 다운로드
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            유효 인증서 수, 월별
+                                            증감현황(1~12월)
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 100px" />
+                                            <col style="width: 110px" />
+                                            <col style="width: 80px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" colspan="3">
+                                                    유효 인증서 수
+                                                </th>
+                                                <th scope="col" colspan="12">
+                                                    월별 증감현황
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">
+                                                    전년도 12월
+                                                </th>
+                                                <th scope="col">
+                                                    2023년 02월
+                                                </th>
+                                                <th scope="col">증감</th>
+                                                <th scope="col">1월</th>
+                                                <th scope="col">2월</th>
+                                                <th scope="col">3월</th>
+                                                <th scope="col">4월</th>
+                                                <th scope="col">5월</th>
+                                                <th scope="col">6월</th>
+                                                <th scope="col">7월</th>
+                                                <th scope="col">8월</th>
+                                                <th scope="col">9월</th>
+                                                <th scope="col">10월</th>
+                                                <th scope="col">11월</th>
+                                                <th scope="col">12월</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">7,000</td>
+                                                <td rowspan="2">7,050</td>
+                                                <td rowspan="2">
+                                                    <div class="available-num">
+                                                        <div class="up">
+                                                            50
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="flex">
+                                                        <span>유효</span>
+                                                        <div class="nums">
+                                                            7,100
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="flex">
+                                                        <span>유효</span>
+                                                        <div class="nums">
+                                                            7,100
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="flex">
+                                                        <span class="stop">신규</span>
+                                                        <span class="stop">100</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="stop">유입</span>
+                                                        <span class="stop">50</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum">반납</span>
+                                                        <span class="sum">0</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum">이탈</span>
+                                                        <span class="sum">50</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum">취소</span>
+                                                        <span class="sum">0</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="flex">
+                                                        <span class="stop">신규</span>
+                                                        <span class="stop">100</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="stop">유입</span>
+                                                        <span class="stop">50</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum">반납</span>
+                                                        <span class="sum">0</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum">이탈</span>
+                                                        <span class="sum">50</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <span class="sum">취소</span>
+                                                        <span class="sum">0</span>
+                                                    </div>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th colspan="3">월 증감</th>
+                                                <td class="right">
+                                                    <div class="available-num">
+                                                        <div class="up">
+                                                            100
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="right">
+                                                    <div class="available-num">
+                                                        <div class="down">
+                                                            50
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="3">
+                                                    전 년도 12월대비 증감
+                                                </th>
+                                                <td class=right>
+                                                    <div class="available-num">
+                                                        <div class="up">
+                                                            100
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class=right>
+                                                    <div class="available-num">
+                                                        <div class="up">
+                                                            50
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                                <td class="right">-</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title border-bm">
+                            <div class="title-box">
+                                <h3 class="box-title">KS심사 승인대기</h3>
+                                <p class="payment">
+                                    승인결재가 필요한 건입니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <ul class="major_list border-0 pd-0">
+                                        <li class="major_item">
+                                            <span class="item_name">심사원 심사보고
+                                                미승인</span>
+                                            <div class="major_link">
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <span class="item_name">시험기관 심사결과
+                                                미승인</span>
+                                            <div class="major_link">
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title border-bm">
+                            <div class="title-box">
+                                <h3 class="box-title">KS심사 결과현황</h3>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">
+                                            나의 담당보고서
+                                        </h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">시험결과 승인대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">6</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">심사보고서
+                                                    검토대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">6</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">부서장 상신대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">6</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">전체</h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">시험결과 승인대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">6</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">부서장 상신대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">6</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">부서장 승인대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">6</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group-application group-result">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">부서장</h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">부서장 상신대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">6</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">부서장 승인대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">6</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title">
+                            <div class="title-box">
+                                <h3 class="box-title">KS심사 진행현황</h3>
+                                <p class="payment">
+                                    신청 및 심사단계별 건수를 확인하시고
+                                    업무처리에 참고하세요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="company_txt">
+                            <div class="multi-boxs">
+                                <span class="normal">담당코드</span>
+                                <select multiple="multiple" name="somename0" class="multi-select" placeholder="선택">
+                                    <option value="A(기본)">A(기본)</option>
+                                    <option value="B(기계)">B(기계)</option>
+                                    <option value="C(전기전자)">
+                                        C(전기전자)
+                                    </option>
+                                    <option value="D(금속)">D(금속)</option>
+                                    <option value="E(광산)">E(광산)</option>
+                                    <option value="F(건설)">F(건설)</option>
+                                    <option value="G(일용품)">
+                                        G(일용품)
+                                    </option>
+                                    <option value="H(식료품)">
+                                        H(식료품)
+                                    </option>
+                                    <option value="I(환경)">I(환경)</option>
+                                    <option value="J(생물)">J(생물)</option>
+                                    <option value="K(섬유)">K(섬유)</option>
+                                    <option value="L(요업)">L(요업)</option>
+                                    <option value="M(화학)">M(화학)</option>
+                                    <option value="P(의료)">P(의료)</option>
+                                    <option value="Q(품질경영)">
+                                        Q(품질경영)
+                                    </option>
+                                    <option value="R(수송기계)">
+                                        R(수송기계)
+                                    </option>
+                                    <option value="S(서비스)">
+                                        S(서비스)
+                                    </option>
+                                    <option value="T(물류)">T(물류)</option>
+                                    <option value="V(조선)">V(조선)</option>
+                                    <option value="W(항공우주)">
+                                        W(항공우주)
+                                    </option>
+                                    <option value="X(정보통신)">
+                                        X(정보통신)
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="title-box">
+                                <span class="normal">담당지역본부</span>
+                                <select class="select">
+                                    <option value="">선택</option>
+                                    <option value="">경기지역본부</option>
+                                    <option value="">강원지역본부</option>
+                                    <option value="">서울지역본부</option>
+                                    <option value="">춘천지역본부</option>
+                                    <option value="">충북지역본부</option>
+                                    <option value="">호남지역본부</option>
+                                    <option value="">전북지역본부</option>
+                                    <option value="">전남지역본부</option>
+                                    <option value="">영남지역본부</option>
+                                    <option value="">제주지역본부</option>
+                                </select>
+                                <button class="btn btn-registered">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">심사신청</h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">접수</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">검증완료&배정시작</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- <li class="major_item">
+                                                <div class="major_link">
+                                                    <span class="item_name"
+                                                        >심사단계</span
+                                                    >
+                                                    <div class="major-cases">
+                                                        <a
+                                                            href="#"
+                                                            class="item_number"
+                                                            >0</a
+                                                        >
+                                                        건
+                                                    </div>
+                                                </div>
+                                            </li> -->
+                                    </ul>
+                                </div>
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">
+                                            심사원 배정
+                                        </h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">미배정 (임시저장
+                                                    포함)</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">심사비산정중</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">심사진행</h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">심사대기</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">1</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">심사중</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">부적합 개선진행</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">30</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                            <div class="under_wrap">
+                                                <ul class="under_list">
+                                                    <li class="unser_item">
+                                                        <span class="nums_days">1~45일</span>
+                                                        <a href="#" class="nums_count">
+                                                            10
+                                                        </a>
+                                                        건
+                                                    </li>
+                                                    <li class="unser_item">
+                                                        <span class="nums_days">
+                                                            46일~90일
+                                                        </span>
+                                                        <a href="#" class="nums_count">10</a>건
+                                                    </li>
+                                                    <li class="unser_item">
+                                                        <span class="nums_days">
+                                                            90일 초과
+                                                        </span>
+                                                        <a href="#" class="nums_count">
+                                                            10
+                                                        </a>
+                                                        건
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">시판품 행정처분
+                                                    시정조치</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">30</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                            <div class="under_wrap">
+                                                <ul class="under_list">
+                                                    <li class="unser_item">
+                                                        <span class="nums_days">1~45일</span>
+                                                        <a href="#" class="nums_count">
+                                                            10
+                                                        </a>
+                                                        건
+                                                    </li>
+                                                    <li class="unser_item">
+                                                        <span class="nums_days">
+                                                            46일~90일
+                                                        </span>
+                                                        <a href="#" class="nums_count">10</a>건
+                                                    </li>
+                                                    <li class="unser_item">
+                                                        <span class="nums_days">
+                                                            90일 초과
+                                                        </span>
+                                                        <a href="#" class="nums_count">
+                                                            10
+                                                        </a>
+                                                        건
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title">
+                            <div class="title-box">
+                                <h3 class="box-title">KS인증서 변경신고</h3>
+                                <p class="payment">
+                                    인증서 신고사항을 확인하시고 업무처리에
+                                    참고하세요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="company_txt">
+                            <div class="multi-boxs">
+                                <span class="normal">담당코드</span>
+                                <select multiple="multiple" name="somename0" class="multi-select" placeholder="선택">
+                                    <option value="A(기본)">A(기본)</option>
+                                    <option value="B(기계)">B(기계)</option>
+                                    <option value="C(전기전자)">
+                                        C(전기전자)
+                                    </option>
+                                    <option value="D(금속)">D(금속)</option>
+                                    <option value="E(광산)">E(광산)</option>
+                                    <option value="F(건설)">F(건설)</option>
+                                    <option value="G(일용품)">
+                                        G(일용품)
+                                    </option>
+                                    <option value="H(식료품)">
+                                        H(식료품)
+                                    </option>
+                                    <option value="I(환경)">I(환경)</option>
+                                    <option value="J(생물)">J(생물)</option>
+                                    <option value="K(섬유)">K(섬유)</option>
+                                    <option value="L(요업)">L(요업)</option>
+                                    <option value="M(화학)">M(화학)</option>
+                                    <option value="P(의료)">P(의료)</option>
+                                    <option value="Q(품질경영)">
+                                        Q(품질경영)
+                                    </option>
+                                    <option value="R(수송기계)">
+                                        R(수송기계)
+                                    </option>
+                                    <option value="S(서비스)">
+                                        S(서비스)
+                                    </option>
+                                    <option value="T(물류)">T(물류)</option>
+                                    <option value="V(조선)">V(조선)</option>
+                                    <option value="W(항공우주)">
+                                        W(항공우주)
+                                    </option>
+                                    <option value="X(정보통신)">
+                                        X(정보통신)
+                                    </option>
+                                </select>
+                                <button type="button" class="btn btn-registered">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <span class="item_name">제조중단신고</span>
+                                            <div class="major_link">
+                                                <span class="item_name">신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <span class="item_name">제조개시신고</span>
+                                            <div class="major_link">
+                                                <span class="item_name">신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <span class="item_name">주요자재목록</span>
+                                            <div class="major_link">
+                                                <span class="item_name">신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <span class="item_name">제조중단기간 만료 및
+                                                미개시</span>
+                                            <div class="major_link">
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">인증서반납</h3>
+                                    </div>
+                                    <ul class="major_list border-0 pd-0">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">접수</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">1</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title">
+                            <div class="title-box">
+                                <h3 class="box-title">
+                                    KS인증 정기심사 대상
+                                </h3>
+                                <p class="payment">
+                                    도래일 기준으로 신청이 접수되지 않은
+                                    인증서 건수입니다
+                                </p>
+                            </div>
+                        </div>
+                        <div class="company_txt">
+                            <div class="multi-boxs">
+                                <span class="normal">담당코드</span>
+                                <select multiple="multiple" name="somename0" class="multi-select" placeholder="선택">
+                                    <option value="A(기본)">A(기본)</option>
+                                    <option value="B(기계)">B(기계)</option>
+                                    <option value="C(전기전자)">
+                                        C(전기전자)
+                                    </option>
+                                    <option value="D(금속)">D(금속)</option>
+                                    <option value="E(광산)">E(광산)</option>
+                                    <option value="F(건설)">F(건설)</option>
+                                    <option value="G(일용품)">
+                                        G(일용품)
+                                    </option>
+                                    <option value="H(식료품)">
+                                        H(식료품)
+                                    </option>
+                                    <option value="I(환경)">I(환경)</option>
+                                    <option value="J(생물)">J(생물)</option>
+                                    <option value="K(섬유)">K(섬유)</option>
+                                    <option value="L(요업)">L(요업)</option>
+                                    <option value="M(화학)">M(화학)</option>
+                                    <option value="P(의료)">P(의료)</option>
+                                    <option value="Q(품질경영)">
+                                        Q(품질경영)
+                                    </option>
+                                    <option value="R(수송기계)">
+                                        R(수송기계)
+                                    </option>
+                                    <option value="S(서비스)">
+                                        S(서비스)
+                                    </option>
+                                    <option value="T(물류)">T(물류)</option>
+                                    <option value="V(조선)">V(조선)</option>
+                                    <option value="W(항공우주)">
+                                        W(항공우주)
+                                    </option>
+                                    <option value="X(정보통신)">
+                                        X(정보통신)
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="title-box">
+                                <span class="normal">담당지역본부</span>
+                                <select class="select">
+                                    <option value="">선택</option>
+                                    <option value="">경기지역본부</option>
+                                    <option value="">강원지역본부</option>
+                                    <option value="">서울지역본부</option>
+                                    <option value="">춘천지역본부</option>
+                                    <option value="">충북지역본부</option>
+                                    <option value="">호남지역본부</option>
+                                    <option value="">전북지역본부</option>
+                                    <option value="">전남지역본부</option>
+                                    <option value="">영남지역본부</option>
+                                    <option value="">제주지역본부</option>
+                                </select>
+                                <button class="btn btn-registered">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">
+                                            3년 정기심사
+                                        </h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">만료 3개월전 ~
+                                                    당일</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">만료 1개월 전 ~
+                                                    당일</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">초과 1일 ~ 14일</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">초과 15일 이상</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group-application">
+                                    <div class="page_head head-picker">
+                                        <h3 class="page_tit">1년심사</h3>
+                                        <div class="picker_oneday">
+                                            <input type="text" class="datepicker" placeholder="2023" />
+                                        </div>
+                                    </div>
+                                    <ul class="major_list border-0 pd-0">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">미신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title">
+                            <div class="title-box">
+                                <h3 class="box-title">
+                                    KS인증서 재발급신청
+                                </h3>
+                                <p class="payment">
+                                    인증서 재발급 신청건수를 확인 후
+                                    업무처리에 참고하세요
+                                </p>
+                            </div>
+                        </div>
+                        <div class="company_txt">
+                            <div class="multi-boxs">
+                                <span class="normal">담당코드</span>
+                                <select multiple="multiple" name="somename0" class="multi-select" placeholder="선택">
+                                    <option value="A(기본)">A(기본)</option>
+                                    <option value="B(기계)">B(기계)</option>
+                                    <option value="C(전기전자)">
+                                        C(전기전자)
+                                    </option>
+                                    <option value="D(금속)">D(금속)</option>
+                                    <option value="E(광산)">E(광산)</option>
+                                    <option value="F(건설)">F(건설)</option>
+                                    <option value="G(일용품)">
+                                        G(일용품)
+                                    </option>
+                                    <option value="H(식료품)">
+                                        H(식료품)
+                                    </option>
+                                    <option value="I(환경)">I(환경)</option>
+                                    <option value="J(생물)">J(생물)</option>
+                                    <option value="K(섬유)">K(섬유)</option>
+                                    <option value="L(요업)">L(요업)</option>
+                                    <option value="M(화학)">M(화학)</option>
+                                    <option value="P(의료)">P(의료)</option>
+                                    <option value="Q(품질경영)">
+                                        Q(품질경영)
+                                    </option>
+                                    <option value="R(수송기계)">
+                                        R(수송기계)
+                                    </option>
+                                    <option value="S(서비스)">
+                                        S(서비스)
+                                    </option>
+                                    <option value="T(물류)">T(물류)</option>
+                                    <option value="V(조선)">V(조선)</option>
+                                    <option value="W(항공우주)">
+                                        W(항공우주)
+                                    </option>
+                                    <option value="X(정보통신)">
+                                        X(정보통신)
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="title-box">
+                                <span class="normal">담당지역본부</span>
+                                <select class="select">
+                                    <option value="">선택</option>
+                                    <option value="">경기지역본부</option>
+                                    <option value="">강원지역본부</option>
+                                    <option value="">서울지역본부</option>
+                                    <option value="">춘천지역본부</option>
+                                    <option value="">충북지역본부</option>
+                                    <option value="">호남지역본부</option>
+                                    <option value="">전북지역본부</option>
+                                    <option value="">전남지역본부</option>
+                                    <option value="">영남지역본부</option>
+                                    <option value="">제주지역본부</option>
+                                </select>
+                                <button class="btn btn-registered">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">재발급</h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">접수</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">영문인증서</h3>
+                                    </div>
+                                    <ul class="major_list border-0 pd-0">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">신청</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">접수</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title">
+                            <div class="title-box">
+                                <h3 class="box-title">KS인증 미수</h3>
+                                <p class="payment">
+                                    신청비 및 심사비 결제가 진행되지 않은
+                                    건입니다
+                                </p>
+                            </div>
+                        </div>
+                        <div class="company_txt">
+                            <div class="title-box">
+                                <span class="normal">담당지역본부</span>
+                                <select class="select">
+                                    <option value="">선택</option>
+                                    <option value="">경기지역본부</option>
+                                    <option value="">강원지역본부</option>
+                                    <option value="">서울지역본부</option>
+                                    <option value="">춘천지역본부</option>
+                                    <option value="">충북지역본부</option>
+                                    <option value="">호남지역본부</option>
+                                    <option value="">전북지역본부</option>
+                                    <option value="">전남지역본부</option>
+                                    <option value="">영남지역본부</option>
+                                    <option value="">제주지역본부</option>
+                                </select>
+                                <button class="btn btn-registered">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <ul class="major_list border-0 pd-0">
+                                        <li class="major_item">
+                                            <span class="item_name">매출 미발행</span>
+                                            <div class="major_link">
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <span class="item_name">심사원비 미발행</span>
+                                            <div class="major_link">
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group-head title border-bm">
+                            <div class="title-box">
+                                <h3 class="box-title">고객센터 민원</h3>
+                                <p class="payment">
+                                    민원 신청건수를 확인 후 업무처리에
+                                    참고하세요
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="group-application">
+                                    <div class="page_head">
+                                        <h3 class="page_tit">
+                                            Q&A (KS인증 이의신청)
+                                        </h3>
+                                    </div>
+                                    <ul class="major_list">
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">접수</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number is-active">10</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="major_item">
+                                            <div class="major_link">
+                                                <span class="item_name">처리중</span>
+                                                <div class="major-cases">
+                                                    <a href="#" class="item_number">0</a>
+                                                    건
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-head title">
+                            <div class="title-box">
+                                <h3 class="box-title">
+                                    KS심사표준 개정 관리
+                                </h3>
+                                <p class="payment">
+                                    개정된 심사표준의 인증서 재발급 상태를
+                                    확인하셔서 업무처리에 참고하시기
+                                    바랍니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="company_txt border-0 pd-0">
+                            <div class="multi-boxs">
+                                <span class="normal">담당코드</span>
+                                <select multiple="multiple" name="somename0" class="multi-select" placeholder="선택">
+                                    <option value="A(기본)">A(기본)</option>
+                                    <option value="B(기계)">B(기계)</option>
+                                    <option value="C(전기전자)">
+                                        C(전기전자)
+                                    </option>
+                                    <option value="D(금속)">D(금속)</option>
+                                    <option value="E(광산)">E(광산)</option>
+                                    <option value="F(건설)">F(건설)</option>
+                                    <option value="G(일용품)">
+                                        G(일용품)
+                                    </option>
+                                    <option value="H(식료품)">
+                                        H(식료품)
+                                    </option>
+                                    <option value="I(환경)">I(환경)</option>
+                                    <option value="J(생물)">J(생물)</option>
+                                    <option value="K(섬유)">K(섬유)</option>
+                                    <option value="L(요업)">L(요업)</option>
+                                    <option value="M(화학)">M(화학)</option>
+                                    <option value="P(의료)">P(의료)</option>
+                                    <option value="Q(품질경영)">
+                                        Q(품질경영)
+                                    </option>
+                                    <option value="R(수송기계)">
+                                        R(수송기계)
+                                    </option>
+                                    <option value="S(서비스)">
+                                        S(서비스)
+                                    </option>
+                                    <option value="T(물류)">T(물류)</option>
+                                    <option value="V(조선)">V(조선)</option>
+                                    <option value="W(항공우주)">
+                                        W(항공우주)
+                                    </option>
+                                    <option value="X(정보통신)">
+                                        X(정보통신)
+                                    </option>
+                                </select>
+                                <div class="picker_oneday">
+                                    <input type="text" class="datepicker" placeholder="2023" />
+                                </div>
+                                <button type="button" class="btn btn-registered">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            ks심사표준 개정관리 -
+                                            등록일,표준코드, 표준명,
+                                            표준발행일, 표준상태,
+                                            심사기준발행일, 발행인증서 수,
+                                            개정대상, 개정에 따른
+                                            재발급신청(신청, 신청전)
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 140px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 542px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 180px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 140px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 120px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2">
+                                                    등록일
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    표준번호
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    표준명
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    표준발행일
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    표준상태
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    심사기준발행일
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    발행인증서 수
+                                                </th>
+                                                <th scope="col" rowspan="2">
+                                                    개정대상
+                                                </th>
+                                                <th scope="col" colspan="2">
+                                                    개정에 따른 재발급신청
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">신청</th>
+                                                <th scope="col">신청전</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2023-10-24</td>
+                                                <td>
+                                                    <a href="#a">
+                                                        KS B 1234
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="tbl_link_box">
+                                                        6각 볼트
+
+                                                        <div class="btn_wrap">
+                                                            <button type="button" class="btn btn-sm">
+                                                                표준정보
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                심사기준
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>확인</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>
+                                                    <div>35</div>
+                                                    <a href="#a" class="btn btn-down">다운로드</a>
+                                                </td>
+                                                <td>
+                                                    <div>0</div>
+                                                    <a href="#a" class="btn btn-down">다운로드</a>
+                                                </td>
+                                                <td><a href="#a">0</a></td>
+                                                <td>
+                                                    <a href="#">2</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023-10-24</td>
+                                                <td>
+                                                    <a href="#a">
+                                                        KS B 1234
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="tbl_link_box">
+                                                        6각 볼트
+
+                                                        <div class="btn_wrap">
+                                                            <button type="button" class="btn btn-sm">
+                                                                표준정보
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                심사기준
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>확인</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>
+                                                    <div>35</div>
+                                                    <a href="#a" class="btn btn-down">다운로드</a>
+                                                </td>
+                                                <td>
+                                                    <div>0</div>
+                                                    <a href="#a" class="btn btn-down">다운로드</a>
+                                                </td>
+                                                <td><a href="#a">0</a></td>
+                                                <td>
+                                                    <a href="#">2</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023-10-24</td>
+                                                <td>
+                                                    <a href="#a">
+                                                        KS B 1234
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="tbl_link_box">
+                                                        6각 볼트
+
+                                                        <div class="btn_wrap">
+                                                            <button type="button" class="btn btn-sm">
+                                                                표준정보
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                심사기준
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>확인</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>
+                                                    <div>35</div>
+                                                    <a href="#a" class="btn btn-down">다운로드</a>
+                                                </td>
+                                                <td>
+                                                    <div>0</div>
+                                                    <a href="#a" class="btn btn-down">다운로드</a>
+                                                </td>
+                                                <td><a href="#a">0</a></td>
+                                                <td>
+                                                    <a href="#">2</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023-10-24</td>
+                                                <td>
+                                                    <a href="#a">
+                                                        KS B 1234
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="tbl_link_box">
+                                                        6각 볼트
+
+                                                        <div class="btn_wrap">
+                                                            <button type="button" class="btn btn-sm">
+                                                                표준정보
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                심사기준
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>확인</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>
+                                                    <div>35</div>
+                                                    <a href="#a" class="btn btn-down">다운로드</a>
+                                                </td>
+                                                <td>
+                                                    <div>0</div>
+                                                    <a href="#a" class="btn btn-down">다운로드</a>
+                                                </td>
+                                                <td><a href="#a">0</a></td>
+                                                <td>
+                                                    <a href="#">2</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-head title">
+                            <div class="title-box">
+                                <h3 class="box-title">
+                                    KS심사기준 개정대상
+                                </h3>
+                                <p class="payment">
+                                    개정된 심사표준에 맞게 심사기준 개정이
+                                    필요한 리스트입니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="company_txt border-0 pd-0">
+                            <div class="multi-boxs">
+                                <span class="normal">담당코드</span>
+                                <select multiple="multiple" name="somename0" class="multi-select" placeholder="선택">
+                                    <option value="A(기본)">A(기본)</option>
+                                    <option value="B(기계)">B(기계)</option>
+                                    <option value="C(전기전자)">
+                                        C(전기전자)
+                                    </option>
+                                    <option value="D(금속)">D(금속)</option>
+                                    <option value="E(광산)">E(광산)</option>
+                                    <option value="F(건설)">F(건설)</option>
+                                    <option value="G(일용품)">
+                                        G(일용품)
+                                    </option>
+                                    <option value="H(식료품)">
+                                        H(식료품)
+                                    </option>
+                                    <option value="I(환경)">I(환경)</option>
+                                    <option value="J(생물)">J(생물)</option>
+                                    <option value="K(섬유)">K(섬유)</option>
+                                    <option value="L(요업)">L(요업)</option>
+                                    <option value="M(화학)">M(화학)</option>
+                                    <option value="P(의료)">P(의료)</option>
+                                    <option value="Q(품질경영)">
+                                        Q(품질경영)
+                                    </option>
+                                    <option value="R(수송기계)">
+                                        R(수송기계)
+                                    </option>
+                                    <option value="S(서비스)">
+                                        S(서비스)
+                                    </option>
+                                    <option value="T(물류)">T(물류)</option>
+                                    <option value="V(조선)">V(조선)</option>
+                                    <option value="W(항공우주)">
+                                        W(항공우주)
+                                    </option>
+                                    <option value="X(정보통신)">
+                                        X(정보통신)
+                                    </option>
+                                </select>
+                                <div class="chk-inner">
+                                    <input type="checkbox" class="visually-hidden" name="tbl-chk" id="chk-head1" />
+                                    <label for="chk-head1">개정관리대상 지정건 포함
+                                    </label>
+                                </div>
+                                <button class="btn btn-registered">
+                                    검색
+                                </button>
+                            </div>
+                            <div class="title-box">
+                                <span class="normal">개정관리대상</span>
+                                <select class="select w-100">
+                                    <option value="">선택</option>
+                                    <option value="">불포함</option>
+                                    <option value="">포함</option>
+                                </select>
+                                <input type="text" placeholder="사유를 입력해 주세요." />
+                                <button class="btn btn-page">저장</button>
+                            </div>
+                        </div>
+                        <div class="group-body group-chk">
+                            <div class="group-inner">
+                                <div class="tbl_wrap">
+                                    <table class="tbl">
+                                        <caption>
+                                            ks심사기준 개정대상 - 선택,
+                                            표준번호, 표준명, 표준발행일,
+                                            표준상태, 심사기준발행일,
+                                            심사기준상태, 발행인증서 수,
+                                            개정대상
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 80px" />
+                                            <col style="width: 138px" />
+                                            <col style="width: 392px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 80px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 100px" />
+                                            <col style="width: 272px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">
+                                                    표준번호
+                                                </th>
+                                                <th scope="col">표준명</th>
+                                                <th scope="col">
+                                                    표준발행일
+                                                </th>
+                                                <th scope="col">
+                                                    표준상태
+                                                </th>
+                                                <th scope="col">
+                                                    심사기준발행일
+                                                </th>
+                                                <th scope="col">
+                                                    심사기준상태
+                                                </th>
+                                                <th scope="col">
+                                                    발행인증서 수
+                                                </th>
+                                                <th scope="col">
+                                                    개정관리대상
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input type="checkbox" class="visually-hidden" name="tbl-chk"
+                                                            id="code-chk1" />
+                                                        <label for="code-chk1" class="label"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">KS B 1234</a>
+                                                    <p>한국표준협회</p>
+                                                </td>
+                                                <td>
+                                                    <div class="tbl_link_box">
+                                                        <span class="ellipsis">6각 볼트</span>
+                                                        <div class="btn_wrap">
+                                                            <button type="button" class="btn btn-sm">
+                                                                상세보기
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                표준정보
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                심사기준
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>개정</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>개정</td>
+
+                                                <td>
+                                                    <a href="#">0</a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input type="checkbox" class="visually-hidden" name="tbl-chk"
+                                                            id="code-chk2" />
+                                                        <label for="code-chk2" class="label"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">KS B 1234</a>
+                                                    <p>한국표준협회</p>
+                                                </td>
+                                                <td>
+                                                    <div class="tbl_link_box">
+                                                        6각 볼트
+                                                        <div class="btn_wrap">
+                                                            <button type="button" class="btn btn-sm">
+                                                                상세보기
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                표준정보
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                심사기준
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>개정</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>개정</td>
+
+                                                <td>
+                                                    <a href="#">0</a>
+                                                </td>
+                                                <td>
+                                                    불포함 / 사유 : 개정취소
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input type="checkbox" class="visually-hidden" name="tbl-chk"
+                                                            id="code-chk3" />
+                                                        <label for="code-chk3" class="label"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">KS B 1234</a>
+                                                    <p>한국표준협회</p>
+                                                </td>
+                                                <td>
+                                                    <div class="tbl_link_box">
+                                                        6각 볼트
+                                                        <div class="btn_wrap">
+                                                            <button type="button" class="btn btn-sm">
+                                                                상세보기
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                표준정보
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                심사기준
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>개정</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>개정</td>
+
+                                                <td>
+                                                    <a href="#">0</a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="chk-inner">
+                                                        <input type="checkbox" class="visually-hidden" name="tbl-chk"
+                                                            id="code-chk4" />
+                                                        <label for="code-chk4" class="label"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">KS B 1234</a>
+                                                    <p>한국표준협회</p>
+                                                </td>
+                                                <td>
+                                                    <div class="tbl_link_box">
+                                                        6각 볼트
+                                                        <div class="btn_wrap">
+                                                            <button type="button" class="btn btn-sm">
+                                                                상세보기
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                표준정보
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm">
+                                                                심사기준
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>개정</td>
+                                                <td>YYYY-MM-DD</td>
+                                                <td>개정</td>
+
+                                                <td>
+                                                    <a href="#">0</a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./js/opensrc/jquery-3.6.3.min.js"></script>
+    <script src="./js/opensrc/jquery-ui.min.js"></script>
+    <script src="./js/opensrc/summernote-ko-KR.js"></script>
+    <script src="./js/opensrc/summernote-lite.js"></script>
+    <script src="./js/opensrc/MonthPicker.min.js"></script>
+    <script src="./js/opensrc/jquery.sumoselect.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/constants.js"></script>
+</body>
+
+</html>
